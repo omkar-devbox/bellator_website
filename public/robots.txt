@@ -1,0 +1,6 @@
+# Robots.txt for Bellator Engineers
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://bellatorengineers.in/sitemap.xml

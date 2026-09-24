@@ -1,0 +1,151 @@
+@import "../../style.css";
+
+/* ==========================================================================
+   About Us Page Custom Styles - 60-30-10 Format & Home Match
+   Referring live site https://www.bellatorengineers.in/about-us/
+   60% Base Canvas (#060E1D Dark Hero / #FFFFFF & #F8FAFC Light Content)
+   30% Secondary (#0F172A Slate Headings, #E2E8F0 Borders, #F8FAFC Card Surfaces)
+   10% Accent (#EE6226 Vivid Orange CTAs, Active Pills, Badges & Highlights)
+   ========================================================================== */
+
+/* Navbar: Matches Home Page Exactly (Translucent on Dark Hero, White on Scroll) */
+#techno-navbar:not(.navbar-scrolled) .nav-logo-white {
+  display: block !important;
+}
+
+#techno-navbar:not(.navbar-scrolled) .nav-logo-dark {
+  display: none !important;
+}
+
+#techno-navbar.navbar-scrolled .nav-logo-white {
+  display: none !important;
+}
+
+#techno-navbar.navbar-scrolled .nav-logo-dark {
+  display: block !important;
+}
+
+/* Active link indicator in navbar */
+#techno-navbar .nav-pill-link.active {
+  background: rgba(255, 255, 255, 0.95);
+  color: #EE6226 !important;
+  font-weight: 700;
+  border-color: rgba(238, 98, 38, 0.3);
+  box-shadow: 0 2px 8px rgba(238, 98, 38, 0.15);
+}
+
+.navbar-scrolled #techno-navbar .nav-pill-link.active,
+#techno-navbar.navbar-scrolled .nav-pill-link.active {
+  background: #f8fafc;
+  color: #EE6226 !important;
+  border-color: rgba(238, 98, 38, 0.25);
+}
+
+/* Engineering Info & Feature Cards (60-30-10) */
+.feature-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 1.25rem;
+  padding: 2rem 1.75rem;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, border-color, box-shadow;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(238, 98, 38, 0.4);
+  box-shadow:
+    0 20px 35px -8px rgba(15, 23, 42, 0.08),
+    0 0 0 1px rgba(238, 98, 38, 0.15);
+}
+
+/* Quality Pillar Card */
+.quality-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  transition: all 0.25s ease;
+}
+
+.quality-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(238, 98, 38, 0.35);
+  box-shadow: 0 14px 28px -6px rgba(15, 23, 42, 0.06);
+}
+
+/* Industry Showcase Card */
+.industry-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  background-color: #ffffff;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industry-tile img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industry-tile:hover img {
+  transform: scale(1.08);
+}
+
+.industry-tile:hover {
+  transform: translateY(-4px);
+  border-color: rgba(238, 98, 38, 0.45);
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.12);
+}
+
+/* Leadership Card */
+.leader-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
+}
+
+.leader-card:hover {
+  border-color: rgba(238, 98, 38, 0.35);
+  box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.09);
+}
+
+/* Interactive Milestone Stat Badges */
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: #FFF7ED;
+  border: 1px solid #FFEDD5;
+  color: #EE6226;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(238, 98, 38, 0.35);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(238, 98, 38, 0.7);
+}
