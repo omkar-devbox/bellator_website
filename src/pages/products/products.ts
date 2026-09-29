@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearSearchBtn = document.getElementById('clear-search-btn') as HTMLButtonElement | null;
   const cards = document.querySelectorAll<HTMLElement>('.valve-card');
   const visibleCountEl = document.getElementById('visible-count');
-  const matrixLinks = document.querySelectorAll<HTMLAnchorElement>('.valve-matrix-item');
 
   let currentCategory = 'all';
   let searchQuery = '';
@@ -108,40 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const cardId = card.getAttribute('data-id');
       if (cardId) {
         navigateToProductDetail(cardId);
-      }
-    });
-  });
-
-  // Matrix item click handler
-  matrixLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      const jumpId = link.getAttribute('data-jump');
-      if (jumpId) {
-        matrixLinks.forEach(l => l.classList.remove('is-active'));
-        link.classList.add('is-active');
-
-        // Scroll to card
-        const targetCard = document.getElementById(`card-${jumpId}`);
-        if (targetCard) {
-          // If category was filtered out, switch to all or its category
-          if (targetCard.style.display === 'none') {
-            currentCategory = 'all';
-            tabBtns.forEach(b => {
-              if (b.getAttribute('data-filter') === 'all') {
-                b.classList.add('active');
-              } else {
-                b.classList.remove('active');
-              }
-            });
-            updateFilter();
-          }
-
-          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          targetCard.classList.add('ring-2', 'ring-[#EE6226]');
-          setTimeout(() => {
-            targetCard.classList.remove('ring-2', 'ring-[#EE6226]');
-          }, 2000);
-        }
       }
     });
   });

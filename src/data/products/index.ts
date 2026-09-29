@@ -1,3 +1,18 @@
+export interface MaterialTableItem {
+  component: string;
+  material: string;
+}
+
+export interface SpecTableItem {
+  parameter: string;
+  details: string;
+}
+
+export interface ReferenceItem {
+  endUser: string;
+  application: string;
+}
+
 export interface ProductDetail {
   id: string;
   title: string;
@@ -18,43 +33,142 @@ export interface ProductDetail {
   standards: string;
   features: string[];
   applications: string[];
+  // Brochure enriched fields
+  taglineBrochure?: string;
+  shapes?: string;
+  endConnection?: string;
+  rectangularSize?: string;
+  technicalSpecs?: SpecTableItem[];
+  mocTable?: MaterialTableItem[];
+  automationOptions?: { name: string; desc?: string }[];
+  optionalFeatures?: string[];
+  inspectionTesting?: string[];
+  majorReferences?: ReferenceItem[];
+  galleryImages?: { title: string; subtitle?: string; image?: string }[];
+  industriesServed?: { name: string; image?: string }[];
 }
 
 export const productsData: Record<string, ProductDetail> = {
   'butterfly-damper-valves': {
     id: 'butterfly-damper-valves',
-    title: 'Butterfly Damper Valves',
-    model: 'BE-10 Series',
+    title: 'BE10 : BUTTERFLY DAMPER VALVES',
+    model: 'BE10 SERIES',
     image: '/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png',
     category: 'isolation',
-    categoryLabel: 'Isolation & Throttling',
-    tagline: 'Precision engineered single flap butterfly damper for harsh flue gas isolation and aerodynamic throttling.',
-    desc: 'Manufactured in sizes up to 7,000 mm in round shape and up to 12,000 mm in rectangular shape. Features concentric or offset single disc for corrosive, abrasive, and hazardous gas flows. Designed in accordance with key international power and oil & gas standards.',
-    longDesc: 'Bellator Engineers BE-10 Series Butterfly Damper Valves are heavy-duty single disc control and isolation dampers fabricated to withstand extreme industrial environments. Designed for circular and rectangular ductwork systems, these valves provide dependable regulation and tight shut-off in thermal power plants, cement manufacturing, steel mills, and chemical processing complexes.',
+    categoryLabel: 'Isolation & Flow Control',
+    tagline: 'Engineered for reliable isolation and flow control of air, flue gases, and process media in industrial ducting systems.',
+    desc: 'Bellator BE10 Series Butterfly Damper Valves are engineered for reliable isolation and flow control of air, flue gases, and process media in industrial ducting systems. Designed for low pressure drop, dependable sealing performance, and long operational life under demanding service conditions.',
+    longDesc: 'Manufactured with heavy-duty fabricated construction and application-oriented engineering, the BE10 Series offers smooth operation and reliable performance under continuous duty and elevated temperature conditions. The dampers are available in Round, Square, and Rectangular configurations with customized dimensions to suit project requirements. The BE10 Series can be supplied with Manual, Pneumatic, Electric, or Hydraulic actuation systems along with complete automation accessories. Designed using advanced engineering tools including 3D modelling and FEA-based validation, Bellator dampers are optimized for thermal expansion, actuator sizing, and long-term operational reliability.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'Standard sizes up to Ø7,000 mm round & 12,000 mm rectangular',
-      'Engineered for low pressure drop and aerodynamic blade profiles',
-      'Available with step seat, metal-to-metal, or flexible metallic leaf seals',
-      'SIL-2 & CE Qualified manufacturing design'
+      'Low Pressure Drop Design & Heavy Duty Fabricated Construction',
+      'Low Operating Torque & Maintenance Friendly Design',
+      'Multiple Automation Options: Manual, Pneumatic, Electric, Hydraulic',
+      'Custom Designed as per Application & Suitable for Corrosive & Dusty Media',
+      '3D Modelling & FEA-based validation for thermal expansion and long life'
     ],
-    leakage: 'Class IV / VI (99.5% - 100% sealing efficiency)',
-    temp: '-25°C to +825°C',
-    pressure: 'Up to 10,197 mmWC',
-    sizes: 'Ø40 mm to Ø7,000 mm Round / Rectangular up to 12,000 mm',
-    materials: 'ASTM A36, IS2062, ASTM A240 Type 304L/316L/310S, ASTM A516 Gr-70, ASTM A387 Gr-11',
-    actuation: 'Pneumatic Cylinder, Electric Motorized Actuator, Manual Lever & Bevel Gearbox',
-    standards: 'EN 1751, AMCA 500-D, ASME Sec. VIII Div. 1, SIL-2 / CE Qualified',
+    leakage: 'Up to 99.95%',
+    temp: '-25°C to 825°C',
+    pressure: 'Up to 10197 mmWC',
+    sizes: 'Ø40 mm to Ø7000 mm (Rectangular up to 12000 mm)',
+    materials: 'Body: IS2062 / SA516 Gr-70 | Disc: SS304 / SS310S | Shaft: EN8D / SS410 / SS316',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO / Customer Specific',
+    shapes: 'Round / Square / Rectangular',
+    endConnection: 'Wafer / Flanged / Butt Weld',
+    rectangularSize: 'Up to 12000 mm',
+    technicalSpecs: [
+      { parameter: 'Damper Valve Type', details: 'Butterfly' },
+      { parameter: 'Size Range', details: 'Ø40 mm to Ø7000 mm' },
+      { parameter: 'Rectangular Size', details: 'Up to 12000 mm' },
+      { parameter: 'Design Temperature', details: '-25°C to 825°C' },
+      { parameter: 'Pressure Rating', details: 'Up to 10197 mmWC' },
+      { parameter: 'Leakage Performance', details: 'Up to 99.95%' },
+      { parameter: 'Operation', details: 'Manual / Pneumatic / Electric / Hydraulic' },
+      { parameter: 'End Connection', details: 'Wafer / Flanged / Butt Weld' },
+      { parameter: 'Shapes', details: 'Round / Square / Rectangular' },
+      { parameter: 'Design Standards', details: 'API / ASME / ISO / Customer Specific' },
+      { parameter: 'Automation', details: 'Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / Customer Specific' },
+      { component: 'Disc', material: 'SS304 / SS310S / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metallic / Soft Seat / Customer Specific' },
+      { component: 'Seal', material: 'Ceramic Fiber / Graphite / SS / Customer Specific' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated / Customer Specific' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Heavy duty pneumatic actuator with positioners, solenoid valves & limit switches' },
+      { name: 'Electric', desc: 'Motorized quarter-turn/multi-turn actuators for modulating & ON/OFF control' },
+      { name: 'Hydraulic', desc: 'Electro-hydraulic power units with fast trip fail-safe accumulators' },
+      { name: 'Manual', desc: 'Hand lever and precision bevel/worm gearboxes with position indicators' }
+    ],
     features: [
-      'Through-shaft or stub-shaft design with high-integrity packing gland',
-      'Outboard heavy-duty pillow block bearings isolated from hot gas stream',
-      'Thermal insulation bonnet extensions for high-temperature media',
-      'Customized face-to-face and flange drilling per customer requirements'
+      'Low Pressure Drop Design',
+      'Heavy Duty Fabricated Construction',
+      'Low Operating Torque',
+      'Maintenance Friendly Design',
+      'Multiple Automation Options',
+      'Custom Designed as per Application',
+      'Suitable for Corrosive & Dusty Media'
+    ],
+    optionalFeatures: [
+      'Air Seal Arrangement',
+      'Spark Proof Design',
+      'Anti-Static Design',
+      'Anti-Blowout Shaft Design',
+      'Seismic Qualified Design',
+      'High Temperature Design',
+      'C5 / NORSOK Paint System',
+      'Refractory Lining Option',
+      'External Insulation Option'
+    ],
+    inspectionTesting: [
+      'Inspection & Testing',
+      'Leakage Testing',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered'
     ],
     applications: [
-      'Thermal Power Plant Flue Gas Desulfurization (FGD)',
-      'Cement Rotary Kiln Exhaust & Raw Mill Ducts',
-      'Steel Plant Sintering & Blast Furnace Gas Lines',
-      'Incinerator & Waste Heat Recovery Systems'
+      'Boiler Air & Flue Gas Lines',
+      'ID / FD Fan Isolation',
+      'Hot Air Systems',
+      'Exhaust Systems',
+      'Dust Collection Systems',
+      'HVAC Ventilation Systems',
+      'Kiln & Furnace Systems'
+    ],
+    majorReferences: [
+      { endUser: 'Saudi Aramco', application: 'Isolation of Combustion Air' },
+      { endUser: 'Reliance Industries Limited', application: 'Process Gas System' },
+      { endUser: 'Petroleum Development Oman (PDO)', application: 'Isolation of Combustion Air' },
+      { endUser: 'Unilever', application: 'Incinerator Line' },
+      { endUser: 'Asian Paints', application: 'Boiler Process Line' },
+      { endUser: 'Welspun', application: 'Process Gas System' }
+    ],
+    galleryImages: [
+      { title: 'PNEUMATIC BUTTERFLY', subtitle: 'Dia 900 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' },
+      { title: 'MOTORISED BUTTERFLY', subtitle: 'Dia 1200 mm', image: '/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png' },
+      { title: 'PNEUMATIC BUTTERFLY', subtitle: 'Dia 1250 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' },
+      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: '1200X800 mm', image: '/BE10-Motorized-Square-Butterfly-Damper-Valve.png' },
+      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: 'Dia 400mm & 300 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' },
+      { title: 'MOTORIZED BUTTERFLY DAMPER', subtitle: 'Dia 2000 mm', image: '/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png' },
+      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: 'Dia 1500 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' }
+    ],
+    industriesServed: [
+      { name: 'Power', image: '/industry-power-gen.jpg' },
+      { name: 'Steel', image: '/industry-steel.jpg' },
+      { name: 'Oil & Gas', image: '/industry-oil-gas.jpg' },
+      { name: 'Cement', image: '/industry-cement.jpg' },
+      { name: 'Pharma', image: '/industry-pharma.jpg' },
+      { name: 'Paper & Pulp', image: '/industry-paper-pulp.jpg' }
     ]
   },
   'air-seal-damper-valves': {
