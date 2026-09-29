@@ -27,3 +27,88 @@
 .spec-table-row:last-child {
   border-bottom: none;
 }
+
+/* ==========================================================================
+   Continuous Right-to-Left Infinite Ticker for Major References
+   ========================================================================== */
+.references-marquee-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.75rem 0;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+.references-marquee-viewport:active {
+  cursor: grabbing;
+}
+
+.references-fade-left,
+.references-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .references-fade-left,
+  .references-fade-right {
+    width: 80px;
+  }
+}
+
+.references-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 20%, transparent 100%);
+}
+
+.references-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 20%, transparent 100%);
+}
+
+.references-marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  align-items: stretch;
+  will-change: transform;
+  animation: referencesScrollLeft 24s linear infinite;
+}
+
+.references-marquee-viewport:hover .references-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes referencesScrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reference-card-item {
+  flex: 0 0 280px;
+  width: 280px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+@media (min-width: 640px) {
+  .reference-card-item {
+    flex: 0 0 310px;
+    width: 310px;
+  }
+}
+
+.reference-card-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(238, 98, 38, 0.45);
+  box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(238, 98, 38, 0.15);
+}

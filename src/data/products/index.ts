@@ -11,6 +11,7 @@ export interface SpecTableItem {
 export interface ReferenceItem {
   endUser: string;
   application: string;
+  logo?: string;
 }
 
 export interface ProductDetail {
@@ -154,13 +155,10 @@ export const productsData: Record<string, ProductDetail> = {
       { endUser: 'Welspun', application: 'Process Gas System' }
     ],
     galleryImages: [
-      { title: 'PNEUMATIC BUTTERFLY', subtitle: 'Dia 900 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' },
-      { title: 'MOTORISED BUTTERFLY', subtitle: 'Dia 1200 mm', image: '/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png' },
-      { title: 'PNEUMATIC BUTTERFLY', subtitle: 'Dia 1250 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' },
-      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: '1200X800 mm', image: '/BE10-Motorized-Square-Butterfly-Damper-Valve.png' },
-      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: 'Dia 400mm & 300 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' },
-      { title: 'MOTORIZED BUTTERFLY DAMPER', subtitle: 'Dia 2000 mm', image: '/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png' },
-      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: 'Dia 1500 mm', image: '/BE10-Pneumatic-Single-flap-Butterfly-Damper-Valve.png' }
+      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: '1200X800 mm', image: '/gallery-be10-pneumatic-1200x800.webp' },
+      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: 'Dia 400mm & 300 mm', image: '/gallery-be10-pneumatic-dia-400-300.webp' },
+      { title: 'MOTORIZED BUTTERFLY DAMPER', subtitle: 'Dia 2000 mm', image: '/gallery-be10-motorized-dia-2000.webp' },
+      { title: 'PNEUMATIC BUTTERFLY DAMPER', subtitle: 'Dia 1500 mm', image: '/gallery-be10-pneumatic-dia-1500.webp' }
     ],
     industriesServed: [
       { name: 'Power', image: '/industry-power-gen.jpg' },
@@ -173,8 +171,8 @@ export const productsData: Record<string, ProductDetail> = {
   },
   'air-seal-damper-valves': {
     id: 'air-seal-damper-valves',
-    title: 'Air Seal Damper Valves',
-    model: 'BE-50 Series',
+    title: 'BE50 : AIR SEAL DAMPER VALVES',
+    model: 'BE50 SERIES',
     image: '/BE50-Electric-Air-Seal-Butterfly-Damper-Valve.png',
     category: 'isolation',
     categoryLabel: 'Zero-Leakage Barrier',
@@ -209,44 +207,120 @@ export const productsData: Record<string, ProductDetail> = {
   },
   'double-offset-butterfly-damper-valves': {
     id: 'double-offset-butterfly-damper-valves',
-    title: 'Double Offset Butterfly Damper Valves',
-    model: 'BE-20 Series',
+    title: 'BE20 : DOUBLE OFFSET BUTTERFLY DAMPER VALVES',
+    model: 'BE20 SERIES',
     image: '/BE20-Pneumatic-Double-Offset-Butterfly-Damper-Valve.png',
     category: 'isolation',
     categoryLabel: 'Double Cam Action',
-    tagline: 'High pressure double eccentric cam action damper ensuring bubble-tight shutoff up to PN25.',
-    desc: 'Features two distinct shaft offsets: shaft behind centerline of disc seal, and shaft offset from pipe centerline. This generates an eccentric cam action during rotation that lifts the seal immediately off the seat, virtually eliminating wear and ensuring 100% bubble-tight shutoff up to PN25.',
-    longDesc: 'The BE-20 Series Double Offset Damper utilizes precision dual eccentricity to minimize friction during cycling. The disc cams away from the seat instantly upon opening, significantly prolonging seal longevity and delivering reliable bubble-tight isolation in high-pressure process gas lines.',
+    tagline: 'High Performance Double Offset Design specially engineered for reliable shut-off and flow control applications.',
+    desc: 'Bellator BE20 Series Double Offset Butterfly Damper Valves are specially engineered for reliable shut-off and flow control applications requiring superior sealing performance, lower operating torque, and extended service life. The double offset disc geometry minimizes seat friction during operation, resulting in reduced wear, improved sealing reliability, and smooth operation under demanding service conditions.',
+    longDesc: 'Manufactured with robust fabricated construction and precision-engineered sealing arrangements, the BE20 Series is designed to handle steam, gases, hot air, water, and various process media applications. The optimized offset design enhances sealing efficiency while reducing operational stress on seating components. The BE20 Series dampers are available in Manual, Pneumatic, Electric, and Hydraulic operated configurations with complete automation and control accessories. Designed using advanced engineering and validation practices, these dampers ensure reliable long-term performance and operational stability.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'High pressure rating up to PN25 (25 bar)',
-      '100% Bubble-Tight Shutoff with resilient or metallic seats',
-      'Reduced operating torque enabling compact actuation packages',
-      'Fire-safe design certified according to API 607'
+      'Double Offset Cam Action Design & Bubble Tight Shut-Off Performance',
+      'Low Seat Wear & Frictionless Operation with Lower Operating Torque',
+      'Suitable up to PN25 Pressure Rating with Heavy Duty Fabricated Construction',
+      'Engineered Double Offset Construction minimizing seat stress',
+      '100% Sealing Performance & Available in Sizes Ø150 mm to Ø4000 mm'
     ],
-    leakage: '100% Bubble-Tight Shutoff (Zero Leakage)',
-    temp: '-25°C to +250°C',
-    pressure: 'PN10 / PN16 / PN25 (Up to 25 bar)',
-    sizes: 'Ø150 mm to Ø3,500 mm (Round)',
-    materials: 'A216 Gr. WCB, A351 Gr. CF8 / CF8M, ASTM A240 Type 316L, IS2062',
-    actuation: 'Pneumatic Quarter-Turn Cylinder, Electric Actuator, Manual Gearbox',
-    standards: 'API 609 Cat. B, ASME B16.34, EN 593, Fire Safe API 607',
+    leakage: '100% Sealing (Bubble Tight)',
+    temp: '-25°C to 300°C',
+    pressure: 'Up to PN25',
+    sizes: 'Ø150 mm to Ø4000 mm',
+    materials: 'Body: IS2062 / SA516 Gr-70 / WCB | Disc: SS304 / SS316 / CF8 / CF8M | Shaft: EN8D / SS410 / SS316',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO / Customer Specific',
+    shapes: 'Round (Double Offset Geometry)',
+    endConnection: 'Wafer / Flanged / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Valve Type', details: 'Double Offset Butterfly' },
+      { parameter: 'Operation', details: 'Manual / Pneumatic / Electric / Hydraulic' },
+      { parameter: 'Size Range', details: 'Ø150 mm to Ø4000 mm' },
+      { parameter: 'End Connection', details: 'Wafer / Flanged / Butt Weld' },
+      { parameter: 'Design Temperature', details: '-25°C to 300°C' },
+      { parameter: 'Design Type', details: 'Double Offset Geometry' },
+      { parameter: 'Pressure Rating', details: 'Up to PN25' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' },
+      { parameter: 'Leakage Performance', details: '100% Sealing' },
+      { parameter: 'Automation', details: 'Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / WCB / Customer Specific' },
+      { component: 'Disc', material: 'SS304 / SS316 / CF8 / CF8M / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'EPDM / Viton / Silicon / Customer Specific' },
+      { component: 'Seal', material: 'Soft Seat' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Pneumatic double offset actuator with positioners, limit switches & solenoids' },
+      { name: 'Electric', desc: 'Motorized quarter-turn actuator packages for precision modulation and ON/OFF' },
+      { name: 'Manual', desc: 'Precision heavy-duty manual gearbox with handwheel position indicator' },
+      { name: 'Hydraulic', desc: 'Electro-hydraulic power unit for high-thrust, rapid fail-safe operation' }
+    ],
     features: [
-      'Dual offset shaft geometry minimizing seat wear',
-      'Renewable seat retainer ring for quick maintenance',
-      'Blow-out proof heavy-duty stainless steel shaft design',
-      'ISO 5211 top flange for universal actuator mounting'
+      'Double Offset Cam Action Design',
+      'Bubble Tight Shut-Off Performance',
+      'Low Seat Wear & Frictionless Operation',
+      'Lower Operating Torque',
+      'Suitable up to PN25 Pressure Rating',
+      'Heavy Duty Fabricated Construction'
+    ],
+    optionalFeatures: [
+      'Anti-Blowout Shaft Design',
+      'Seismic Qualified Design',
+      'High Pressure Design',
+      'C5 / NORSOK Paint System',
+      'Extended Shaft Arrangement',
+      'Locking Arrangement'
+    ],
+    inspectionTesting: [
+      'Leakage Testing (Hydro/Pne.)',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered'
     ],
     applications: [
-      'High Pressure Industrial Gas Lines',
-      'Petrochemical & Refinery Off-Gas Systems',
-      'CO2 Capture & Hydrogen Gas Distribution',
-      'Cooling Gas and Process Air Systems'
+      'Steam Lines',
+      'Hot Air Systems',
+      'Process Gas Isolation',
+      'Water Treatment Systems',
+      'Scrubber Systems',
+      'RTO Systems',
+      'HVAC Isolation',
+      'Utility Process Lines',
+      'Chemical Process Systems'
+    ],
+    majorReferences: [
+      { endUser: 'TATA Steel', application: 'Hot gas Isolation' },
+      { endUser: 'Adani Petrochemicals', application: 'Oxygen Enriched Air Isolation' },
+      { endUser: 'Equinor', application: 'Flue Gas Recirculation' },
+      { endUser: 'ORLEN', application: 'Combustion Air Isolation' }
+    ],
+    galleryImages: [
+      { title: 'MOTORIZED DOUBLE OFFSET', subtitle: 'Dia 1600 mm', image: '/BE20-Motorized-Double-Offset-Butterfly-Damper-Valve.png' },
+      { title: 'MANUAL DOUBLE OFFSET', subtitle: 'Dia 1250 mm', image: '/Manual-Gear-Operated-Double-Offset-Butterfly-Damper-Valve.png' },
+      { title: 'PNEUMATIC DOUBLE OFFSET', subtitle: 'Dia 1000 mm', image: '/BE20-Pneumatic-Double-Offset-Butterfly-Damper-Valve.png' },
+      { title: 'ENGINEERED DOUBLE OFFSET', subtitle: 'Dual Eccentric Geometry', image: '/Double-offset.png' }
+    ],
+    industriesServed: [
+      { name: 'Steel', image: '/industry-steel.jpg' },
+      { name: 'Petrochemicals', image: '/industry-oil-gas.jpg' },
+      { name: 'Power', image: '/industry-power-gen.jpg' },
+      { name: 'Chemical', image: '/industry-chemical.jpg' },
+      { name: 'Water Treatment', image: '/WATER.jpg' },
+      { name: 'Process', image: '/industry-process.jpg' }
     ]
   },
   'triple-offset-butterfly-damper-valves': {
     id: 'triple-offset-butterfly-damper-valves',
-    title: 'Triple Offset Butterfly Damper Valves',
-    model: 'BE-30 Series',
+    title: 'BE30 : TRIPLE OFFSET BUTTERFLY DAMPER VALVES',
+    model: 'BE30 SERIES',
     image: '/Motorized-Triple-Offset-Butterfly-Damper-Valve.png',
     category: 'isolation',
     categoryLabel: 'Conical Cam Geometry',
@@ -317,8 +391,8 @@ export const productsData: Record<string, ProductDetail> = {
   },
   'three-lever-shut-off-damper-valves': {
     id: 'three-lever-shut-off-damper-valves',
-    title: 'Three Lever Shut Off Damper Valves',
-    model: 'BE-40 Series',
+    title: 'BE40 : THREE LEVER SHUT OFF DAMPER VALVES',
+    model: 'BE40 SERIES',
     image: '/BE40-Motorized-Three-Lever-ShutOff-Damper-Valves.png',
     category: 'isolation',
     categoryLabel: 'Frictionless Seating',

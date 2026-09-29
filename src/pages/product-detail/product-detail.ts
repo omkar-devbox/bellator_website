@@ -230,17 +230,129 @@ document.addEventListener('DOMContentLoaded', () => {
   if (referencesSection && referencesGrid) {
     if (data.majorReferences && data.majorReferences.length > 0) {
       referencesSection.classList.remove('hidden');
-      referencesGrid.innerHTML = data.majorReferences.map(ref => `
-        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
-          <div class="flex items-center gap-2.5 mb-2">
-            <span class="w-2 h-2 rounded-full bg-[#EE6226]"></span>
-            <span class="text-xs font-bold text-slate-900">${ref.endUser}</span>
+
+      // Map brand logos (SVG vector graphics / badges matching the engineering brochure)
+      const getBrandLogo = (endUser: string) => {
+        const lower = endUser.toLowerCase();
+        if (lower.includes('aramco')) {
+          return `
+            <div class="flex items-center">
+              <div class="px-2 py-1 rounded bg-[#00142e] flex items-center justify-center border border-slate-700/40 shadow-xs">
+                <img src="${cleanBase}aramco-logo--white.webp" alt="Saudi Aramco" class="h-5 w-auto object-contain" />
+              </div>
+            </div>
+          `;
+        }
+        if (lower.includes('reliance')) {
+          return `
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-600 to-yellow-400 flex items-center justify-center text-white text-[11px] font-serif font-bold shadow-xs">R</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs sm:text-sm font-black text-slate-900 tracking-tight font-serif">Reliance</span>
+                <span class="text-[8px] font-bold tracking-widest text-slate-500 uppercase">Industries Limited</span>
+              </div>
+            </div>
+          `;
+        }
+        if (lower.includes('pdo') || lower.includes('oman')) {
+          return `
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full border-2 border-emerald-600 bg-emerald-50 flex items-center justify-center text-emerald-700 text-[10px] font-black">PDO</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs font-bold text-emerald-900 leading-tight">PDO Oman</span>
+                <span class="text-[8px] text-slate-500 font-arabic">شركة تنمية نفط عمان</span>
+              </div>
+            </div>
+          `;
+        }
+        if (lower.includes('unilever')) {
+          return `
+            <div class="flex items-center">
+              <img src="${cleanBase}Unilever.webp" alt="Unilever" class="h-6 w-auto object-contain" />
+            </div>
+          `;
+        }
+        if (lower.includes('asian paints')) {
+          return `
+            <div class="flex items-center">
+              <img src="${cleanBase}asian.png" alt="Asian Paints" class="h-6 w-auto object-contain" />
+            </div>
+          `;
+        }
+        if (lower.includes('welspun')) {
+          return `
+            <div class="flex items-center">
+              <img src="${cleanBase}welspun.webp" alt="Welspun" class="h-6 w-auto object-contain" />
+            </div>
+          `;
+        }
+        if (lower.includes('tata')) {
+          return `
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-[#00529b] flex items-center justify-center text-white text-[11px] font-sans font-extrabold shadow-xs">T</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs sm:text-sm font-black text-[#00529b] tracking-wider font-sans">TATA STEEL</span>
+              </div>
+            </div>
+          `;
+        }
+        if (lower.includes('adani')) {
+          return `
+            <div class="flex items-center gap-1.5">
+              <div class="flex flex-col leading-none">
+                <div class="text-sm font-extrabold tracking-tight">
+                  <span class="text-[#004b87]">ada</span><span class="text-[#c4161c]">ni</span>
+                </div>
+                <span class="text-[7.5px] font-bold tracking-wider text-slate-500 uppercase">Petrochemicals</span>
+              </div>
+            </div>
+          `;
+        }
+        if (lower.includes('equinor')) {
+          return `
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-[#ff1243] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L3 9l3 13h12l3-13z" />
+              </svg>
+              <span class="text-xs sm:text-sm font-black text-slate-900 tracking-tight">equinor</span>
+            </div>
+          `;
+        }
+        if (lower.includes('orlen')) {
+          return `
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-[#d01e2b] flex items-center justify-center text-white text-[10px] font-black">
+                &#9650;
+              </div>
+              <span class="text-xs sm:text-sm font-black text-[#d01e2b] tracking-wider">ORLEN</span>
+            </div>
+          `;
+        }
+        return `
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#EE6226]"></span>
+            <span class="text-xs font-bold text-slate-900">${endUser}</span>
           </div>
-          <div class="text-[11px] text-slate-500 font-medium">
-            Application: <span class="text-slate-800 font-semibold">${ref.application}</span>
+        `;
+      };
+
+      const renderCards = (list: typeof data.majorReferences) => list.map(ref => `
+        <div class="reference-card-item p-4 rounded-xl border border-slate-200/90 bg-white hover:border-[#EE6226]/60 transition-all flex flex-col justify-between group shadow-xs shrink-0">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100 min-h-[44px]">
+            <div>
+              ${getBrandLogo(ref.endUser)}
+            </div>
+            <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 uppercase">Verified</span>
+          </div>
+          <div class="pt-3 flex flex-col">
+            <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Process Duty / Application</span>
+            <span class="text-xs font-semibold text-slate-800 mt-0.5 line-clamp-2">${ref.application}</span>
           </div>
         </div>
       `).join('');
+
+      // Duplicate list twice for seamless 100% smooth infinite marquee
+      referencesGrid.innerHTML = renderCards(data.majorReferences) + renderCards(data.majorReferences);
     } else {
       referencesSection.classList.add('hidden');
     }
@@ -255,13 +367,13 @@ document.addEventListener('DOMContentLoaded', () => {
       galleryGrid.innerHTML = data.galleryImages.map(item => {
         const itemImg = item.image ? (item.image.startsWith('/') ? `${cleanBase}${item.image.slice(1)}` : item.image) : data.image;
         return `
-          <div class="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col group hover:border-[#EE6226] transition-all">
-            <div class="w-full h-36 bg-gradient-to-br from-slate-100 to-white flex items-center justify-center p-3 relative overflow-hidden">
-              <img src="${itemImg}" alt="${item.title}" class="max-h-28 max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+          <div class="rounded-2xl border border-slate-200 overflow-hidden bg-white flex flex-col group hover:border-[#EE6226] hover:shadow-xl transition-all duration-300">
+            <div class="w-full h-64 sm:h-72 bg-slate-100 flex items-center justify-center p-2 relative overflow-hidden">
+              <img src="${itemImg}" alt="${item.title}" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <div class="p-3 bg-white border-t border-slate-100 flex flex-col text-left">
-              <span class="text-[11px] font-bold text-slate-800 group-hover:text-[#EE6226] transition-colors line-clamp-1">${item.title}</span>
-              ${item.subtitle ? `<span class="text-[10px] font-mono font-semibold text-slate-500">${item.subtitle}</span>` : ''}
+            <div class="p-4 bg-white border-t border-slate-100 flex flex-col text-left">
+              <span class="text-xs sm:text-sm font-extrabold text-slate-900 group-hover:text-[#EE6226] transition-colors line-clamp-1">${item.title}</span>
+              ${item.subtitle ? `<span class="text-xs font-mono font-semibold text-[#EE6226] mt-0.5">${item.subtitle}</span>` : ''}
             </div>
           </div>
         `;
@@ -324,20 +436,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Render Other Products
+  // Render Related Models (Exact Visual Format matching reference)
   const otherGrid = document.getElementById('other-products-grid');
   if (otherGrid) {
-    const allProducts = Object.values(productsData);
-    const otherProducts = allProducts.filter(p => p.id !== data.id).slice(0, 6);
+    // Preferred related models list: BE20, BE30, BE40, BE50, etc.
+    const priorityIds = [
+      'double-offset-butterfly-damper-valves', // BE20
+      'triple-offset-butterfly-damper-valves', // BE30
+      'three-lever-shut-off-damper-valves',    // BE40
+      'air-seal-damper-valves'                 // BE50
+    ];
 
-    otherGrid.innerHTML = otherProducts.map(p => `
-      <a href="${cleanBase}product-detail.html?id=${p.id}" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#EE6226] bg-slate-50 hover:bg-white transition-all group flex flex-col items-center text-center">
-        <div class="w-full h-16 flex items-center justify-center mb-2 bg-white rounded-lg p-1 border border-slate-100">
-          <img src="${p.image.startsWith('/') ? cleanBase + p.image.slice(1) : p.image}" alt="${p.title}" class="max-h-14 max-w-full object-contain group-hover:scale-105 transition-transform" />
-        </div>
-        <span class="text-[11px] font-bold text-slate-800 group-hover:text-[#EE6226] line-clamp-1">${p.title}</span>
-        <span class="text-[10px] font-mono text-slate-400 font-medium">${p.model}</span>
-      </a>
-    `).join('');
+    const allProducts = Object.values(productsData);
+    let otherProducts = priorityIds
+      .filter(id => id !== data.id && productsData[id])
+      .map(id => productsData[id]);
+
+    if (otherProducts.length < 4) {
+      const remaining = allProducts.filter(p => p.id !== data.id && !priorityIds.includes(p.id));
+      otherProducts = [...otherProducts, ...remaining].slice(0, 4);
+    }
+
+    const themeGradients = [
+      { bg: 'bg-damper-emerald', badgeBg: 'bg-white/90 text-[#15803D]', badgeText: 'Double Offset', subText: 'BE20 SERIES' },
+      { bg: 'bg-damper-purple', badgeBg: 'bg-white/90 text-[#7E22CE]', badgeText: 'Triple Offset', subText: 'BE30 SERIES' },
+      { bg: 'bg-damper-blue', badgeBg: 'bg-white/90 text-[#1D4ED8]', badgeText: 'Three Lever', subText: 'BE40 SERIES' },
+      { bg: 'bg-damper-orange', badgeBg: 'bg-white/90 text-[#C2410C]', badgeText: 'Air Seal', subText: 'BE50 SERIES' },
+    ];
+
+    otherGrid.innerHTML = otherProducts.map((p, idx) => {
+      const theme = themeGradients[idx % themeGradients.length];
+      const pImg = p.image.startsWith('/') ? `${cleanBase}${p.image.slice(1)}` : p.image;
+      const shortDesc = p.tagline || p.desc;
+
+      return `
+        <a class="infosys-damper-card group block" href="${cleanBase}product-detail.html?id=${p.id}">
+          <div class="infosys-damper-visual ${theme.bg}">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.45),transparent_60%)]"></div>
+            <div class="absolute top-3.5 right-3.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase ${theme.badgeBg} shadow-xs border border-white/60">
+              ${p.model || theme.subText}
+            </div>
+            <img alt="${p.title}" src="${pImg}" loading="lazy" class="max-h-[140px] max-w-[85%] object-contain" />
+          </div>
+          <div class="infosys-damper-body">
+            <h3 class="mb-2 text-base font-bold leading-snug text-[#0F172A] group-hover:text-[#EE6226] transition-colors line-clamp-2">
+              ${p.title}
+            </h3>
+            <p class="text-xs leading-relaxed text-slate-600 mb-3 flex-1 line-clamp-3">
+              ${shortDesc}
+            </p>
+            <div class="infosys-damper-cta mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-800 transition-colors">
+              <span class="flex items-center gap-1.5 underline decoration-[#EE6226] underline-offset-4">
+                Learn More
+                <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 text-[#EE6226]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+              <span class="text-[10px] font-medium text-slate-400 font-mono">${p.model}</span>
+            </div>
+          </div>
+        </a>
+      `;
+    }).join('');
   }
 });

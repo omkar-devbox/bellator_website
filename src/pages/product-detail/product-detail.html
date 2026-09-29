@@ -666,6 +666,20 @@
           </div>
         </div>
       </div>
+      <!-- Manufactured Units Gallery Section -->
+      <section id="gallery-section" class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 mb-10 overflow-hidden">
+        <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-[#EE6226]">Pune Works Manufacturing</span>
+            <h3 class="text-base sm:text-lg font-bold text-[#0F172A]">Manufactured Units Gallery</h3>
+          </div>
+          <span class="text-xs font-mono font-bold text-slate-400">ACTUAL UNITS</span>
+        </div>
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Rendered dynamically -->
+        </div>
+      </section>
+
       <!-- Request Custom Sizing RFQ Section (Placed directly under Technical Specification Parameters) -->
       <section id="rfq-section"
         class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10 mb-10 overflow-hidden relative">
@@ -771,33 +785,28 @@
         </div>
       </section>
 
-      <!-- Major References / Credentials Section (Proven Global Track Record) -->
-      <section id="references-section" class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 mb-10">
-        <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
+      <!-- Major References / Credentials Section (Proven Global Track Record - Right-to-Left Movable) -->
+      <section id="references-section" class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 mb-10 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
           <div>
-            <span class="text-[10px] font-bold uppercase tracking-wider text-[#EE6226]">Proven Global Track
-              Record</span>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-[#EE6226]">Proven Global Track Record</span>
             <h3 class="text-base sm:text-lg font-bold text-[#0F172A]">Major References / Credentials</h3>
           </div>
-          <span class="text-xs font-mono font-bold text-slate-400">BE10 CREDENTIALS</span>
-        </div>
-        <div id="references-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <!-- Rendered dynamically -->
-        </div>
-      </section>
-      <!-- Gallery / Manufactured Units Showcase -->
-      <section id="gallery-section" class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 mb-10">
-        <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
-          <div>
-            <span class="text-[10px] font-bold uppercase tracking-wider text-[#EE6226]">Manufacturing Showcase</span>
-            <h3 class="text-base sm:text-lg font-bold text-[#0F172A]">Manufactured Units Gallery</h3>
+          <div class="flex items-center gap-2">
+            <span class="hidden sm:inline-block text-[11px] text-slate-400 font-medium">Hover to pause</span>
+            <span class="text-xs font-mono font-bold text-slate-400">CREDENTIALS</span>
           </div>
-          <span class="text-xs font-mono font-bold text-slate-400">SHOP FLOOR DISPATCH</span>
         </div>
-        <div id="gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          <!-- Rendered dynamically -->
+
+        <div class="references-marquee-viewport">
+          <div class="references-fade-left"></div>
+          <div class="references-fade-right"></div>
+          <div id="references-grid" class="references-marquee-track">
+            <!-- Rendered dynamically with duplicated track for seamless right-to-left loop -->
+          </div>
         </div>
       </section>
+
 
       <!-- Industries Served Section -->
       <section id="industries-section" class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8 mb-10">
@@ -813,20 +822,21 @@
         </div>
       </section>
 
-      <!-- Other Products Carousel / Quick Navigation Strip -->
-      <section class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
-        <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
+      <!-- Explore Related Damper Valve Models (Exact Match Visual Format) -->
+      <section id="related-models-section" class="mb-10">
+        <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-200">
           <div>
             <span class="text-[10px] font-bold uppercase tracking-wider text-[#EE6226]">Directory Navigation</span>
             <h3 class="text-base sm:text-lg font-bold text-[#0F172A]">Explore Other Industrial Damper Models</h3>
           </div>
-          <a href="/products.html" class="text-xs font-bold text-[#EE6226] hover:underline">
-            View All 21 Models &rarr;
+          <a href="/products.html" class="text-xs font-bold text-[#EE6226] hover:underline flex items-center gap-1">
+            <span>View All 21 Models</span>
+            <span>&rarr;</span>
           </a>
         </div>
 
-        <div id="other-products-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          <!-- Populated by TS -->
+        <div id="other-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 pb-8">
+          <!-- Populated dynamically with the visual card format -->
         </div>
       </section>
 
