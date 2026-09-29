@@ -438,52 +438,84 @@ function init3DFluidWave() {
 }
 
 /* ==========================================================================
-   Technorithm Hero Typewriter Effect
+   Technorithm Hero Typewriter & Headline Auto-Changer Effect
    ========================================================================== */
 function initHeroTypewriter() {
+  const titleEl = document.getElementById('hero-main-title');
   const target = document.getElementById('hero-typewriter-text');
   if (!target) return;
   const textEl = target;
 
-  const phrases = [
-    "Global Leaders in Customized Damper Valve Solutions",
-    "Advanced Engineering for Industrial & Marine Damper Valves",
-    "Precision-Engineered Damper Valves for Demanding Applications",
-    "Innovative Damper Valve Solutions for Global Industries",
-    "Engineering Excellence in Industrial & Marine Flow Control"
+  const slidesData = [
+    {
+      title: `Industrial & Marine Damper Valve Engineering<br /><span class="text-[#EE6226]">for Demanding Global Environments</span>`,
+      subtitle: "Custom Engineered Damper Valves & Flow Control Solutions"
+    },
+    {
+      title: `High-Temperature Heavy-Duty Damper Systems<br /><span class="text-[#EE6226]">Engineered up to 1200°C & Zero Leakage</span>`,
+      subtitle: "100% Tight Shut-Off & Isolation for Severe Duty Applications"
+    },
+    {
+      title: `Indo-Italian Actuation Partnership with Actuatech S.p.A.<br /><span class="text-[#EE6226]">World-Class Actuated Damper Valve Systems</span>`,
+      subtitle: "Partnered with Actuatech S.p.A. Italy for Advanced Actuation"
+    },
+    {
+      title: `Aerodynamic CFD Simulation & FEA Precision<br /><span class="text-[#EE6226]">Tailored for Hostile, Corrosive & Abrasive Media</span>`,
+      subtitle: "Tailored for Power, Cement, Steel, Marine & Chemical Industries"
+    },
+    {
+      title: `Precision Engineered Flue Gas & Process Dampers<br /><span class="text-[#EE6226]">Certified for Global Industrial Standards</span>`,
+      subtitle: "Engineering Excellence in Industrial & Marine Flow Control"
+    }
   ];
 
-  let phraseIndex = 0;
-  let charIndex = phrases[0].length;
+  let currentIndex = 0;
+  let charIndex = slidesData[0].subtitle.length;
   let isDeleting = true;
   let typingSpeed = 50;
 
+  function changeHeadline(newHtml: string) {
+    if (!titleEl) return;
+    titleEl.style.opacity = '0';
+    titleEl.style.transform = 'translateY(12px)';
+    setTimeout(() => {
+      titleEl.innerHTML = newHtml;
+      titleEl.style.opacity = '1';
+      titleEl.style.transform = 'translateY(0)';
+    }, 350);
+  }
+
   function type() {
-    const currentPhrase = phrases[phraseIndex];
+    const currentItem = slidesData[currentIndex];
 
     if (isDeleting) {
-      textEl.textContent = currentPhrase.substring(0, charIndex - 1);
+      textEl.textContent = currentItem.subtitle.substring(0, charIndex - 1);
       charIndex--;
-      typingSpeed = 25;
+      typingSpeed = 18;
     } else {
-      textEl.textContent = currentPhrase.substring(0, charIndex + 1);
+      textEl.textContent = currentItem.subtitle.substring(0, charIndex + 1);
       charIndex++;
-      typingSpeed = 45;
+      typingSpeed = 32;
     }
 
-    if (!isDeleting && charIndex === currentPhrase.length) {
-      typingSpeed = 2400; // Pause at end of text
+    if (!isDeleting && charIndex === currentItem.subtitle.length) {
+      typingSpeed = 4000; // Display complete text for 4 seconds
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      typingSpeed = 400;
+      currentIndex = (currentIndex + 1) % slidesData.length;
+      
+      // Synchronously switch the main headline too
+      changeHeadline(slidesData[currentIndex].title);
+
+      typingSpeed = 400; // Small breath before typing next subtitle
     }
 
     setTimeout(type, typingSpeed);
   }
 
-  setTimeout(type, 2000);
+  // Start rotation after initial 3.5 seconds
+  setTimeout(type, 3500);
 }
 
 /* ==========================================================================
