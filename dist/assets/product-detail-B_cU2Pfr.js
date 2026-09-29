@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./nav-xUi3SNx4.js";import{t}from"./products-DGMb3_ed.js";document.addEventListener(`DOMContentLoaded`,()=>{e(`products`);let n=new URLSearchParams(window.location.search).get(`id`);if(!n){let e=window.location.pathname.replace(/\.html$/,``).split(`/`).filter(Boolean);e.length>=2&&(e[0]===`products`||e[0]===`product`)&&(n=e[1])}(!n||!t[n])&&(n=`butterfly-damper-valves`);let r=t[n];document.title=`${r.title} (${r.model}) | Bellator Engineers`;let i=document.getElementById(`meta-desc`);i&&i.setAttribute(`content`,`${r.title} manufactured by Bellator Engineers in Pune. ${r.desc}`);let a=document.getElementById(`breadcrumb-current`);a&&(a.textContent=r.title);let o=document.getElementById(`detail-category-badge`);o&&(o.textContent=r.categoryLabel||r.category);let s=document.getElementById(`detail-model-badge`);s&&(s.textContent=r.model);let c=`/test_web/`,l=c.endsWith(`/`)?c:c+`/`,u=document.getElementById(`detail-image`);u&&(u.src=r.image.startsWith(`/`)?`${l}${r.image.slice(1)}`:r.image,u.alt=`${r.title} (${r.model})`);let d=document.getElementById(`quick-leakage`);d&&(d.textContent=r.leakage.split(`(`)[0].trim());let f=document.getElementById(`quick-temp`);f&&(f.textContent=r.temp);let p=document.getElementById(`quick-pressure`);p&&(p.textContent=r.pressure);let m=document.getElementById(`detail-title`);m&&(m.textContent=r.title);let h=document.getElementById(`detail-tagline`);h&&(h.textContent=r.tagline||r.desc);let g=document.getElementById(`detail-desc`);if(g){let e=r.longDesc||r.desc;e.includes(`
+import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./nav-xUi3SNx4.js";import{t}from"./products-CZdILa9O.js";document.addEventListener(`DOMContentLoaded`,()=>{e(`products`);let n=new URLSearchParams(window.location.search).get(`id`);if(!n){let e=window.location.pathname.replace(/\.html$/,``).split(`/`).filter(Boolean);e.length>=2&&(e[0]===`products`||e[0]===`product`)&&(n=e[1])}(!n||!t[n])&&(n=`butterfly-damper-valves`);let r=t[n];document.title=`${r.title} (${r.model}) | Bellator Engineers`;let i=document.getElementById(`meta-desc`);i&&i.setAttribute(`content`,`${r.title} manufactured by Bellator Engineers in Pune. ${r.desc}`);let a=document.getElementById(`breadcrumb-current`);a&&(a.textContent=r.title);let o=document.getElementById(`detail-category-badge`);o&&(o.textContent=r.categoryLabel||r.category);let s=document.getElementById(`detail-model-badge`);s&&(s.textContent=r.model);let c=`/test_web/`,l=c.endsWith(`/`)?c:c+`/`,u=document.getElementById(`detail-image`);u&&(u.src=r.image.startsWith(`/`)?`${l}${r.image.slice(1)}`:r.image,u.alt=`${r.title} (${r.model})`);let d=document.getElementById(`quick-leakage`);d&&(d.textContent=r.leakage.split(`(`)[0].trim());let f=document.getElementById(`quick-temp`);f&&(f.textContent=r.temp);let p=document.getElementById(`quick-pressure`);p&&(p.textContent=r.pressure);let m=document.getElementById(`detail-title`);m&&(m.textContent=r.title);let h=document.getElementById(`detail-tagline`);h&&(h.textContent=r.tagline||r.desc);let g=document.getElementById(`detail-desc`);if(g){let e=r.longDesc||r.desc;e.includes(`
 
 `)?g.innerHTML=e.split(`
 
@@ -76,6 +76,22 @@ import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./nav-xUi3SNx4.j
             <div class="flex items-center">
               <img src="${l}welspun.webp" alt="Welspun" class="h-6 w-auto object-contain" />
             </div>
+          `:t.includes(`npcil`)?`
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-[#0d3b66] border border-[#0d3b66] flex items-center justify-center text-white text-[9px] font-bold shadow-xs">NPCIL</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs sm:text-sm font-extrabold text-[#0d3b66] tracking-tight">NPCIL</span>
+                <span class="text-[7.5px] font-semibold text-slate-500 uppercase">Nuclear Power Corp</span>
+              </div>
+            </div>
+          `:t.includes(`tata electronics`)?`
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-[#00529b] flex items-center justify-center text-white text-[11px] font-sans font-extrabold shadow-xs">T</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs sm:text-sm font-black text-[#00529b] tracking-wider font-sans">TATA</span>
+                <span class="text-[7.5px] font-bold text-slate-500 uppercase tracking-wider">ELECTRONICS</span>
+              </div>
+            </div>
           `:t.includes(`tata`)?`
             <div class="flex items-center gap-2">
               <div class="w-6 h-6 rounded-full bg-[#00529b] flex items-center justify-center text-white text-[11px] font-sans font-extrabold shadow-xs">T</div>
@@ -99,12 +115,21 @@ import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./nav-xUi3SNx4.j
               </svg>
               <span class="text-xs sm:text-sm font-black text-slate-900 tracking-tight">equinor</span>
             </div>
-          `:t.includes(`orlen`)?`
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 rounded-full bg-[#d01e2b] flex items-center justify-center text-white text-[10px] font-black">
-                &#9650;
-              </div>
-              <span class="text-xs sm:text-sm font-black text-[#d01e2b] tracking-wider">ORLEN</span>
+          `:t.includes(`jsw`)?`
+            <div class="flex items-center">
+              <img src="${l}images/clients/jsw-logo.png" alt="JSW" class="h-6 w-auto object-contain" />
+            </div>
+          `:t.includes(`am/ns`)||t.includes(`amns`)||t.includes(`arcelormittal`)?`
+            <div class="flex items-center">
+              <img src="${l}images/clients/amns-logo.png" alt="AM/NS India" class="h-6 w-auto object-contain" />
+            </div>
+          `:t.includes(`rio grande`)?`
+            <div class="flex items-center">
+              <img src="${l}images/clients/rio-grande-lng-logo.png" alt="Rio Grande LNG" class="h-6 w-auto object-contain" />
+            </div>
+          `:t.includes(`shree cement`)||t.includes(`shree`)?`
+            <div class="flex items-center">
+              <img src="${l}images/clients/shree-cement-logo.png" alt="Shree Cement" class="h-6 w-auto object-contain" />
             </div>
           `:e.logo?`
             <div class="flex items-center">
