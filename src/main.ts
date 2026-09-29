@@ -448,6 +448,10 @@ function initHeroTypewriter() {
 
   const slidesData = [
     {
+      title: `Over 15 Years of Specialised Experience<br /><span class="text-[#EE6226]">in Designing Advanced Damper Valves</span>`,
+      subtitle: "Over 15 years of specialised experience in designing advanced damper valves."
+    },
+    {
       title: `Industrial & Marine Damper Valve Engineering<br /><span class="text-[#EE6226]">for Demanding Global Environments</span>`,
       subtitle: "Custom Engineered Damper Valves & Flow Control Solutions"
     },
