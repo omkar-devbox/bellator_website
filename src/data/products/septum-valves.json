@@ -1,0 +1,104 @@
+{
+  "id": "septum-valves",
+  "title": "BE260 : SEPTUM VALVES",
+  "model": "BE260 SERIES",
+  "image": "/images/products/BE260-Septum-Valves.png",
+  "category": "severe",
+  "categoryLabel": "Blast Furnace Top Pressure Control Valves",
+  "tagline": "Specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems.",
+  "desc": "The Bellator BE260 Series Septum Valve is a specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems. It is primarily used for precise regulation of blast furnace top pressure while handling clean, semi-cleaned, or partially dust-laden blast furnace gas streams.",
+  "longDesc": "The Bellator BE260 Series Septum Valve is a specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems. It is primarily used for precise regulation of blast furnace top pressure while handling clean, semi-cleaned, or partially dust-laden blast furnace gas streams.\n\nThe valve is installed in the Blast Furnace Top Pressure Control System, generally located in piping of blast furnace throat or within the gas cleaning plant. By employing multiple independently controlled butterfly dampers housed within a common body, the Septum Valve provides highly accurate pressure modulation over a wide operating range while ensuring reliable operation under severe process conditions.\n\nThe valve plays a critical role in maintaining stable furnace top pressure, thereby improving furnace efficiency, process stability, and gas recovery performance.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "keyHighlights": [
+    "Multi-Stage Pressure Control with multiple independently operated control butterfly elements",
+    "Engineered specifically for Blast Furnace Throat and Gas Cleaning Plant Top Pressure regulation",
+    "High Reliability: uninterrupted operation even during routine maintenance of individual elements",
+    "Wear-resistant materials & Stellite / SS cladding minimizing abrasive dust erosion",
+    "Available in large circular dimensions from 1200 mm to 3500 mm with Motorised / Pneumatic / Hydraulic actuation"
+  ],
+  "leakage": "Metal Seated (Up to 98% cross-sectional sealing)",
+  "temp": "As Per Project Specific",
+  "pressure": "As Per Project Specific",
+  "sizes": "1200 mm to 3500 mm (Circular)",
+  "materials": "Body: IS2062 / SA516 Gr-70 / SS304 / SS316 | Disc: IS2062 / SA516 Gr-70 / SS304 / SS316 | Internal Coating: Stellite / SS cladding",
+  "actuation": "Motorised / Pneumatic / Hydraulic",
+  "standards": "API / ASME / ISO",
+  "shapes": "Circular",
+  "endConnection": "Flanged",
+  "technicalSpecs": [
+    { "parameter": "Damper Valve Type", "details": "Septum" },
+    { "parameter": "Size Range", "details": "1200 mm to 3500 mm" },
+    { "parameter": "Shape", "details": "Circular" },
+    { "parameter": "Design Temperature", "details": "As Per Project Specific" },
+    { "parameter": "Pressure Rating", "details": "As Per Project Specific" },
+    { "parameter": "Flow Medium", "details": "Clean / Semi-Clean Blast Furnace Gas" },
+    { "parameter": "Installation", "details": "Horizontal / Vertical" },
+    { "parameter": "End Connection", "details": "Flanged" },
+    { "parameter": "Actuation", "details": "Motorised / Pneumatic / Hydraulic" },
+    { "parameter": "Standards", "details": "API / ASME / ISO" }
+  ],
+  "mocTable": [
+    { "component": "Body", "material": "IS2062 / SA516 Gr-70 / SS304 / SS316 / Customer Specific" },
+    { "component": "Disc", "material": "IS2062 / SA516 Gr-70 / SS304 / SS316 / Customer Specific" },
+    { "component": "Shaft", "material": "EN8D / SS410 / SS316 / Customer Specific" },
+    { "component": "Seat", "material": "Metal Seated" },
+    { "component": "Internal Coating", "material": "Stellite / SS cladding" },
+    { "component": "Bearings", "material": "Heavy Duty High Temperature Bearings" }
+  ],
+  "automationOptions": [
+    { "name": "Pneumatic Actuation", "desc": "Independent precision modulating pneumatic actuators with smart positioners for fine trimming control" },
+    { "name": "Motorised Actuation", "desc": "Heavy duty electric modulating actuators for coarse sequential opening of larger butterfly ports" },
+    { "name": "Hydraulic Actuation", "desc": "Electro-hydraulic actuator units for ultra-responsive high pressure blast furnace regulation" }
+  ],
+  "features": [
+    "Precise Pressure Control: Multiple independently operated control elements provide superior regulation compared to conventional single-disc control valves.",
+    "High Reliability: The multi-valve arrangement ensures uninterrupted operation even during maintenance of individual control elements.",
+    "Extended Service Life: Wear-resistant materials and protective coatings minimize erosion caused by abrasive blast furnace dust.",
+    "Low Pressure Loss: Optimised flow passages reduce unnecessary pressure drop while maintaining excellent control characteristics.",
+    "Large Size Capability: Suitable for large blast furnace gas systems requiring high flow capacity."
+  ],
+  "optionalFeatures": [
+    "Stellite / SS Cladding Erosion Protection",
+    "Water Spray Cooling Ports",
+    "Trimming Butterfly Valve Integration (e.g. 3x DN700 + 1x DN350)",
+    "High Temperature Purge Seals",
+    "Redundant Smart Positioners"
+  ],
+  "engineeringAdvantages": [
+    "Multi-stage independent butterfly modulation preventing furnace surge & pressure collapse",
+    "Coarse + fine trimming combination ensures unmatched control precision across wide turndown",
+    "Stellite/SS cladding shields against abrasive particulate wear at high differential velocities",
+    "Maintains stable top pressure to optimize furnace recovery turbine power output"
+  ],
+  "inspectionTesting": [
+    "Pneumatic Pressure Test (Housing tested at 1.5x design pressure; verification of weld integrity & leak-free performance)",
+    "Operational Test (Full open-close cycling of each butterfly valve, actuator verification, position feedback calibration)",
+    "Seat Leakage Test (Individual butterfly assemblies tested for shut-off performance; typical sealing efficiency up to 98%)",
+    "Comprehensive QA Documentation (MTC, Inspection Reports, Pressure Test Reports, Dimensional & Functional Records)",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered."
+  ],
+  "applications": [
+    "Blast Furnace Top Pressure Control Systems",
+    "Blast Furnace Gas Cleaning Plants",
+    "Gas Recovery Systems",
+    "Iron & Steel Manufacturing Facilities",
+    "Energy Recovery and Waste Gas Utilization Systems",
+    "High-Temperature Dust-Laden Gas Services"
+  ],
+  "majorReferences": [
+    { "endUser": "TATA STEEL", "application": "Blast Furnace Gas Top Pressure Control" },
+    { "endUser": "JSW", "application": "Blast Furnace Gas Cleaning Plant" },
+    { "endUser": "AM/NS INDIA", "application": "Gas Recovery & Pressure Regulation" },
+    { "endUser": "SAIL", "application": "Blast Furnace Top Throat Piping" }
+  ],
+  "galleryImages": [
+    { "title": "SEPTUM VALVE PERSPECTIVE VIEW", "subtitle": "Size Dia 1800 mm with Multi-Actuator Stanchions", "image": "/images/gallery/be260/BE260-Septum-Valve-Dia-1800-Perspective.webp" },
+    { "title": "SEPTUM VALVE FRONT PORT CONFIGURATION", "subtitle": "Size 1800 mm (Coarse & Fine Trimming Ports)", "image": "/images/gallery/be260/BE260-Septum-Valve-Front-Port-Configuration.webp" },
+    { "title": "OPERATING PRINCIPLE & TESTING PROTOCOL", "subtitle": "Multi-Stage Pressure Regulation Dynamics", "image": "/images/gallery/be260/BE260-Operating-Principle-Multi-Stage-Control.webp" }
+  ],
+  "industriesServed": [
+    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
+    { "name": "Power", "image": "/images/industries/THERMAL.jpg" },
+    { "name": "Petrochem", "image": "/images/industries/industry-oil-gas.jpg" }
+  ]
+}

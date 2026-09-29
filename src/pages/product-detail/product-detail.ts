@@ -371,13 +371,31 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           `;
         }
-        if (lower.includes('orlen')) {
+        if (lower.includes('jsw')) {
           return `
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 rounded-full bg-[#d01e2b] flex items-center justify-center text-white text-[10px] font-black">
-                &#9650;
-              </div>
-              <span class="text-xs sm:text-sm font-black text-[#d01e2b] tracking-wider">ORLEN</span>
+            <div class="flex items-center">
+              <img src="${cleanBase}images/clients/jsw-logo.png" alt="JSW" class="h-6 w-auto object-contain" />
+            </div>
+          `;
+        }
+        if (lower.includes('am/ns') || lower.includes('amns') || lower.includes('arcelormittal')) {
+          return `
+            <div class="flex items-center">
+              <img src="${cleanBase}images/clients/amns-logo.png" alt="AM/NS India" class="h-6 w-auto object-contain" />
+            </div>
+          `;
+        }
+        if (lower.includes('rio grande')) {
+          return `
+            <div class="flex items-center">
+              <img src="${cleanBase}images/clients/rio-grande-lng-logo.png" alt="Rio Grande LNG" class="h-6 w-auto object-contain" />
+            </div>
+          `;
+        }
+        if (lower.includes('shree cement') || lower.includes('shree')) {
+          return `
+            <div class="flex items-center">
+              <img src="${cleanBase}images/clients/shree-cement-logo.png" alt="Shree Cement" class="h-6 w-auto object-contain" />
             </div>
           `;
         }

@@ -1447,74 +1447,260 @@ export const productsData: Record<string, ProductDetail> = {
   },
   'refractory-lined-damper-valves': {
     id: 'refractory-lined-damper-valves',
-    title: 'Refractory Lined Damper Valves',
-    model: 'BE-140 Series',
+    title: 'BE140 : REFRACTORY LINED DAMPER VALVES',
+    model: 'BE140 SERIES',
     image: '/images/products/BE140-Pneumatic-Refractory-Lined-Damper-Valves.png',
     category: 'severe',
-    categoryLabel: 'Severe Thermal Resilience',
-    tagline: 'Ultra-high temperature refractory lined damper valve engineered for continuous service up to 1,200°C.',
-    desc: 'Engineered for extreme thermal conditions up to 1,200°C in cement rotary kilns, blast furnaces, thermal oxidizers, and metallurgical smelters. Heavy steel casing and disc are lined with dense high-alumina refractory castable anchored by stainless V-studs.',
-    longDesc: 'Bellator BE-140 Series Refractory Lined Damper Valves provide reliable gas control in the hottest industrial applications. The interior casing and blade are protected by a thick layer of dense refractory castable anchored with Inconel or stainless steel V-studs, keeping outer shell temperatures safe and preserving structural integrity.',
+    categoryLabel: 'Engineered for Extreme Temperature Service',
+    tagline: 'Engineered for Extreme Temperature Service in severe high temperature process applications up to 1400°C.',
+    desc: 'Bellator BE140 Series Refractory Lined Damper Valves are specially engineered for severe high temperature process applications involving hot gases, thermal cycling, abrasive media, and elevated thermal loads. These dampers incorporate specially designed refractory lining systems that protect the metallic structure from direct exposure to high temperature process media while ensuring reliable operational integrity and extended service life.',
+    longDesc: 'Bellator BE140 Series Refractory Lined Damper Valves are specially engineered for severe high temperature process applications involving hot gases, thermal cycling, abrasive media, and elevated thermal loads. These dampers incorporate specially designed refractory lining systems that protect the metallic structure from direct exposure to high temperature process media while ensuring reliable operational integrity and extended service life.\n\nThe BE140 Series combines heavy-duty fabricated construction, optimized thermal expansion design, and advanced refractory engineering to deliver dependable isolation and flow control performance under extreme operating conditions. The refractory lining arrangement minimizes thermal stress on the valve body while enhancing durability and operational reliability during continuous high temperature service.\n\nManufactured using advanced engineering and application-oriented design practices, the BE140 Series is suitable for critical process applications involving furnaces, kilns, incinerators, WHRB systems, and high temperature process gas handling systems requiring dependable long-term performance.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'Continuous thermal operating temperature up to 1,200°C',
-      'Dense high-alumina castable lining anchored with stainless V-studs',
-      'Water-cooled shaft and packing gland cooling jacket options',
-      'Resistant to severe thermal shock and abrasive particulate erosion'
+      'Advanced Refractory Lined Construction suitable for extreme continuous service up to 1400°C',
+      'Multi-layer refractory protection reducing outer shell and skin temperature',
+      'Optimized thermal expansion compensation and thermal shock resistant engineering',
+      'Available in Pneumatic, Electric, Hydraulic, and Manual actuation configurations',
+      'Custom fabricated in Round, Square & Rectangular shapes from 100 mm to 5000 mm'
     ],
-    leakage: 'Class III / Class IV (Up to 99% Sealing)',
-    temp: 'Up to +1,200°C Continuous Thermal Duty',
-    pressure: 'Up to 6,000 mmWC',
-    sizes: 'DN300 to DN3,500',
-    materials: 'Heavy Carbon Steel Shell, High-Alumina Refractory Castable, Inconel / SS310 Anchors',
-    actuation: 'Heavy-Duty Pneumatic Cylinder with Water-Cooled Shafts, Motorized Gearbox',
-    standards: 'Severe Process Metallurgy Standards, ASME Sec. VIII',
+    leakage: 'Up to 99.95%',
+    temp: 'Up to 1400°C',
+    pressure: 'Up to PN1',
+    sizes: '100 mm to 5000 mm (Round / Square / Rectangular)',
+    materials: 'Body: SA516 Gr-70 / SS | Disc: SS310S / Inconel / Refractory Lined | Shaft: SS410 / SS316 / High Temp. Alloy',
+    actuation: 'Pneumatic / Electric / Hydraulic / Manual',
+    standards: 'ASME / API / ISO / Project Specific',
+    shapes: 'Round / Square / Rectangular',
+    endConnection: 'Flanged / Slip Fit / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Refractory Lined' },
+      { parameter: 'Size Range', details: '100 mm to 5000 mm' },
+      { parameter: 'Design Temperature', details: 'Up to 1400°C' },
+      { parameter: 'Pressure Rating', details: 'Up to PN1' },
+      { parameter: 'Leakage Performance', details: 'Up to 99.95%' },
+      { parameter: 'Operation', details: 'Pneumatic / Electric / Hydraulic / Manual' },
+      { parameter: 'Lining Type', details: 'Single Layer / Multi-Layer Refractory system' },
+      { parameter: 'Shapes', details: 'Round / Square / Rectangular' },
+      { parameter: 'Standards', details: 'ASME / API / ISO' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'SA516 Gr-70 / SS' },
+      { component: 'Disc', material: 'SS310S / Inconel / Refractory Lined' },
+      { component: 'Shaft', material: 'SS410 / SS316 / High Temp. Alloy' },
+      { component: 'Refractory', material: 'Castable / Ceramic / Insulating' },
+      { component: 'Anchors', material: 'SS310 / High Temperature Alloy' },
+      { component: 'Bearings', material: 'High Temp. Isolated Bearings' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Heavy duty pneumatic actuator with water-cooled linkages, positioners, and fast trip fail-safe options' },
+      { name: 'Electric', desc: 'Motorized quarter-turn/multi-turn actuators for modulating & ON/OFF high temperature isolation' },
+      { name: 'Hydraulic', desc: 'Electro-hydraulic actuator units engineered for high-torque critical furnace lines' },
+      { name: 'Manual', desc: 'Precision manual gearbox with handwheel and position indicator' }
+    ],
     features: [
-      'Engineered refractory anchor pattern with thermal expansion joints',
-      'Hollow water-cooled drive shaft and purge-cooled stuffing boxes',
-      'Heavy-duty outboard roller bearings on elevated stanchions',
-      'Refractory step seat design delivering tight high-temperature sealing'
+      'Advanced Refractory Lined Construction',
+      'Suitable up to 1400°C',
+      'Reduced Outer Skin Temperature',
+      'Thermal Shock Resistant Design',
+      'Heavy Duty Reinforced Construction',
+      'Optimized Thermal Expansion Compensation',
+      'Suitable for Abrasive Hot Gas Media',
+      'Reliable High Temperature Isolation',
+      'Multiple Damper Configurations Available',
+      'Extended Service Life Under Severe Conditions'
+    ],
+    optionalFeatures: [
+      'Air Seal Arrangement',
+      'Double Layer Refractory System',
+      'Thermal Expansion Joints',
+      'Seismic Qualified Design',
+      'High Velocity Gas Design',
+      'C5 / NORSOK Paint System',
+      'External Insulation Option',
+      'Temperature Monitoring Ports'
+    ],
+    engineeringAdvantages: [
+      'Multi-layer refractory protection system (Eliminates thermal distortion of metallic structures)',
+      'Reduced shell exposure to process heat (Prevents excessive outer shell temperature)',
+      'Optimized thermal expansion management (Eliminates premature seal & bearing failure)',
+      'Enhanced structural protection (Reduces high thermal stress concentration)',
+      'Long service life under severe thermal cycling'
+    ],
+    inspectionTesting: [
+      'Refractory Visual Inspection',
+      'Hammer Sound Testing',
+      'Leakage Testing',
+      'Functional Stroke Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Cement Plant Rotary Kiln Exhaust & Preheater Tower',
-      'Steel Mill Blast Furnace & Direct Reduced Iron (DRI) Plants',
-      'Hazardous Waste Thermal Oxidizers & Incinerators',
-      'Non-Ferrous Metallurgical Smelters & Roasters'
+      'Blast Furnace Gas Systems',
+      'Hot Gas Isolation',
+      'Kiln Process Systems',
+      'Furnace Exhaust Systems',
+      'Incinerator Systems',
+      'WHRB Systems',
+      'Thermal Oxidizer Systems',
+      'Coke Oven Gas Systems',
+      'High Temperature Process Lines',
+      'Process Shutdown Isolation'
+    ],
+    majorReferences: [
+      { endUser: 'JSW', application: 'RTO Hot Gas Bypass Application' },
+      { endUser: 'AM/NS INDIA', application: 'RTO Hot Gas Bypass Application' },
+      { endUser: 'Asian Paints', application: 'RTO Hot Gas Bypass Application' },
+      { endUser: 'Rio Grande LNG', application: 'Hot Flue Gas Isolation' }
+    ],
+    galleryImages: [
+      { title: 'MOTORISED REFRACTORY LINED DAMPERS PAIR', subtitle: 'Size 3650/3500 & 2560/2500 mm (Refractory on site)', image: '/images/gallery/be140/BE140-Motorised-Refractory-Lined-Dampers-Pair.webp' },
+      { title: 'GEARED REFRACTORY DAMPER', subtitle: 'Size Dia 500 / 300 mm Fabricated Unit', image: '/images/gallery/be140/BE140-Geared-Refractory-Damper-Dia-500-300.webp' },
+      { title: 'PNEUMATIC CONTROL DUTY REFRACTORY DAMPER', subtitle: 'Size Dia 1200 / 800 mm with Positioner', image: '/images/gallery/be140/BE140-Pneumatic-Control-Duty-Refractory-Damper-Dia-1200-800.webp' },
+      { title: 'MOTORISED REFRACTORY LINED MULTI-LOUVER', subtitle: 'Size Dia 2350 / 2500 mm Large Diameter', image: '/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-2350-2500.webp' },
+      { title: 'PNEUMATIC REFRACTORY LINED COFFEE POT DAMPER', subtitle: 'Size Dia 800 / 600 mm Severe Duty Valve', image: '/images/gallery/be140/BE140-Pneumatic-Refractory-Coffee-Pot-Damper.webp' },
+      { title: 'MOTORISED REFRACTORY LINED MULTI-LOUVER', subtitle: 'Size Dia 2250 / 2100 mm High Temperature', image: '/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-2250-2100.webp' },
+      { title: 'MOTORISED REFRACTORY LINED MULTI-LOUVER', subtitle: 'Size Dia 3650 / 3500 mm Giant Industrial Damper', image: '/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-3650-3500.webp' },
+      { title: 'PNEUMATIC REFRACTORY LINED BUTTERFLY', subtitle: 'Size 550 / 150 mm Thermal Process Valve', image: '/images/gallery/be140/BE140-Pneumatic-Refractory-Butterfly-550-150.webp' },
+      { title: 'PNEUMATIC REFRACTORY LINED BUTTERFLY', subtitle: 'Size 700 / 300 mm Flanged High Temp Damper', image: '/images/gallery/be140/BE140-Pneumatic-Refractory-Butterfly-700-300.webp' }
+    ],
+    industriesServed: [
+      { name: 'Marine', image: '/images/industries/MARINE.jpg' },
+      { name: 'Steel', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Oil & Gas', image: '/images/industries/industry-oil-gas.jpg' },
+      { name: 'Cement', image: '/images/industries/CEMENT-1.jpg' },
+      { name: 'Power', image: '/images/industries/THERMAL.jpg' },
+      { name: 'Fertilisers', image: '/images/industries/industry-chemical.jpg' }
     ]
   },
   'double-flap-damper-valves': {
     id: 'double-flap-damper-valves',
-    title: 'Double Flap Damper Valves',
-    model: 'DFDV Series',
+    title: 'BE150 : DOUBLE FLAP DAMPER VALVES',
+    model: 'BE150 SERIES',
     image: '/images/products/Counter-Weight-Operated-Double-Flap-Valve.png',
     category: 'severe',
-    categoryLabel: 'Hopper Dust Discharge',
-    tagline: 'Dual-chamber mechanical airlock valve discharging heavy dust and ash while maintaining airtight vacuum seal.',
-    desc: 'Dual-chamber mechanical airlock valve that continuously discharges fly ash, cement clinker dust, and heavy ores from baghouse hoppers and electrostatic precipitators without letting atmospheric air infiltrate into the vacuum system.',
-    longDesc: 'The DFDV Series Double Flap Damper functions as a reliable mechanical airlock for bulk solids discharge. Two counter-weighted or motor-driven flaps alternate opening cycles, ensuring that one flap is always closed to maintain the airtight vacuum boundary in hoppers and cyclones.',
+    categoryLabel: 'Engineered for Controlled Material Discharge',
+    tagline: 'Engineered for Controlled Material Discharge of bulk materials, ash, dust, and particulate media.',
+    desc: 'Bellator BE150 Series Twin Flap Damper Valves are specially engineered for controlled discharge of bulk materials, ash, dust, and particulate media while maintaining reliable air sealing between upstream and downstream process systems.',
+    longDesc: 'Bellator BE150 Series Twin Flap Damper Valves are specially engineered for controlled discharge of bulk materials, ash, dust, and particulate media while maintaining reliable air sealing between upstream and downstream process systems.\n\nThe dual flap arrangement operates sequentially to ensure uninterrupted material discharge with minimal pressure loss and reduced air leakage, making these dampers highly suitable for pneumatic conveying and dust handling applications.\n\nThese dampers are widely used in thermal power plants, cement plants, steel plants, pollution control systems, and bulk material handling industries where controlled discharge and air lock performance are essential.\n\nAvailable in pneumatic, hydraulic, electric, and counterweight operated configurations.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'Continuous airtight pressure boundary during solids discharge',
-      'Available with gravity counterweight arms or motorized cam drives',
-      'Replaceable Hardox wear liners and Stellite hardfaced contact seats',
-      'Resistant to bridging, clogging, and heavy thermal distortion'
+      'Sequential Twin Flap Design ensuring uninterrupted material discharge with zero air leakage',
+      'Reliable Air Locking Performance between upstream and downstream vacuum/pressure systems',
+      'Heavy Duty Fabricated Construction with replaceable abrasion-resistant liners',
+      'Available in Geared Motor, Counterweight, Pneumatic & Hydraulic operation',
+      'Wide size envelope from 150 mm to 2500 mm in Round, Square & Rectangular shapes'
     ],
-    leakage: 'Airtight Vacuum Boundary Maintenance',
-    temp: 'Up to +450°C',
-    pressure: 'Vacuum to +2,000 mmWC',
-    sizes: '200 x 200 mm to 1,200 x 1,200 mm Flange Opening',
-    materials: 'IS2062 Steel, Hardox 400 Wear Liners, Stellite / Hardfaced Flap Contact Edges',
-    actuation: 'Geared Electric Motor with Cam Mechanism or Gravity Counterweight Levers',
-    standards: 'Dust Containment & Bulk Material Handling Codes',
+    leakage: 'Reliable Air Locking Performance',
+    temp: '-25°C to 850°C',
+    pressure: 'Low Pressure Material Handling Systems',
+    sizes: '150 mm to 2500 mm (Round / Square / Rectangular)',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS | Flaps: SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel | Shaft: EN8D / SS410 / SS316',
+    actuation: 'Pneumatic / Hydraulic / Electric (Geared Motor) / Counterweight',
+    standards: 'ASME / API / ISO',
+    shapes: 'Round / Square / Rectangular',
+    endConnection: 'Flanged / Welded',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Twin Flap Damper Valve' },
+      { parameter: 'Size Range', details: '150 mm to 2500 mm' },
+      { parameter: 'Design Temp.', details: '-25°C to 850°C' },
+      { parameter: 'Pressure Rating', details: 'Low Pressure Material Handling Systems' },
+      { parameter: 'Operation', details: 'Pneumatic / Hydraulic / Electric / Counterweight' },
+      { parameter: 'Media', details: 'Ash / Dust / Powder / Bulk Material' },
+      { parameter: 'Flap Arrangement', details: 'Sequential Twin Flap Design' },
+      { parameter: 'End Connection', details: 'Flanged / Welded' },
+      { parameter: 'Construction', details: 'Heavy Duty Fabricated' },
+      { parameter: 'Standards', details: 'ASME / API / ISO' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS' },
+      { component: 'Flaps', material: 'SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316' },
+      { component: 'Seals', material: 'Metallic' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' },
+      { component: 'Liners', material: 'Abrasion Resistant Liners' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Pneumatic cylinders with solenoid controls for rapid automated sequential cycle operation' },
+      { name: 'Geared Motor', desc: 'Electric gear motor with cam/linkage mechanism for smooth, continuous automatic discharge' },
+      { name: 'Counter Weight', desc: 'Self-actuating gravity and counterweight arms for passive material-weight triggered dumping' }
+    ],
     features: [
-      'Two isolated chambers with precision machined flap seats',
-      'Replaceable Hardox 400/500 abrasive wear plates',
-      'Motorized camshaft mechanism ensuring positive sequential cycling',
-      'Inspection access doors on both upper and lower chambers'
+      'Sequential Twin Flap Operation',
+      'Reliable Air Locking Performance',
+      'Controlled Bulk Material Discharge',
+      'Suitable for Dusty & Abrasive Media',
+      'Heavy Duty Fabricated Construction',
+      'Reduced Pressure Loss',
+      'Suitable for High Temperature Applications',
+      'Low Maintenance Design',
+      'Multiple Automation Options',
+      'Continuous Material Handling Capability'
+    ],
+    optionalFeatures: [
+      'Abrasion Resistant Liners',
+      'High Temperature Design',
+      'Air Seal Arrangement',
+      'C5 / NORSOK Paint System',
+      'External Insulation Option',
+      'Dust Tight Construction'
+    ],
+    engineeringAdvantages: [
+      'Sequential dual flap sealing arrangement (Eliminates air leakage during material discharge)',
+      'Controlled discharge operation (Prevents uncontrolled material surge flow)',
+      'Reliable air lock performance (Eliminates high wear under abrasive conditions)',
+      'Reduced process leakage (Overcomes pressure imbalance in conveying systems)',
+      'Improved conveying efficiency'
+    ],
+    inspectionTesting: [
+      'Functional Sequential Testing',
+      'Leakage Testing',
+      'Material Flow Verification',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Electrostatic Precipitator (ESP) Ash Hopper Discharge',
-      'Fabric Filter Baghouse Hopper Air Lock Isolation',
-      'Cyclone Dust Collector Bottom Unloading',
-      'Cement Clinker, Lime, and Coal Dust Feeder Chutes'
+      'Ash Handling Systems',
+      'Dust Collection Systems',
+      'Pneumatic Conveying Systems',
+      'ESP Hopper Discharge',
+      'Boiler Bottom Ash Systems',
+      'Cement Material Handling',
+      'Bulk Powder Handling',
+      'Pollution Control Systems',
+      'Material Transfer Systems',
+      'Process Dust Discharge'
+    ],
+    majorReferences: [
+      { endUser: 'JSW', application: 'At Hopper Discharge' },
+      { endUser: 'AM/NS INDIA', application: 'At Hopper Discharge' },
+      { endUser: 'adani', application: 'At Hopper Discharge' },
+      { endUser: 'Shree Cement', application: 'At Hopper Discharge' }
+    ],
+    galleryImages: [
+      { title: 'GEARED MOTOR OPERATED DOUBLE FLAP', subtitle: 'Size Sq. 1000 mm Heavy Duty Unit', image: '/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-1000-Pair.webp' },
+      { title: 'GEARED MOTOR OPERATED DOUBLE FLAP BATCH', subtitle: 'Size Sq. 300 mm Production Assembly Line', image: '/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-300-Line.webp' },
+      { title: 'COUNTER WEIGHT OPERATED DOUBLE FLAP', subtitle: 'Size Dia 300 mm Circular Flanged Stainless Steel', image: '/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Dia-300.webp' },
+      { title: 'GEARED MOTOR OPERATED DOUBLE FLAP BATCH', subtitle: 'Size Sq. 200 mm Factory Floor Alignment', image: '/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-200-Batch.webp' },
+      { title: 'COUNTER WEIGHT OPERATED DOUBLE FLAP', subtitle: 'Size Sq. 600 mm Heavy Duty Airlock Unit', image: '/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Sq-600.webp' },
+      { title: 'GEARED MOTOR OPERATED DOUBLE FLAP', subtitle: 'Size Sq. 250 mm Drive Shaft Unit', image: '/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Single.webp' },
+      { title: 'GEARED MOTOR OPERATED DOUBLE FLAP BATCH', subtitle: 'Size Sq. 250 mm Ready for Dispatch', image: '/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Batch.webp' }
+    ],
+    industriesServed: [
+      { name: 'Mines', image: '/images/industries/METAL.jpg' },
+      { name: 'Steel', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Paper', image: '/images/industries/industry-paper-pulp.jpg' },
+      { name: 'Cement', image: '/images/industries/CEMENT-1.jpg' },
+      { name: 'Power', image: '/images/industries/THERMAL.jpg' },
+      { name: 'Fertilisers', image: '/images/industries/industry-chemical.jpg' }
     ]
   },
   'back-draft-damper-valves': {
@@ -1865,6 +2051,111 @@ export const productsData: Record<string, ProductDetail> = {
       { name: 'Data Centers', image: '/images/industries/industry-power-gen.jpg' },
       { name: 'Marine & Offshore', image: '/images/industries/MARINE.jpg' }
     ]
+  },
+  'septum-valves': {
+    id: 'septum-valves',
+    title: 'BE260 : SEPTUM VALVES',
+    model: 'BE260 SERIES',
+    image: '/images/products/BE260-Septum-Valves.png',
+    category: 'severe',
+    categoryLabel: 'Blast Furnace Top Pressure Control Valves',
+    tagline: 'Specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems.',
+    desc: 'The Bellator BE260 Series Septum Valve is a specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems. It is primarily used for precise regulation of blast furnace top pressure while handling clean, semi-cleaned, or partially dust-laden blast furnace gas streams.',
+    longDesc: 'The Bellator BE260 Series Septum Valve is a specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems. It is primarily used for precise regulation of blast furnace top pressure while handling clean, semi-cleaned, or partially dust-laden blast furnace gas streams.\n\nThe valve is installed in the Blast Furnace Top Pressure Control System, generally located in piping of blast furnace throat or within the gas cleaning plant. By employing multiple independently controlled butterfly dampers housed within a common body, the Septum Valve provides highly accurate pressure modulation over a wide operating range while ensuring reliable operation under severe process conditions.\n\nThe valve plays a critical role in maintaining stable furnace top pressure, thereby improving furnace efficiency, process stability, and gas recovery performance.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
+    keyHighlights: [
+      'Multi-Stage Pressure Control with multiple independently operated control butterfly elements',
+      'Engineered specifically for Blast Furnace Throat and Gas Cleaning Plant Top Pressure regulation',
+      'High Reliability: uninterrupted operation even during routine maintenance of individual elements',
+      'Wear-resistant materials & Stellite / SS cladding minimizing abrasive dust erosion',
+      'Available in large circular dimensions from 1200 mm to 3500 mm with Motorised / Pneumatic / Hydraulic actuation'
+    ],
+    leakage: 'Metal Seated (Up to 98% cross-sectional sealing)',
+    temp: 'As Per Project Specific',
+    pressure: 'As Per Project Specific',
+    sizes: '1200 mm to 3500 mm (Circular)',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS304 / SS316 | Disc: IS2062 / SA516 Gr-70 / SS304 / SS316 | Internal Coating: Stellite / SS cladding',
+    actuation: 'Motorised / Pneumatic / Hydraulic',
+    standards: 'API / ASME / ISO',
+    shapes: 'Circular',
+    endConnection: 'Flanged',
+    technicalSpecs: [
+      { parameter: 'Damper Valve Type', details: 'Septum' },
+      { parameter: 'Size Range', details: '1200 mm to 3500 mm' },
+      { parameter: 'Shape', details: 'Circular' },
+      { parameter: 'Design Temperature', details: 'As Per Project Specific' },
+      { parameter: 'Pressure Rating', details: 'As Per Project Specific' },
+      { parameter: 'Flow Medium', details: 'Clean / Semi-Clean Blast Furnace Gas' },
+      { parameter: 'Installation', details: 'Horizontal / Vertical' },
+      { parameter: 'End Connection', details: 'Flanged' },
+      { parameter: 'Actuation', details: 'Motorised / Pneumatic / Hydraulic' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS304 / SS316 / Customer Specific' },
+      { component: 'Disc', material: 'IS2062 / SA516 Gr-70 / SS304 / SS316 / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metal Seated' },
+      { component: 'Internal Coating', material: 'Stellite / SS cladding' },
+      { component: 'Bearings', material: 'Heavy Duty High Temperature Bearings' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic Actuation', desc: 'Independent precision modulating pneumatic actuators with smart positioners for fine trimming control' },
+      { name: 'Motorised Actuation', desc: 'Heavy duty electric modulating actuators for coarse sequential opening of larger butterfly ports' },
+      { name: 'Hydraulic Actuation', desc: 'Electro-hydraulic actuator units for ultra-responsive high pressure blast furnace regulation' }
+    ],
+    features: [
+      'Precise Pressure Control: Multiple independently operated control elements provide superior regulation compared to conventional single-disc control valves.',
+      'High Reliability: The multi-valve arrangement ensures uninterrupted operation even during maintenance of individual control elements.',
+      'Extended Service Life: Wear-resistant materials and protective coatings minimize erosion caused by abrasive blast furnace dust.',
+      'Low Pressure Loss: Optimised flow passages reduce unnecessary pressure drop while maintaining excellent control characteristics.',
+      'Large Size Capability: Suitable for large blast furnace gas systems requiring high flow capacity.'
+    ],
+    optionalFeatures: [
+      'Stellite / SS Cladding Erosion Protection',
+      'Water Spray Cooling Ports',
+      'Trimming Butterfly Valve Integration (e.g. 3x DN700 + 1x DN350)',
+      'High Temperature Purge Seals',
+      'Redundant Smart Positioners'
+    ],
+    engineeringAdvantages: [
+      'Multi-stage independent butterfly modulation preventing furnace surge & pressure collapse',
+      'Coarse + fine trimming combination ensures unmatched control precision across wide turndown',
+      'Stellite/SS cladding shields against abrasive particulate wear at high differential velocities',
+      'Maintains stable top pressure to optimize furnace recovery turbine power output'
+    ],
+    inspectionTesting: [
+      'Pneumatic Pressure Test (Housing tested at 1.5x design pressure; verification of weld integrity & leak-free performance)',
+      'Operational Test (Full open-close cycling of each butterfly valve, actuator verification, position feedback calibration)',
+      'Seat Leakage Test (Individual butterfly assemblies tested for shut-off performance; typical sealing efficiency up to 98%)',
+      'Comprehensive QA Documentation (MTC, Inspection Reports, Pressure Test Reports, Dimensional & Functional Records)',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
+    ],
+    applications: [
+      'Blast Furnace Top Pressure Control Systems',
+      'Blast Furnace Gas Cleaning Plants',
+      'Gas Recovery Systems',
+      'Iron & Steel Manufacturing Facilities',
+      'Energy Recovery and Waste Gas Utilization Systems',
+      'High-Temperature Dust-Laden Gas Services'
+    ],
+    majorReferences: [
+      { endUser: 'TATA STEEL', application: 'Blast Furnace Gas Top Pressure Control' },
+      { endUser: 'JSW', application: 'Blast Furnace Gas Cleaning Plant' },
+      { endUser: 'AM/NS INDIA', application: 'Gas Recovery & Pressure Regulation' },
+      { endUser: 'SAIL', application: 'Blast Furnace Top Throat Piping' }
+    ],
+    galleryImages: [
+      { title: 'SEPTUM VALVE PERSPECTIVE VIEW', subtitle: 'Size Dia 1800 mm with Multi-Actuator Stanchions', image: '/images/gallery/be260/BE260-Septum-Valve-Dia-1800-Perspective.webp' },
+      { title: 'SEPTUM VALVE FRONT PORT CONFIGURATION', subtitle: 'Size 1800 mm (Coarse & Fine Trimming Ports)', image: '/images/gallery/be260/BE260-Septum-Valve-Front-Port-Configuration.webp' },
+      { title: 'OPERATING PRINCIPLE & TESTING PROTOCOL', subtitle: 'Multi-Stage Pressure Regulation Dynamics', image: '/images/gallery/be260/BE260-Operating-Principle-Multi-Stage-Control.webp' }
+    ],
+    industriesServed: [
+      { name: 'Steel', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Power', image: '/images/industries/THERMAL.jpg' },
+      { name: 'Petrochem', image: '/images/industries/industry-oil-gas.jpg' }
+    ]
   }
 };
+
 

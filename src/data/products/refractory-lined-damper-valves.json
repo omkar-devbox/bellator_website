@@ -1,36 +1,131 @@
 {
   "id": "refractory-lined-damper-valves",
-  "title": "Refractory Lined Damper Valves",
-  "model": "BE-140 Series",
+  "title": "BE140 : REFRACTORY LINED DAMPER VALVES",
+  "model": "BE140 SERIES",
   "image": "/images/products/BE140-Pneumatic-Refractory-Lined-Damper-Valves.png",
   "category": "severe",
-  "categoryLabel": "Severe Thermal Resilience",
-  "tagline": "Ultra-high temperature refractory lined damper valve engineered for continuous service up to 1,200°C.",
-  "desc": "Engineered for extreme thermal conditions up to 1,200°C in cement rotary kilns, blast furnaces, thermal oxidizers, and metallurgical smelters. Heavy steel casing and disc are lined with dense high-alumina refractory castable anchored by stainless V-studs.",
-  "longDesc": "Bellator BE-140 Series Refractory Lined Damper Valves provide reliable gas control in the hottest industrial applications. The interior casing and blade are protected by a thick layer of dense refractory castable anchored with Inconel or stainless steel V-studs, keeping outer shell temperatures safe and preserving structural integrity.",
+  "categoryLabel": "Engineered for Extreme Temperature Service",
+  "tagline": "Engineered for Extreme Temperature Service in severe high temperature process applications up to 1400°C.",
+  "desc": "Bellator BE140 Series Refractory Lined Damper Valves are specially engineered for severe high temperature process applications involving hot gases, thermal cycling, abrasive media, and elevated thermal loads. These dampers incorporate specially designed refractory lining systems that protect the metallic structure from direct exposure to high temperature process media while ensuring reliable operational integrity and extended service life.",
+  "longDesc": "Bellator BE140 Series Refractory Lined Damper Valves are specially engineered for severe high temperature process applications involving hot gases, thermal cycling, abrasive media, and elevated thermal loads. These dampers incorporate specially designed refractory lining systems that protect the metallic structure from direct exposure to high temperature process media while ensuring reliable operational integrity and extended service life.\n\nThe BE140 Series combines heavy-duty fabricated construction, optimized thermal expansion design, and advanced refractory engineering to deliver dependable isolation and flow control performance under extreme operating conditions. The refractory lining arrangement minimizes thermal stress on the valve body while enhancing durability and operational reliability during continuous high temperature service.\n\nManufactured using advanced engineering and application-oriented design practices, the BE140 Series is suitable for critical process applications involving furnaces, kilns, incinerators, WHRB systems, and high temperature process gas handling systems requiring dependable long-term performance.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
   "keyHighlights": [
-    "Continuous thermal operating temperature up to 1,200°C",
-    "Dense high-alumina castable lining anchored with stainless V-studs",
-    "Water-cooled shaft and packing gland cooling jacket options",
-    "Resistant to severe thermal shock and abrasive particulate erosion"
+    "Advanced Refractory Lined Construction suitable for extreme continuous service up to 1400°C",
+    "Multi-layer refractory protection reducing outer shell and skin temperature",
+    "Optimized thermal expansion compensation and thermal shock resistant engineering",
+    "Available in Pneumatic, Electric, Hydraulic, and Manual actuation configurations",
+    "Custom fabricated in Round, Square & Rectangular shapes from 100 mm to 5000 mm"
   ],
-  "leakage": "Class III / Class IV (Up to 99% Sealing)",
-  "temp": "Up to +1,200°C Continuous Thermal Duty",
-  "pressure": "Up to 6,000 mmWC",
-  "sizes": "DN300 to DN3,500",
-  "materials": "Heavy Carbon Steel Shell, High-Alumina Refractory Castable, Inconel / SS310 Anchors",
-  "actuation": "Heavy-Duty Pneumatic Cylinder with Water-Cooled Shafts, Motorized Gearbox",
-  "standards": "Severe Process Metallurgy Standards, ASME Sec. VIII",
+  "leakage": "Up to 99.95%",
+  "temp": "Up to 1400°C",
+  "pressure": "Up to PN1",
+  "sizes": "100 mm to 5000 mm (Round / Square / Rectangular)",
+  "materials": "Body: SA516 Gr-70 / SS | Disc: SS310S / Inconel / Refractory Lined | Shaft: SS410 / SS316 / High Temp. Alloy",
+  "actuation": "Pneumatic / Electric / Hydraulic / Manual",
+  "standards": "ASME / API / ISO / Project Specific",
+  "shapes": "Round / Square / Rectangular",
+  "endConnection": "Flanged / Slip Fit / Butt Weld",
+  "technicalSpecs": [
+    { "parameter": "Damper Type", "details": "Refractory Lined" },
+    { "parameter": "Size Range", "details": "100 mm to 5000 mm" },
+    { "parameter": "Design Temperature", "details": "Up to 1400°C" },
+    { "parameter": "Pressure Rating", "details": "Up to PN1" },
+    { "parameter": "Leakage Performance", "details": "Up to 99.95%" },
+    { "parameter": "Operation", "details": "Pneumatic / Electric / Hydraulic / Manual" },
+    { "parameter": "Lining Type", "details": "Single Layer / Multi-Layer Refractory system" },
+    { "parameter": "Shapes", "details": "Round / Square / Rectangular" },
+    { "parameter": "Standards", "details": "ASME / API / ISO" }
+  ],
+  "mocTable": [
+    { "component": "Body", "material": "SA516 Gr-70 / SS" },
+    { "component": "Disc", "material": "SS310S / Inconel / Refractory Lined" },
+    { "component": "Shaft", "material": "SS410 / SS316 / High Temp. Alloy" },
+    { "component": "Refractory", "material": "Castable / Ceramic / Insulating" },
+    { "component": "Anchors", "material": "SS310 / High Temperature Alloy" },
+    { "component": "Bearings", "material": "High Temp. Isolated Bearings" }
+  ],
+  "automationOptions": [
+    { "name": "Pneumatic", "desc": "Heavy duty pneumatic actuator with water-cooled linkages, positioners, and fast trip fail-safe options" },
+    { "name": "Electric", "desc": "Motorized quarter-turn/multi-turn actuators for modulating & ON/OFF high temperature isolation" },
+    { "name": "Hydraulic", "desc": "Electro-hydraulic actuator units engineered for high-torque critical furnace lines" },
+    { "name": "Manual", "desc": "Precision manual gearbox with handwheel and position indicator" }
+  ],
   "features": [
-    "Engineered refractory anchor pattern with thermal expansion joints",
-    "Hollow water-cooled drive shaft and purge-cooled stuffing boxes",
-    "Heavy-duty outboard roller bearings on elevated stanchions",
-    "Refractory step seat design delivering tight high-temperature sealing"
+    "Advanced Refractory Lined Construction",
+    "Suitable up to 1400°C",
+    "Reduced Outer Skin Temperature",
+    "Thermal Shock Resistant Design",
+    "Heavy Duty Reinforced Construction",
+    "Optimized Thermal Expansion Compensation",
+    "Suitable for Abrasive Hot Gas Media",
+    "Reliable High Temperature Isolation",
+    "Multiple Damper Configurations Available",
+    "Extended Service Life Under Severe Conditions"
+  ],
+  "optionalFeatures": [
+    "Air Seal Arrangement",
+    "Double Layer Refractory System",
+    "Thermal Expansion Joints",
+    "Seismic Qualified Design",
+    "High Velocity Gas Design",
+    "C5 / NORSOK Paint System",
+    "External Insulation Option",
+    "Temperature Monitoring Ports"
+  ],
+  "engineeringAdvantages": [
+    "Multi-layer refractory protection system (Eliminates thermal distortion of metallic structures)",
+    "Reduced shell exposure to process heat (Prevents excessive outer shell temperature)",
+    "Optimized thermal expansion management (Eliminates premature seal & bearing failure)",
+    "Enhanced structural protection (Reduces high thermal stress concentration)",
+    "Long service life under severe thermal cycling"
+  ],
+  "inspectionTesting": [
+    "Refractory Visual Inspection",
+    "Hammer Sound Testing",
+    "Leakage Testing",
+    "Functional Stroke Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered."
   ],
   "applications": [
-    "Cement Plant Rotary Kiln Exhaust & Preheater Tower",
-    "Steel Mill Blast Furnace & Direct Reduced Iron (DRI) Plants",
-    "Hazardous Waste Thermal Oxidizers & Incinerators",
-    "Non-Ferrous Metallurgical Smelters & Roasters"
+    "Blast Furnace Gas Systems",
+    "Hot Gas Isolation",
+    "Kiln Process Systems",
+    "Furnace Exhaust Systems",
+    "Incinerator Systems",
+    "WHRB Systems",
+    "Thermal Oxidizer Systems",
+    "Coke Oven Gas Systems",
+    "High Temperature Process Lines",
+    "Process Shutdown Isolation"
+  ],
+  "majorReferences": [
+    { "endUser": "JSW", "application": "RTO Hot Gas Bypass Application" },
+    { "endUser": "AM/NS INDIA", "application": "RTO Hot Gas Bypass Application" },
+    { "endUser": "Asian Paints", "application": "RTO Hot Gas Bypass Application" },
+    { "endUser": "Rio Grande LNG", "application": "Hot Flue Gas Isolation" }
+  ],
+  "galleryImages": [
+    { "title": "MOTORISED REFRACTORY LINED DAMPERS PAIR", "subtitle": "Size 3650/3500 & 2560/2500 mm (Refractory on site)", "image": "/images/gallery/be140/BE140-Motorised-Refractory-Lined-Dampers-Pair.webp" },
+    { "title": "GEARED REFRACTORY DAMPER", "subtitle": "Size Dia 500 / 300 mm Fabricated Unit", "image": "/images/gallery/be140/BE140-Geared-Refractory-Damper-Dia-500-300.webp" },
+    { "title": "PNEUMATIC CONTROL DUTY REFRACTORY DAMPER", "subtitle": "Size Dia 1200 / 800 mm with Positioner", "image": "/images/gallery/be140/BE140-Pneumatic-Control-Duty-Refractory-Damper-Dia-1200-800.webp" },
+    { "title": "MOTORISED REFRACTORY LINED MULTI-LOUVER", "subtitle": "Size Dia 2350 / 2500 mm Large Diameter", "image": "/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-2350-2500.webp" },
+    { "title": "PNEUMATIC REFRACTORY LINED COFFEE POT DAMPER", "subtitle": "Size Dia 800 / 600 mm Severe Duty Valve", "image": "/images/gallery/be140/BE140-Pneumatic-Refractory-Coffee-Pot-Damper.webp" },
+    { "title": "MOTORISED REFRACTORY LINED MULTI-LOUVER", "subtitle": "Size Dia 2250 / 2100 mm High Temperature", "image": "/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-2250-2100.webp" },
+    { "title": "MOTORISED REFRACTORY LINED MULTI-LOUVER", "subtitle": "Size Dia 3650 / 3500 mm Giant Industrial Damper", "image": "/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-3650-3500.webp" },
+    { "title": "PNEUMATIC REFRACTORY LINED BUTTERFLY", "subtitle": "Size 550 / 150 mm Thermal Process Valve", "image": "/images/gallery/be140/BE140-Pneumatic-Refractory-Butterfly-550-150.webp" },
+    { "title": "PNEUMATIC REFRACTORY LINED BUTTERFLY", "subtitle": "Size 700 / 300 mm Flanged High Temp Damper", "image": "/images/gallery/be140/BE140-Pneumatic-Refractory-Butterfly-700-300.webp" }
+  ],
+  "industriesServed": [
+    { "name": "Marine", "image": "/images/industries/MARINE.jpg" },
+    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
+    { "name": "Oil & Gas", "image": "/images/industries/industry-oil-gas.jpg" },
+    { "name": "Cement", "image": "/images/industries/CEMENT-1.jpg" },
+    { "name": "Power", "image": "/images/industries/THERMAL.jpg" },
+    { "name": "Fertilisers", "image": "/images/industries/industry-chemical.jpg" }
   ]
 }

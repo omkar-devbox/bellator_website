@@ -1,36 +1,127 @@
 {
   "id": "double-flap-damper-valves",
-  "title": "Double Flap Damper Valves",
-  "model": "DFDV Series",
+  "title": "BE150 : DOUBLE FLAP DAMPER VALVES",
+  "model": "BE150 SERIES",
   "image": "/images/products/Counter-Weight-Operated-Double-Flap-Valve.png",
   "category": "severe",
-  "categoryLabel": "Hopper Dust Discharge",
-  "tagline": "Dual-chamber mechanical airlock valve discharging heavy dust and ash while maintaining airtight vacuum seal.",
-  "desc": "Dual-chamber mechanical airlock valve that continuously discharges fly ash, cement clinker dust, and heavy ores from baghouse hoppers and electrostatic precipitators without letting atmospheric air infiltrate into the vacuum system.",
-  "longDesc": "The DFDV Series Double Flap Damper functions as a reliable mechanical airlock for bulk solids discharge. Two counter-weighted or motor-driven flaps alternate opening cycles, ensuring that one flap is always closed to maintain the airtight vacuum boundary in hoppers and cyclones.",
+  "categoryLabel": "Engineered for Controlled Material Discharge",
+  "tagline": "Engineered for Controlled Material Discharge of bulk materials, ash, dust, and particulate media.",
+  "desc": "Bellator BE150 Series Twin Flap Damper Valves are specially engineered for controlled discharge of bulk materials, ash, dust, and particulate media while maintaining reliable air sealing between upstream and downstream process systems.",
+  "longDesc": "Bellator BE150 Series Twin Flap Damper Valves are specially engineered for controlled discharge of bulk materials, ash, dust, and particulate media while maintaining reliable air sealing between upstream and downstream process systems.\n\nThe dual flap arrangement operates sequentially to ensure uninterrupted material discharge with minimal pressure loss and reduced air leakage, making these dampers highly suitable for pneumatic conveying and dust handling applications.\n\nThese dampers are widely used in thermal power plants, cement plants, steel plants, pollution control systems, and bulk material handling industries where controlled discharge and air lock performance are essential.\n\nAvailable in pneumatic, hydraulic, electric, and counterweight operated configurations.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
   "keyHighlights": [
-    "Continuous airtight pressure boundary during solids discharge",
-    "Available with gravity counterweight arms or motorized cam drives",
-    "Replaceable Hardox wear liners and Stellite hardfaced contact seats",
-    "Resistant to bridging, clogging, and heavy thermal distortion"
+    "Sequential Twin Flap Design ensuring uninterrupted material discharge with zero air leakage",
+    "Reliable Air Locking Performance between upstream and downstream vacuum/pressure systems",
+    "Heavy Duty Fabricated Construction with replaceable abrasion-resistant liners",
+    "Available in Geared Motor, Counterweight, Pneumatic & Hydraulic operation",
+    "Wide size envelope from 150 mm to 2500 mm in Round, Square & Rectangular shapes"
   ],
-  "leakage": "Airtight Vacuum Boundary Maintenance",
-  "temp": "Up to +450°C",
-  "pressure": "Vacuum to +2,000 mmWC",
-  "sizes": "200 x 200 mm to 1,200 x 1,200 mm Flange Opening",
-  "materials": "IS2062 Steel, Hardox 400 Wear Liners, Stellite / Hardfaced Flap Contact Edges",
-  "actuation": "Geared Electric Motor with Cam Mechanism or Gravity Counterweight Levers",
-  "standards": "Dust Containment & Bulk Material Handling Codes",
+  "leakage": "Reliable Air Locking Performance",
+  "temp": "-25°C to 850°C",
+  "pressure": "Low Pressure Material Handling Systems",
+  "sizes": "150 mm to 2500 mm (Round / Square / Rectangular)",
+  "materials": "Body: IS2062 / SA516 Gr-70 / SS | Flaps: SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel | Shaft: EN8D / SS410 / SS316",
+  "actuation": "Pneumatic / Hydraulic / Electric (Geared Motor) / Counterweight",
+  "standards": "ASME / API / ISO",
+  "shapes": "Round / Square / Rectangular",
+  "endConnection": "Flanged / Welded",
+  "technicalSpecs": [
+    { "parameter": "Damper Type", "details": "Twin Flap Damper Valve" },
+    { "parameter": "Size Range", "details": "150 mm to 2500 mm" },
+    { "parameter": "Design Temp.", "details": "-25°C to 850°C" },
+    { "parameter": "Pressure Rating", "details": "Low Pressure Material Handling Systems" },
+    { "parameter": "Operation", "details": "Pneumatic / Hydraulic / Electric / Counterweight" },
+    { "parameter": "Media", "details": "Ash / Dust / Powder / Bulk Material" },
+    { "parameter": "Flap Arrangement", "details": "Sequential Twin Flap Design" },
+    { "parameter": "End Connection", "details": "Flanged / Welded" },
+    { "parameter": "Construction", "details": "Heavy Duty Fabricated" },
+    { "parameter": "Standards", "details": "ASME / API / ISO" }
+  ],
+  "mocTable": [
+    { "component": "Body", "material": "IS2062 / SA516 Gr-70 / SS" },
+    { "component": "Flaps", "material": "SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel" },
+    { "component": "Shaft", "material": "EN8D / SS410 / SS316" },
+    { "component": "Seals", "material": "Metallic" },
+    { "component": "Bearings", "material": "Heavy Duty Self Lubricated" },
+    { "component": "Liners", "material": "Abrasion Resistant Liners" }
+  ],
+  "automationOptions": [
+    { "name": "Pneumatic", "desc": "Pneumatic cylinders with solenoid controls for rapid automated sequential cycle operation" },
+    { "name": "Geared Motor", "desc": "Electric gear motor with cam/linkage mechanism for smooth, continuous automatic discharge" },
+    { "name": "Counter Weight", "desc": "Self-actuating gravity and counterweight arms for passive material-weight triggered dumping" }
+  ],
   "features": [
-    "Two isolated chambers with precision machined flap seats",
-    "Replaceable Hardox 400/500 abrasive wear plates",
-    "Motorized camshaft mechanism ensuring positive sequential cycling",
-    "Inspection access doors on both upper and lower chambers"
+    "Sequential Twin Flap Operation",
+    "Reliable Air Locking Performance",
+    "Controlled Bulk Material Discharge",
+    "Suitable for Dusty & Abrasive Media",
+    "Heavy Duty Fabricated Construction",
+    "Reduced Pressure Loss",
+    "Suitable for High Temperature Applications",
+    "Low Maintenance Design",
+    "Multiple Automation Options",
+    "Continuous Material Handling Capability"
+  ],
+  "optionalFeatures": [
+    "Abrasion Resistant Liners",
+    "High Temperature Design",
+    "Air Seal Arrangement",
+    "C5 / NORSOK Paint System",
+    "External Insulation Option",
+    "Dust Tight Construction"
+  ],
+  "engineeringAdvantages": [
+    "Sequential dual flap sealing arrangement (Eliminates air leakage during material discharge)",
+    "Controlled discharge operation (Prevents uncontrolled material surge flow)",
+    "Reliable air lock performance (Eliminates high wear under abrasive conditions)",
+    "Reduced process leakage (Overcomes pressure imbalance in conveying systems)",
+    "Improved conveying efficiency"
+  ],
+  "inspectionTesting": [
+    "Functional Sequential Testing",
+    "Leakage Testing",
+    "Material Flow Verification",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered."
   ],
   "applications": [
-    "Electrostatic Precipitator (ESP) Ash Hopper Discharge",
-    "Fabric Filter Baghouse Hopper Air Lock Isolation",
-    "Cyclone Dust Collector Bottom Unloading",
-    "Cement Clinker, Lime, and Coal Dust Feeder Chutes"
+    "Ash Handling Systems",
+    "Dust Collection Systems",
+    "Pneumatic Conveying Systems",
+    "ESP Hopper Discharge",
+    "Boiler Bottom Ash Systems",
+    "Cement Material Handling",
+    "Bulk Powder Handling",
+    "Pollution Control Systems",
+    "Material Transfer Systems",
+    "Process Dust Discharge"
+  ],
+  "majorReferences": [
+    { "endUser": "JSW", "application": "At Hopper Discharge" },
+    { "endUser": "AM/NS INDIA", "application": "At Hopper Discharge" },
+    { "endUser": "adani", "application": "At Hopper Discharge" },
+    { "endUser": "Shree Cement", "application": "At Hopper Discharge" }
+  ],
+  "galleryImages": [
+    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP", "subtitle": "Size Sq. 1000 mm Heavy Duty Unit", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-1000-Pair.webp" },
+    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH", "subtitle": "Size Sq. 300 mm Production Assembly Line", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-300-Line.webp" },
+    { "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP", "subtitle": "Size Dia 300 mm Circular Flanged Stainless Steel", "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Dia-300.webp" },
+    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH", "subtitle": "Size Sq. 200 mm Factory Floor Alignment", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-200-Batch.webp" },
+    { "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP", "subtitle": "Size Sq. 600 mm Heavy Duty Airlock Unit", "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Sq-600.webp" },
+    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP", "subtitle": "Size Sq. 250 mm Drive Shaft Unit", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Single.webp" },
+    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH", "subtitle": "Size Sq. 250 mm Ready for Dispatch", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Batch.webp" }
+  ],
+  "industriesServed": [
+    { "name": "Mines", "image": "/images/industries/METAL.jpg" },
+    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
+    { "name": "Paper", "image": "/images/industries/industry-paper-pulp.jpg" },
+    { "name": "Cement", "image": "/images/industries/CEMENT-1.jpg" },
+    { "name": "Power", "image": "/images/industries/THERMAL.jpg" },
+    { "name": "Fertilisers", "image": "/images/industries/industry-chemical.jpg" }
   ]
 }
