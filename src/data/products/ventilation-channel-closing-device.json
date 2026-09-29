@@ -26,32 +26,83 @@
   "standards": "Project / Nuclear Specific Standards",
   "shapes": "Rectangular (With Adaptor / Without Adaptor)",
   "endConnection": "Double Flanged (With Adaptor / Without Adaptor)",
-  "designVelocity": "Up to 55 m/s",
-  "operatingPrinciple": "Passive Self-Actuating",
-  "closingMechanism": "Spring Assisted (< 60 ms)",
   "technicalSpecs": [
-    { "parameter": "Device Type", "details": "Ventilation Channel Closing Device (VChCD)" },
-    { "parameter": "Size Range", "details": "400 mm to 2600 mm" },
-    { "parameter": "End Connection", "details": "Double Flanged (With Adaptor / Without Adaptor)" },
-    { "parameter": "Design Velocity", "details": "Up to 55 m/s" },
-    { "parameter": "Operating Principle", "details": "Passive Self-Actuating" },
-    { "parameter": "Closing Mechanism", "details": "Spring Assisted" },
-    { "parameter": "Leakage Performance", "details": "Critical Isolation Design (100% Sealing to Atmosphere)" },
-    { "parameter": "Operation", "details": "Automatic Passive Operation" },
-    { "parameter": "Drive Mode", "details": "Shock Wave Impact / Deflagration Wave Impact / Wind Velocity Impact" },
-    { "parameter": "Standards", "details": "Project / Nuclear Specific" }
+    {
+      "parameter": "Device Type",
+      "details": "Ventilation Channel Closing Device (VChCD)"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "400 mm to 2600 mm"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Double Flanged (With Adaptor / Without Adaptor)"
+    },
+    {
+      "parameter": "Design Velocity",
+      "details": "Up to 55 m/s"
+    },
+    {
+      "parameter": "Operating Principle",
+      "details": "Passive Self-Actuating"
+    },
+    {
+      "parameter": "Closing Mechanism",
+      "details": "Spring Assisted (< 60 ms)"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Critical Isolation Design (100% Sealing to Atmosphere)"
+    },
+    {
+      "parameter": "Operation",
+      "details": "Automatic Passive Operation"
+    },
+    {
+      "parameter": "Drive Mode",
+      "details": "Shock Wave Impact / Deflagration Wave Impact / Wind Velocity Impact"
+    },
+    {
+      "parameter": "Standards",
+      "details": "Project / Nuclear Specific"
+    }
   ],
   "mocTable": [
-    { "component": "Body", "material": "SS321 / SS304 / Customer Specific" },
-    { "component": "Flap / Blade", "material": "SS321 / SS304 / Customer Specific" },
-    { "component": "Axle", "material": "SS321 / SS304 / Customer Specific" },
-    { "component": "Spring", "material": "High Tensile Spring Steel" },
-    { "component": "Connecting Link", "material": "SS321 / SS304 / Customer Specific" },
-    { "component": "Bush", "material": "Self Lubricated Maintenance-Free" }
+    {
+      "component": "Body",
+      "material": "SS321 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Flap / Blade",
+      "material": "SS321 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Axle",
+      "material": "SS321 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Spring",
+      "material": "High Tensile Spring Steel"
+    },
+    {
+      "component": "Connecting Link",
+      "material": "SS321 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Bush",
+      "material": "Self Lubricated Maintenance-Free"
+    }
   ],
   "automationOptions": [
-    { "name": "Passive Self-Actuating", "desc": "Automatic triggering by shock wave, deflagration wave, or 55 m/s wind velocity with rapid spring-assisted closure in < 60 ms" },
-    { "name": "Manual Drive Mechanism", "desc": "Inbuilt mechanism with manual drive for routine maintenance, inspection, and reset" }
+    {
+      "name": "Passive Self-Actuating",
+      "desc": "Automatic triggering by shock wave, deflagration wave, or 55 m/s wind velocity with rapid spring-assisted closure in < 60 ms"
+    },
+    {
+      "name": "Manual Drive Mechanism",
+      "desc": "Inbuilt mechanism with manual drive for routine maintenance, inspection, and reset"
+    }
   ],
   "features": [
     "Passive Self-Actuating Safety Design",
@@ -102,17 +153,53 @@
     "High Risk Scientific Labs & Critical Research Centres"
   ],
   "galleryImages": [
-    { "title": "VCHCD WITHOUT ADAPTOR", "subtitle": "Double Flanged Stainless Steel Construction", "image": "/images/gallery/be110/BE110-VCHCD-Without-Adaptor.webp" },
-    { "title": "VCHCD WITH INTEGRAL ADAPTOR", "subtitle": "Single Unit with Transition Box", "image": "/images/gallery/be110/BE110-VCHCD-With-Adaptor-Single.webp" },
-    { "title": "VCHCD WITH ADAPTOR PRODUCTION BATCH", "subtitle": "Nuclear & Defense Grade Delivery Batch", "image": "/images/gallery/be110/BE110-VCHCD-With-Adaptor-Batch.webp" },
-    { "title": "CLOSURE MODE: SHOCK WAVE IMPACT", "subtitle": "Instantaneous passive barrier triggering", "image": "/images/gallery/be110/BE110-Closure-Shock-Wave-Impact.webp" },
-    { "title": "CLOSURE MODE: DEFLAGRATION WAVE IMPACT", "subtitle": "Rapid closure isolating fire and blast fronts", "image": "/images/gallery/be110/BE110-Closure-Deflagration-Wave-Impact.webp" },
-    { "title": "CLOSURE MODE: WIND VELOCITY 55 M/S IMPACT", "subtitle": "Automatic closure at extreme dynamic pressure (1.88 kPa)", "image": "/images/gallery/be110/BE110-Closure-Wind-Velocity-55ms.webp" }
+    {
+      "title": "VCHCD WITHOUT ADAPTOR",
+      "subtitle": "Double Flanged Stainless Steel Construction",
+      "image": "/images/gallery/be110/BE110-VCHCD-Without-Adaptor.webp"
+    },
+    {
+      "title": "VCHCD WITH INTEGRAL ADAPTOR",
+      "subtitle": "Single Unit with Transition Box",
+      "image": "/images/gallery/be110/BE110-VCHCD-With-Adaptor-Single.webp"
+    },
+    {
+      "title": "VCHCD WITH ADAPTOR PRODUCTION BATCH",
+      "subtitle": "Nuclear & Defense Grade Delivery Batch",
+      "image": "/images/gallery/be110/BE110-VCHCD-With-Adaptor-Batch.webp"
+    },
+    {
+      "title": "CLOSURE MODE: SHOCK WAVE IMPACT",
+      "subtitle": "Instantaneous passive barrier triggering",
+      "image": "/images/gallery/be110/BE110-Closure-Shock-Wave-Impact.webp"
+    },
+    {
+      "title": "CLOSURE MODE: DEFLAGRATION WAVE IMPACT",
+      "subtitle": "Rapid closure isolating fire and blast fronts",
+      "image": "/images/gallery/be110/BE110-Closure-Deflagration-Wave-Impact.webp"
+    },
+    {
+      "title": "CLOSURE MODE: WIND VELOCITY 55 M/S IMPACT",
+      "subtitle": "Automatic closure at extreme dynamic pressure (1.88 kPa)",
+      "image": "/images/gallery/be110/BE110-Closure-Wind-Velocity-55ms.webp"
+    }
   ],
   "industriesServed": [
-    { "name": "Nuclear Facilities", "image": "/images/gallery/be110/BE110-Industry-Nuclear-Facilities.webp" },
-    { "name": "Rocket Launching Stations", "image": "/images/gallery/be110/BE110-Industry-Rocket-Launching-Stations.webp" },
-    { "name": "Critical Research Lab Centres", "image": "/images/gallery/be110/BE110-Industry-Critical-Research-Lab.webp" },
-    { "name": "Defence Bunker Facilities", "image": "/images/gallery/be110/BE110-Industry-Defence-Bunker-Facilities.webp" }
+    {
+      "name": "Nuclear Facilities",
+      "image": "/images/gallery/be110/BE110-Industry-Nuclear-Facilities.webp"
+    },
+    {
+      "name": "Rocket Launching Stations",
+      "image": "/images/gallery/be110/BE110-Industry-Rocket-Launching-Stations.webp"
+    },
+    {
+      "name": "Critical Research Lab Centres",
+      "image": "/images/gallery/be110/BE110-Industry-Critical-Research-Lab.webp"
+    },
+    {
+      "name": "Defence Bunker Facilities",
+      "image": "/images/gallery/be110/BE110-Industry-Defence-Bunker-Facilities.webp"
+    }
   ]
 }

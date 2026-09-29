@@ -26,28 +26,82 @@
   "shapes": "Round / Square / Rectangular",
   "endConnection": "Flanged / Slip Fit / Butt Weld",
   "technicalSpecs": [
-    { "parameter": "Damper Type", "details": "Back Draft Damper Valve" },
-    { "parameter": "Size Range", "details": "150 mm to 2500 mm" },
-    { "parameter": "Design Temperature", "details": "-25°C to 450°C" },
-    { "parameter": "Pressure Rating", "details": "Low Pressure Ventilation Systems" },
-    { "parameter": "Operation Principle", "details": "Self-Actuating Gravity Operation" },
-    { "parameter": "Leakage Performance", "details": "Reverse Flow Prevention" },
-    { "parameter": "Configurations", "details": "Single / Multi-Flap" },
-    { "parameter": "Shapes", "details": "Round / Square / Rectangular" },
-    { "parameter": "End Connection", "details": "Flanged / Slip Fit / Butt Weld" },
-    { "parameter": "Standards", "details": "AMCA 511 , ASME AG-1 , ERDA 76-21" }
+    {
+      "parameter": "Damper Type",
+      "details": "Back Draft Damper Valve"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "150 mm to 2500 mm"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 450°C"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Low Pressure Ventilation Systems"
+    },
+    {
+      "parameter": "Operation Principle",
+      "details": "Self-Actuating Gravity Operation"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Reverse Flow Prevention"
+    },
+    {
+      "parameter": "Configurations",
+      "details": "Single / Multi-Flap"
+    },
+    {
+      "parameter": "Shapes",
+      "details": "Round / Square / Rectangular"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Slip Fit / Butt Weld"
+    },
+    {
+      "parameter": "Standards",
+      "details": "AMCA 511 , ASME AG-1 , ERDA 76-21"
+    }
   ],
   "mocTable": [
-    { "component": "Body", "material": "IS2062 / GI / SS" },
-    { "component": "Flap", "material": "Aluminum / SS304 / SS316" },
-    { "component": "Shaft", "material": "EN8D / SS410 / SS316" },
-    { "component": "Hinges", "material": "Heavy Duty Reinforced" },
-    { "component": "Seal", "material": "Metallic / Rubber Seal" },
-    { "component": "Bearings", "material": "Maintenance Free Bearings" }
+    {
+      "component": "Body",
+      "material": "IS2062 / GI / SS"
+    },
+    {
+      "component": "Flap",
+      "material": "Aluminum / SS304 / SS316"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316"
+    },
+    {
+      "component": "Hinges",
+      "material": "Heavy Duty Reinforced"
+    },
+    {
+      "component": "Seal",
+      "material": "Metallic / Rubber Seal"
+    },
+    {
+      "component": "Bearings",
+      "material": "Maintenance Free Bearings"
+    }
   ],
   "automationOptions": [
-    { "name": "Self-Actuating Gravity", "desc": "Process airflow pushes blades open; gravity & self-weight provide rapid instantaneous closure on flow reversal" },
-    { "name": "Counterbalance Assist", "desc": "Optional counterweight lever for fine-tuning opening sensitivity across variable duct velocities" }
+    {
+      "name": "Self-Actuating Gravity",
+      "desc": "Process airflow pushes blades open; gravity & self-weight provide rapid instantaneous closure on flow reversal"
+    },
+    {
+      "name": "Counterbalance Assist",
+      "desc": "Optional counterweight lever for fine-tuning opening sensitivity across variable duct velocities"
+    }
   ],
   "features": [
     "Uni Directional",
@@ -91,26 +145,84 @@
     "Utility Ventilation Systems"
   ],
   "majorReferences": [
-    { "endUser": "NPCIL", "application": "Ventilation System" },
-    { "endUser": "Unilever", "application": "Ventilation System" },
-    { "endUser": "TATA ELECTRONICS", "application": "Ventilation System" },
-    { "endUser": "Reliance Industries Limited", "application": "Ventilation System" }
+    {
+      "endUser": "NPCIL",
+      "application": "Ventilation System"
+    },
+    {
+      "endUser": "Unilever",
+      "application": "Ventilation System"
+    },
+    {
+      "endUser": "TATA ELECTRONICS",
+      "application": "Ventilation System"
+    },
+    {
+      "endUser": "Reliance Industries Limited",
+      "application": "Ventilation System"
+    }
   ],
   "galleryImages": [
-    { "title": "BACK DRAFT DAMPER PRODUCTION BATCH", "subtitle": "Size Dia 600 mm White Fabricated", "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Main.webp" },
-    { "title": "BACK DRAFT DAMPER", "subtitle": "Size Dia 800 mm Flanged Valve", "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-800.webp" },
-    { "title": "BACK DRAFT DAMPER BATCH", "subtitle": "Size Dia 600 mm Blue Epoxy Coated", "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Blue.webp" },
-    { "title": "FUNCTIONING PRINCIPLE: NORMAL & REVERSE AIR FLOW", "subtitle": "Self-Actuating Gravity Blade Dynamics", "image": "/images/gallery/be120/BE120-Functioning-Normal-and-Reverse-Flow.webp" },
-    { "title": "LEAKAGE & FUNCTIONAL TESTING SETUP", "subtitle": "Tested as per AMCA 511, ASME AG-1, ERDA 76-21", "image": "/images/gallery/be120/BE120-Damper-Testing-Area-Setup.webp" },
-    { "title": "BACK DRAFT DAMPER", "subtitle": "Size Dia 600 mm Industrial Check Unit", "image": "/images/gallery/be120/BE120-Gallery-Dia-600-Single-Unit.webp" },
-    { "title": "BACK DRAFT DAMPER ARRAY", "subtitle": "Dia 600 mm Blue Finish Multi-Unit Shipment", "image": "/images/gallery/be120/BE120-Gallery-Dia-600-Blue-Batch.webp" }
+    {
+      "title": "BACK DRAFT DAMPER PRODUCTION BATCH",
+      "subtitle": "Size Dia 600 mm White Fabricated",
+      "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Main.webp"
+    },
+    {
+      "title": "BACK DRAFT DAMPER",
+      "subtitle": "Size Dia 800 mm Flanged Valve",
+      "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-800.webp"
+    },
+    {
+      "title": "BACK DRAFT DAMPER BATCH",
+      "subtitle": "Size Dia 600 mm Blue Epoxy Coated",
+      "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Blue.webp"
+    },
+    {
+      "title": "FUNCTIONING PRINCIPLE: NORMAL & REVERSE AIR FLOW",
+      "subtitle": "Self-Actuating Gravity Blade Dynamics",
+      "image": "/images/gallery/be120/BE120-Functioning-Normal-and-Reverse-Flow.webp"
+    },
+    {
+      "title": "LEAKAGE & FUNCTIONAL TESTING SETUP",
+      "subtitle": "Tested as per AMCA 511, ASME AG-1, ERDA 76-21",
+      "image": "/images/gallery/be120/BE120-Damper-Testing-Area-Setup.webp"
+    },
+    {
+      "title": "BACK DRAFT DAMPER",
+      "subtitle": "Size Dia 600 mm Industrial Check Unit",
+      "image": "/images/gallery/be120/BE120-Gallery-Dia-600-Single-Unit.webp"
+    },
+    {
+      "title": "BACK DRAFT DAMPER ARRAY",
+      "subtitle": "Dia 600 mm Blue Finish Multi-Unit Shipment",
+      "image": "/images/gallery/be120/BE120-Gallery-Dia-600-Blue-Batch.webp"
+    }
   ],
   "industriesServed": [
-    { "name": "Nuclear Power", "image": "/images/industries/NUCLEAR.jpg" },
-    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
-    { "name": "Oil & Gas", "image": "/images/industries/industry-oil-gas.jpg" },
-    { "name": "Cement", "image": "/images/industries/CEMENT-1.jpg" },
-    { "name": "Thermal Power", "image": "/images/industries/THERMAL.jpg" },
-    { "name": "Marine", "image": "/images/industries/MARINE.jpg" }
+    {
+      "name": "Nuclear Power",
+      "image": "/images/industries/NUCLEAR.jpg"
+    },
+    {
+      "name": "Steel",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "Oil & Gas",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    },
+    {
+      "name": "Cement",
+      "image": "/images/industries/CEMENT-1.jpg"
+    },
+    {
+      "name": "Thermal Power",
+      "image": "/images/industries/THERMAL.jpg"
+    },
+    {
+      "name": "Marine",
+      "image": "/images/industries/MARINE.jpg"
+    }
   ]
 }

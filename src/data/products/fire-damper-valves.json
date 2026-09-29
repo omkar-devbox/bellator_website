@@ -26,29 +26,86 @@
   "shapes": "Round / Square / Rectangular",
   "endConnection": "Flanged / Slip Fit",
   "technicalSpecs": [
-    { "parameter": "Damper Type", "details": "Fire Damper Valve" },
-    { "parameter": "Size Range", "details": "150 mm to 2000 mm" },
-    { "parameter": "Fire Rating", "details": "60 / 90 / 120 / 180 Minutes" },
-    { "parameter": "Design Temperature", "details": "HVAC & Fire Rated Applications" },
-    { "parameter": "Operation", "details": "Automatic Thermal / Motorized" },
-    { "parameter": "Configurations", "details": "Curtain / Multi-Blade" },
-    { "parameter": "Shapes", "details": "Round / Square / Rectangular" },
-    { "parameter": "End Connection", "details": "Flanged / Slip Fit" },
-    { "parameter": "Leakage Performance", "details": "Low Leakage Design" },
-    { "parameter": "Standards", "details": "UL / NFPA / SMACNA / Project Specific" }
+    {
+      "parameter": "Damper Type",
+      "details": "Fire Damper Valve"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "150 mm to 2000 mm"
+    },
+    {
+      "parameter": "Fire Rating",
+      "details": "60 / 90 / 120 / 180 Minutes"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "HVAC & Fire Rated Applications"
+    },
+    {
+      "parameter": "Operation",
+      "details": "Automatic Thermal / Motorized"
+    },
+    {
+      "parameter": "Configurations",
+      "details": "Curtain / Multi-Blade"
+    },
+    {
+      "parameter": "Shapes",
+      "details": "Round / Square / Rectangular"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Slip Fit"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Low Leakage Design"
+    },
+    {
+      "parameter": "Standards",
+      "details": "UL / NFPA / SMACNA / Project Specific"
+    }
   ],
   "mocTable": [
-    { "component": "Frame", "material": "GI / SS304 / CRCA" },
-    { "component": "Blades", "material": "GI / SS304" },
-    { "component": "Shaft", "material": "SS410 / SS304" },
-    { "component": "Seals", "material": "Fire Resistant Seals" },
-    { "component": "Bearings", "material": "Maintenance Free Bearings" },
-    { "component": "Linkages", "material": "Heavy Duty Reinforced" }
+    {
+      "component": "Frame",
+      "material": "GI / SS304 / CRCA"
+    },
+    {
+      "component": "Blades",
+      "material": "GI / SS304"
+    },
+    {
+      "component": "Shaft",
+      "material": "SS410 / SS304"
+    },
+    {
+      "component": "Seals",
+      "material": "Fire Resistant Seals"
+    },
+    {
+      "component": "Bearings",
+      "material": "Maintenance Free Bearings"
+    },
+    {
+      "component": "Linkages",
+      "material": "Heavy Duty Reinforced"
+    }
   ],
   "automationOptions": [
-    { "name": "Fusible Link Operated", "desc": "Thermal fusible link release trigger mechanism (72°C / 95°C / 140°C) with mechanical spring-return" },
-    { "name": "Motorised Fire Damper", "desc": "Electric spring-return fail-safe actuator with thermal sensor and fire alarm panel integration" },
-    { "name": "Pneumatic Fire Damper", "desc": "Pneumatic cylinder actuator with solenoid valve and quick-exhaust fail-safe closure" }
+    {
+      "name": "Fusible Link Operated",
+      "desc": "Thermal fusible link release trigger mechanism (72°C / 95°C / 140°C) with mechanical spring-return"
+    },
+    {
+      "name": "Motorised Fire Damper",
+      "desc": "Electric spring-return fail-safe actuator with thermal sensor and fire alarm panel integration"
+    },
+    {
+      "name": "Pneumatic Fire Damper",
+      "desc": "Pneumatic cylinder actuator with solenoid valve and quick-exhaust fail-safe closure"
+    }
   ],
   "features": [
     "Automatic Fire Isolation",
@@ -102,24 +159,75 @@
     "Critical Infrastructure"
   ],
   "majorReferences": [
-    { "endUser": "Airports Authority of India", "application": "Terminal HVAC Fire Isolation" },
-    { "endUser": "Industrial Plants & Refineries", "application": "Critical Fire Zone Compartmentation" },
-    { "endUser": "Commercial Towers & IT Parks", "application": "Life Safety Smoke & Fire Isolation" }
+    {
+      "endUser": "Airports Authority of India",
+      "application": "Terminal HVAC Fire Isolation"
+    },
+    {
+      "endUser": "Industrial Plants & Refineries",
+      "application": "Critical Fire Zone Compartmentation"
+    },
+    {
+      "endUser": "Commercial Towers & IT Parks",
+      "application": "Life Safety Smoke & Fire Isolation"
+    }
   ],
   "galleryImages": [
-    { "title": "FIRE DAMPER VALVE CONFIGURATIONS", "subtitle": "Motorised, Fusible Link & Pneumatic (Sq. 400 mm)", "image": "/images/gallery/be130/BE130-Fire-Damper-Valves-Showcase.webp" },
-    { "title": "FUNCTIONING SEQUENCE OF FIRE DAMPER VALVES", "subtitle": "Step 1: Fire | Step 2: Damper Closed | Step 3: Damper Holding Fire", "image": "/images/gallery/be130/BE130-Functioning-Fire-Damper-Sequence.webp" },
-    { "title": "STAGE 1: FIRE CONDITION", "subtitle": "Elevated temperature detection in ductwork", "image": "/images/gallery/be130/BE130-Stage-1-Fire-Condition.webp" },
-    { "title": "STAGE 2: DAMPER CLOSED", "subtitle": "Instantaneous fail-safe thermal trip closure", "image": "/images/gallery/be130/BE130-Stage-2-Damper-Closed.webp" },
-    { "title": "STAGE 3: DAMPER HOLDING THE FIRE", "subtitle": "60 to 180 minutes structural flame barrier", "image": "/images/gallery/be130/BE130-Stage-3-Damper-Holding-Fire.webp" },
-    { "title": "FIRE DAMPERS: PROTECTING LIFE & PRESERVING SAFETY", "subtitle": "Airports, Industrial Plants, Commercial Buildings", "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp" }
+    {
+      "title": "FIRE DAMPER VALVE CONFIGURATIONS",
+      "subtitle": "Motorised, Fusible Link & Pneumatic (Sq. 400 mm)",
+      "image": "/images/gallery/be130/BE130-Fire-Damper-Valves-Showcase.webp"
+    },
+    {
+      "title": "FUNCTIONING SEQUENCE OF FIRE DAMPER VALVES",
+      "subtitle": "Step 1: Fire | Step 2: Damper Closed | Step 3: Damper Holding Fire",
+      "image": "/images/gallery/be130/BE130-Functioning-Fire-Damper-Sequence.webp"
+    },
+    {
+      "title": "STAGE 1: FIRE CONDITION",
+      "subtitle": "Elevated temperature detection in ductwork",
+      "image": "/images/gallery/be130/BE130-Stage-1-Fire-Condition.webp"
+    },
+    {
+      "title": "STAGE 2: DAMPER CLOSED",
+      "subtitle": "Instantaneous fail-safe thermal trip closure",
+      "image": "/images/gallery/be130/BE130-Stage-2-Damper-Closed.webp"
+    },
+    {
+      "title": "STAGE 3: DAMPER HOLDING THE FIRE",
+      "subtitle": "60 to 180 minutes structural flame barrier",
+      "image": "/images/gallery/be130/BE130-Stage-3-Damper-Holding-Fire.webp"
+    },
+    {
+      "title": "FIRE DAMPERS: PROTECTING LIFE & PRESERVING SAFETY",
+      "subtitle": "Airports, Industrial Plants, Commercial Buildings",
+      "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp"
+    }
   ],
   "industriesServed": [
-    { "name": "Airports", "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp" },
-    { "name": "Industrial Plants", "image": "/images/industries/industry-process.jpg" },
-    { "name": "Commercial Buildings", "image": "/images/industries/General.jpg" },
-    { "name": "Power Plants", "image": "/images/industries/THERMAL.jpg" },
-    { "name": "Data Centers", "image": "/images/industries/industry-power-gen.jpg" },
-    { "name": "Marine & Offshore", "image": "/images/industries/MARINE.jpg" }
+    {
+      "name": "Airports",
+      "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp"
+    },
+    {
+      "name": "Industrial Plants",
+      "image": "/images/industries/industry-process.jpg"
+    },
+    {
+      "name": "Commercial Buildings",
+      "image": "/images/industries/General.jpg"
+    },
+    {
+      "name": "Power Plants",
+      "image": "/images/industries/THERMAL.jpg"
+    },
+    {
+      "name": "Data Centers",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Marine & Offshore",
+      "image": "/images/industries/MARINE.jpg"
+    }
   ]
 }

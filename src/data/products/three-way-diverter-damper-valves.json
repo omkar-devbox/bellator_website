@@ -1,13 +1,14 @@
 {
   "id": "three-way-diverter-damper-valves",
-  "title": "BE60 : Three Way Diverter Damper Valves",
-  "model": "BE60 Series",
+  "title": "BE60 : THREE WAY DIVERTER DAMPER VALVES",
+  "model": "BE60 SERIES",
   "image": "/images/gallery/be60/BE60-Pneumatic-Diverter-Dia-500.webp",
   "category": "control",
   "categoryLabel": "Intelligent Flow Diversion Technology",
   "tagline": "Intelligent Flow Diversion Technology specially engineered for reliable diversion, isolation, and routing of hot gases and process media.",
   "desc": "Bellator BE60 Series Three Way Diverter Damper Valves are specially engineered for reliable diversion, isolation, and routing of hot gases and process media in critical industrial systems. Designed to handle high temperature, dusty, and corrosive gas applications, these dampers ensure low pressure drop, dependable sealing performance, and smooth operational switching between multiple process lines.",
   "longDesc": "The BE60 Series is designed for demanding service conditions where reliable diversion control is essential for safe and efficient plant operation. Optimized flow path geometry and robust fabricated construction ensure stable operation, reduced thermal stress, and long operational life under continuous duty conditions.\n\nManufactured using advanced engineering and validation practices, the BE60 Series dampers are available in multiple orientation configurations with Pneumatic, Electric, Hydraulic, or Manual operation options to suit specific application requirements.",
+  "taglineBrochure": "“Intelligent Flow Diversion • Robust Construction • Reliable Performance”",
   "keyHighlights": [
     "Reliable Flow Diversion Technology with smooth operational switching",
     "Low Pressure Drop Design with optimized flow path geometry",
@@ -23,6 +24,94 @@
   "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft",
   "actuation": "Manual / Pneumatic / Electric / Hydraulic",
   "standards": "API / ASME / ISO",
+  "shapes": "Round / Rectangular (T-Type, Y-Type, Box Type)",
+  "endConnection": "Flanged / Butt Weld",
+  "technicalSpecs": [
+    {
+      "parameter": "Damper Type",
+      "details": "Three Way Diverter"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Up to 99.95%"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "Ø150 mm to Ø3000 mm"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Butt Weld"
+    },
+    {
+      "parameter": "Rectangular Size",
+      "details": "Up to 3000 mm"
+    },
+    {
+      "parameter": "Design Options",
+      "details": "T-Type / Y-Type"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 825°C"
+    },
+    {
+      "parameter": "Standards",
+      "details": "API / ASME / ISO"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Up to PN1"
+    },
+    {
+      "parameter": "Automation",
+      "details": "Manual / Pneumatic / Electric / Hydraulic"
+    }
+  ],
+  "mocTable": [
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Disc",
+      "material": "SS304 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Seat",
+      "material": "Metallic"
+    },
+    {
+      "component": "Seal",
+      "material": "Metallic / Soft"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty Self Lubricated"
+    }
+  ],
+  "automationOptions": [
+    {
+      "name": "Pneumatic",
+      "desc": "Heavy-duty pneumatic actuator with positioners, limit switches & quick-switch fail-safe options"
+    },
+    {
+      "name": "Electric",
+      "desc": "Motorized quarter-turn/lever drive for smooth multi-port redirection and positioning"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "Electro-hydraulic power unit for high-thrust, rapid emergency diversion"
+    },
+    {
+      "name": "Manual",
+      "desc": "Heavy-duty gear operator with handwheel and clear position indicator"
+    }
+  ],
   "features": [
     "Reliable Flow Diversion Technology",
     "Low Pressure Drop Design",
@@ -32,6 +121,25 @@
     "Suitable for Dusty & Corrosive Media",
     "Available Diverter Designs: T-Type, Y-Type, and Box Type"
   ],
+  "optionalFeatures": [
+    "Anti-Blowout Shaft Design",
+    "Seismic Qualified Design",
+    "High Temperature Insulation & Cold Casing Design",
+    "Seal Air Pressurization System for 100% Zero Bypass Leakage",
+    "C5 / NORSOK Protective Coating System",
+    "Extended Bonnet & Shaft Arrangement"
+  ],
+  "inspectionTesting": [
+    "Leakage Testing",
+    "Functional Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered"
+  ],
   "applications": [
     "WHRB Systems",
     "SCR / FGD Systems",
@@ -40,5 +148,75 @@
     "Multi-Stream Process Routing",
     "Emergency Bypass Systems",
     "Process Shutdown Systems"
+  ],
+  "majorReferences": [
+    {
+      "endUser": "Welspun",
+      "application": "Waste Heat Recovery System",
+      "logo": "/images/clients/welspun-logo.png"
+    },
+    {
+      "endUser": "Haldia Petrochemicals",
+      "application": "RTO System - Gas Diversion",
+      "logo": "/images/clients/haldia-logo.png"
+    },
+    {
+      "endUser": "Unilever",
+      "application": "Waste Heat Recovery System",
+      "logo": "/images/clients/unilever-logo.png"
+    },
+    {
+      "endUser": "Tamilnadu Petroproducts Ltd (TPL)",
+      "application": "Hot Flue Gas Diversion system",
+      "logo": "/images/clients/tpl-logo.png"
+    }
+  ],
+  "galleryImages": [
+    {
+      "title": "PNEUMATIC THREE WAY DIVERTER DAMPER",
+      "subtitle": "Dia 500 mm",
+      "image": "/images/gallery/be60/BE60-Pneumatic-Diverter-Dia-500.webp"
+    },
+    {
+      "title": "MOTORISED THREE WAY DIVERTER DAMPER",
+      "subtitle": "Dia 1200 mm (Pair)",
+      "image": "/images/gallery/be60/BE60-Motorised-Diverter-Dia-1200-Pair.webp"
+    },
+    {
+      "title": "MOTORISED THREE WAY DIVERTER DAMPER",
+      "subtitle": "Dia 1200 mm (Production Line)",
+      "image": "/images/gallery/be60/BE60-Motorised-Diverter-Dia-1200-Line.webp"
+    },
+    {
+      "title": "BE60 ORIENTATION OPTIONS",
+      "subtitle": "BE-1 to BE-7 Flow Routing Configurations",
+      "image": "/images/gallery/be60/BE60-Orientation-Options-Chart.webp"
+    }
+  ],
+  "industriesServed": [
+    {
+      "name": "Power Generation & WHRB",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Petrochemicals & RTO",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    },
+    {
+      "name": "Chemical & Process",
+      "image": "/images/industries/industry-chemical.jpg"
+    },
+    {
+      "name": "Incineration Systems",
+      "image": "/images/industries/industry-process.jpg"
+    },
+    {
+      "name": "Steel & Metallurgy",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "FGD / SCR Systems",
+      "image": "/images/industries/industry-cement.jpg"
+    }
   ]
 }

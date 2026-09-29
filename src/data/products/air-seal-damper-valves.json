@@ -1,36 +1,238 @@
 {
   "id": "air-seal-damper-valves",
-  "title": "Air Seal Damper Valves",
-  "model": "BE-50 Series",
-  "image": "/images/products/BE50-Electric-Air-Seal-Butterfly-Damper-Valve.png",
+  "title": "BE50 : AIR SEAL DAMPER VALVES",
+  "model": "BE50 SERIES",
+  "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Butterfly-Dia-1000-Line.webp",
   "category": "isolation",
   "categoryLabel": "Zero-Leakage Barrier",
-  "tagline": "100% Man-Safe zero-leakage isolation damper with continuous pressurized seal air injection system.",
-  "desc": "100% sealing efficiency is achieved by injecting pressurized, preheated seal air into the gap maintained between the tandem flaps. The overpressure air barrier completely eliminates fugitive toxic or hazardous gas pass-through for 100% man-safe maintenance isolation.",
-  "longDesc": "The BE-50 Series Air Seal Butterfly Damper provides absolute 100% gas-tight isolation for applications where human life safety is critical during continuous plant operations. By maintaining a seal air pressure chamber between double tandem discs at a higher pressure than the duct gas, any leakage that occurs consists strictly of clean seal air into the duct.",
+  "tagline": "Engineered for Zero Leakage Performance with Pressurized Seal Air Barrier Technology.",
+  "desc": "Bellator BE50 Series Air Seal Damper Valves are specially engineered for critical process applications requiring extremely high sealing efficiency and dependable downstream isolation performance. The advanced air seal arrangement creates a pressurized sealing barrier between sealing surfaces, significantly reducing leakage and ensuring reliable isolation under demanding operating conditions.",
+  "longDesc": "Designed for severe service and high temperature applications, the BE50 Series provides enhanced sealing reliability where conventional sealing arrangements are insufficient. The optimized sealing system ensures improved operational safety and dependable shut-off performance during continuous operation and maintenance isolation conditions.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE50 Series dampers are suitable for critical process gas handling applications. These dampers are available in Butterfly, Diverter, Guillotine, Poppet, and Multi-Louver configurations with various automation options as per application requirements.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
   "keyHighlights": [
-    "100% True Zero Fugitive Gas Leakage Isolation",
-    "Dedicated Seal Air Blower skid with electric heaters and redundant blowers",
-    "Enables safe personnel entry into downstream ducts during live operation",
-    "EN 1751 Class 4 tightest isolation certified"
+    "Near Zero Leakage Performance (99.95% without seal air & 100% with seal air)",
+    "Advanced Seal Air Barrier Technology with pressurized chamber for positive maintenance isolation",
+    "Heavy Duty Fabricated Construction suitable for critical process & hazardous gas systems",
+    "Available across Butterfly, Diverter, Guillotine, Poppet & Multi-Louver configurations",
+    "Sizes from Ø300 mm to Ø5000 mm (Round) and up to 12000 mm (Rectangular)"
   ],
-  "leakage": "100% Zero-Leakage (Continuous Pressurized Air Barrier)",
-  "temp": "-25°C to +825°C",
-  "pressure": "Up to 10,197 mmWC",
-  "sizes": "Ø300 mm to Ø7,000 mm Round / Rectangular up to 12,000 mm",
-  "materials": "ASTM A36, IS2062, ASTM A240 Type 304L/316L/310S, ASTM A516 Gr-70",
-  "actuation": "Electric Actuator / Pneumatic Cylinder with Dedicated Seal Air Blower Skid",
-  "standards": "EN 1751 Class 4, AMCA 500-D, CE / SIL-3 Ready, Seismic Qualified",
+  "leakage": "99.95% Without Seal Air and 100% with Seal Air",
+  "temp": "-25°C to 825°C",
+  "pressure": "Up to PN1",
+  "sizes": "Ø300 mm to Ø5000 mm Round / Rectangular Up to 12000 mm",
+  "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: IS2062 / SA516 Gr-70 / SS304 | Shaft: EN8D / SS410 / SS316",
+  "actuation": "Manual / Pneumatic / Electric / Hydraulic",
+  "standards": "API / ASME / ISO / Customer Specific",
+  "shapes": "Round / Rectangular / Diverter / Poppet",
+  "endConnection": "Wafer / Flanged / Butt Weld",
+  "technicalSpecs": [
+    {
+      "parameter": "Damper Type",
+      "details": "Air Seal Damper Valve"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "Ø300 mm to Ø5000 mm"
+    },
+    {
+      "parameter": "Rectangular Size",
+      "details": "Up to 12000 mm"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 825°C"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Up to PN1"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "99.95% Without Seal Air and 100% with Seal Air"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Wafer / Flanged / Butt Weld"
+    },
+    {
+      "parameter": "Seal Type",
+      "details": "Pressurized Seal Air Barrier"
+    },
+    {
+      "parameter": "Standards",
+      "details": "API / ASME / ISO"
+    },
+    {
+      "parameter": "Automation",
+      "details": "Manual / Pneumatic / Electric / Hydraulic"
+    }
+  ],
+  "mocTable": [
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Disc",
+      "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Seat",
+      "material": "Metallic"
+    },
+    {
+      "component": "Seal",
+      "material": "Metallic + Air Seal / Soft + Air Seal"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty Self Lubricated"
+    }
+  ],
+  "automationOptions": [
+    {
+      "name": "Pneumatic",
+      "desc": "Heavy-duty pneumatic cylinder & scotch yoke actuator packages with positioners and solenoids"
+    },
+    {
+      "name": "Electric",
+      "desc": "Motorized quarter-turn and multi-turn smart actuator systems with modulating & ON/OFF controls"
+    },
+    {
+      "name": "Manual",
+      "desc": "Precision heavy-duty manual gearbox with handwheel & position indicator"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "High-thrust electro-hydraulic actuators for quick shutoff and fail-safe operation"
+    }
+  ],
   "features": [
-    "Tandem twin-blade configuration with internal pressurization chamber",
-    "Automated seal air pressure regulation interlocked with plant DCS",
-    "Heavy-duty shaft packing glands with lantern ring purge",
-    "Seismic and high-vibration qualified robust structure"
+    "Near Zero Leakage Performance",
+    "Advanced Seal Air Barrier Technology",
+    "Positive Maintenance Isolation",
+    "Heavy Duty Fabricated Construction",
+    "Suitable for Critical Process Systems",
+    "Integrated Seal Air System Solutions"
+  ],
+  "engineeringAdvantages": [
+    "Overcomes Conventional Damper Challenges (Leakage across sealing surfaces & unsafe downstream maintenance)",
+    "Pressurized seal air barrier maintains Pa > Pi (Seal Air Pressure > Inlet Pressure) for 100% upstream media isolation",
+    "Near zero downstream leakage protecting maintenance personnel and plant assets",
+    "Prevents thermal distortion leakage with reliable sealing under elevated temperatures up to 825°C",
+    "Eliminates ineffective shut-off under severe process and hazardous gas services"
+  ],
+  "inspectionTesting": [
+    "Leakage Testing",
+    "Seal Air Performance Testing",
+    "Functional Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered"
   ],
   "applications": [
-    "Selective Catalytic Reduction (SCR) & DeNOx Isolation",
-    "Flue Gas Desulfurization (FGD) Absorber Inlet/Outlet",
-    "Toxic Chemical and Hazardous Exhaust Gas Systems",
-    "Nuclear Ventilation & Dangerous Media Containment"
+    "RTO / SCR / FGD Systems",
+    "Incinerator Systems",
+    "Hot Gas Isolation",
+    "Maintenance Shut-Off Applications",
+    "Hazardous Gas Isolation"
+  ],
+  "majorReferences": [
+    {
+      "endUser": "AM/NS INDIA",
+      "application": "RTO Systems",
+      "logo": "/images/clients/amns-logo.png"
+    },
+    {
+      "endUser": "JSW",
+      "application": "Process hot gas Isolation",
+      "logo": "/images/clients/jsw-logo.png"
+    },
+    {
+      "endUser": "Saudi Electricity Company",
+      "application": "Control / Isolation of Augmenting Air to Burner",
+      "logo": "/images/clients/saudi-electricity-company-logo.png"
+    },
+    {
+      "endUser": "Reliance Industries Limited",
+      "application": "Flue Gas Isolation",
+      "logo": "/images/clients/reliance-logo.png"
+    }
+  ],
+  "galleryImages": [
+    {
+      "title": "PNEUMATIC AIR SEAL BUTTERFLY",
+      "subtitle": "Dia 1000 mm",
+      "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Butterfly-Dia-1000-Line.webp"
+    },
+    {
+      "title": "PNEUMATIC AIR SEAL DIVERTER",
+      "subtitle": "Dia 800 mm",
+      "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Diverter-Dia-800.webp"
+    },
+    {
+      "title": "PNEUMATIC AIR SEAL BUTTERFLY",
+      "subtitle": "Dia 400 mm",
+      "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Butterfly-Dia-400.webp"
+    },
+    {
+      "title": "MOTORIZED AIR SEAL DAMPER",
+      "subtitle": "Dia 1200 mm",
+      "image": "/images/gallery/be50/BE50-Motorized-Air-Seal-Damper-Dia-1200.webp"
+    },
+    {
+      "title": "PNEUMATIC AIR SEAL DAMPER",
+      "subtitle": "Dia 1000 mm",
+      "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Damper-Dia-1000.webp"
+    },
+    {
+      "title": "PNEUMATIC AIR SEAL DAMPER",
+      "subtitle": "Dia 1700 mm",
+      "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Damper-Dia-1700.webp"
+    },
+    {
+      "title": "PNEUMATIC AIR SEAL POPPET VALVE",
+      "subtitle": "Dia 900 mm",
+      "image": "/images/gallery/be50/BE50-Pneumatic-Air-Seal-Poppet-Valve-Dia-900.webp"
+    },
+    {
+      "title": "SEAL AIR BARRIER SCHEMATIC",
+      "subtitle": "Construction & Pressurization Principle",
+      "image": "/images/gallery/be50/BE50-Construction-Features-Seal-Air-Schematic.webp"
+    }
+  ],
+  "industriesServed": [
+    {
+      "name": "Steel",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "Power Generation",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Petrochemicals",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    },
+    {
+      "name": "Chemical",
+      "image": "/images/industries/industry-chemical.jpg"
+    },
+    {
+      "name": "Incineration & RTO",
+      "image": "/images/industries/industry-process.jpg"
+    },
+    {
+      "name": "Cement",
+      "image": "/images/industries/industry-cement.jpg"
+    }
   ]
 }

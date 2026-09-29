@@ -24,22 +24,93 @@
   "materials": "ASTM A 36 / IS2062 E250 A, B, Br / ASTM A 516 Gr-70 / As per Client Requirement",
   "actuation": "Manual / Motorized / Pneumatic / Hydraulic etc.",
   "standards": "ASME B16.34 / ASME SEC VIII; SEC V; SEC IX",
+  "shapes": "Round",
   "endConnection": "Double Flanged",
-  "flangeDrilling": "IS 6392 / ASME B16.5 / ASME B16.47 / BS EN 1092-1 / Mfg. STD.",
-  "testingStandards": "ANSI FCI 70-2 / DIN 3230 / Mfg. STD.",
-  "flowingMedia": "Air / Coke Oven Gas / Flue Gas etc.",
   "technicalSpecs": [
-    { "parameter": "Size Range", "details": "300 mm to 3000 mm" },
-    { "parameter": "MOC", "details": "ASTM A 36 / IS2062 E250 A, B, Br / ASTM A 516 Gr-70 / As per Client Requirement" },
-    { "parameter": "Flowing Media", "details": "Air / Coke Oven Gas / Flue Gas etc." },
-    { "parameter": "Design Temp.", "details": "-25°C to 350°C" },
-    { "parameter": "Pressure Ratings", "details": "PN1 / PN3" },
-    { "parameter": "End Connection", "details": "Double Flanged" },
-    { "parameter": "Flange Drilling", "details": "IS 6392 / ASME B16.5 / ASME B16.47 / BS EN 1092-1 / Mfg. STD." },
-    { "parameter": "Testing", "details": "ANSI FCI 70-2 / DIN 3230 / Mfg. STD." },
-    { "parameter": "Sealing Efficiency", "details": "100% Leak Proof [Through Body and Stem] & 100% at Downstream" },
-    { "parameter": "Drive Mode", "details": "Manual / Motorized / Pneumatic / Hydraulic etc." },
-    { "parameter": "Codes and Standards", "details": "ASME B16.34 / ASME SEC VIII; SEC V; SEC IX" }
+    {
+      "parameter": "Size Range",
+      "details": "300 mm to 3000 mm"
+    },
+    {
+      "parameter": "MOC",
+      "details": "ASTM A 36 / IS2062 E250 A, B, Br / ASTM A 516 Gr-70 / As per Client Requirement"
+    },
+    {
+      "parameter": "Flowing Media",
+      "details": "Air / Coke Oven Gas / Flue Gas etc."
+    },
+    {
+      "parameter": "Design Temp.",
+      "details": "-25°C to 350°C"
+    },
+    {
+      "parameter": "Pressure Ratings",
+      "details": "PN1 / PN3"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Double Flanged"
+    },
+    {
+      "parameter": "Flange Drilling",
+      "details": "IS 6392 / ASME B16.5 / ASME B16.47 / BS EN 1092-1 / Mfg. STD."
+    },
+    {
+      "parameter": "Testing",
+      "details": "ANSI FCI 70-2 / DIN 3230 / Mfg. STD."
+    },
+    {
+      "parameter": "Sealing Efficiency",
+      "details": "100% Leak Proof [Through Body and Stem] & 100% at Downstream"
+    },
+    {
+      "parameter": "Drive Mode",
+      "details": "Manual / Motorized / Pneumatic / Hydraulic etc."
+    },
+    {
+      "parameter": "Codes and Standards",
+      "details": "ASME B16.34 / ASME SEC VIII; SEC V; SEC IX"
+    }
+  ],
+  "mocTable": [
+    {
+      "component": "Body & Bonnet",
+      "material": "ASTM A36 / IS2062 / ASTM A516 Gr-70 / Client Specific"
+    },
+    {
+      "component": "Double Discs",
+      "material": "Fabricated Steel with Hardfaced Stellite / SS Seating"
+    },
+    {
+      "component": "Spindle / Stem",
+      "material": "Rising Spindle Stainless Steel / High Tensile Alloy"
+    },
+    {
+      "component": "Seating Surfaces",
+      "material": "Taper Seat Metal-to-Metal Hard-Faced"
+    },
+    {
+      "component": "Stuffing Box",
+      "material": "Heavy-Duty with Purging Arrangement for Atmosphere Sealing"
+    }
+  ],
+  "automationOptions": [
+    {
+      "name": "Motorized / Electric",
+      "desc": "AUMA / Rotork or equivalent multi-turn actuator with bevel gearbox and limit switches"
+    },
+    {
+      "name": "Pneumatic",
+      "desc": "Heavy-duty linear pneumatic cylinder actuation with fail-safe features"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "Hydraulic power cylinder package for high thrust and emergency trip closing"
+    },
+    {
+      "name": "Manual",
+      "desc": "Manual bevel gear drive with handwheel for smooth, controlled operation"
+    }
   ],
   "features": [
     "Taper seat design for positive wedging closure",
@@ -76,22 +147,71 @@
     "Petrochemical Process Systems"
   ],
   "majorReferences": [
-    { "endUser": "JSW", "application": "Coke Oven Gas isolation", "logo": "/images/clients/jsw-logo.png" },
-    { "endUser": "AM/NS INDIA", "application": "Process hot gas Isolation", "logo": "/images/clients/amns-logo.png" },
-    { "endUser": "TATA STEEL", "application": "Coke Oven Gas isolation", "logo": "/images/clients/tata-steel-logo.png" },
-    { "endUser": "adani Petrochemicals", "application": "Hot Air Isolation", "logo": "/images/clients/adani-logo.png" }
+    {
+      "endUser": "JSW",
+      "application": "Coke Oven Gas isolation",
+      "logo": "/images/clients/jsw-logo.png"
+    },
+    {
+      "endUser": "AM/NS INDIA",
+      "application": "Process hot gas Isolation",
+      "logo": "/images/clients/amns-logo.png"
+    },
+    {
+      "endUser": "TATA STEEL",
+      "application": "Coke Oven Gas isolation",
+      "logo": "/images/clients/tata-steel-logo.png"
+    },
+    {
+      "endUser": "adani Petrochemicals",
+      "application": "Hot Air Isolation",
+      "logo": "/images/clients/adani-logo.png"
+    }
   ],
   "galleryImages": [
-    { "title": "MOTORISED DOUBLE DISC GATE VALVE", "subtitle": "Size Dia 1400 mm", "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1400.webp" },
-    { "title": "MOTORISED DOUBLE DISC GATE VALVE", "subtitle": "Size Dia 1200 mm", "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1200.webp" },
-    { "title": "MOTORISED DOUBLE DISC GATE VALVE", "subtitle": "Vertical Rising Spindle Construction", "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Vertical-Assembly.webp" },
-    { "title": "LEAKAGE TESTING - BODY HYDRO TEST", "subtitle": "Body Test 1.5x Design Pressure", "image": "/images/gallery/be100/BE100-Leakage-Testing-Body-Hydro-Test.webp" },
-    { "title": "LEAKAGE TESTING - SEAT HYDRO TEST", "subtitle": "Seat Test 1.1x Design Pressure • 100% Leak Proof", "image": "/images/gallery/be100/BE100-Leakage-Testing-Seat-Hydro-Test.webp" },
-    { "title": "DIMENSIONAL DRAWING & GA DATA", "subtitle": "DN300 to DN2000 Standard Dimensions", "image": "/images/gallery/be100/BE100-Dimensional-Drawing.webp" }
+    {
+      "title": "MOTORISED DOUBLE DISC GATE VALVE",
+      "subtitle": "Size Dia 1400 mm",
+      "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1400.webp"
+    },
+    {
+      "title": "MOTORISED DOUBLE DISC GATE VALVE",
+      "subtitle": "Size Dia 1200 mm",
+      "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1200.webp"
+    },
+    {
+      "title": "MOTORISED DOUBLE DISC GATE VALVE",
+      "subtitle": "Vertical Rising Spindle Construction",
+      "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Vertical-Assembly.webp"
+    },
+    {
+      "title": "LEAKAGE TESTING - BODY HYDRO TEST",
+      "subtitle": "Body Test 1.5x Design Pressure",
+      "image": "/images/gallery/be100/BE100-Leakage-Testing-Body-Hydro-Test.webp"
+    },
+    {
+      "title": "LEAKAGE TESTING - SEAT HYDRO TEST",
+      "subtitle": "Seat Test 1.1x Design Pressure • 100% Leak Proof",
+      "image": "/images/gallery/be100/BE100-Leakage-Testing-Seat-Hydro-Test.webp"
+    },
+    {
+      "title": "DIMENSIONAL DRAWING & GA DATA",
+      "subtitle": "DN300 to DN2000 Standard Dimensions",
+      "image": "/images/gallery/be100/BE100-Dimensional-Drawing.webp"
+    }
   ],
   "industriesServed": [
-    { "name": "Power", "image": "/images/industries/industry-power-gen.jpg" },
-    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
-    { "name": "Petrochem", "image": "/images/industries/industry-oil-gas.jpg" }
+    {
+      "name": "Power",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Steel",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "Petrochem",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    }
   ]
 }

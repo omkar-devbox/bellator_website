@@ -1,36 +1,243 @@
 {
   "id": "triple-offset-butterfly-damper-valves",
-  "title": "Triple Offset Butterfly Damper Valves",
-  "model": "BE-30 Series",
-  "image": "/images/products/Motorized-Triple-Offset-Butterfly-Damper-Valve.png",
+  "title": "BE30 : TRIPLE OFFSET BUTTERFLY DAMPER VALVES",
+  "model": "BE30 SERIES",
+  "image": "/images/gallery/be30/BE30-Pneumatic-Triple-Offset-Dia-750.webp",
   "category": "isolation",
-  "categoryLabel": "Conical Cam Geometry",
-  "tagline": "Severe duty metal-to-metal zero-leakage triple eccentric damper for temperatures up to 650°C.",
-  "desc": "Combines two eccentric shaft offsets with a third conical angle offset on the seating surface. Eliminates rubbing friction across the entire 90° stroke, achieving true metal-to-metal zero leakage shutoff in high temperature gas and severe chemical processing.",
-  "longDesc": "Bellator BE-30 Triple Offset Valves represent the pinnacle of rotary valve engineering. The third conical offset ensures the disc engages the body seat only at the final point of shut-off, creating a non-rubbing, torque-seated metal-to-metal boundary that withstands extreme thermal cycling and aggressive chemical atmospheres.",
+  "categoryLabel": "Advanced Triple Offset Sealing",
+  "tagline": "Advanced Triple Offset Sealing Technology engineered for severe service isolation applications requiring reliable shut-off performance.",
+  "desc": "Bellator BE30 Series Triple Offset Butterfly Damper Valves are engineered for severe service isolation applications requiring reliable shut-off performance under high temperature and demanding process conditions. The advanced triple offset geometry eliminates seat rubbing during operation, ensuring frictionless sealing, reduced wear, lower operating torque, and extended operational life.",
+  "longDesc": "Designed for critical applications involving high temperature gases, steam, thermal cycling, and continuous operation, the BE30 Series delivers dependable sealing performance under demanding service conditions. The precision-engineered sealing arrangement provides improved operational reliability and consistent performance over long operating cycles.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE30 Series dampers are suitable for automated and manual operation with Pneumatic, Electric, Hydraulic, or Gear operated configurations available as per application requirements.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
   "keyHighlights": [
-    "Metal-to-Metal Zero Leakage shutoff (Class VI / Bubble Tight)",
-    "Operates seamlessly from -25°C up to +650°C",
-    "Laminated stainless steel & graphite or solid Inconel seal ring",
-    "Bi-directional zero-leakage pressure retention"
+    "Advanced Triple Offset Geometry eliminating seat rubbing during operation",
+    "Frictionless Sealing with Reduced Seat Wear & Lower Operating Torque",
+    "100% Sealing Performance & Metal Seated High Temperature Construction up to 650°C",
+    "Bi-Directional Sealing Capability & Stable Performance at Elevated Temperatures",
+    "Suitable for Severe Service Applications & Minimal Pressure Loss Across Valve"
   ],
-  "leakage": "Metal-to-Metal Zero Leakage (Class VI / Bubble Tight)",
-  "temp": "-25°C to +650°C",
-  "pressure": "PN10 / PN16 / PN25",
-  "sizes": "Ø150 mm to Ø1,200 mm & above",
-  "materials": "A216 Gr. WCB, A351 CF8M, Inconel 625 Laminated Seal Ring, Stellite Body Seat",
-  "actuation": "Electric Multi-Turn/Quarter-Turn Actuator, Pneumatic Cylinder, Manual Gear",
-  "standards": "API 609, ASME B16.34, ISO 10497 Fire Safe, CE / SIL-3 Qualified",
+  "leakage": "100% Sealing",
+  "temp": "-25°C to 650°C",
+  "pressure": "Up to PN25",
+  "sizes": "Ø150 mm to Ø1200 mm",
+  "materials": "Body: IS2062 / SA516 Gr-70 / WCB | Disc: SS304 / SS316 / CF8 / CF8M | Shaft: EN8D / SS410 / SS316 | Seat: Metal Seated | Seal: SS + Graphite / Laminated Seal",
+  "actuation": "Manual / Pneumatic / Electric / Hydraulic",
+  "standards": "API / ASME / ISO / Customer Specific",
+  "shapes": "Round (Triple Offset Geometry)",
+  "endConnection": "Wafer / Flanged / Butt Weld",
+  "technicalSpecs": [
+    {
+      "parameter": "Damper Valve Type",
+      "details": "Triple Offset Butterfly"
+    },
+    {
+      "parameter": "Operation",
+      "details": "Manual / Pneumatic / Electric / Hydraulic"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "Ø150 mm to Ø1200 mm"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Wafer / Flanged / Butt Weld"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 650°C"
+    },
+    {
+      "parameter": "Design Type",
+      "details": "Triple Offset Geometry"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Up to PN25"
+    },
+    {
+      "parameter": "Standards",
+      "details": "API / ASME / ISO"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "100% Sealing"
+    },
+    {
+      "parameter": "Automation",
+      "details": "Pneumatic / Electric / Hydraulic"
+    }
+  ],
+  "mocTable": [
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / WCB / Customer Specific"
+    },
+    {
+      "component": "Disc",
+      "material": "SS304 / SS316 / CF8 / CF8M / Customer Specific"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Seat",
+      "material": "Metal Seated"
+    },
+    {
+      "component": "Seal",
+      "material": "SS + Graphite / Laminated Seal"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty High Temperature Bearings"
+    }
+  ],
+  "automationOptions": [
+    {
+      "name": "Pneumatic",
+      "desc": "Pneumatic cylinder / scotch yoke actuation with positioners, limit switches & fail-safe reservoirs"
+    },
+    {
+      "name": "Electric",
+      "desc": "Motorized quarter-turn actuator packages for precision modulation and ON/OFF shutoff"
+    },
+    {
+      "name": "Manual",
+      "desc": "Heavy-duty manual gearbox with handwheel & visual position indicator"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "Electro-hydraulic power unit for high-thrust, rapid fail-safe operation"
+    }
+  ],
   "features": [
-    "Zero-rubbing 90-degree rotary stroke eliminating galling",
-    "Stellite hard-faced integrally welded body seat",
-    "Full metallic fire-safe architecture",
-    "Low breakout and running torque characteristics"
+    "Frictionless sealing during operation",
+    "Reduced seat wear",
+    "Suitable for thermal cycling applications",
+    "Bi-directional sealing capability",
+    "Stable sealing performance at elevated temp.",
+    "Reduced actuator sizing requirement",
+    "Metal seated high temperature construction",
+    "Suitable for severe service applications",
+    "Minimal pressure loss across valve"
+  ],
+  "optionalFeatures": [
+    "Anti-Blowout Shaft Design",
+    "Seismic Qualified Design",
+    "High Pressure Design",
+    "C5 / NORSOK Paint System",
+    "Extended Shaft Arrangement",
+    "Locking Arrangement"
+  ],
+  "inspectionTesting": [
+    "Leakage Testing (Hydro/Pne.)",
+    "Functional Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered"
   ],
   "applications": [
-    "High Temperature Steam and Hydrocarbon Vapors",
-    "Sulfur Recovery Units (SRU) & Acid Gas Streams",
-    "Refinery Catalytic Cracking (FCCU) Flue Gas",
-    "District Heating and Superheated Steam Lines"
+    "Boiler isolation systems",
+    "Hot blast furnace systems",
+    "Process gas shut-off",
+    "High temperature air systems",
+    "Thermal oxidizer systems",
+    "Incineration systems",
+    "Flare gas systems"
+  ],
+  "majorReferences": [
+    {
+      "endUser": "JSW",
+      "application": "Blast Furnace Gas Isolation",
+      "logo": "/images/clients/jsw-logo.png"
+    },
+    {
+      "endUser": "AM/NS INDIA",
+      "application": "Process hot gas Isolation",
+      "logo": "/images/clients/amns-logo.png"
+    },
+    {
+      "endUser": "TATA STEEL",
+      "application": "Flue Gas Isolation",
+      "logo": "/images/clients/tata-steel-logo.png"
+    },
+    {
+      "endUser": "IMFA",
+      "application": "Submerged Arc furnace flue gas isolation",
+      "logo": "/images/clients/imfa-logo.png"
+    }
+  ],
+  "galleryImages": [
+    {
+      "title": "PNEUMATIC TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 750 mm",
+      "image": "/images/gallery/be30/BE30-Pneumatic-Triple-Offset-Dia-750.webp"
+    },
+    {
+      "title": "MOTORISED TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 600 mm",
+      "image": "/images/gallery/be30/BE30-Motorised-Triple-Offset-Dia-600.webp"
+    },
+    {
+      "title": "MANUAL TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 615 mm",
+      "image": "/images/gallery/be30/BE30-Manual-Triple-Offset-Dia-615.webp"
+    },
+    {
+      "title": "MANUAL TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 650 mm",
+      "image": "/images/gallery/be30/BE30-Manual-Triple-Offset-Dia-650.webp"
+    },
+    {
+      "title": "MOTORISED TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 750 mm",
+      "image": "/images/gallery/be30/BE30-Motorised-Triple-Offset-Dia-750.webp"
+    },
+    {
+      "title": "MOTORISED TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 600 mm (Horizontal)",
+      "image": "/images/gallery/be30/BE30-Motorised-Triple-Offset-Dia-600-Horizontal.webp"
+    },
+    {
+      "title": "MOTORISED TRIPLE OFFSET DAMPER",
+      "subtitle": "Dia 800 mm",
+      "image": "/images/gallery/be30/BE30-Motorised-Triple-Offset-Dia-800.webp"
+    },
+    {
+      "title": "ADVANCED TRIPLE OFFSET GEOMETRY",
+      "subtitle": "Design & Construction Schematic",
+      "image": "/images/gallery/be30/BE30-Triple-Offset-Construction-Diagram.webp"
+    }
+  ],
+  "industriesServed": [
+    {
+      "name": "Steel",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "Power Generation",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Petrochemicals",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    },
+    {
+      "name": "Chemical",
+      "image": "/images/industries/industry-chemical.jpg"
+    },
+    {
+      "name": "Incineration & RTO",
+      "image": "/images/industries/industry-process.jpg"
+    },
+    {
+      "name": "Cement",
+      "image": "/images/industries/industry-cement.jpg"
+    }
   ]
 }

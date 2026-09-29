@@ -27,31 +27,94 @@
   "endConnection": "Flanged / Butt Weld",
   "rectangularSize": "Up to 5000 mm",
   "technicalSpecs": [
-    { "parameter": "Damper Type", "details": "Guillotine Damper Valve" },
-    { "parameter": "Leakage Performance", "details": "Up to 99.99%" },
-    { "parameter": "Size Range", "details": "Ø300 mm to Ø5000 mm" },
-    { "parameter": "End Connection", "details": "Flanged / Butt Weld" },
-    { "parameter": "Rectangular Size", "details": "Up to 5000 mm" },
-    { "parameter": "Blade Design", "details": "Single / Double Blade" },
-    { "parameter": "Design Temperature", "details": "-25°C to 825°C" },
-    { "parameter": "Mounting", "details": "Vertical / Horizontal" },
-    { "parameter": "Pressure Rating", "details": "Up to PN1" },
-    { "parameter": "Standards", "details": "API / ASME / ISO" },
-    { "parameter": "Automation", "details": "Manual / Pneumatic / Electric / Hydraulic" }
+    {
+      "parameter": "Damper Type",
+      "details": "Guillotine Damper Valve"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Up to 99.99%"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "Ø300 mm to Ø5000 mm"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Butt Weld"
+    },
+    {
+      "parameter": "Rectangular Size",
+      "details": "Up to 5000 mm"
+    },
+    {
+      "parameter": "Blade Design",
+      "details": "Single / Double Blade"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 825°C"
+    },
+    {
+      "parameter": "Mounting",
+      "details": "Vertical / Horizontal"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Up to PN1"
+    },
+    {
+      "parameter": "Standards",
+      "details": "API / ASME / ISO"
+    },
+    {
+      "parameter": "Automation",
+      "details": "Manual / Pneumatic / Electric / Hydraulic"
+    }
   ],
   "mocTable": [
-    { "component": "Body", "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific" },
-    { "component": "Disc", "material": "SS304 / SS316 / Customer Specific" },
-    { "component": "Shaft", "material": "EN8D / SS410 / SS316 / Customer Specific" },
-    { "component": "Seat", "material": "Metallic" },
-    { "component": "Seal", "material": "Metallic / Soft" },
-    { "component": "Bearings", "material": "Heavy Duty Self Lubricated" }
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Disc",
+      "material": "SS304 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Seat",
+      "material": "Metallic"
+    },
+    {
+      "component": "Seal",
+      "material": "Metallic / Soft"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty Self Lubricated"
+    }
   ],
   "automationOptions": [
-    { "name": "Pneumatic", "desc": "Pneumatic cylinder actuation with solenoid valves, limit switches & fail-safe air reservoir tank" },
-    { "name": "Electric", "desc": "Electric motor drive with precision rack & pinion or lead screw mechanism for smooth blade travel" },
-    { "name": "Hydraulic", "desc": "Electro-hydraulic power pack cylinder drives for high thrust and emergency rapid closure" },
-    { "name": "Manual", "desc": "Manual handwheel or chain pulley operated rack & pinion / lead screw mechanisms" }
+    {
+      "name": "Pneumatic",
+      "desc": "Pneumatic cylinder actuation with solenoid valves, limit switches & fail-safe air reservoir tank"
+    },
+    {
+      "name": "Electric",
+      "desc": "Electric motor drive with precision rack & pinion or lead screw mechanism for smooth blade travel"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "Electro-hydraulic power pack cylinder drives for high thrust and emergency rapid closure"
+    },
+    {
+      "name": "Manual",
+      "desc": "Manual handwheel or chain pulley operated rack & pinion / lead screw mechanisms"
+    }
   ],
   "features": [
     "Positive Isolation Design",
@@ -96,28 +159,98 @@
     "Maintenance Isolation Applications"
   ],
   "majorReferences": [
-    { "endUser": "TATA STEEL", "application": "Process Isolation Systems", "logo": "/images/clients/tata-steel-logo.png" },
-    { "endUser": "Shree Cement", "application": "At Recirculation Duct", "logo": "/images/clients/shree-cement-logo.png" },
-    { "endUser": "JSW", "application": "Fitted at Reactor Inlet", "logo": "/images/clients/jsw-logo.png" },
-    { "endUser": "ADITYA BIRLA CARBON", "application": "Flue Gas Isolation", "logo": "/images/clients/aditya-birla-carbon-logo.png" }
+    {
+      "endUser": "TATA STEEL",
+      "application": "Process Isolation Systems",
+      "logo": "/images/clients/tata-steel-logo.png"
+    },
+    {
+      "endUser": "Shree Cement",
+      "application": "At Recirculation Duct",
+      "logo": "/images/clients/shree-cement-logo.png"
+    },
+    {
+      "endUser": "JSW",
+      "application": "Fitted at Reactor Inlet",
+      "logo": "/images/clients/jsw-logo.png"
+    },
+    {
+      "endUser": "ADITYA BIRLA CARBON",
+      "application": "Flue Gas Isolation",
+      "logo": "/images/clients/aditya-birla-carbon-logo.png"
+    }
   ],
   "galleryImages": [
-    { "title": "MOTORISED GUILLOTINE DAMPER", "subtitle": "Size Dia 3600 mm", "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-3600.webp" },
-    { "title": "MOTORISED GUILLOTINE DAMPER", "subtitle": "Size 2200 X 1300 mm", "image": "/images/gallery/be90/BE90-Motorised-Guillotine-2200x1300.webp" },
-    { "title": "MOTORISED GUILLOTINE DAMPER", "subtitle": "Size Dia 1400 mm (SS304)", "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-1400-SS304.webp" },
-    { "title": "CHAIN PULLEY OPERATED GUILLOTINE", "subtitle": "Rack N Pinion Mechanism Size 1000X800 mm", "image": "/images/gallery/be90/BE90-Chain-Pulley-Rack-Pinion-1000x800.webp" },
-    { "title": "MOTORISED RACK N PINION GUILLOTINE", "subtitle": "Size Dia 1200 mm", "image": "/images/gallery/be90/BE90-Motorised-Rack-Pinion-Dia-1200.webp" },
-    { "title": "PNEUMATIC GUILLOTINE DAMPER", "subtitle": "With Air Reservoir (Fail safe) Size Dia 800 mm", "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-Air-Reservoir-Dia-800.webp" },
-    { "title": "PNEUMATIC GUILLOTINE DAMPER", "subtitle": "Size 2000X2000 mm", "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-2000x2000.webp" },
-    { "title": "MOTORISED LEAD SCREW GUILLOTINE", "subtitle": "Size Dia 1600 mm • Export Job to Saudi • 99.99% Sealing", "image": "/images/gallery/be90/BE90-Motorised-Lead-Screw-Dia-1600.webp" },
-    { "title": "MANUAL LEAD SCREW GUILLOTINE", "subtitle": "Size Sq. 600 mm", "image": "/images/gallery/be90/BE90-Manual-Lead-Screw-Sq-600.webp" }
+    {
+      "title": "MOTORISED GUILLOTINE DAMPER",
+      "subtitle": "Size Dia 3600 mm",
+      "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-3600.webp"
+    },
+    {
+      "title": "MOTORISED GUILLOTINE DAMPER",
+      "subtitle": "Size 2200 X 1300 mm",
+      "image": "/images/gallery/be90/BE90-Motorised-Guillotine-2200x1300.webp"
+    },
+    {
+      "title": "MOTORISED GUILLOTINE DAMPER",
+      "subtitle": "Size Dia 1400 mm (SS304)",
+      "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-1400-SS304.webp"
+    },
+    {
+      "title": "CHAIN PULLEY OPERATED GUILLOTINE",
+      "subtitle": "Rack N Pinion Mechanism Size 1000X800 mm",
+      "image": "/images/gallery/be90/BE90-Chain-Pulley-Rack-Pinion-1000x800.webp"
+    },
+    {
+      "title": "MOTORISED RACK N PINION GUILLOTINE",
+      "subtitle": "Size Dia 1200 mm",
+      "image": "/images/gallery/be90/BE90-Motorised-Rack-Pinion-Dia-1200.webp"
+    },
+    {
+      "title": "PNEUMATIC GUILLOTINE DAMPER",
+      "subtitle": "With Air Reservoir (Fail safe) Size Dia 800 mm",
+      "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-Air-Reservoir-Dia-800.webp"
+    },
+    {
+      "title": "PNEUMATIC GUILLOTINE DAMPER",
+      "subtitle": "Size 2000X2000 mm",
+      "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-2000x2000.webp"
+    },
+    {
+      "title": "MOTORISED LEAD SCREW GUILLOTINE",
+      "subtitle": "Size Dia 1600 mm • Export Job to Saudi • 99.99% Sealing",
+      "image": "/images/gallery/be90/BE90-Motorised-Lead-Screw-Dia-1600.webp"
+    },
+    {
+      "title": "MANUAL LEAD SCREW GUILLOTINE",
+      "subtitle": "Size Sq. 600 mm",
+      "image": "/images/gallery/be90/BE90-Manual-Lead-Screw-Sq-600.webp"
+    }
   ],
   "industriesServed": [
-    { "name": "Power & Thermal Plants", "image": "/images/industries/industry-power-gen.jpg" },
-    { "name": "Steel & Metallurgy", "image": "/images/industries/industry-steel.jpg" },
-    { "name": "Cement & Minerals", "image": "/images/industries/industry-cement.jpg" },
-    { "name": "Carbon Black & Chemical", "image": "/images/industries/industry-chemical.jpg" },
-    { "name": "Pollution Control & ESP", "image": "/images/industries/industry-process.jpg" },
-    { "name": "Oil, Gas & Petrochemical", "image": "/images/industries/industry-oil-gas.jpg" }
+    {
+      "name": "Power & Thermal Plants",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Steel & Metallurgy",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "Cement & Minerals",
+      "image": "/images/industries/industry-cement.jpg"
+    },
+    {
+      "name": "Carbon Black & Chemical",
+      "image": "/images/industries/industry-chemical.jpg"
+    },
+    {
+      "name": "Pollution Control & ESP",
+      "image": "/images/industries/industry-process.jpg"
+    },
+    {
+      "name": "Oil, Gas & Petrochemical",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    }
   ]
 }

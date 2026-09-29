@@ -26,29 +26,86 @@
   "shapes": "Round / Square / Rectangular",
   "endConnection": "Flanged / Welded",
   "technicalSpecs": [
-    { "parameter": "Damper Type", "details": "Twin Flap Damper Valve" },
-    { "parameter": "Size Range", "details": "150 mm to 2500 mm" },
-    { "parameter": "Design Temp.", "details": "-25°C to 850°C" },
-    { "parameter": "Pressure Rating", "details": "Low Pressure Material Handling Systems" },
-    { "parameter": "Operation", "details": "Pneumatic / Hydraulic / Electric / Counterweight" },
-    { "parameter": "Media", "details": "Ash / Dust / Powder / Bulk Material" },
-    { "parameter": "Flap Arrangement", "details": "Sequential Twin Flap Design" },
-    { "parameter": "End Connection", "details": "Flanged / Welded" },
-    { "parameter": "Construction", "details": "Heavy Duty Fabricated" },
-    { "parameter": "Standards", "details": "ASME / API / ISO" }
+    {
+      "parameter": "Damper Type",
+      "details": "Twin Flap Damper Valve"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "150 mm to 2500 mm"
+    },
+    {
+      "parameter": "Design Temp.",
+      "details": "-25°C to 850°C"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Low Pressure Material Handling Systems"
+    },
+    {
+      "parameter": "Operation",
+      "details": "Pneumatic / Hydraulic / Electric / Counterweight"
+    },
+    {
+      "parameter": "Media",
+      "details": "Ash / Dust / Powder / Bulk Material"
+    },
+    {
+      "parameter": "Flap Arrangement",
+      "details": "Sequential Twin Flap Design"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Welded"
+    },
+    {
+      "parameter": "Construction",
+      "details": "Heavy Duty Fabricated"
+    },
+    {
+      "parameter": "Standards",
+      "details": "ASME / API / ISO"
+    }
   ],
   "mocTable": [
-    { "component": "Body", "material": "IS2062 / SA516 Gr-70 / SS" },
-    { "component": "Flaps", "material": "SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel" },
-    { "component": "Shaft", "material": "EN8D / SS410 / SS316" },
-    { "component": "Seals", "material": "Metallic" },
-    { "component": "Bearings", "material": "Heavy Duty Self Lubricated" },
-    { "component": "Liners", "material": "Abrasion Resistant Liners" }
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / SS"
+    },
+    {
+      "component": "Flaps",
+      "material": "SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316"
+    },
+    {
+      "component": "Seals",
+      "material": "Metallic"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty Self Lubricated"
+    },
+    {
+      "component": "Liners",
+      "material": "Abrasion Resistant Liners"
+    }
   ],
   "automationOptions": [
-    { "name": "Pneumatic", "desc": "Pneumatic cylinders with solenoid controls for rapid automated sequential cycle operation" },
-    { "name": "Geared Motor", "desc": "Electric gear motor with cam/linkage mechanism for smooth, continuous automatic discharge" },
-    { "name": "Counter Weight", "desc": "Self-actuating gravity and counterweight arms for passive material-weight triggered dumping" }
+    {
+      "name": "Pneumatic",
+      "desc": "Pneumatic cylinders with solenoid controls for rapid automated sequential cycle operation"
+    },
+    {
+      "name": "Geared Motor",
+      "desc": "Electric gear motor with cam/linkage mechanism for smooth, continuous automatic discharge"
+    },
+    {
+      "name": "Counter Weight",
+      "desc": "Self-actuating gravity and counterweight arms for passive material-weight triggered dumping"
+    }
   ],
   "features": [
     "Sequential Twin Flap Operation",
@@ -102,26 +159,84 @@
     "Process Dust Discharge"
   ],
   "majorReferences": [
-    { "endUser": "JSW", "application": "At Hopper Discharge" },
-    { "endUser": "AM/NS INDIA", "application": "At Hopper Discharge" },
-    { "endUser": "adani", "application": "At Hopper Discharge" },
-    { "endUser": "Shree Cement", "application": "At Hopper Discharge" }
+    {
+      "endUser": "JSW",
+      "application": "At Hopper Discharge"
+    },
+    {
+      "endUser": "AM/NS INDIA",
+      "application": "At Hopper Discharge"
+    },
+    {
+      "endUser": "adani",
+      "application": "At Hopper Discharge"
+    },
+    {
+      "endUser": "Shree Cement",
+      "application": "At Hopper Discharge"
+    }
   ],
   "galleryImages": [
-    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP", "subtitle": "Size Sq. 1000 mm Heavy Duty Unit", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-1000-Pair.webp" },
-    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH", "subtitle": "Size Sq. 300 mm Production Assembly Line", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-300-Line.webp" },
-    { "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP", "subtitle": "Size Dia 300 mm Circular Flanged Stainless Steel", "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Dia-300.webp" },
-    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH", "subtitle": "Size Sq. 200 mm Factory Floor Alignment", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-200-Batch.webp" },
-    { "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP", "subtitle": "Size Sq. 600 mm Heavy Duty Airlock Unit", "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Sq-600.webp" },
-    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP", "subtitle": "Size Sq. 250 mm Drive Shaft Unit", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Single.webp" },
-    { "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH", "subtitle": "Size Sq. 250 mm Ready for Dispatch", "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Batch.webp" }
+    {
+      "title": "GEARED MOTOR OPERATED DOUBLE FLAP",
+      "subtitle": "Size Sq. 1000 mm Heavy Duty Unit",
+      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-1000-Pair.webp"
+    },
+    {
+      "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH",
+      "subtitle": "Size Sq. 300 mm Production Assembly Line",
+      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-300-Line.webp"
+    },
+    {
+      "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP",
+      "subtitle": "Size Dia 300 mm Circular Flanged Stainless Steel",
+      "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Dia-300.webp"
+    },
+    {
+      "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH",
+      "subtitle": "Size Sq. 200 mm Factory Floor Alignment",
+      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-200-Batch.webp"
+    },
+    {
+      "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP",
+      "subtitle": "Size Sq. 600 mm Heavy Duty Airlock Unit",
+      "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Sq-600.webp"
+    },
+    {
+      "title": "GEARED MOTOR OPERATED DOUBLE FLAP",
+      "subtitle": "Size Sq. 250 mm Drive Shaft Unit",
+      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Single.webp"
+    },
+    {
+      "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH",
+      "subtitle": "Size Sq. 250 mm Ready for Dispatch",
+      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Batch.webp"
+    }
   ],
   "industriesServed": [
-    { "name": "Mines", "image": "/images/industries/METAL.jpg" },
-    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
-    { "name": "Paper", "image": "/images/industries/industry-paper-pulp.jpg" },
-    { "name": "Cement", "image": "/images/industries/CEMENT-1.jpg" },
-    { "name": "Power", "image": "/images/industries/THERMAL.jpg" },
-    { "name": "Fertilisers", "image": "/images/industries/industry-chemical.jpg" }
+    {
+      "name": "Mines",
+      "image": "/images/industries/METAL.jpg"
+    },
+    {
+      "name": "Steel",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "Paper",
+      "image": "/images/industries/industry-paper-pulp.jpg"
+    },
+    {
+      "name": "Cement",
+      "image": "/images/industries/CEMENT-1.jpg"
+    },
+    {
+      "name": "Power",
+      "image": "/images/industries/THERMAL.jpg"
+    },
+    {
+      "name": "Fertilisers",
+      "image": "/images/industries/industry-chemical.jpg"
+    }
   ]
 }

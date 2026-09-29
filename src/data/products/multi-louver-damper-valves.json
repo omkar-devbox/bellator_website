@@ -1,13 +1,14 @@
 {
   "id": "multi-louver-damper-valves",
-  "title": "BE70 : Multi-Louver Damper Valves",
-  "model": "BE70 Series",
+  "title": "BE70 : MULTI-LOUVER DAMPER VALVES",
+  "model": "BE70 SERIES",
   "image": "/images/gallery/be70/BE70-Pneumatic-Control-Duty-Dia-450.webp",
   "category": "control",
   "categoryLabel": "Engineered for Precision Flow Control",
   "tagline": "Engineered for Precision Flow Control with multiple synchronized aerodynamic blades providing superior modulation and low pressure loss.",
   "desc": "Bellator BE70 Series Multi-Louver Damper Valves are specially engineered for accurate airflow control, modulation, and isolation in industrial ventilation and process systems. The multiple blade arrangement provides improved flow distribution, enhanced throttling characteristics, and smooth control performance compared to conventional single blade dampers.",
   "longDesc": "Designed for reliable airflow management and stable process control, the BE70 Series ensures dependable operation under continuous duty conditions. The optimized blade design and linkage mechanism provide uniform flow control, reduced pressure loss, and improved operational efficiency.\n\nManufactured with robust fabricated construction and application-oriented engineering, the BE70 Series dampers are available in Parallel Blade, Opposed Blade, and customized mixed blade configurations with Manual, Pneumatic, Electric, or Hydraulic operation options.",
+  "taglineBrochure": "“Engineered for Precision Flow Control • Smooth Blade Synchronization • Heavy Duty Performance”",
   "keyHighlights": [
     "Precision Airflow Modulation with multiple synchronized aerodynamic blades",
     "Parallel & Opposed Blade Designs for rapid cutoff or precise linear throttling",
@@ -23,6 +24,94 @@
   "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft | Bearings: Heavy Duty Self Lubricated",
   "actuation": "Manual / Pneumatic / Electric / Hydraulic",
   "standards": "API / ASME / ISO",
+  "shapes": "Round / Rectangular Multi-Span",
+  "endConnection": "Flanged / Butt Weld",
+  "technicalSpecs": [
+    {
+      "parameter": "Damper Type",
+      "details": "Multi-Louver"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Up to 99.95%"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "Ø300 mm to Ø3000 mm"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Butt Weld"
+    },
+    {
+      "parameter": "Rectangular Size",
+      "details": "Up to 12000 mm"
+    },
+    {
+      "parameter": "Blade Design",
+      "details": "Parallel / Opposed / Mixed"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 825°C"
+    },
+    {
+      "parameter": "Standards",
+      "details": "API / ASME / ISO"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Up to PN1"
+    },
+    {
+      "parameter": "Automation",
+      "details": "Manual / Pneumatic / Electric / Hydraulic"
+    }
+  ],
+  "mocTable": [
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Disc",
+      "material": "SS304 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Seat",
+      "material": "Metallic"
+    },
+    {
+      "component": "Seal",
+      "material": "Metallic / Soft"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty Self Lubricated"
+    }
+  ],
+  "automationOptions": [
+    {
+      "name": "Pneumatic",
+      "desc": "Pneumatic control cylinder / actuator with smart 4-20mA positioner for high-speed precise modulating control"
+    },
+    {
+      "name": "Electric",
+      "desc": "Motorized modulating electric actuator with continuous positioning feedback and manual override"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "Electro-hydraulic actuator for heavy industrial dampers requiring high holding torque"
+    },
+    {
+      "name": "Manual",
+      "desc": "Manual multi-turn gearbox or locking quadrant lever for local flow balancing and trimming"
+    }
+  ],
   "features": [
     "Precision Airflow Modulation",
     "Parallel & Opposed Blade Designs",
@@ -31,6 +120,32 @@
     "Heavy Duty Fabricated Construction",
     "Smooth Blade Synchronization",
     "Suitable for Large Duct Sizes"
+  ],
+  "engineeringAdvantages": [
+    "Overcomes Conventional Single Damper Challenges: Uneven airflow distribution replaced with optimized multi-blade arrangement",
+    "Improved airflow uniformity eliminating poor modulation characteristics",
+    "Enhanced throttling accuracy preventing high turbulence generation",
+    "Better process control stability & reduced turbulence generation for precise flow balancing"
+  ],
+  "optionalFeatures": [
+    "Parallel Blade Configuration for rapid duct isolation & high flow capacity",
+    "Opposed Blade Configuration for precision linear throttling & flow balancing",
+    "Mixed Blade Configuration for customized combination process control",
+    "Seal Air Pressurization System for 100% Zero-Bypass Isolation",
+    "High Temperature Outboard Bearings isolated from duct heat stream",
+    "Anti-Blowout Shaft Design & C5 Marine Protective Coating"
+  ],
+  "inspectionTesting": [
+    "Leakage Testing",
+    "Seal Air Performance Testing",
+    "Functional Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered"
   ],
   "applications": [
     "ID Fan Control",
@@ -42,5 +157,75 @@
     "Flue Gas Systems",
     "Thermal Oxidizer Systems",
     "Exhaust Air Systems"
+  ],
+  "majorReferences": [
+    {
+      "endUser": "Vedanta Sesa Goa",
+      "application": "Blast Furnace Emergency Vent Before MDC",
+      "logo": "/images/clients/vedanta-sesagoa-logo.png"
+    },
+    {
+      "endUser": "Rio Grande LNG",
+      "application": "Primary Air Control",
+      "logo": "/images/clients/rio-grande-lng-logo.png"
+    },
+    {
+      "endUser": "JGC",
+      "application": "Primary Air Control",
+      "logo": "/images/clients/jgc-logo.png"
+    },
+    {
+      "endUser": "Cedar LNG",
+      "application": "RTO Process Control Line",
+      "logo": "/images/clients/cedar-lng-logo.png"
+    }
+  ],
+  "galleryImages": [
+    {
+      "title": "PNEUMATIC CONTROL DUTY MULTI-LOUVER DAMPER",
+      "subtitle": "Size Dia 450 mm",
+      "image": "/images/gallery/be70/BE70-Pneumatic-Control-Duty-Dia-450.webp"
+    },
+    {
+      "title": "PNEUMATIC CONTROL DUTY MULTI-LOUVER DAMPER",
+      "subtitle": "Size Sq. 850 mm",
+      "image": "/images/gallery/be70/BE70-Pneumatic-Control-Duty-Sq-850.webp"
+    },
+    {
+      "title": "MOTORISED MULTI-LOUVER DAMPER",
+      "subtitle": "Size Dia 2400 mm",
+      "image": "/images/gallery/be70/BE70-Motorised-Multi-Louver-Dia-2400.webp"
+    },
+    {
+      "title": "PNEUMATIC MULTI-LOUVER DAMPER",
+      "subtitle": "Size 2600 x 1600 mm",
+      "image": "/images/gallery/be70/BE70-Pneumatic-Multi-Louver-2600x1600.webp"
+    }
+  ],
+  "industriesServed": [
+    {
+      "name": "Power & Thermal Utilities",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "LNG & Cryogenic Terminals",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    },
+    {
+      "name": "Steel & Blast Furnace Plants",
+      "image": "/images/industries/industry-steel.jpg"
+    },
+    {
+      "name": "RTO & Environmental Systems",
+      "image": "/images/industries/industry-chemical.jpg"
+    },
+    {
+      "name": "Cement & Kiln Exhaust",
+      "image": "/images/industries/industry-cement.jpg"
+    },
+    {
+      "name": "HVAC & Industrial Ventilation",
+      "image": "/images/industries/industry-process.jpg"
+    }
   ]
 }

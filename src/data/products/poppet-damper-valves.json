@@ -1,36 +1,238 @@
 {
   "id": "poppet-damper-valves",
-  "title": "Poppet Damper Valves",
-  "model": "BE-80 Series",
-  "image": "/images/products/BE80-Pneumatic-Two-Way-Poppet-Damper-Valve-Verticle-Orientation.png",
+  "title": "BE80 : POPPET DAMPER VALVES",
+  "model": "BE80 SERIES",
+  "image": "/images/gallery/be80/BE80-Hero-Pneumatic-Three-Way-Dia-1200.webp",
   "category": "control",
-  "categoryLabel": "Fast Pneumatic Stroke",
-  "tagline": "High-speed directional and compartment isolation valve for baghouse pulse-jet cleaning systems.",
-  "desc": "High-speed directional and isolation valves developed for fabric filter baghouses, electrostatic precipitators, and regenerative thermal oxidizers (RTO). Completes full open/close cycle in 3 to 5 seconds to isolate compartments during pulse-jet cleaning.",
-  "longDesc": "The BE-80 Series Poppet Damper is engineered for rapid cycling in dust collection and pollution abatement systems. Its linear reciprocating action allows whole baghouse compartments to be isolated within 3 seconds, enabling online filter cleaning and maintenance without shutting down process production.",
+  "categoryLabel": "Advanced Vertical Isolation Technology",
+  "tagline": "Advanced Vertical Isolation Technology specially engineered for reliable shut-off, flow diversion, and positive isolation applications.",
+  "desc": "Bellator BE80 Series Poppet Damper Valves are specially engineered for reliable shut-off, flow diversion, and positive isolation applications involving dusty, corrosive, and high temperature process media. The vertical reciprocating disc arrangement provides dependable sealing performance, reduced pressure loss, and reliable operation under demanding service conditions.",
+  "longDesc": "Designed for critical process isolation applications, the BE80 Series ensures smooth vertical sealing movement and enhanced operational reliability during continuous operation. The optimized sealing arrangement minimizes leakage and improves long-term performance in challenging industrial environments.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE80 Series dampers are available in Two-Way and Three-Way configurations with Vertical or Horizontal mounting orientations and multiple automation options.",
+  "taglineBrochure": "“Advanced Vertical Isolation Technology • High Performance • Reliable Shut-Off”",
   "keyHighlights": [
-    "Ultra-fast stroke time: 3 to 5 seconds per cycle",
-    "High cycle life rated for millions of operations",
-    "Available in 2-way and 3-way flow configurations",
-    "Resilient Viton/PTFE or metal-to-metal seat options"
+    "Vertical Reciprocating Sealing Design with dependable positive shut-off",
+    "Available in Two-Way & Three-Way Designs for versatile process layouts",
+    "High Temperature Capability suitable up to 825°C",
+    "Low Pressure Drop Design & Heavy Duty Fabricated Construction",
+    "Anti-Gravity Lock Protection & multiple automation options",
+    "Suitable for Dusty & Corrosive Media in harsh industrial environments"
   ],
-  "leakage": "Up to 99.9% / 100% with Pressurized Perimeter Purge",
-  "temp": "-20°C to +350°C",
-  "pressure": "Differential Pressure up to 4,000 mmWC",
-  "sizes": "DN400 to DN2,500",
-  "materials": "Carbon Steel IS2062, Stainless Steel 304L / 316L, Viton/PTFE/Metal Seals",
-  "actuation": "Heavy-Duty Pneumatic Cylinder with Fast Exhaust Valves & Solenoids",
-  "standards": "AMCA 500-D, EN 1751",
+  "leakage": "Up to 99.95%",
+  "temp": "-25°C to 825°C",
+  "pressure": "Up to PN1",
+  "sizes": "Ø300 mm to Ø3500 mm (Round) / Up to 2500 mm (Rectangular)",
+  "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft",
+  "actuation": "Manual / Pneumatic / Electric / Hydraulic",
+  "standards": "API / ASME / ISO",
+  "shapes": "Round / Rectangular (Two-Way & Three-Way Configurations)",
+  "endConnection": "Flanged / Butt Weld",
+  "technicalSpecs": [
+    {
+      "parameter": "Damper Type",
+      "details": "Poppet Damper Valve"
+    },
+    {
+      "parameter": "Leakage Performance",
+      "details": "Up to 99.95%"
+    },
+    {
+      "parameter": "Size Range",
+      "details": "Ø300 mm to Ø3500 mm"
+    },
+    {
+      "parameter": "End Connection",
+      "details": "Flanged / Butt Weld"
+    },
+    {
+      "parameter": "Rectangular Size",
+      "details": "Up to 2500 mm"
+    },
+    {
+      "parameter": "Configurations",
+      "details": "Two-Way / Three-Way"
+    },
+    {
+      "parameter": "Design Temperature",
+      "details": "-25°C to 825°C"
+    },
+    {
+      "parameter": "Mounting",
+      "details": "Vertical / Horizontal"
+    },
+    {
+      "parameter": "Pressure Rating",
+      "details": "Up to PN1"
+    },
+    {
+      "parameter": "Standards",
+      "details": "API / ASME / ISO"
+    },
+    {
+      "parameter": "Automation",
+      "details": "Manual / Pneumatic / Electric / Hydraulic"
+    }
+  ],
+  "mocTable": [
+    {
+      "component": "Body",
+      "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific"
+    },
+    {
+      "component": "Disc",
+      "material": "SS304 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Shaft",
+      "material": "EN8D / SS410 / SS316 / Customer Specific"
+    },
+    {
+      "component": "Seat",
+      "material": "Metallic"
+    },
+    {
+      "component": "Seal",
+      "material": "Metallic / Soft"
+    },
+    {
+      "component": "Bearings",
+      "material": "Heavy Duty Self Lubricated"
+    }
+  ],
+  "automationOptions": [
+    {
+      "name": "Pneumatic",
+      "desc": "Heavy-duty pneumatic cylinder actuator for rapid cycling and reliable reciprocating motion"
+    },
+    {
+      "name": "Electric",
+      "desc": "Motorized linear / rotary actuator with feedback options and manual override"
+    },
+    {
+      "name": "Hydraulic",
+      "desc": "High-thrust hydraulic cylinder actuation for large poppet valves and severe load duties"
+    },
+    {
+      "name": "Manual",
+      "desc": "Handwheel or gearbox operated manual drive for maintenance and isolation"
+    }
+  ],
   "features": [
-    "Direct-mounted high-speed pneumatic cylinder",
-    "Self-aligning disc assembly ensuring uniform perimeter seating",
-    "Robust guide bushings resistant to particulate fouling",
-    "Integral quick exhaust valves and speed controls"
+    "Vertical Reciprocating Sealing Design",
+    "Reliable Positive Isolation",
+    "Available in Two-Way & Three-Way Designs",
+    "Suitable up to 825°C",
+    "Low Pressure Drop Design",
+    "Heavy Duty Fabricated Construction",
+    "Anti-Gravity Lock Protection",
+    "Suitable for Dusty & Corrosive Media",
+    "Multiple Automation Options",
+    "Flexible Mounting Orientations"
+  ],
+  "engineeringAdvantages": [
+    "Conventional Damper Challenges Overcome: Eliminates leakage under dusty conditions with positive vertical seating arrangement",
+    "Solves poor vertical sealing reliability through dependable isolation under dusty service",
+    "Reduces high maintenance in process gas systems via smooth reciprocating movement",
+    "Overcomes limited orientation flexibility with flexible vertical & horizontal installation orientations",
+    "Optimized flow diversion capability for both two-way shutoff and three-way redirection"
+  ],
+  "optionalFeatures": [
+    "Air Seal Arrangement for Zero Leakage Performance",
+    "Refractory Lining Option for high temperature process zones",
+    "High Temperature Design",
+    "C5 / NORSOK Protective Paint System",
+    "External Insulation Option"
+  ],
+  "inspectionTesting": [
+    "Leakage Testing",
+    "Functional Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered"
   ],
   "applications": [
-    "Fabric Filter Baghouse Compartment Isolation",
-    "Regenerative Thermal Oxidizers (RTO) Switching",
-    "Reverse Gas Baghouse Cleaning Cycles",
-    "Electrostatic Precipitator Inlet/Outlet Headers"
+    "RTO Systems",
+    "Thermal Oxidizers",
+    "Bag Filter Systems",
+    "Process Gas Isolation",
+    "Dust Handling Systems",
+    "Hot Gas Diversion",
+    "VOC Control Systems",
+    "Exhaust Air Systems",
+    "Chamber Isolation Systems",
+    "Pollution Control Systems"
+  ],
+  "majorReferences": [
+    {
+      "endUser": "IndianOil",
+      "application": "RTO System",
+      "logo": "/images/clients/indianoil-logo.png"
+    },
+    {
+      "endUser": "Solar",
+      "application": "Bag Filter System",
+      "logo": "/images/clients/solar-logo.png"
+    },
+    {
+      "endUser": "Reliance Industries Limited",
+      "application": "RTO System",
+      "logo": "/images/clients/reliance-logo.png"
+    },
+    {
+      "endUser": "Haldia Petrochemicals Ltd",
+      "application": "RTO System",
+      "logo": "/images/clients/haldia-logo.png"
+    }
+  ],
+  "galleryImages": [
+    {
+      "title": "PNEUMATIC TWO WAY POPPET DAMPER",
+      "subtitle": "Size Dia 1400 mm (RTO Application)",
+      "image": "/images/gallery/be80/BE80-Pneumatic-Two-Way-Dia-1400.webp"
+    },
+    {
+      "title": "PNEUMATIC TWO WAY POPPET DAMPER",
+      "subtitle": "Size Dia 500 mm (RTO Application)",
+      "image": "/images/gallery/be80/BE80-Pneumatic-Two-Way-Dia-500.webp"
+    },
+    {
+      "title": "PNEUMATIC TWO WAY HORIZONTAL ORIENTATION POPPET DAMPER",
+      "subtitle": "Size Dia 900 mm (RTO Application)",
+      "image": "/images/gallery/be80/BE80-Pneumatic-Two-Way-Horizontal-Dia-900.webp"
+    },
+    {
+      "title": "MOTORISED THREE WAY POPPET DAMPER",
+      "subtitle": "Size Dia 700 mm (Bag Filter Application)",
+      "image": "/images/gallery/be80/BE80-Motorised-Three-Way-Dia-700.webp"
+    }
+  ],
+  "industriesServed": [
+    {
+      "name": "RTO & VOC Abatement",
+      "image": "/images/industries/industry-chemical.jpg"
+    },
+    {
+      "name": "Bag Filter & Dust Handling",
+      "image": "/images/industries/industry-cement.jpg"
+    },
+    {
+      "name": "Petrochemicals & Refineries",
+      "image": "/images/industries/industry-oil-gas.jpg"
+    },
+    {
+      "name": "Thermal Oxidizers",
+      "image": "/images/industries/industry-power-gen.jpg"
+    },
+    {
+      "name": "Pollution Control & Air Quality",
+      "image": "/images/industries/industry-process.jpg"
+    },
+    {
+      "name": "Steel & Metallurgy",
+      "image": "/images/industries/industry-steel.jpg"
+    }
   ]
 }
