@@ -1,36 +1,116 @@
 {
   "id": "back-draft-damper-valves",
-  "title": "Back Draft Damper Valves",
-  "model": "BE-120 Series",
+  "title": "BE120 : BACK DRAFT DAMPER VALVES",
+  "model": "BE120 SERIES",
   "image": "/images/products/BE120-BackDraft-Damper-Valves.png",
   "category": "severe",
-  "categoryLabel": "Reverse Flow Check",
-  "tagline": "Self-actuating non-return gravity damper preventing reverse gas flow and protecting offline industrial fans.",
-  "desc": "Automatic gravity and counterweight-actuated non-return dampers. Sensitive aerodynamic blade balancing allows forward gas flow with minimal pressure resistance, while instantly shutting tight when reverse air currents or fan shutdowns occur.",
-  "longDesc": "Bellator BE-120 Series Back Draft Dampers are automatic non-return check valves for large air and gas systems. Featuring precision counterbalanced blades that swing open with low forward velocity and slam shut immediately upon flow reversal, protecting fans and blowers from reverse windmilling.",
+  "categoryLabel": "Engineered for Reliable Reverse Flow Protection",
+  "tagline": "Engineered for Reliable Reverse Flow Protection in industrial ventilation, exhaust, and process systems.",
+  "desc": "Bellator BE120 Series Back Draft Damper Valves are specially engineered to automatically prevent reverse airflow in industrial ventilation, exhaust, and process systems. These dampers operate automatically using process airflow without external power or actuator dependency, ensuring dependable reverse flow isolation while maintaining minimal resistance during forward airflow conditions.",
+  "longDesc": "Bellator BE120 Series Back Draft Damper Valves are specially engineered to automatically prevent reverse airflow in industrial ventilation, exhaust, and process systems. These dampers operate automatically using process airflow without external power or actuator dependency, ensuring dependable reverse flow isolation while maintaining minimal resistance during forward airflow conditions.\n\nThe lightweight flap arrangement combined with optimized hinge geometry provides smooth opening characteristics and rapid closing action through gravity and self-weight of the flap. This ensures reliable prevention of reverse flow and process back pressure under varying operating conditions.\n\nAlso known as Gravity Dampers or Check Dampers, the BE120 Series is designed for reliable operation in ventilation systems, fan discharge lines, boiler air systems, HVAC systems, and industrial exhaust applications. Manufactured with robust fabricated construction and application-oriented engineering, these dampers provide dependable long-term performance with minimal maintenance requirements.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
   "keyHighlights": [
-    "Self-actuating gravity and counterweight operation with zero power required",
-    "Protects redundant fans and blowers from reverse airflow damage",
-    "Low opening pressure threshold with adjustable counterweight arms",
-    "Custom duct profiles up to 4,000 x 4,000 mm"
+    "Automatic Reverse Flow Protection without external power or actuator dependency",
+    "Self-Actuating Gravity Operation with lightweight flap & optimized hinge geometry",
+    "Rapid Reverse Closing Response preventing fan back pressure damage & reverse windmilling",
+    "Low Pressure Drop Design maintaining minimal resistance during forward airflow",
+    "Available in Round, Square & Rectangular shapes from 150 mm to 2500 mm"
   ],
-  "leakage": "Automatic Reverse Flow Prevention",
-  "temp": "Up to +350°C",
-  "pressure": "Up to 3,500 mmWC",
-  "sizes": "Custom Duct Dimensions to 4,000 x 4,000 mm",
-  "materials": "Corten Steel, Low-Inertia Aluminum / SS304 Blades, Precision Bronze Bushings",
-  "actuation": "Self-Actuating Gravity / Adjustable Counterweight Arm",
-  "standards": "AMCA 500-D, EN 1751",
+  "leakage": "Reverse Flow Prevention",
+  "temp": "-25°C to 450°C",
+  "pressure": "Low Pressure Ventilation Systems",
+  "sizes": "150 mm to 2500 mm (Round / Square / Rectangular)",
+  "materials": "Body: IS2062 / GI / SS | Flap: Aluminum / SS304 / SS316 | Shaft: EN8D / SS410 / SS316",
+  "actuation": "Self-Actuating Gravity Operation",
+  "standards": "AMCA 511 , ASME AG-1 , ERDA 76-21",
+  "shapes": "Round / Square / Rectangular",
+  "endConnection": "Flanged / Slip Fit / Butt Weld",
+  "technicalSpecs": [
+    { "parameter": "Damper Type", "details": "Back Draft Damper Valve" },
+    { "parameter": "Size Range", "details": "150 mm to 2500 mm" },
+    { "parameter": "Design Temperature", "details": "-25°C to 450°C" },
+    { "parameter": "Pressure Rating", "details": "Low Pressure Ventilation Systems" },
+    { "parameter": "Operation Principle", "details": "Self-Actuating Gravity Operation" },
+    { "parameter": "Leakage Performance", "details": "Reverse Flow Prevention" },
+    { "parameter": "Configurations", "details": "Single / Multi-Flap" },
+    { "parameter": "Shapes", "details": "Round / Square / Rectangular" },
+    { "parameter": "End Connection", "details": "Flanged / Slip Fit / Butt Weld" },
+    { "parameter": "Standards", "details": "AMCA 511 , ASME AG-1 , ERDA 76-21" }
+  ],
+  "mocTable": [
+    { "component": "Body", "material": "IS2062 / GI / SS" },
+    { "component": "Flap", "material": "Aluminum / SS304 / SS316" },
+    { "component": "Shaft", "material": "EN8D / SS410 / SS316" },
+    { "component": "Hinges", "material": "Heavy Duty Reinforced" },
+    { "component": "Seal", "material": "Metallic / Rubber Seal" },
+    { "component": "Bearings", "material": "Maintenance Free Bearings" }
+  ],
+  "automationOptions": [
+    { "name": "Self-Actuating Gravity", "desc": "Process airflow pushes blades open; gravity & self-weight provide rapid instantaneous closure on flow reversal" },
+    { "name": "Counterbalance Assist", "desc": "Optional counterweight lever for fine-tuning opening sensitivity across variable duct velocities" }
+  ],
   "features": [
-    "Aerodynamically balanced low-inertia blade construction",
-    "External adjustable counterweight levers for sensitivity tuning",
-    "Oil-impregnated bronze or sealed stainless ball bearings",
-    "Neoprene or stainless blade tip seals for tight reverse shutoff"
+    "Uni Directional",
+    "Automatic Reverse Flow Protection",
+    "Self-Actuating Operation",
+    "No External Power Requirement",
+    "Low Pressure Drop Design",
+    "Lightweight Flap Construction",
+    "Rapid Reverse Closing Response",
+    "Suitable for Large Duct Sizes",
+    "Maintenance Friendly Design",
+    "Suitable for Ventilation & Exhaust Systems"
+  ],
+  "engineeringAdvantages": [
+    "Automatic flap closing during reverse flow (Eliminates reverse airflow during fan shutdown)",
+    "Improved process protection (Prevents back pressure damage & risk)",
+    "Reduced reverse pressure impact (Prevents process contamination through reverse flow)",
+    "Minimal forward flow resistance (Avoids energy losses during idle conditions)",
+    "Improved ventilation efficiency"
+  ],
+  "inspectionTesting": [
+    "Functional Opening Testing",
+    "Reverse Flow (Leakage) Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Seismic Qualification Testing",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered."
   ],
   "applications": [
-    "Parallel Fan Discharge Headers (FD/ID Fan Discharge)",
-    "Building Ventilation and Exhaust Plenums",
-    "Turbine Generator Ventilation Outlets",
-    "Emergency Standby Blower Discharge Lines"
+    "Fan Discharge Systems",
+    "Boiler Air Systems",
+    "Exhaust Ventilation Systems",
+    "HVAC Systems",
+    "Process Air Systems",
+    "Dust Collection Systems",
+    "Industrial Exhaust Lines",
+    "Fresh Air Intake Systems",
+    "Pollution Control Systems",
+    "Utility Ventilation Systems"
+  ],
+  "majorReferences": [
+    { "endUser": "NPCIL", "application": "Ventilation System" },
+    { "endUser": "Unilever", "application": "Ventilation System" },
+    { "endUser": "TATA ELECTRONICS", "application": "Ventilation System" },
+    { "endUser": "Reliance Industries Limited", "application": "Ventilation System" }
+  ],
+  "galleryImages": [
+    { "title": "BACK DRAFT DAMPER PRODUCTION BATCH", "subtitle": "Size Dia 600 mm White Fabricated", "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Main.webp" },
+    { "title": "BACK DRAFT DAMPER", "subtitle": "Size Dia 800 mm Flanged Valve", "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-800.webp" },
+    { "title": "BACK DRAFT DAMPER BATCH", "subtitle": "Size Dia 600 mm Blue Epoxy Coated", "image": "/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Blue.webp" },
+    { "title": "FUNCTIONING PRINCIPLE: NORMAL & REVERSE AIR FLOW", "subtitle": "Self-Actuating Gravity Blade Dynamics", "image": "/images/gallery/be120/BE120-Functioning-Normal-and-Reverse-Flow.webp" },
+    { "title": "LEAKAGE & FUNCTIONAL TESTING SETUP", "subtitle": "Tested as per AMCA 511, ASME AG-1, ERDA 76-21", "image": "/images/gallery/be120/BE120-Damper-Testing-Area-Setup.webp" },
+    { "title": "BACK DRAFT DAMPER", "subtitle": "Size Dia 600 mm Industrial Check Unit", "image": "/images/gallery/be120/BE120-Gallery-Dia-600-Single-Unit.webp" },
+    { "title": "BACK DRAFT DAMPER ARRAY", "subtitle": "Dia 600 mm Blue Finish Multi-Unit Shipment", "image": "/images/gallery/be120/BE120-Gallery-Dia-600-Blue-Batch.webp" }
+  ],
+  "industriesServed": [
+    { "name": "Nuclear Power", "image": "/images/industries/NUCLEAR.jpg" },
+    { "name": "Steel", "image": "/images/industries/industry-steel.jpg" },
+    { "name": "Oil & Gas", "image": "/images/industries/industry-oil-gas.jpg" },
+    { "name": "Cement", "image": "/images/industries/CEMENT-1.jpg" },
+    { "name": "Thermal Power", "image": "/images/industries/THERMAL.jpg" },
+    { "name": "Marine", "image": "/images/industries/MARINE.jpg" }
   ]
 }

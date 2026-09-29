@@ -160,16 +160,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Key Features
+  // Key Features & Optional Features
+  const featuresWrapper = document.getElementById('features-wrapper');
   const featuresBox = document.getElementById('features-box');
   const featuresList = document.getElementById('features-list');
+  const optionalFeaturesBox = document.getElementById('optional-features-box');
+  const optionalFeaturesList = document.getElementById('optional-features-list');
+
+  const hasFeatures = Boolean(data.features && data.features.length > 0);
+  const hasOptionalFeatures = Boolean(data.optionalFeatures && data.optionalFeatures.length > 0);
+
+  if (featuresWrapper) {
+    if (!hasFeatures && !hasOptionalFeatures) {
+      featuresWrapper.classList.add('hidden');
+    } else {
+      featuresWrapper.classList.remove('hidden');
+      if (hasFeatures && !hasOptionalFeatures) {
+        // Full width single box with a 2-column internal list
+        featuresWrapper.className = 'grid grid-cols-1 gap-4 flex-1';
+        if (featuresList) {
+          featuresList.className = 'grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3.5 text-sm leading-relaxed text-slate-700';
+        }
+      } else {
+        featuresWrapper.className = 'grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1';
+        if (featuresList) {
+          featuresList.className = 'space-y-3 text-sm leading-relaxed text-slate-700';
+        }
+      }
+    }
+  }
+
   if (featuresBox && featuresList) {
-    if (data.features && data.features.length > 0) {
+    if (hasFeatures) {
       featuresBox.classList.remove('hidden');
       featuresList.innerHTML = data.features.map(f => `
-        <li class="flex items-start gap-2">
-          <span class="text-[#EE6226] font-bold text-xs mt-0.5">&bull;</span>
-          <span>${f}</span>
+        <li class="flex items-start gap-2.5">
+          <span class="text-[#EE6226] font-bold text-base leading-none mt-0.5">&bull;</span>
+          <span class="text-slate-700 font-medium">${f}</span>
         </li>
       `).join('');
     } else {
@@ -177,16 +204,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Optional Features
-  const optionalFeaturesBox = document.getElementById('optional-features-box');
-  const optionalFeaturesList = document.getElementById('optional-features-list');
   if (optionalFeaturesBox && optionalFeaturesList) {
-    if (data.optionalFeatures && data.optionalFeatures.length > 0) {
+    if (hasOptionalFeatures) {
       optionalFeaturesBox.classList.remove('hidden');
-      optionalFeaturesList.innerHTML = data.optionalFeatures.map(f => `
-        <li class="flex items-start gap-2">
-          <span class="text-[#EE6226] font-bold text-xs mt-0.5">&bull;</span>
-          <span>${f}</span>
+      optionalFeaturesList.innerHTML = data.optionalFeatures!.map(f => `
+        <li class="flex items-start gap-2.5">
+          <span class="text-[#EE6226] font-bold text-base leading-none mt-0.5">&bull;</span>
+          <span class="text-slate-700 font-medium">${f}</span>
         </li>
       `).join('');
     } else {
@@ -201,9 +225,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (data.inspectionTesting && data.inspectionTesting.length > 0) {
       inspectionBox.classList.remove('hidden');
       inspectionList.innerHTML = data.inspectionTesting.map(t => `
-        <div class="flex items-center gap-2">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span>
-          <span class="truncate">${t}</span>
+        <div class="flex items-center gap-2.5 py-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+          <span class="truncate font-medium text-slate-700">${t}</span>
         </div>
       `).join('');
     } else {
@@ -224,8 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
       ];
 
     applicationsContainer.innerHTML = apps.map(app => `
-      <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center gap-2">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#EE6226]"></span>
+      <div class="p-3.5 sm:p-4 rounded-xl bg-slate-50 hover:bg-slate-100/80 transition-colors border border-slate-200 text-sm font-medium text-slate-800 flex items-center gap-3">
+        <span class="w-2 h-2 rounded-full bg-[#EE6226] shrink-0"></span>
         <span>${app}</span>
       </div>
     `).join('');
@@ -238,8 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (data.majorReferences && data.majorReferences.length > 0) {
       referencesSection.classList.remove('hidden');
 
-      // Map brand logos (SVG vector graphics / badges matching the engineering brochure)
-      const getBrandLogo = (endUser: string) => {
+      const getBrandLogo = (ref: typeof data.majorReferences[number]) => {
+        const endUser = ref.endUser;
         const lower = endUser.toLowerCase();
         if (lower.includes('aramco')) {
           return `
@@ -293,6 +317,28 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           `;
         }
+        if (lower.includes('npcil')) {
+          return `
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-[#0d3b66] border border-[#0d3b66] flex items-center justify-center text-white text-[9px] font-bold shadow-xs">NPCIL</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs sm:text-sm font-extrabold text-[#0d3b66] tracking-tight">NPCIL</span>
+                <span class="text-[7.5px] font-semibold text-slate-500 uppercase">Nuclear Power Corp</span>
+              </div>
+            </div>
+          `;
+        }
+        if (lower.includes('tata electronics')) {
+          return `
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-[#00529b] flex items-center justify-center text-white text-[11px] font-sans font-extrabold shadow-xs">T</div>
+              <div class="flex flex-col leading-none">
+                <span class="text-xs sm:text-sm font-black text-[#00529b] tracking-wider font-sans">TATA</span>
+                <span class="text-[7.5px] font-bold text-slate-500 uppercase tracking-wider">ELECTRONICS</span>
+              </div>
+            </div>
+          `;
+        }
         if (lower.includes('tata')) {
           return `
             <div class="flex items-center gap-2">
@@ -335,10 +381,18 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           `;
         }
+        if (ref.logo) {
+          const logoSrc = ref.logo.startsWith('/') ? `${cleanBase}${ref.logo.slice(1)}` : ref.logo;
+          return `
+            <div class="flex items-center">
+              <img src="${logoSrc}" alt="${ref.endUser}" class="h-6 sm:h-7 max-w-[120px] object-contain" />
+            </div>
+          `;
+        }
         return `
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-[#EE6226]"></span>
-            <span class="text-xs font-bold text-slate-900">${endUser}</span>
+            <span class="text-xs font-bold text-slate-900">${ref.endUser}</span>
           </div>
         `;
       };
@@ -347,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="reference-card-item p-4 rounded-xl border border-slate-200/90 bg-white hover:border-[#EE6226]/60 transition-all flex flex-col justify-between group shadow-xs shrink-0">
           <div class="flex items-center justify-between pb-3 border-b border-slate-100 min-h-[44px]">
             <div>
-              ${getBrandLogo(ref.endUser)}
+              ${getBrandLogo(ref)}
             </div>
             <span class="text-[9px] font-mono font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 uppercase">Verified</span>
           </div>

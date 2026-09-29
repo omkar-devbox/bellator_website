@@ -44,6 +44,7 @@ export interface ProductDetail {
   automationOptions?: { name: string; desc?: string }[];
   optionalFeatures?: string[];
   inspectionTesting?: string[];
+  engineeringAdvantages?: string[];
   majorReferences?: ReferenceItem[];
   galleryImages?: { title: string; subtitle?: string; image?: string }[];
   industriesServed?: { name: string; image?: string }[];
@@ -176,36 +177,112 @@ export const productsData: Record<string, ProductDetail> = {
     id: 'air-seal-damper-valves',
     title: 'BE50 : AIR SEAL DAMPER VALVES',
     model: 'BE50 SERIES',
-    image: '/images/products/BE50-Electric-Air-Seal-Butterfly-Damper-Valve.png',
+    image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Butterfly-Dia-1000-Line.webp',
     category: 'isolation',
     categoryLabel: 'Zero-Leakage Barrier',
-    tagline: '100% Man-Safe zero-leakage isolation damper with continuous pressurized seal air injection system.',
-    desc: '100% sealing efficiency is achieved by injecting pressurized, preheated seal air into the gap maintained between the tandem flaps. The overpressure air barrier completely eliminates fugitive toxic or hazardous gas pass-through for 100% man-safe maintenance isolation.',
-    longDesc: 'The BE-50 Series Air Seal Butterfly Damper provides absolute 100% gas-tight isolation for applications where human life safety is critical during continuous plant operations. By maintaining a seal air pressure chamber between double tandem discs at a higher pressure than the duct gas, any leakage that occurs consists strictly of clean seal air into the duct.',
+    tagline: 'Engineered for Zero Leakage Performance with Pressurized Seal Air Barrier Technology.',
+    desc: 'Bellator BE50 Series Air Seal Damper Valves are specially engineered for critical process applications requiring extremely high sealing efficiency and dependable downstream isolation performance. The advanced air seal arrangement creates a pressurized sealing barrier between sealing surfaces, significantly reducing leakage and ensuring reliable isolation under demanding operating conditions.',
+    longDesc: 'Designed for severe service and high temperature applications, the BE50 Series provides enhanced sealing reliability where conventional sealing arrangements are insufficient. The optimized sealing system ensures improved operational safety and dependable shut-off performance during continuous operation and maintenance isolation conditions.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE50 Series dampers are suitable for critical process gas handling applications. These dampers are available in Butterfly, Diverter, Guillotine, Poppet, and Multi-Louver configurations with various automation options as per application requirements.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      '100% True Zero Fugitive Gas Leakage Isolation',
-      'Dedicated Seal Air Blower skid with electric heaters and redundant blowers',
-      'Enables safe personnel entry into downstream ducts during live operation',
-      'EN 1751 Class 4 tightest isolation certified'
+      'Near Zero Leakage Performance (99.95% without seal air & 100% with seal air)',
+      'Advanced Seal Air Barrier Technology with pressurized chamber for positive maintenance isolation',
+      'Heavy Duty Fabricated Construction suitable for critical process & hazardous gas systems',
+      'Available across Butterfly, Diverter, Guillotine, Poppet & Multi-Louver configurations',
+      'Sizes from Ø300 mm to Ø5000 mm (Round) and up to 12000 mm (Rectangular)'
     ],
-    leakage: '100% Zero-Leakage (Continuous Pressurized Air Barrier)',
-    temp: '-25°C to +825°C',
-    pressure: 'Up to 10,197 mmWC',
-    sizes: 'Ø300 mm to Ø7,000 mm Round / Rectangular up to 12,000 mm',
-    materials: 'ASTM A36, IS2062, ASTM A240 Type 304L/316L/310S, ASTM A516 Gr-70',
-    actuation: 'Electric Actuator / Pneumatic Cylinder with Dedicated Seal Air Blower Skid',
-    standards: 'EN 1751 Class 4, AMCA 500-D, CE / SIL-3 Ready, Seismic Qualified',
+    leakage: '99.95% Without Seal Air and 100% with Seal Air',
+    temp: '-25°C to 825°C',
+    pressure: 'Up to PN1',
+    sizes: 'Ø300 mm to Ø5000 mm Round / Rectangular Up to 12000 mm',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS304 | Disc: IS2062 / SA516 Gr-70 / SS304 | Shaft: EN8D / SS410 / SS316',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO / Customer Specific',
+    shapes: 'Round / Rectangular / Diverter / Poppet',
+    endConnection: 'Wafer / Flanged / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Air Seal Damper Valve' },
+      { parameter: 'Size Range', details: 'Ø300 mm to Ø5000 mm' },
+      { parameter: 'Rectangular Size', details: 'Up to 12000 mm' },
+      { parameter: 'Design Temperature', details: '-25°C to 825°C' },
+      { parameter: 'Pressure Rating', details: 'Up to PN1' },
+      { parameter: 'Leakage Performance', details: '99.95% Without Seal Air and 100% with Seal Air' },
+      { parameter: 'End Connection', details: 'Wafer / Flanged / Butt Weld' },
+      { parameter: 'Seal Type', details: 'Pressurized Seal Air Barrier' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' },
+      { parameter: 'Automation', details: 'Manual / Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS304 / Customer Specific' },
+      { component: 'Disc', material: 'IS2062 / SA516 Gr-70 / SS304 / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metallic' },
+      { component: 'Seal', material: 'Metallic + Air Seal / Soft + Air Seal' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Heavy-duty pneumatic cylinder & scotch yoke actuator packages with positioners and solenoids' },
+      { name: 'Electric', desc: 'Motorized quarter-turn and multi-turn smart actuator systems with modulating & ON/OFF controls' },
+      { name: 'Manual', desc: 'Precision heavy-duty manual gearbox with handwheel & position indicator' },
+      { name: 'Hydraulic', desc: 'High-thrust electro-hydraulic actuators for quick shutoff and fail-safe operation' }
+    ],
     features: [
-      'Tandem twin-blade configuration with internal pressurization chamber',
-      'Automated seal air pressure regulation interlocked with plant DCS',
-      'Heavy-duty shaft packing glands with lantern ring purge',
-      'Seismic and high-vibration qualified robust structure'
+      'Near Zero Leakage Performance',
+      'Advanced Seal Air Barrier Technology',
+      'Positive Maintenance Isolation',
+      'Heavy Duty Fabricated Construction',
+      'Suitable for Critical Process Systems',
+      'Integrated Seal Air System Solutions'
+    ],
+    engineeringAdvantages: [
+      'Overcomes Conventional Damper Challenges (Leakage across sealing surfaces & unsafe downstream maintenance)',
+      'Pressurized seal air barrier maintains Pa > Pi (Seal Air Pressure > Inlet Pressure) for 100% upstream media isolation',
+      'Near zero downstream leakage protecting maintenance personnel and plant assets',
+      'Prevents thermal distortion leakage with reliable sealing under elevated temperatures up to 825°C',
+      'Eliminates ineffective shut-off under severe process and hazardous gas services'
+    ],
+    inspectionTesting: [
+      'Leakage Testing',
+      'Seal Air Performance Testing',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered'
     ],
     applications: [
-      'Selective Catalytic Reduction (SCR) & DeNOx Isolation',
-      'Flue Gas Desulfurization (FGD) Absorber Inlet/Outlet',
-      'Toxic Chemical and Hazardous Exhaust Gas Systems',
-      'Nuclear Ventilation & Dangerous Media Containment'
+      'RTO / SCR / FGD Systems',
+      'Incinerator Systems',
+      'Hot Gas Isolation',
+      'Maintenance Shut-Off Applications',
+      'Hazardous Gas Isolation'
+    ],
+    majorReferences: [
+      { endUser: 'AM/NS INDIA', application: 'RTO Systems', logo: '/images/clients/amns-logo.png' },
+      { endUser: 'JSW', application: 'Process hot gas Isolation', logo: '/images/clients/jsw-logo.png' },
+      { endUser: 'Saudi Electricity Company', application: 'Control / Isolation of Augmenting Air to Burner', logo: '/images/clients/saudi-electricity-company-logo.png' },
+      { endUser: 'Reliance Industries Limited', application: 'Flue Gas Isolation', logo: '/images/clients/reliance-logo.png' }
+    ],
+    galleryImages: [
+      { title: 'PNEUMATIC AIR SEAL BUTTERFLY', subtitle: 'Dia 1000 mm', image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Butterfly-Dia-1000-Line.webp' },
+      { title: 'PNEUMATIC AIR SEAL DIVERTER', subtitle: 'Dia 800 mm', image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Diverter-Dia-800.webp' },
+      { title: 'PNEUMATIC AIR SEAL BUTTERFLY', subtitle: 'Dia 400 mm', image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Butterfly-Dia-400.webp' },
+      { title: 'MOTORIZED AIR SEAL DAMPER', subtitle: 'Dia 1200 mm', image: '/images/gallery/be50/BE50-Motorized-Air-Seal-Damper-Dia-1200.webp' },
+      { title: 'PNEUMATIC AIR SEAL DAMPER', subtitle: 'Dia 1000 mm', image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Damper-Dia-1000.webp' },
+      { title: 'PNEUMATIC AIR SEAL DAMPER', subtitle: 'Dia 1700 mm', image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Damper-Dia-1700.webp' },
+      { title: 'PNEUMATIC AIR SEAL POPPET VALVE', subtitle: 'Dia 900 mm', image: '/images/gallery/be50/BE50-Pneumatic-Air-Seal-Poppet-Valve-Dia-900.webp' },
+      { title: 'SEAL AIR BARRIER SCHEMATIC', subtitle: 'Construction & Pressurization Principle', image: '/images/gallery/be50/BE50-Construction-Features-Seal-Air-Schematic.webp' }
+    ],
+    industriesServed: [
+      { name: 'Steel', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Power Generation', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'Petrochemicals', image: '/images/industries/industry-oil-gas.jpg' },
+      { name: 'Chemical', image: '/images/industries/industry-chemical.jpg' },
+      { name: 'Incineration & RTO', image: '/images/industries/industry-process.jpg' },
+      { name: 'Cement', image: '/images/industries/industry-cement.jpg' }
     ]
   },
   'double-offset-butterfly-damper-valves': {
@@ -444,36 +521,108 @@ export const productsData: Record<string, ProductDetail> = {
     id: 'double-disc-gate-valves',
     title: 'BE100 : DOUBLE DISC GATE VALVES',
     model: 'BE100 SERIES',
-    image: '/images/products/Motorized-Double-Disc-Gate-Valve-main-image.webp',
+    image: '/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1400.webp',
     category: 'isolation',
-    categoryLabel: 'Dirty Gas Isolation',
-    tagline: 'Robust dual disc wedging gate valve engineered for dirty, particulate-laden gas isolation with 100% full bore.',
-    desc: 'Fabricated wedging gate valve engineered for dirty and particulate-laden gas isolation. Small mechanical wedge expands dual disc plates firmly against hard-faced body seats upon closing. In open position, disc assembly retracts completely providing 100% full bore with zero pressure loss.',
-    longDesc: 'The DDGV Series Double Disc Gate Valve provides unobstructed full-bore gas passage when open, preventing accumulation of ash, dust, and heavy solids. Upon closure, an internal mechanical wedging mechanism pushes both discs outward against hardfaced body seats, ensuring reliable shutoff even in heavy particulate media.',
+    categoryLabel: 'Metal-to-Metal Wedging Isolation',
+    tagline: 'Engineered for Superior Gas Isolation with robust fabricated construction and metal-to-metal wedging type sealing arrangement.',
+    desc: 'Bellator BE100 Series Double Disc Gate Valves are specially engineered for superior gas isolation applications involving dusty, abrasive, and high temperature process media. Designed with robust fabricated construction and metal-to-metal wedging type sealing arrangement, these valves provide dependable shut-off performance and high sealing reliability under demanding operating conditions.',
+    longDesc: 'Bellator BE100 Series Double Disc Gate Valves are specially engineered for superior gas isolation applications involving dusty, abrasive, and high temperature process media. Designed with robust fabricated construction and metal-to-metal wedging type sealing arrangement, these valves provide dependable shut-off performance and high sealing reliability under demanding operating conditions.\n\nThe advanced double disc and wedge mechanism allows flexible seating action during valve closure, ensuring uniform contact between the disc and body seating surfaces. During opening operation, the disc plates retract smoothly, minimizing friction and enabling reliable movement of the complete disc assembly. Hard-faced seating surfaces further enhance wear resistance and long-term sealing performance.\n\nThe BE100 Series features a rising spindle design with heavy-duty guiding and stuffing box arrangements to ensure smooth operation and prevention of gas leakage to atmosphere. Manufactured using advanced engineering practices, these valves are suitable for critical process isolation applications and are available in Manual, Electric, Pneumatic, and Hydraulic operated configurations with AUMA or equivalent actuator options.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      '100% Unobstructed Full Bore with zero pressure drop',
-      'Mechanical dual disc wedging action for high seating force',
-      'Stellite hardfaced seats resilient against abrasive erosion',
-      'Optional purge air connection for man-safe zero leakage'
+      '100% Leak Proof [Through Body and Stem] & 100% at Downstream with taper seat design',
+      'Stress relief using the VSR method before final assembly, ensuring a long service life',
+      'Bi-Directional capability with anti-blowout design for added safety',
+      'Hydro seal arrangement for 100% man-safe isolation and zero leakage',
+      'Steam purging arrangement for melting tar, with two drain ports for removing molten tar & trapped materials',
+      'Size range from 300 mm to 3000 mm (DN300 to DN3000)'
     ],
-    leakage: '100% Isolation with Seal Air / Class VI Metal-to-Metal',
-    temp: '-20°C to +500°C',
-    pressure: 'Differential Pressure up to 5,000 mmWC',
-    sizes: 'DN200 to DN3,000',
-    materials: 'Fabricated Carbon Steel IS2062, SS304L/316L, Stellite Hardfaced Seats',
-    actuation: 'Electric Actuator with Bevel Gear, Pneumatic Cylinder, Manual Handwheel',
-    standards: 'ASME Sec. VIII, AWS D1.1, EN 1751 Class 4',
+    leakage: '100% Leak Proof [Through Body and Stem] & 100% at Downstream',
+    temp: '-25°C to 350°C',
+    pressure: 'PN1 / PN3',
+    sizes: '300 mm to 3000 mm (DN300 to DN3000)',
+    materials: 'ASTM A 36 / IS2062 E250 A, B, Br / ASTM A 516 Gr-70 / As per Client Requirement',
+    actuation: 'Manual / Motorized / Pneumatic / Hydraulic etc.',
+    standards: 'ASME B16.34 / ASME SEC VIII; SEC V; SEC IX',
+    shapes: 'Round',
+    endConnection: 'Double Flanged',
+    technicalSpecs: [
+      { parameter: 'Size Range', details: '300 mm to 3000 mm' },
+      { parameter: 'MOC', details: 'ASTM A 36 / IS2062 E250 A, B, Br / ASTM A 516 Gr-70 / As per Client Requirement' },
+      { parameter: 'Flowing Media', details: 'Air / Coke Oven Gas / Flue Gas etc.' },
+      { parameter: 'Design Temp.', details: '-25°C to 350°C' },
+      { parameter: 'Pressure Ratings', details: 'PN1 / PN3' },
+      { parameter: 'End Connection', details: 'Double Flanged' },
+      { parameter: 'Flange Drilling', details: 'IS 6392 / ASME B16.5 / ASME B16.47 / BS EN 1092-1 / Mfg. STD.' },
+      { parameter: 'Testing', details: 'ANSI FCI 70-2 / DIN 3230 / Mfg. STD.' },
+      { parameter: 'Sealing Efficiency', details: '100% Leak Proof [Through Body and Stem] & 100% at Downstream' },
+      { parameter: 'Drive Mode', details: 'Manual / Motorized / Pneumatic / Hydraulic etc.' },
+      { parameter: 'Codes and Standards', details: 'ASME B16.34 / ASME SEC VIII; SEC V; SEC IX' }
+    ],
+    mocTable: [
+      { component: 'Body & Bonnet', material: 'ASTM A36 / IS2062 / ASTM A516 Gr-70 / Client Specific' },
+      { component: 'Double Discs', material: 'Fabricated Steel with Hardfaced Stellite / SS Seating' },
+      { component: 'Spindle / Stem', material: 'Rising Spindle Stainless Steel / High Tensile Alloy' },
+      { component: 'Seating Surfaces', material: 'Taper Seat Metal-to-Metal Hard-Faced' },
+      { component: 'Stuffing Box', material: 'Heavy-Duty with Purging Arrangement for Atmosphere Sealing' }
+    ],
+    automationOptions: [
+      { name: 'Motorized / Electric', desc: 'AUMA / Rotork or equivalent multi-turn actuator with bevel gearbox and limit switches' },
+      { name: 'Pneumatic', desc: 'Heavy-duty linear pneumatic cylinder actuation with fail-safe features' },
+      { name: 'Hydraulic', desc: 'Hydraulic power cylinder package for high thrust and emergency trip closing' },
+      { name: 'Manual', desc: 'Manual bevel gear drive with handwheel for smooth, controlled operation' }
+    ],
     features: [
-      'Dual disc floating construction with central spreading wedge',
-      'Bottom dust purge ports and cleanout access covers',
-      'Self-cleaning seating surfaces that scrape deposits away',
-      'Heavy-duty exterior yoke and rising stem assembly'
+      'Taper seat design for positive wedging closure',
+      'Stress relief using the VSR method before final assembly, ensuring a long service life',
+      'Bi-Directional capability',
+      'Anti-blowout design for added safety',
+      'Available With Different Orientations',
+      '100% Leak tight performance',
+      'Lower Torque, Economical, Longer Life',
+      'Easy replacement of discs',
+      'Adjustment scope in the disc mechanism for achieving zero leakage',
+      'Lower torque requirements, offering an economical and longer life solution',
+      'Hydro seal arrangement for 100% man-safe isolation',
+      'Steam purging arrangement for melting tar, with two drain ports for removing molten tar and other trapped materials',
+      'Purging arrangement at the stuffing box to ensure proper lubrication'
+    ],
+    inspectionTesting: [
+      'Leakage Testing (Hydro/Pne.)',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Blast Furnace Gas & Coke Oven Gas Handling',
-      'Sponge Iron DRI Plant De-dusting Systems',
-      'Cement Clinker Cooler & Raw Meal Ducts',
-      'Heavy Ash-Laden Boiler Flue Gas Ducts'
+      'Coke Oven Gas Isolation',
+      'Process Hot Gas Isolation',
+      'Hot Air Isolation',
+      'Blast Furnace Gas Handling',
+      'Power Plant Flue Gas Systems',
+      'Petrochemical Process Systems'
+    ],
+    majorReferences: [
+      { endUser: 'JSW', application: 'Coke Oven Gas isolation', logo: '/images/clients/jsw-logo.png' },
+      { endUser: 'AM/NS INDIA', application: 'Process hot gas Isolation', logo: '/images/clients/amns-logo.png' },
+      { endUser: 'TATA STEEL', application: 'Coke Oven Gas isolation', logo: '/images/clients/tata-steel-logo.png' },
+      { endUser: 'adani Petrochemicals', application: 'Hot Air Isolation', logo: '/images/clients/adani-logo.png' }
+    ],
+    galleryImages: [
+      { title: 'MOTORISED DOUBLE DISC GATE VALVE', subtitle: 'Size Dia 1400 mm', image: '/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1400.webp' },
+      { title: 'MOTORISED DOUBLE DISC GATE VALVE', subtitle: 'Size Dia 1200 mm', image: '/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1200.webp' },
+      { title: 'MOTORISED DOUBLE DISC GATE VALVE', subtitle: 'Vertical Rising Spindle Construction', image: '/images/gallery/be100/BE100-Motorised-Double-Disc-Vertical-Assembly.webp' },
+      { title: 'LEAKAGE TESTING - BODY HYDRO TEST', subtitle: 'Body Test 1.5x Design Pressure', image: '/images/gallery/be100/BE100-Leakage-Testing-Body-Hydro-Test.webp' },
+      { title: 'LEAKAGE TESTING - SEAT HYDRO TEST', subtitle: 'Seat Test 1.1x Design Pressure • 100% Leak Proof', image: '/images/gallery/be100/BE100-Leakage-Testing-Seat-Hydro-Test.webp' },
+      { title: 'DIMENSIONAL DRAWING & GA DATA', subtitle: 'DN300 to DN2000 Standard Dimensions', image: '/images/gallery/be100/BE100-Dimensional-Drawing.webp' }
+    ],
+    industriesServed: [
+      { name: 'Power', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'Steel', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Petrochem', image: '/images/industries/industry-oil-gas.jpg' }
     ]
   },
   'three-lever-shut-off-damper-valves': {
@@ -598,142 +747,479 @@ export const productsData: Record<string, ProductDetail> = {
     model: 'BE90 SERIES',
     image: '/images/products/BE90-Motorized-Guillotine-Damper-Valve.png',
     category: 'isolation',
-    categoryLabel: 'Sliding Blade Gate',
-    tagline: 'Heavy-duty sliding blade gate damper engineered to slice through heavy ash sediment for 100% duct isolation.',
-    desc: 'Heavy-duty sliding blade gate dampers providing complete full-duct isolation during plant turnarounds and boiler inspections. Features self-cleaning rack and pinion, screw, or chain drives designed to slice through heavy fly ash and dust sediment without binding.',
-    longDesc: 'Bellator BE-90 Series Guillotine Dampers are designed for total duct shutoff in dirty, solid-laden flue gas streams. When open, the blade is 100% retracted from the gas flow, eliminating flow obstruction and erosion. The tapered blade edge cuts cleanly through dense ash build-up during closure.',
+    categoryLabel: 'Sliding Blade Isolation',
+    tagline: 'Engineered for Positive Isolation Performance in severe, dirty, and high-temperature gas handling systems.',
+    desc: 'Bellator BE90 Series Guillotine Damper Valves are specially engineered for reliable positive isolation applications involving dusty, abrasive, high temperature, and process gas handling systems. The sliding blade arrangement provides dependable shut-off performance with minimal flow obstruction in the fully open position, making these dampers highly suitable for severe service conditions.',
+    longDesc: 'Bellator BE90 Series Guillotine Damper Valves are specially engineered for reliable positive isolation applications involving dusty, abrasive, high temperature, and process gas handling systems. The sliding blade arrangement provides dependable shut-off performance with minimal flow obstruction in the fully open position, making these dampers highly suitable for severe service conditions.\n\nDesigned for heavy-duty industrial applications, the BE90 Series ensures reliable maintenance isolation and stable operation under continuous duty conditions. The robust blade guiding and sealing arrangement enhances operational reliability while minimizing wear during repeated operation cycles.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE90 Series dampers are available in Pneumatic, Hydraulic, Electric, and Manual operated configurations with customized designs to suit specific process requirements.',
+    taglineBrochure: '“Engineered for Positive Isolation Performance • Heavy Duty Construction • Minimal Flow Obstruction”',
     keyHighlights: [
-      'Custom sizes up to 6,000 x 6,000 mm in square/rectangular/round',
-      'Zero duct flow obstruction and pressure drop in open position',
-      '100% Man-Safe personnel protection when combined with seal air',
-      'Self-cleaning drive systems resistant to heavy particulate binding'
+      'Positive Isolation Design with sliding blade shut-off technology',
+      'Full Bore Unobstructed Opening with low pressure drop in open position',
+      'Suitable for Dusty, Abrasive & High Temperature Media up to 825°C',
+      'Heavy Duty Sliding Blade Construction with robust guide & sealing system',
+      'Large Size Capability: Ø300 mm to Ø5000 mm Round / Rectangular up to 5000 mm'
     ],
-    leakage: 'Up to 100% Man-Safe with Seal Air System',
-    temp: 'Up to +750°C',
-    pressure: 'Differential Pressure up to 6,000 mmWC',
-    sizes: 'Custom Square & Rectangular up to 6,000 x 6,000 mm',
-    materials: 'IS2062, ASTM A516 Gr-70, SS316L Blade, Inconel Flexible Perimeter Seals',
-    actuation: 'Rack & Pinion with Electric Gearmotor, Chain Drive, Pneumatic Cylinder',
-    standards: 'ASME Sec. VIII, AMCA 500-D, NFPA 85',
+    leakage: 'Up to 99.99%',
+    temp: '-25°C to 825°C',
+    pressure: 'Up to PN1',
+    sizes: 'Ø300 mm to Ø5000 mm (Rectangular up to 5000 mm)',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO',
+    shapes: 'Round / Rectangular',
+    endConnection: 'Flanged / Butt Weld',
+    rectangularSize: 'Up to 5000 mm',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Guillotine Damper Valve' },
+      { parameter: 'Leakage Performance', details: 'Up to 99.99%' },
+      { parameter: 'Size Range', details: 'Ø300 mm to Ø5000 mm' },
+      { parameter: 'End Connection', details: 'Flanged / Butt Weld' },
+      { parameter: 'Rectangular Size', details: 'Up to 5000 mm' },
+      { parameter: 'Blade Design', details: 'Single / Double Blade' },
+      { parameter: 'Design Temperature', details: '-25°C to 825°C' },
+      { parameter: 'Mounting', details: 'Vertical / Horizontal' },
+      { parameter: 'Pressure Rating', details: 'Up to PN1' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' },
+      { parameter: 'Automation', details: 'Manual / Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS304 / Customer Specific' },
+      { component: 'Disc', material: 'SS304 / SS316 / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metallic' },
+      { component: 'Seal', material: 'Metallic / Soft' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Pneumatic cylinder actuation with solenoid valves, limit switches & fail-safe air reservoir tank' },
+      { name: 'Electric', desc: 'Electric motor drive with precision rack & pinion or lead screw mechanism for smooth blade travel' },
+      { name: 'Hydraulic', desc: 'Electro-hydraulic power pack cylinder drives for high thrust and emergency rapid closure' },
+      { name: 'Manual', desc: 'Manual handwheel or chain pulley operated rack & pinion / lead screw mechanisms' }
+    ],
     features: [
-      'Heavy structural steel framework with guide rollers and scraper blades',
-      'Flexible metallic Inconel or stainless perimeter leaf seals',
-      'External seal air pressurization plenum',
-      'Motorized rack & pinion or heavy-duty twin lead screw actuation'
+      'Positive Isolation Design',
+      'Full Bore Unobstructed Opening',
+      'Suitable for Dusty & Abrasive Media',
+      'Heavy Duty Sliding Blade Construction',
+      'Large Size Capability',
+      'Low Pressure Drop in Open Position',
+      'Rack & Pinion Drive Options',
+      'Maintenance Friendly Design'
+    ],
+    engineeringAdvantages: [
+      'Overcomes Conventional Damper Challenges (Incomplete shut-off under dusty service & high turbulence)',
+      'Positive sliding blade isolation slices through heavy particulates and dense ash build-up',
+      'Full flow opening with minimal flow obstruction and zero pressure drop in open position',
+      'Reinforced high temperature construction prevents blade distortion at elevated temperatures up to 825°C',
+      'Reliable large duct isolation with robust blade guiding and sealing arrangement',
+      'Eliminates difficult maintenance access with modular maintenance-friendly design'
+    ],
+    inspectionTesting: [
+      'Leakage Testing',
+      'Seal Air Performance Testing',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Thermal Power Plant Utility Boiler Outlets',
-      'Electrostatic Precipitator (ESP) Inlet & Outlet Isolation',
-      'Flue Gas Desulfurization (FGD) System Isolation',
-      'Cement Raw Mill and Kiln Exhaust Ducts'
+      'Boiler Isolation Systems',
+      'ESP Systems (Electrostatic Precipitators)',
+      'Bag Filter Systems',
+      'Kiln Process Systems',
+      'Hot Gas Isolation',
+      'Dust Handling Systems',
+      'Process Shutdown Isolation',
+      'Pollution Control Systems',
+      'Ash Handling Systems',
+      'Maintenance Isolation Applications'
+    ],
+    majorReferences: [
+      { endUser: 'TATA STEEL', application: 'Process Isolation Systems', logo: '/images/clients/tata-steel-logo.png' },
+      { endUser: 'Shree Cement', application: 'At Recirculation Duct', logo: '/images/clients/shree-cement-logo.png' },
+      { endUser: 'JSW', application: 'Fitted at Reactor Inlet', logo: '/images/clients/jsw-logo.png' },
+      { endUser: 'ADITYA BIRLA CARBON', application: 'Flue Gas Isolation', logo: '/images/clients/aditya-birla-carbon-logo.png' }
+    ],
+    galleryImages: [
+      { title: 'MOTORISED GUILLOTINE DAMPER', subtitle: 'Size Dia 3600 mm', image: '/images/gallery/be90/BE90-Motorised-Guillotine-Dia-3600.webp' },
+      { title: 'MOTORISED GUILLOTINE DAMPER', subtitle: 'Size 2200 X 1300 mm', image: '/images/gallery/be90/BE90-Motorised-Guillotine-2200x1300.webp' },
+      { title: 'MOTORISED GUILLOTINE DAMPER', subtitle: 'Size Dia 1400 mm (SS304)', image: '/images/gallery/be90/BE90-Motorised-Guillotine-Dia-1400-SS304.webp' },
+      { title: 'CHAIN PULLEY OPERATED GUILLOTINE', subtitle: 'Rack N Pinion Mechanism Size 1000X800 mm', image: '/images/gallery/be90/BE90-Chain-Pulley-Rack-Pinion-1000x800.webp' },
+      { title: 'MOTORISED RACK N PINION GUILLOTINE', subtitle: 'Size Dia 1200 mm', image: '/images/gallery/be90/BE90-Motorised-Rack-Pinion-Dia-1200.webp' },
+      { title: 'PNEUMATIC GUILLOTINE DAMPER', subtitle: 'With Air Reservoir (Fail safe) Size Dia 800 mm', image: '/images/gallery/be90/BE90-Pneumatic-Guillotine-Air-Reservoir-Dia-800.webp' },
+      { title: 'PNEUMATIC GUILLOTINE DAMPER', subtitle: 'Size 2000X2000 mm', image: '/images/gallery/be90/BE90-Pneumatic-Guillotine-2000x2000.webp' },
+      { title: 'MOTORISED LEAD SCREW GUILLOTINE', subtitle: 'Size Dia 1600 mm • Export Job to Saudi • 99.99% Sealing', image: '/images/gallery/be90/BE90-Motorised-Lead-Screw-Dia-1600.webp' },
+      { title: 'MANUAL LEAD SCREW GUILLOTINE', subtitle: 'Size Sq. 600 mm', image: '/images/gallery/be90/BE90-Manual-Lead-Screw-Sq-600.webp' }
+    ],
+    industriesServed: [
+      { name: 'Power & Thermal Plants', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'Steel & Metallurgy', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Cement & Minerals', image: '/images/industries/industry-cement.jpg' },
+      { name: 'Carbon Black & Chemical', image: '/images/industries/industry-chemical.jpg' },
+      { name: 'Pollution Control & ESP', image: '/images/industries/industry-process.jpg' },
+      { name: 'Oil, Gas & Petrochemical', image: '/images/industries/industry-oil-gas.jpg' }
     ]
   },
   'multi-louver-damper-valves': {
     id: 'multi-louver-damper-valves',
     title: 'BE70 : MULTI-LOUVER DAMPER VALVES',
     model: 'BE70 SERIES',
-    image: '/images/products/BE70-Pneumatic-Opposed-Blade-Multilouver-Damper-Valve.png',
+    image: '/images/gallery/be70/BE70-Pneumatic-Control-Duty-Dia-450.webp',
     category: 'control',
-    categoryLabel: 'Opposed / Parallel Blades',
-    tagline: 'Multi-blade aerodynamic modulating damper delivering linear flow regulation and low operating torque.',
-    desc: 'Engineered with multiple synchronized aerodynamic blades for high-precision flow regulation and low operating torque in large rectangular ducts. Opposed blade arrangement delivers linear airflow throttling, while parallel blade synchronization enables rapid gas cutoff.',
-    longDesc: 'The BE-70 Series Multi-Louver Damper is the premier choice for precise flow control and pressure modulation in large duct systems. Multiple streamlined airfoil blades distribute operating torque across several shafts, allowing high-speed response with compact actuation.',
+    categoryLabel: 'Engineered for Precision Flow Control',
+    tagline: 'Engineered for Precision Flow Control with multiple synchronized aerodynamic blades providing superior modulation and low pressure loss.',
+    desc: 'Bellator BE70 Series Multi-Louver Damper Valves are specially engineered for accurate airflow control, modulation, and isolation in industrial ventilation and process systems. The multiple blade arrangement provides improved flow distribution, enhanced throttling characteristics, and smooth control performance compared to conventional single blade dampers.',
+    longDesc: 'Designed for reliable airflow management and stable process control, the BE70 Series ensures dependable operation under continuous duty conditions. The optimized blade design and linkage mechanism provide uniform flow control, reduced pressure loss, and improved operational efficiency.\n\nManufactured with robust fabricated construction and application-oriented engineering, the BE70 Series dampers are available in Parallel Blade, Opposed Blade, and customized mixed blade configurations with Manual, Pneumatic, Electric, or Hydraulic operation options.',
+    taglineBrochure: '“Engineered for Precision Flow Control • Smooth Blade Synchronization • Heavy Duty Performance”',
     keyHighlights: [
-      'Opposed blade configuration for precise linear flow modulation',
-      'Parallel blade configuration for rapid duct shut-off',
-      'Aerodynamic hollow airfoil blades minimizing system pressure loss',
-      'Modular multi-section design for ducts up to 6,000 x 6,000 mm'
+      'Precision Airflow Modulation with multiple synchronized aerodynamic blades',
+      'Parallel & Opposed Blade Designs for rapid cutoff or precise linear throttling',
+      'Improved Flow Distribution & Reduced Turbulence compared to single blade dampers',
+      'Low Pressure Drop Design with optimized aerodynamic blade profiles',
+      'Heavy Duty Fabricated Construction suitable for large duct sizes',
+      'Smooth Blade Synchronization with heavy-duty precision linkage mechanisms'
     ],
-    leakage: 'Up to 99.5% Tight Sealing with Stainless Flexible Edge Seals',
-    temp: 'Up to +750°C',
-    pressure: 'Up to 8,500 mmWC',
-    sizes: 'Up to 6,000 x 6,000 mm Multi-Span Ducts',
-    materials: 'IS2062, Corten Steel, ASTM A240 Type 304L/316L, SS310S',
-    actuation: 'Pneumatic Positioner 4-20mA, Modulating Electric Actuator, Manual Lever',
-    standards: 'AMCA 500-D, EN 1751, CE Marked',
+    leakage: 'Up to 99.95%',
+    temp: '-25°C to 825°C',
+    pressure: 'Up to PN1',
+    sizes: 'Ø300 mm to Ø3000 mm (Round) / Up to 12000 mm (Rectangular)',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft | Bearings: Heavy Duty Self Lubricated',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO',
+    shapes: 'Round / Rectangular Multi-Span',
+    endConnection: 'Flanged / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Multi-Louver' },
+      { parameter: 'Leakage Performance', details: 'Up to 99.95%' },
+      { parameter: 'Size Range', details: 'Ø300 mm to Ø3000 mm' },
+      { parameter: 'End Connection', details: 'Flanged / Butt Weld' },
+      { parameter: 'Rectangular Size', details: 'Up to 12000 mm' },
+      { parameter: 'Blade Design', details: 'Parallel / Opposed / Mixed' },
+      { parameter: 'Design Temperature', details: '-25°C to 825°C' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' },
+      { parameter: 'Pressure Rating', details: 'Up to PN1' },
+      { parameter: 'Automation', details: 'Manual / Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS304 / Customer Specific' },
+      { component: 'Disc', material: 'SS304 / SS316 / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metallic' },
+      { component: 'Seal', material: 'Metallic / Soft' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Pneumatic control cylinder / actuator with smart 4-20mA positioner for high-speed precise modulating control' },
+      { name: 'Electric', desc: 'Motorized modulating electric actuator with continuous positioning feedback and manual override' },
+      { name: 'Hydraulic', desc: 'Electro-hydraulic actuator for heavy industrial dampers requiring high holding torque' },
+      { name: 'Manual', desc: 'Manual multi-turn gearbox or locking quadrant lever for local flow balancing and trimming' }
+    ],
     features: [
-      'Precision external linkage mechanism with spherical rod end bearings',
-      'Stainless steel flexible interlocking blade edge seals',
-      'Outboard relubricable flange bearings isolated from duct heat',
-      'Optional seal air system for zero-leakage isolation'
+      'Precision Airflow Modulation',
+      'Parallel & Opposed Blade Designs',
+      'Improved Flow Distribution',
+      'Low Pressure Drop Design',
+      'Heavy Duty Fabricated Construction',
+      'Smooth Blade Synchronization',
+      'Suitable for Large Duct Sizes'
+    ],
+    engineeringAdvantages: [
+      'Overcomes Conventional Single Damper Challenges: Uneven airflow distribution replaced with optimized multi-blade arrangement',
+      'Improved airflow uniformity eliminating poor modulation characteristics',
+      'Enhanced throttling accuracy preventing high turbulence generation',
+      'Better process control stability & reduced turbulence generation for precise flow balancing'
+    ],
+    optionalFeatures: [
+      'Parallel Blade Configuration for rapid duct isolation & high flow capacity',
+      'Opposed Blade Configuration for precision linear throttling & flow balancing',
+      'Mixed Blade Configuration for customized combination process control',
+      'Seal Air Pressurization System for 100% Zero-Bypass Isolation',
+      'High Temperature Outboard Bearings isolated from duct heat stream',
+      'Anti-Blowout Shaft Design & C5 Marine Protective Coating'
+    ],
+    inspectionTesting: [
+      'Leakage Testing',
+      'Seal Air Performance Testing',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered'
     ],
     applications: [
-      'Forced Draft (FD) & Induced Draft (ID) Fan Modulation',
-      'Gas Turbine Exhaust Tempering & Ventilation Control',
-      'Industrial Boiler Combustion Air Balancing',
-      'Steel Mill Baghouse Air Volume Regulation'
+      'ID Fan Control',
+      'FD Fan Control',
+      'Boiler Air Systems',
+      'HVAC Ventilation Systems',
+      'Process Air Modulation',
+      'Furnace Air Control',
+      'Flue Gas Systems',
+      'Thermal Oxidizer Systems',
+      'Exhaust Air Systems'
+    ],
+    majorReferences: [
+      { endUser: 'Vedanta Sesa Goa', application: 'Blast Furnace Emergency Vent Before MDC', logo: '/images/clients/vedanta-sesagoa-logo.png' },
+      { endUser: 'Rio Grande LNG', application: 'Primary Air Control', logo: '/images/clients/rio-grande-lng-logo.png' },
+      { endUser: 'JGC', application: 'Primary Air Control', logo: '/images/clients/jgc-logo.png' },
+      { endUser: 'Cedar LNG', application: 'RTO Process Control Line', logo: '/images/clients/cedar-lng-logo.png' }
+    ],
+    galleryImages: [
+      { title: 'PNEUMATIC CONTROL DUTY MULTI-LOUVER DAMPER', subtitle: 'Size Dia 450 mm', image: '/images/gallery/be70/BE70-Pneumatic-Control-Duty-Dia-450.webp' },
+      { title: 'PNEUMATIC CONTROL DUTY MULTI-LOUVER DAMPER', subtitle: 'Size Sq. 850 mm', image: '/images/gallery/be70/BE70-Pneumatic-Control-Duty-Sq-850.webp' },
+      { title: 'MOTORISED MULTI-LOUVER DAMPER', subtitle: 'Size Dia 2400 mm', image: '/images/gallery/be70/BE70-Motorised-Multi-Louver-Dia-2400.webp' },
+      { title: 'PNEUMATIC MULTI-LOUVER DAMPER', subtitle: 'Size 2600 x 1600 mm', image: '/images/gallery/be70/BE70-Pneumatic-Multi-Louver-2600x1600.webp' }
+    ],
+    industriesServed: [
+      { name: 'Power & Thermal Utilities', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'LNG & Cryogenic Terminals', image: '/images/industries/industry-oil-gas.jpg' },
+      { name: 'Steel & Blast Furnace Plants', image: '/images/industries/industry-steel.jpg' },
+      { name: 'RTO & Environmental Systems', image: '/images/industries/industry-chemical.jpg' },
+      { name: 'Cement & Kiln Exhaust', image: '/images/industries/industry-cement.jpg' },
+      { name: 'HVAC & Industrial Ventilation', image: '/images/industries/industry-process.jpg' }
     ]
   },
   'three-way-diverter-damper-valves': {
     id: 'three-way-diverter-damper-valves',
     title: 'BE60 : THREE WAY DIVERTER DAMPER VALVES',
     model: 'BE60 SERIES',
-    image: '/images/products/BE60-Motorized-Round-Diverter-Damper-Valve.png',
+    image: '/images/gallery/be60/BE60-Pneumatic-Diverter-Dia-500.webp',
     category: 'control',
-    categoryLabel: 'Flow Redirection',
-    tagline: 'High-speed diverter valve engineered for gas turbine CCGT exhaust bypass and HRSG steam recovery.',
-    desc: 'Designed for combined cycle gas turbine (CCGT) exhaust bypass and heat recovery steam generator (HRSG) applications. Fast pivoting flap redirects massive turbine exhaust gas flow between bypass stack and boiler with emergency fail-safe transition under 30 seconds.',
-    longDesc: 'Bellator BE-60 Series Three-Way Diverter Dampers are mission-critical components in Combined Cycle Gas Turbine (CCGT) installations. The single pivot toggle flap safely modulates and redirects massive exhaust streams between the bypass stack (simple cycle) and the heat recovery steam generator (combined cycle).',
+    categoryLabel: 'Intelligent Flow Diversion Technology',
+    tagline: 'Intelligent Flow Diversion Technology specially engineered for reliable diversion, isolation, and routing of hot gases and process media.',
+    desc: 'Bellator BE60 Series Three Way Diverter Damper Valves are specially engineered for reliable diversion, isolation, and routing of hot gases and process media in critical industrial systems. Designed to handle high temperature, dusty, and corrosive gas applications, these dampers ensure low pressure drop, dependable sealing performance, and smooth operational switching between multiple process lines.',
+    longDesc: 'The BE60 Series is designed for demanding service conditions where reliable diversion control is essential for safe and efficient plant operation. Optimized flow path geometry and robust fabricated construction ensure stable operation, reduced thermal stress, and long operational life under continuous duty conditions.\n\nManufactured using advanced engineering and validation practices, the BE60 Series dampers are available in multiple orientation configurations with Pneumatic, Electric, Hydraulic, or Manual operation options to suit specific application requirements.',
+    taglineBrochure: '“Intelligent Flow Diversion • Robust Construction • Reliable Performance”',
     keyHighlights: [
-      'Emergency fast trip transition in under 30 seconds',
-      'Continuous seal air barrier for 100% human-safe HRSG entry',
-      'Internal ceramic blanket insulation protecting outer casing',
-      'Electro-hydraulic power unit (HPU) with accumulator fail-safe'
+      'Reliable Flow Diversion Technology with smooth operational switching',
+      'Low Pressure Drop Design with optimized flow path geometry',
+      'Available in Multiple Orientations (BE-1 through BE-7 configurations)',
+      'Heavy Duty Fabricated Construction ensuring long operational life',
+      'Smooth Switching Operation & High Temperature Handling up to 825°C',
+      'Suitable for Dusty & Corrosive Media in harsh industrial environments'
     ],
-    leakage: '100% Isolation on Non-Operating Port with Seal Air System',
-    temp: 'Up to +650°C Exhaust Gas',
-    pressure: 'Up to 5,000 mmWC',
-    sizes: 'Round & Square Ducts up to DN4,000',
-    materials: 'ASTM A516 Gr-70, Corten Steel, 304L/316L, Internal Ceramic Blanket Insulation',
-    actuation: 'Electro-Hydraulic Power Unit (HPU) with Fast Trip, Electric Actuator',
-    standards: 'ASME B31.1, NFPA 85, SIL-3 Certified Hydraulic System',
+    leakage: 'Up to 99.95%',
+    temp: '-25°C to 825°C',
+    pressure: 'Up to PN1',
+    sizes: 'Ø150 mm to Ø3000 mm (Round) / Up to 3000 mm (Rectangular)',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO',
+    shapes: 'Round / Rectangular (T-Type, Y-Type, Box Type)',
+    endConnection: 'Flanged / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Three Way Diverter' },
+      { parameter: 'Leakage Performance', details: 'Up to 99.95%' },
+      { parameter: 'Size Range', details: 'Ø150 mm to Ø3000 mm' },
+      { parameter: 'End Connection', details: 'Flanged / Butt Weld' },
+      { parameter: 'Rectangular Size', details: 'Up to 3000 mm' },
+      { parameter: 'Design Options', details: 'T-Type / Y-Type' },
+      { parameter: 'Design Temperature', details: '-25°C to 825°C' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' },
+      { parameter: 'Pressure Rating', details: 'Up to PN1' },
+      { parameter: 'Automation', details: 'Manual / Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS304 / Customer Specific' },
+      { component: 'Disc', material: 'SS304 / SS316 / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metallic' },
+      { component: 'Seal', material: 'Metallic / Soft' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Heavy-duty pneumatic actuator with positioners, limit switches & quick-switch fail-safe options' },
+      { name: 'Electric', desc: 'Motorized quarter-turn/lever drive for smooth multi-port redirection and positioning' },
+      { name: 'Hydraulic', desc: 'Electro-hydraulic power unit for high-thrust, rapid emergency diversion' },
+      { name: 'Manual', desc: 'Heavy-duty gear operator with handwheel and clear position indicator' }
+    ],
     features: [
-      'Double toggle blade design preventing thermal distortion',
-      'Metallic flexible perimeter seal leaves with continuous air purge',
-      'Integrated cold casing insulation system',
-      'Redundant hydraulic cylinders and SIL-3 safety control loop'
+      'Reliable Flow Diversion Technology',
+      'Low Pressure Drop Design',
+      'Available in Multiple Orientations',
+      'Heavy Duty Fabricated Construction',
+      'Smooth Switching Operation',
+      'Suitable for Dusty & Corrosive Media',
+      'Available Diverter Designs: T-Type, Y-Type, and Box Type'
+    ],
+    optionalFeatures: [
+      'Anti-Blowout Shaft Design',
+      'Seismic Qualified Design',
+      'High Temperature Insulation & Cold Casing Design',
+      'Seal Air Pressurization System for 100% Zero Bypass Leakage',
+      'C5 / NORSOK Protective Coating System',
+      'Extended Bonnet & Shaft Arrangement'
+    ],
+    inspectionTesting: [
+      'Leakage Testing',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered'
     ],
     applications: [
-      'Combined Cycle Power Plants (CCGT Bypass Systems)',
-      'Heat Recovery Steam Generator (HRSG) Inlets',
-      'Waste Heat Recovery Boiler Switching Ducts',
-      'Gas Turbine Fast Peaking Power Stations'
+      'WHRB Systems',
+      'SCR / FGD Systems',
+      'Thermal Oxidizers',
+      'Incinerator Systems',
+      'Multi-Stream Process Routing',
+      'Emergency Bypass Systems',
+      'Process Shutdown Systems'
+    ],
+    majorReferences: [
+      { endUser: 'Welspun', application: 'Waste Heat Recovery System', logo: '/images/clients/welspun-logo.png' },
+      { endUser: 'Haldia Petrochemicals', application: 'RTO System - Gas Diversion', logo: '/images/clients/haldia-logo.png' },
+      { endUser: 'Unilever', application: 'Waste Heat Recovery System', logo: '/images/clients/unilever-logo.png' },
+      { endUser: 'Tamilnadu Petroproducts Ltd (TPL)', application: 'Hot Flue Gas Diversion system', logo: '/images/clients/tpl-logo.png' }
+    ],
+    galleryImages: [
+      { title: 'PNEUMATIC THREE WAY DIVERTER DAMPER', subtitle: 'Dia 500 mm', image: '/images/gallery/be60/BE60-Pneumatic-Diverter-Dia-500.webp' },
+      { title: 'MOTORISED THREE WAY DIVERTER DAMPER', subtitle: 'Dia 1200 mm (Pair)', image: '/images/gallery/be60/BE60-Motorised-Diverter-Dia-1200-Pair.webp' },
+      { title: 'MOTORISED THREE WAY DIVERTER DAMPER', subtitle: 'Dia 1200 mm (Production Line)', image: '/images/gallery/be60/BE60-Motorised-Diverter-Dia-1200-Line.webp' },
+      { title: 'BE60 ORIENTATION OPTIONS', subtitle: 'BE-1 to BE-7 Flow Routing Configurations', image: '/images/gallery/be60/BE60-Orientation-Options-Chart.webp' }
+    ],
+    industriesServed: [
+      { name: 'Power Generation & WHRB', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'Petrochemicals & RTO', image: '/images/industries/industry-oil-gas.jpg' },
+      { name: 'Chemical & Process', image: '/images/industries/industry-chemical.jpg' },
+      { name: 'Incineration Systems', image: '/images/industries/industry-process.jpg' },
+      { name: 'Steel & Metallurgy', image: '/images/industries/industry-steel.jpg' },
+      { name: 'FGD / SCR Systems', image: '/images/industries/industry-cement.jpg' }
     ]
   },
   'poppet-damper-valves': {
     id: 'poppet-damper-valves',
     title: 'BE80 : POPPET DAMPER VALVES',
     model: 'BE80 SERIES',
-    image: '/images/products/BE80-Pneumatic-Two-Way-Poppet-Damper-Valve-Verticle-Orientation.png',
+    image: '/images/gallery/be80/BE80-Hero-Pneumatic-Three-Way-Dia-1200.webp',
     category: 'control',
-    categoryLabel: 'Fast Pneumatic Stroke',
-    tagline: 'High-speed directional and compartment isolation valve for baghouse pulse-jet cleaning systems.',
-    desc: 'High-speed directional and isolation valves developed for fabric filter baghouses, electrostatic precipitators, and regenerative thermal oxidizers (RTO). Completes full open/close cycle in 3 to 5 seconds to isolate compartments during pulse-jet cleaning.',
-    longDesc: 'The BE-80 Series Poppet Damper is engineered for rapid cycling in dust collection and pollution abatement systems. Its linear reciprocating action allows whole baghouse compartments to be isolated within 3 seconds, enabling online filter cleaning and maintenance without shutting down process production.',
+    categoryLabel: 'Advanced Vertical Isolation Technology',
+    tagline: 'Advanced Vertical Isolation Technology specially engineered for reliable shut-off, flow diversion, and positive isolation applications.',
+    desc: 'Bellator BE80 Series Poppet Damper Valves are specially engineered for reliable shut-off, flow diversion, and positive isolation applications involving dusty, corrosive, and high temperature process media. The vertical reciprocating disc arrangement provides dependable sealing performance, reduced pressure loss, and reliable operation under demanding service conditions.',
+    longDesc: 'Designed for critical process isolation applications, the BE80 Series ensures smooth vertical sealing movement and enhanced operational reliability during continuous operation. The optimized sealing arrangement minimizes leakage and improves long-term performance in challenging industrial environments.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE80 Series dampers are available in Two-Way and Three-Way configurations with Vertical or Horizontal mounting orientations and multiple automation options.',
+    taglineBrochure: '“Advanced Vertical Isolation Technology • High Performance • Reliable Shut-Off”',
     keyHighlights: [
-      'Ultra-fast stroke time: 3 to 5 seconds per cycle',
-      'High cycle life rated for millions of operations',
-      'Available in 2-way and 3-way flow configurations',
-      'Resilient Viton/PTFE or metal-to-metal seat options'
+      'Vertical Reciprocating Sealing Design with dependable positive shut-off',
+      'Available in Two-Way & Three-Way Designs for versatile process layouts',
+      'High Temperature Capability suitable up to 825°C',
+      'Low Pressure Drop Design & Heavy Duty Fabricated Construction',
+      'Anti-Gravity Lock Protection & multiple automation options',
+      'Suitable for Dusty & Corrosive Media in harsh industrial environments'
     ],
-    leakage: 'Up to 99.9% / 100% with Pressurized Perimeter Purge',
-    temp: '-20°C to +350°C',
-    pressure: 'Differential Pressure up to 4,000 mmWC',
-    sizes: 'DN400 to DN2,500',
-    materials: 'Carbon Steel IS2062, Stainless Steel 304L / 316L, Viton/PTFE/Metal Seals',
-    actuation: 'Heavy-Duty Pneumatic Cylinder with Fast Exhaust Valves & Solenoids',
-    standards: 'AMCA 500-D, EN 1751',
+    leakage: 'Up to 99.95%',
+    temp: '-25°C to 825°C',
+    pressure: 'Up to PN1',
+    sizes: 'Ø300 mm to Ø3500 mm (Round) / Up to 2500 mm (Rectangular)',
+    materials: 'Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft',
+    actuation: 'Manual / Pneumatic / Electric / Hydraulic',
+    standards: 'API / ASME / ISO',
+    shapes: 'Round / Rectangular (Two-Way & Three-Way Configurations)',
+    endConnection: 'Flanged / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Poppet Damper Valve' },
+      { parameter: 'Leakage Performance', details: 'Up to 99.95%' },
+      { parameter: 'Size Range', details: 'Ø300 mm to Ø3500 mm' },
+      { parameter: 'End Connection', details: 'Flanged / Butt Weld' },
+      { parameter: 'Rectangular Size', details: 'Up to 2500 mm' },
+      { parameter: 'Configurations', details: 'Two-Way / Three-Way' },
+      { parameter: 'Design Temperature', details: '-25°C to 825°C' },
+      { parameter: 'Mounting', details: 'Vertical / Horizontal' },
+      { parameter: 'Pressure Rating', details: 'Up to PN1' },
+      { parameter: 'Standards', details: 'API / ASME / ISO' },
+      { parameter: 'Automation', details: 'Manual / Pneumatic / Electric / Hydraulic' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / SA516 Gr-70 / SS304 / Customer Specific' },
+      { component: 'Disc', material: 'SS304 / SS316 / Customer Specific' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316 / Customer Specific' },
+      { component: 'Seat', material: 'Metallic' },
+      { component: 'Seal', material: 'Metallic / Soft' },
+      { component: 'Bearings', material: 'Heavy Duty Self Lubricated' }
+    ],
+    automationOptions: [
+      { name: 'Pneumatic', desc: 'Heavy-duty pneumatic cylinder actuator for rapid cycling and reliable reciprocating motion' },
+      { name: 'Electric', desc: 'Motorized linear / rotary actuator with feedback options and manual override' },
+      { name: 'Hydraulic', desc: 'High-thrust hydraulic cylinder actuation for large poppet valves and severe load duties' },
+      { name: 'Manual', desc: 'Handwheel or gearbox operated manual drive for maintenance and isolation' }
+    ],
     features: [
-      'Direct-mounted high-speed pneumatic cylinder',
-      'Self-aligning disc assembly ensuring uniform perimeter seating',
-      'Robust guide bushings resistant to particulate fouling',
-      'Integral quick exhaust valves and speed controls'
+      'Vertical Reciprocating Sealing Design',
+      'Reliable Positive Isolation',
+      'Available in Two-Way & Three-Way Designs',
+      'Suitable up to 825°C',
+      'Low Pressure Drop Design',
+      'Heavy Duty Fabricated Construction',
+      'Anti-Gravity Lock Protection',
+      'Suitable for Dusty & Corrosive Media',
+      'Multiple Automation Options',
+      'Flexible Mounting Orientations'
+    ],
+    engineeringAdvantages: [
+      'Conventional Damper Challenges Overcome: Eliminates leakage under dusty conditions with positive vertical seating arrangement',
+      'Solves poor vertical sealing reliability through dependable isolation under dusty service',
+      'Reduces high maintenance in process gas systems via smooth reciprocating movement',
+      'Overcomes limited orientation flexibility with flexible vertical & horizontal installation orientations',
+      'Optimized flow diversion capability for both two-way shutoff and three-way redirection'
+    ],
+    optionalFeatures: [
+      'Air Seal Arrangement for Zero Leakage Performance',
+      'Refractory Lining Option for high temperature process zones',
+      'High Temperature Design',
+      'C5 / NORSOK Protective Paint System',
+      'External Insulation Option'
+    ],
+    inspectionTesting: [
+      'Leakage Testing',
+      'Functional Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered'
     ],
     applications: [
-      'Fabric Filter Baghouse Compartment Isolation',
-      'Regenerative Thermal Oxidizers (RTO) Switching',
-      'Reverse Gas Baghouse Cleaning Cycles',
-      'Electrostatic Precipitator Inlet/Outlet Headers'
+      'RTO Systems',
+      'Thermal Oxidizers',
+      'Bag Filter Systems',
+      'Process Gas Isolation',
+      'Dust Handling Systems',
+      'Hot Gas Diversion',
+      'VOC Control Systems',
+      'Exhaust Air Systems',
+      'Chamber Isolation Systems',
+      'Pollution Control Systems'
+    ],
+    majorReferences: [
+      { endUser: 'IndianOil', application: 'RTO System', logo: '/images/clients/indianoil-logo.png' },
+      { endUser: 'Solar', application: 'Bag Filter System', logo: '/images/clients/solar-logo.png' },
+      { endUser: 'Reliance Industries Limited', application: 'RTO System', logo: '/images/clients/reliance-logo.png' },
+      { endUser: 'Haldia Petrochemicals Ltd', application: 'RTO System', logo: '/images/clients/haldia-logo.png' }
+    ],
+    galleryImages: [
+      { title: 'PNEUMATIC TWO WAY POPPET DAMPER', subtitle: 'Size Dia 1400 mm (RTO Application)', image: '/images/gallery/be80/BE80-Pneumatic-Two-Way-Dia-1400.webp' },
+      { title: 'PNEUMATIC TWO WAY POPPET DAMPER', subtitle: 'Size Dia 500 mm (RTO Application)', image: '/images/gallery/be80/BE80-Pneumatic-Two-Way-Dia-500.webp' },
+      { title: 'PNEUMATIC TWO WAY HORIZONTAL ORIENTATION POPPET DAMPER', subtitle: 'Size Dia 900 mm (RTO Application)', image: '/images/gallery/be80/BE80-Pneumatic-Two-Way-Horizontal-Dia-900.webp' },
+      { title: 'MOTORISED THREE WAY POPPET DAMPER', subtitle: 'Size Dia 700 mm (Bag Filter Application)', image: '/images/gallery/be80/BE80-Motorised-Three-Way-Dia-700.webp' }
+    ],
+    industriesServed: [
+      { name: 'RTO & VOC Abatement', image: '/images/industries/industry-chemical.jpg' },
+      { name: 'Bag Filter & Dust Handling', image: '/images/industries/industry-cement.jpg' },
+      { name: 'Petrochemicals & Refineries', image: '/images/industries/industry-oil-gas.jpg' },
+      { name: 'Thermal Oxidizers', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'Pollution Control & Air Quality', image: '/images/industries/industry-process.jpg' },
+      { name: 'Steel & Metallurgy', image: '/images/industries/industry-steel.jpg' }
     ]
   },
   'straight-pattern-inline-valves': {
@@ -848,36 +1334,115 @@ export const productsData: Record<string, ProductDetail> = {
     id: 'ventilation-channel-closing-device',
     title: 'BE110 : VENTILATION CHANNEL CLOSING DEVICE',
     model: 'BE110 SERIES',
-    image: '/images/products/BE110-Ventilation-Channel-Closing-Device-with-Adaptor.png',
-    category: 'control',
-    categoryLabel: 'Tunnel & Marine Duct',
-    tagline: 'Instant emergency shutoff mechanism for underground tunnels, civil defense shelters, and naval ducts.',
-    desc: 'Instant emergency shutoff mechanism installed in civil defense shelters, naval vessel compartments, underground tunnels, and toxic duct corridors. Triggered mechanically or pneumatically to snap closed within fractions of a second during blast or chemical events.',
-    longDesc: 'The BE-110 Series Ventilation Channel Closing Device is a rapid-response life safety barrier designed to isolate critical air ducts instantly during hazardous gas releases, fires, or blast overpressures. Equipped with fast-release trigger latches and powerful mechanical spring return.',
+    image: '/images/gallery/be110/BE110-VCHCD-Without-Adaptor.webp',
+    category: 'severe',
+    categoryLabel: 'Passive Nuclear & Blast Safety Protection',
+    tagline: 'Engineered for Passive Nuclear Safety Protection against blast waves, deflagration, pressure surges, and shock events.',
+    desc: 'Bellator BE110 Series Ventilation Channel Closing Devices (VChCD) are specially engineered passive safety isolation devices designed to protect critical ventilation systems against blast waves, pressure surges, and accidental shock events. These devices remain fully open during normal ventilation airflow conditions while automatically closing under sudden pressure wave conditions to prevent propagation of blast energy and hazardous contamination.',
+    longDesc: 'Bellator BE110 Series Ventilation Channel Closing Devices (VChCD) are specially engineered passive safety isolation devices designed to protect critical ventilation systems against blast waves, pressure surges, and accidental shock events.\n\nThese devices are designed to remain fully open during normal ventilation airflow conditions while automatically closing under sudden pressure wave conditions to prevent propagation of blast energy and hazardous contamination.\n\nThe BE110 Series combines aerodynamic stability, optimized spring-assisted closing dynamics, and robust heavy-duty construction to ensure dependable operation under severe emergency conditions. Widely suitable for nuclear facilities, critical infrastructure ventilation systems, defense applications, hazardous process environments, and containment ventilation systems.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'Instant emergency trigger closing in under 1 second',
-      'Blast overpressure resistant construction up to 2 bar',
-      'Hermetic gas and smoke tight perimeter elastomeric seal',
-      'Meets strict naval and civil defense blast protection codes'
+      'Passive Self-Actuating Safety Design with zero external power dependency',
+      'Automatic Blast Wave, Deflagration Wave & High Wind Velocity Protection',
+      'Quick Closing and Opening in less than 60 Milliseconds (< 60 ms)',
+      '100% Sealing to Atmosphere with Bi-Directional Capability',
+      'High Velocity Stable Open Condition up to 55 m/s with minimal hydraulic resistance (< 4 @ blade open)',
+      'Engineered for Nuclear Safety, Rocket Launching Stations, and Defense Bunkers'
     ],
-    leakage: 'Hermetic Blast & Gas Tight Seal',
-    temp: '-30°C to +150°C',
-    pressure: 'Blast Overpressure Resistant up to 2 bar',
-    sizes: 'Custom Sizing with Integral Duct Adaptors',
-    materials: 'High-Tensile Fabricated Carbon Steel, Neoprene / Silicone Perimeter Gaskets',
-    actuation: 'Spring-Return Rapid Release Trigger with Pneumatic/Electric Solenoid',
-    standards: 'Naval & Civil Defense Blast Isolation Standards',
+    leakage: 'Critical Isolation Design (100% Sealing to Atmosphere)',
+    temp: '-25°C to 350°C',
+    pressure: 'Shock Wave Impact / Deflagration Wave Impact',
+    sizes: '400 mm to 2600 mm',
+    materials: 'Body/Flap/Axle/Link: SS321 / SS304 / Customer Specific | Spring: Spring Steel | Bush: Self Lubricated',
+    actuation: 'Passive Self-Actuating (Spring Assisted) / Manual Maintenance Drive',
+    standards: 'Project / Nuclear Specific Standards',
+    shapes: 'Rectangular (With Adaptor / Without Adaptor)',
+    endConnection: 'Double Flanged (With Adaptor / Without Adaptor)',
+    technicalSpecs: [
+      { parameter: 'Device Type', details: 'Ventilation Channel Closing Device (VChCD)' },
+      { parameter: 'Size Range', details: '400 mm to 2600 mm' },
+      { parameter: 'End Connection', details: 'Double Flanged (With Adaptor / Without Adaptor)' },
+      { parameter: 'Design Velocity', details: 'Up to 55 m/s' },
+      { parameter: 'Operating Principle', details: 'Passive Self-Actuating' },
+      { parameter: 'Closing Mechanism', details: 'Spring Assisted (< 60 ms)' },
+      { parameter: 'Leakage Performance', details: 'Critical Isolation Design (100% Sealing to Atmosphere)' },
+      { parameter: 'Operation', details: 'Automatic Passive Operation' },
+      { parameter: 'Drive Mode', details: 'Shock Wave Impact / Deflagration Wave Impact / Wind Velocity Impact' },
+      { parameter: 'Standards', details: 'Project / Nuclear Specific' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'SS321 / SS304 / Customer Specific' },
+      { component: 'Flap / Blade', material: 'SS321 / SS304 / Customer Specific' },
+      { component: 'Axle', material: 'SS321 / SS304 / Customer Specific' },
+      { component: 'Spring', material: 'High Tensile Spring Steel' },
+      { component: 'Connecting Link', material: 'SS321 / SS304 / Customer Specific' },
+      { component: 'Bush', material: 'Self Lubricated Maintenance-Free' }
+    ],
+    automationOptions: [
+      { name: 'Passive Self-Actuating', desc: 'Automatic triggering by shock wave, deflagration wave, or 55 m/s wind velocity with rapid spring-assisted closure in < 60 ms' },
+      { name: 'Manual Drive Mechanism', desc: 'Inbuilt mechanism with manual drive for routine maintenance, inspection, and reset' }
+    ],
     features: [
-      'Pre-tensioned mechanical heavy-duty spring pack',
-      'Electromagnetic or pneumatic trigger release mechanism',
-      'Manual mechanical cocking and emergency trip lever',
-      'Duct adaptors tailored to round, oval, or rectangular profiles'
+      'Passive Self-Actuating Safety Design',
+      'Automatic Blast Wave Protection',
+      'High Velocity Stable Open Condition',
+      'Rapid Emergency Closing Response (In less than 60 Milliseconds)',
+      'Heavy Duty Reinforced Construction (Lighter and Stronger)',
+      'Aerodynamically Optimized Design with low pressure drop',
+      'Reliable Spring Assisted Mechanism',
+      'Suitable for Critical Containment Systems',
+      'Low Pressure Drop During Normal Operation',
+      'Designed for Nuclear Safety Applications',
+      'Bi-directional capability',
+      '100% Sealing to Atmosphere',
+      'Inbuild Mechanism With Manual Drive For routine maintenance',
+      'Safeguards & maintains the change in compartment pressure',
+      'Hydraulic Resistance less than 4 @ Blade open Condition',
+      'Device closes at 55 m/s airflow velocity',
+      'Maintenance-free Bush and Axles',
+      'Blade and Springs easily Replaceable'
+    ],
+    engineeringAdvantages: [
+      'Overcomes Conventional Ventilation Challenges (Blast wave propagation risk & Containment pressure failure)',
+      'Passive automatic closing operation with NO external power dependency',
+      'Rapid pressure wave response closing in under 60 milliseconds',
+      'Optimized aerodynamic stability preventing false trips under normal airflow up to 55 m/s',
+      'Eliminates unsafe reverse pressure conditions and reduces maintenance complexity',
+      'Bi-directional containment ensuring safety regardless of explosion/shock origin'
+    ],
+    inspectionTesting: [
+      'Velocity Testing',
+      'Air Shock Wave Testing',
+      'Seismic Qualification Testing',
+      'Spring Calibration Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Metro Tunnel & Highway Underground Ventilation',
-      'Naval Submarine and Warship Citadel Isolation',
-      'Civil Defense Bunkers and Nuclear Shelters',
-      'Hazardous Chemical Warehouse Air Intake Shutoff'
+      'Nuclear Ventilation Systems',
+      'Containment Ventilation Channels',
+      'Blast Protection Systems',
+      'Defense Infrastructure & Bunkers',
+      'Rocket Launching Stations',
+      'High Risk Scientific Labs & Critical Research Centres'
+    ],
+    galleryImages: [
+      { title: 'VCHCD WITHOUT ADAPTOR', subtitle: 'Double Flanged Stainless Steel Construction', image: '/images/gallery/be110/BE110-VCHCD-Without-Adaptor.webp' },
+      { title: 'VCHCD WITH INTEGRAL ADAPTOR', subtitle: 'Single Unit with Transition Box', image: '/images/gallery/be110/BE110-VCHCD-With-Adaptor-Single.webp' },
+      { title: 'VCHCD WITH ADAPTOR PRODUCTION BATCH', subtitle: 'Nuclear & Defense Grade Delivery Batch', image: '/images/gallery/be110/BE110-VCHCD-With-Adaptor-Batch.webp' },
+      { title: 'CLOSURE MODE: SHOCK WAVE IMPACT', subtitle: 'Instantaneous passive barrier triggering', image: '/images/gallery/be110/BE110-Closure-Shock-Wave-Impact.webp' },
+      { title: 'CLOSURE MODE: DEFLAGRATION WAVE IMPACT', subtitle: 'Rapid closure isolating fire and blast fronts', image: '/images/gallery/be110/BE110-Closure-Deflagration-Wave-Impact.webp' },
+      { title: 'CLOSURE MODE: WIND VELOCITY 55 M/S IMPACT', subtitle: 'Automatic closure at extreme dynamic pressure (1.88 kPa)', image: '/images/gallery/be110/BE110-Closure-Wind-Velocity-55ms.webp' }
+    ],
+    industriesServed: [
+      { name: 'Nuclear Facilities', image: '/images/gallery/be110/BE110-Industry-Nuclear-Facilities.webp' },
+      { name: 'Rocket Launching Stations', image: '/images/gallery/be110/BE110-Industry-Rocket-Launching-Stations.webp' },
+      { name: 'Critical Research Lab Centres', image: '/images/gallery/be110/BE110-Industry-Critical-Research-Lab.webp' },
+      { name: 'Defence Bunker Facilities', image: '/images/gallery/be110/BE110-Industry-Defence-Bunker-Facilities.webp' }
     ]
   },
   'refractory-lined-damper-valves': {
@@ -958,34 +1523,114 @@ export const productsData: Record<string, ProductDetail> = {
     model: 'BE120 SERIES',
     image: '/images/products/BE120-BackDraft-Damper-Valves.png',
     category: 'severe',
-    categoryLabel: 'Reverse Flow Check',
-    tagline: 'Self-actuating non-return gravity damper preventing reverse gas flow and protecting offline industrial fans.',
-    desc: 'Automatic gravity and counterweight-actuated non-return dampers. Sensitive aerodynamic blade balancing allows forward gas flow with minimal pressure resistance, while instantly shutting tight when reverse air currents or fan shutdowns occur.',
-    longDesc: 'Bellator BE-120 Series Back Draft Dampers are automatic non-return check valves for large air and gas systems. Featuring precision counterbalanced blades that swing open with low forward velocity and slam shut immediately upon flow reversal, protecting fans and blowers from reverse windmilling.',
+    categoryLabel: 'Engineered for Reliable Reverse Flow Protection',
+    tagline: 'Engineered for Reliable Reverse Flow Protection in industrial ventilation, exhaust, and process systems.',
+    desc: 'Bellator BE120 Series Back Draft Damper Valves are specially engineered to automatically prevent reverse airflow in industrial ventilation, exhaust, and process systems. These dampers operate automatically using process airflow without external power or actuator dependency, ensuring dependable reverse flow isolation while maintaining minimal resistance during forward airflow conditions.',
+    longDesc: 'Bellator BE120 Series Back Draft Damper Valves are specially engineered to automatically prevent reverse airflow in industrial ventilation, exhaust, and process systems. These dampers operate automatically using process airflow without external power or actuator dependency, ensuring dependable reverse flow isolation while maintaining minimal resistance during forward airflow conditions.\n\nThe lightweight flap arrangement combined with optimized hinge geometry provides smooth opening characteristics and rapid closing action through gravity and self-weight of the flap. This ensures reliable prevention of reverse flow and process back pressure under varying operating conditions.\n\nAlso known as Gravity Dampers or Check Dampers, the BE120 Series is designed for reliable operation in ventilation systems, fan discharge lines, boiler air systems, HVAC systems, and industrial exhaust applications. Manufactured with robust fabricated construction and application-oriented engineering, these dampers provide dependable long-term performance with minimal maintenance requirements.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'Self-actuating gravity and counterweight operation with zero power required',
-      'Protects redundant fans and blowers from reverse airflow damage',
-      'Low opening pressure threshold with adjustable counterweight arms',
-      'Custom duct profiles up to 4,000 x 4,000 mm'
+      'Automatic Reverse Flow Protection without external power or actuator dependency',
+      'Self-Actuating Gravity Operation with lightweight flap & optimized hinge geometry',
+      'Rapid Reverse Closing Response preventing fan back pressure damage & reverse windmilling',
+      'Low Pressure Drop Design maintaining minimal resistance during forward airflow',
+      'Available in Round, Square & Rectangular shapes from 150 mm to 2500 mm'
     ],
-    leakage: 'Automatic Reverse Flow Prevention',
-    temp: 'Up to +350°C',
-    pressure: 'Up to 3,500 mmWC',
-    sizes: 'Custom Duct Dimensions to 4,000 x 4,000 mm',
-    materials: 'Corten Steel, Low-Inertia Aluminum / SS304 Blades, Precision Bronze Bushings',
-    actuation: 'Self-Actuating Gravity / Adjustable Counterweight Arm',
-    standards: 'AMCA 500-D, EN 1751',
+    leakage: 'Reverse Flow Prevention',
+    temp: '-25°C to 450°C',
+    pressure: 'Low Pressure Ventilation Systems',
+    sizes: '150 mm to 2500 mm (Round / Square / Rectangular)',
+    materials: 'Body: IS2062 / GI / SS | Flap: Aluminum / SS304 / SS316 | Shaft: EN8D / SS410 / SS316',
+    actuation: 'Self-Actuating Gravity Operation',
+    standards: 'AMCA 511 , ASME AG-1 , ERDA 76-21',
+    shapes: 'Round / Square / Rectangular',
+    endConnection: 'Flanged / Slip Fit / Butt Weld',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Back Draft Damper Valve' },
+      { parameter: 'Size Range', details: '150 mm to 2500 mm' },
+      { parameter: 'Design Temperature', details: '-25°C to 450°C' },
+      { parameter: 'Pressure Rating', details: 'Low Pressure Ventilation Systems' },
+      { parameter: 'Operation Principle', details: 'Self-Actuating Gravity Operation' },
+      { parameter: 'Leakage Performance', details: 'Reverse Flow Prevention' },
+      { parameter: 'Configurations', details: 'Single / Multi-Flap' },
+      { parameter: 'Shapes', details: 'Round / Square / Rectangular' },
+      { parameter: 'End Connection', details: 'Flanged / Slip Fit / Butt Weld' },
+      { parameter: 'Standards', details: 'AMCA 511 , ASME AG-1 , ERDA 76-21' }
+    ],
+    mocTable: [
+      { component: 'Body', material: 'IS2062 / GI / SS' },
+      { component: 'Flap', material: 'Aluminum / SS304 / SS316' },
+      { component: 'Shaft', material: 'EN8D / SS410 / SS316' },
+      { component: 'Hinges', material: 'Heavy Duty Reinforced' },
+      { component: 'Seal', material: 'Metallic / Rubber Seal' },
+      { component: 'Bearings', material: 'Maintenance Free Bearings' }
+    ],
+    automationOptions: [
+      { name: 'Self-Actuating Gravity', desc: 'Process airflow pushes blades open; gravity & self-weight provide rapid instantaneous closure on flow reversal' },
+      { name: 'Counterbalance Assist', desc: 'Optional counterweight lever for fine-tuning opening sensitivity across variable duct velocities' }
+    ],
     features: [
-      'Aerodynamically balanced low-inertia blade construction',
-      'External adjustable counterweight levers for sensitivity tuning',
-      'Oil-impregnated bronze or sealed stainless ball bearings',
-      'Neoprene or stainless blade tip seals for tight reverse shutoff'
+      'Uni Directional',
+      'Automatic Reverse Flow Protection',
+      'Self-Actuating Operation',
+      'No External Power Requirement',
+      'Low Pressure Drop Design',
+      'Lightweight Flap Construction',
+      'Rapid Reverse Closing Response',
+      'Suitable for Large Duct Sizes',
+      'Maintenance Friendly Design',
+      'Suitable for Ventilation & Exhaust Systems'
+    ],
+    engineeringAdvantages: [
+      'Automatic flap closing during reverse flow (Eliminates reverse airflow during fan shutdown)',
+      'Improved process protection (Prevents back pressure damage & risk)',
+      'Reduced reverse pressure impact (Prevents process contamination through reverse flow)',
+      'Minimal forward flow resistance (Avoids energy losses during idle conditions)',
+      'Improved ventilation efficiency'
+    ],
+    inspectionTesting: [
+      'Functional Opening Testing',
+      'Reverse Flow (Leakage) Testing',
+      'Dimensional Inspection',
+      'NDT Examination',
+      'PMI Testing',
+      'FAT Support',
+      'Seismic Qualification Testing',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Parallel Fan Discharge Headers (FD/ID Fan Discharge)',
-      'Building Ventilation and Exhaust Plenums',
-      'Turbine Generator Ventilation Outlets',
-      'Emergency Standby Blower Discharge Lines'
+      'Fan Discharge Systems',
+      'Boiler Air Systems',
+      'Exhaust Ventilation Systems',
+      'HVAC Systems',
+      'Process Air Systems',
+      'Dust Collection Systems',
+      'Industrial Exhaust Lines',
+      'Fresh Air Intake Systems',
+      'Pollution Control Systems',
+      'Utility Ventilation Systems'
+    ],
+    majorReferences: [
+      { endUser: 'NPCIL', application: 'Ventilation System' },
+      { endUser: 'Unilever', application: 'Ventilation System' },
+      { endUser: 'TATA ELECTRONICS', application: 'Ventilation System' },
+      { endUser: 'Reliance Industries Limited', application: 'Ventilation System' }
+    ],
+    galleryImages: [
+      { title: 'BACK DRAFT DAMPER PRODUCTION BATCH', subtitle: 'Size Dia 600 mm White Fabricated', image: '/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Main.webp' },
+      { title: 'BACK DRAFT DAMPER', subtitle: 'Size Dia 800 mm Flanged Valve', image: '/images/gallery/be120/BE120-Back-Draft-Damper-Dia-800.webp' },
+      { title: 'BACK DRAFT DAMPER BATCH', subtitle: 'Size Dia 600 mm Blue Epoxy Coated', image: '/images/gallery/be120/BE120-Back-Draft-Damper-Dia-600-Blue.webp' },
+      { title: 'FUNCTIONING PRINCIPLE: NORMAL & REVERSE AIR FLOW', subtitle: 'Self-Actuating Gravity Blade Dynamics', image: '/images/gallery/be120/BE120-Functioning-Normal-and-Reverse-Flow.webp' },
+      { title: 'LEAKAGE & FUNCTIONAL TESTING SETUP', subtitle: 'Tested as per AMCA 511, ASME AG-1, ERDA 76-21', image: '/images/gallery/be120/BE120-Damper-Testing-Area-Setup.webp' },
+      { title: 'BACK DRAFT DAMPER', subtitle: 'Size Dia 600 mm Industrial Check Unit', image: '/images/gallery/be120/BE120-Gallery-Dia-600-Single-Unit.webp' },
+      { title: 'BACK DRAFT DAMPER ARRAY', subtitle: 'Dia 600 mm Blue Finish Multi-Unit Shipment', image: '/images/gallery/be120/BE120-Gallery-Dia-600-Blue-Batch.webp' }
+    ],
+    industriesServed: [
+      { name: 'Nuclear Power', image: '/images/industries/NUCLEAR.jpg' },
+      { name: 'Steel', image: '/images/industries/industry-steel.jpg' },
+      { name: 'Oil & Gas', image: '/images/industries/industry-oil-gas.jpg' },
+      { name: 'Cement', image: '/images/industries/CEMENT-1.jpg' },
+      { name: 'Thermal Power', image: '/images/industries/THERMAL.jpg' },
+      { name: 'Marine', image: '/images/industries/MARINE.jpg' }
     ]
   },
   'fabricated-double-beat-valves': {
@@ -1098,38 +1743,128 @@ export const productsData: Record<string, ProductDetail> = {
   },
   'fire-damper-valves': {
     id: 'fire-damper-valves',
-    title: 'Fire Damper Valves',
-    model: 'BE-FD Series',
+    title: 'BE130 : FIRE DAMPER VALVES',
+    model: 'BE130 SERIES',
     image: '/images/products/Fire-Damper.png',
     category: 'severe',
-    categoryLabel: 'Fire & Smoke Barrier',
-    tagline: 'Certified life-safety fire damper with thermal fusible link release and spring-return barrier closure.',
-    desc: 'Life-safety certified dampers engineered for marine vessel air distribution, offshore platforms, and hazardous industrial ventilation ducts. Rapid mechanical spring-closure triggered by thermal fusible link or electric fire alarm signal to compartmentalize smoke and fire.',
-    longDesc: 'Bellator BE-FD Series Fire Dampers are certified passive fire protection barriers designed to prevent the spread of flames and lethal smoke through HVAC ducts. Upon detecting temperatures exceeding the fusible link rating (72°C/95°C) or receiving a central fire alarm signal, the spring-loaded mechanism instantly snaps the damper shut.',
+    categoryLabel: 'Engineered for Fire Protection & Life Safety',
+    tagline: 'Engineered for Fire Protection & Life Safety to prevent the spread of fire and high temperature gases.',
+    desc: 'Bellator BE130 Series Fire Damper Valves are specially engineered to prevent the spread of fire and high temperature gases through ventilation and air conditioning duct systems. These dampers are designed to automatically close upon detection of elevated temperature conditions, thereby isolating fire zones and minimizing fire propagation through duct networks.',
+    longDesc: 'Bellator BE130 Series Fire Damper Valves are specially engineered to prevent the spread of fire and high temperature gases through ventilation and air conditioning duct systems. These dampers are designed to automatically close upon detection of elevated temperature conditions, thereby isolating fire zones and minimizing fire propagation through duct networks.\n\nThe BE130 Series combines reliable thermal response mechanisms, heavy-duty construction, and low leakage performance to ensure dependable operation under emergency fire conditions.\n\nThese dampers are widely used in HVAC systems, industrial ventilation systems, commercial buildings, process industries, tunnels, utility plants, and critical infrastructure facilities.',
+    taglineBrochure: '“Engineered for Reliability • Built for Performance • Designed for Critical Applications”',
     keyHighlights: [
-      'Certified fire barrier integrity up to 120 / 180 minutes',
-      'Thermal fusible link release options (72°C, 95°C, 140°C)',
-      'Approved for marine vessels, offshore rigs, and industrial complexes',
-      'Fail-safe mechanical spring return closure'
+      'Automatic Fire Isolation with Rapid Emergency Thermal Closing Response',
+      'Fire Rating options: 60 / 90 / 120 / 180 Minutes Integrity Protection',
+      'Available in Fusible Link Operated, Motorised, and Pneumatic Fire Damper configurations',
+      'Curtain & Multi-Blade design in Round, Square & Rectangular shapes from 150 mm to 2000 mm',
+      'Compliant with UL / NFPA / SMACNA and Project Specific Life-Safety Standards'
     ],
-    leakage: 'Certified Fire & Smoke Barrier',
-    temp: '72°C / 95°C / 140°C Fusible Link Trigger Options',
-    pressure: 'HVAC Duct Working Pressure',
-    sizes: 'Custom Square & Round Dimensions',
-    materials: 'Heavy Galvanized Steel, SS304L, Marine Grade SS316L',
-    actuation: 'Certified Thermal Fusible Link + Spring Return / Motorized Spring Return',
-    standards: 'Tested to International Fire Integrity Standards, Marine Society Approved',
+    leakage: 'Low Leakage Design',
+    temp: 'HVAC & Fire Rated Applications',
+    pressure: 'HVAC & Fire Rated Duct Systems',
+    sizes: '150 mm to 2000 mm (Round / Square / Rectangular)',
+    materials: 'Frame: GI / SS304 / CRCA | Blades: GI / SS304 | Shaft: SS410 / SS304 | Seals: Fire Resistant Seals',
+    actuation: 'Automatic Thermal / Motorized / Pneumatic Actuation',
+    standards: 'UL / NFPA / SMACNA / Project Specific',
+    shapes: 'Round / Square / Rectangular',
+    endConnection: 'Flanged / Slip Fit',
+    technicalSpecs: [
+      { parameter: 'Damper Type', details: 'Fire Damper Valve' },
+      { parameter: 'Size Range', details: '150 mm to 2000 mm' },
+      { parameter: 'Fire Rating', details: '60 / 90 / 120 / 180 Minutes' },
+      { parameter: 'Design Temperature', details: 'HVAC & Fire Rated Applications' },
+      { parameter: 'Operation', details: 'Automatic Thermal / Motorized' },
+      { parameter: 'Configurations', details: 'Curtain / Multi-Blade' },
+      { parameter: 'Shapes', details: 'Round / Square / Rectangular' },
+      { parameter: 'End Connection', details: 'Flanged / Slip Fit' },
+      { parameter: 'Leakage Performance', details: 'Low Leakage Design' },
+      { parameter: 'Standards', details: 'UL / NFPA / SMACNA / Project Specific' }
+    ],
+    mocTable: [
+      { component: 'Frame', material: 'GI / SS304 / CRCA' },
+      { component: 'Blades', material: 'GI / SS304' },
+      { component: 'Shaft', material: 'SS410 / SS304' },
+      { component: 'Seals', material: 'Fire Resistant Seals' },
+      { component: 'Bearings', material: 'Maintenance Free Bearings' },
+      { component: 'Linkages', material: 'Heavy Duty Reinforced' }
+    ],
+    automationOptions: [
+      { name: 'Fusible Link Operated', desc: 'Thermal fusible link release trigger mechanism (72°C / 95°C / 140°C) with mechanical spring-return' },
+      { name: 'Motorised Fire Damper', desc: 'Electric spring-return fail-safe actuator with thermal sensor and fire alarm panel integration' },
+      { name: 'Pneumatic Fire Damper', desc: 'Pneumatic cylinder actuator with solenoid valve and quick-exhaust fail-safe closure' }
+    ],
     features: [
-      'Precision calibrated thermal fusible link mechanism',
-      'Intumescent smoke perimeter seals that swell under heat',
-      'Heavy-gauge galvanized or stainless steel sleeve frame',
-      'Remote electric reset actuator option with status limit switches'
+      'Automatic Fire Isolation',
+      'Thermal Triggered Closing Mechanism',
+      'Fire Resistant Construction',
+      'Low Leakage Performance',
+      'Heavy Duty Blade Construction',
+      'Suitable for HVAC & Industrial Systems',
+      'Rapid Emergency Closing Response',
+      'Reliable Life Safety Protection',
+      'Multiple Mounting Configurations',
+      'Maintenance Friendly Design'
+    ],
+    optionalFeatures: [
+      'Fire & Smoke Combination Design',
+      'Dynamic Fire Rated Design',
+      'Explosion Proof Actuators',
+      'Corrosion Resistant Construction',
+      'Stainless Steel Construction',
+      'High Velocity Design',
+      'C5 Paint System',
+      'External Insulation Option',
+      'Duct Access Door Integration'
+    ],
+    engineeringAdvantages: [
+      'Automatic fire isolation (Eliminates fire propagation through duct systems)',
+      'Reliable compartment separation (Prevents unsafe smoke & heat transfer)',
+      'Rapid thermal response (Overcomes failure of compartment isolation)',
+      'Reduced fire spread risk (Eliminates delayed emergency response)',
+      'Improved ventilation safety & code compliance'
+    ],
+    inspectionTesting: [
+      'Functional Closing Testing',
+      'Leakage Testing',
+      'Dimensional Inspection',
+      'FAT Support',
+      'Third Party Inspection',
+      'QA Dossier Documentation',
+      'Inspection by BV / TUV / SGS / DNV / Client TPI can be offered.'
     ],
     applications: [
-      'Marine Ships, Cruise Liners & Offshore Oil Platforms',
-      'High-Rise Commercial & Industrial Ventilation Ducts',
-      'Hazardous Chemical and Petrochemical Control Rooms',
-      'Underground Tunnels & Metro Rail Substation HVAC'
+      'HVAC Duct Systems',
+      'Commercial Buildings',
+      'Industrial Ventilation Systems',
+      'Utility Tunnels',
+      'Power Plants',
+      'Process Ventilation',
+      'Clean Room Ventilation',
+      'Data Centers',
+      'Underground Facilities',
+      'Critical Infrastructure'
+    ],
+    majorReferences: [
+      { endUser: 'Airports Authority of India', application: 'Terminal HVAC Fire Isolation' },
+      { endUser: 'Industrial Plants & Refineries', application: 'Critical Fire Zone Compartmentation' },
+      { endUser: 'Commercial Towers & IT Parks', application: 'Life Safety Smoke & Fire Isolation' }
+    ],
+    galleryImages: [
+      { title: 'FIRE DAMPER VALVE CONFIGURATIONS', subtitle: 'Motorised, Fusible Link & Pneumatic (Sq. 400 mm)', image: '/images/gallery/be130/BE130-Fire-Damper-Valves-Showcase.webp' },
+      { title: 'FUNCTIONING SEQUENCE OF FIRE DAMPER VALVES', subtitle: 'Step 1: Fire | Step 2: Damper Closed | Step 3: Damper Holding Fire', image: '/images/gallery/be130/BE130-Functioning-Fire-Damper-Sequence.webp' },
+      { title: 'STAGE 1: FIRE CONDITION', subtitle: 'Elevated temperature detection in ductwork', image: '/images/gallery/be130/BE130-Stage-1-Fire-Condition.webp' },
+      { title: 'STAGE 2: DAMPER CLOSED', subtitle: 'Instantaneous fail-safe thermal trip closure', image: '/images/gallery/be130/BE130-Stage-2-Damper-Closed.webp' },
+      { title: 'STAGE 3: DAMPER HOLDING THE FIRE', subtitle: '60 to 180 minutes structural flame barrier', image: '/images/gallery/be130/BE130-Stage-3-Damper-Holding-Fire.webp' },
+      { title: 'FIRE DAMPERS: PROTECTING LIFE & PRESERVING SAFETY', subtitle: 'Airports, Industrial Plants, Commercial Buildings', image: '/images/gallery/be130/BE130-Industries-Served-Protection.webp' }
+    ],
+    industriesServed: [
+      { name: 'Airports', image: '/images/gallery/be130/BE130-Industries-Served-Protection.webp' },
+      { name: 'Industrial Plants', image: '/images/industries/industry-process.jpg' },
+      { name: 'Commercial Buildings', image: '/images/industries/General.jpg' },
+      { name: 'Power Plants', image: '/images/industries/THERMAL.jpg' },
+      { name: 'Data Centers', image: '/images/industries/industry-power-gen.jpg' },
+      { name: 'Marine & Offshore', image: '/images/industries/MARINE.jpg' }
     ]
   }
 };
+

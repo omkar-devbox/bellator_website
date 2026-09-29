@@ -1,36 +1,123 @@
 {
   "id": "guillotine-damper-valves",
-  "title": "Guillotine Damper Valves",
-  "model": "BE-90 Series",
+  "title": "BE90 : GUILLOTINE DAMPER VALVES",
+  "model": "BE90 SERIES",
   "image": "/images/products/BE90-Motorized-Guillotine-Damper-Valve.png",
   "category": "isolation",
-  "categoryLabel": "Sliding Blade Gate",
-  "tagline": "Heavy-duty sliding blade gate damper engineered to slice through heavy ash sediment for 100% duct isolation.",
-  "desc": "Heavy-duty sliding blade gate dampers providing complete full-duct isolation during plant turnarounds and boiler inspections. Features self-cleaning rack and pinion, screw, or chain drives designed to slice through heavy fly ash and dust sediment without binding.",
-  "longDesc": "Bellator BE-90 Series Guillotine Dampers are designed for total duct shutoff in dirty, solid-laden flue gas streams. When open, the blade is 100% retracted from the gas flow, eliminating flow obstruction and erosion. The tapered blade edge cuts cleanly through dense ash build-up during closure.",
+  "categoryLabel": "Sliding Blade Isolation",
+  "tagline": "Engineered for Positive Isolation Performance in severe, dirty, and high-temperature gas handling systems.",
+  "desc": "Bellator BE90 Series Guillotine Damper Valves are specially engineered for reliable positive isolation applications involving dusty, abrasive, high temperature, and process gas handling systems. The sliding blade arrangement provides dependable shut-off performance with minimal flow obstruction in the fully open position, making these dampers highly suitable for severe service conditions.",
+  "longDesc": "Bellator BE90 Series Guillotine Damper Valves are specially engineered for reliable positive isolation applications involving dusty, abrasive, high temperature, and process gas handling systems. The sliding blade arrangement provides dependable shut-off performance with minimal flow obstruction in the fully open position, making these dampers highly suitable for severe service conditions.\n\nDesigned for heavy-duty industrial applications, the BE90 Series ensures reliable maintenance isolation and stable operation under continuous duty conditions. The robust blade guiding and sealing arrangement enhances operational reliability while minimizing wear during repeated operation cycles.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE90 Series dampers are available in Pneumatic, Hydraulic, Electric, and Manual operated configurations with customized designs to suit specific process requirements.",
+  "taglineBrochure": "“Engineered for Positive Isolation Performance • Heavy Duty Construction • Minimal Flow Obstruction”",
   "keyHighlights": [
-    "Custom sizes up to 6,000 x 6,000 mm in square/rectangular/round",
-    "Zero duct flow obstruction and pressure drop in open position",
-    "100% Man-Safe personnel protection when combined with seal air",
-    "Self-cleaning drive systems resistant to heavy particulate binding"
+    "Positive Isolation Design with sliding blade shut-off technology",
+    "Full Bore Unobstructed Opening with low pressure drop in open position",
+    "Suitable for Dusty, Abrasive & High Temperature Media up to 825°C",
+    "Heavy Duty Sliding Blade Construction with robust guide & sealing system",
+    "Large Size Capability: Ø300 mm to Ø5000 mm Round / Rectangular up to 5000 mm"
   ],
-  "leakage": "Up to 100% Man-Safe with Seal Air System",
-  "temp": "Up to +750°C",
-  "pressure": "Differential Pressure up to 6,000 mmWC",
-  "sizes": "Custom Square & Rectangular up to 6,000 x 6,000 mm",
-  "materials": "IS2062, ASTM A516 Gr-70, SS316L Blade, Inconel Flexible Perimeter Seals",
-  "actuation": "Rack & Pinion with Electric Gearmotor, Chain Drive, Pneumatic Cylinder",
-  "standards": "ASME Sec. VIII, AMCA 500-D, NFPA 85",
+  "leakage": "Up to 99.99%",
+  "temp": "-25°C to 825°C",
+  "pressure": "Up to PN1",
+  "sizes": "Ø300 mm to Ø5000 mm (Rectangular up to 5000 mm)",
+  "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316",
+  "actuation": "Manual / Pneumatic / Electric / Hydraulic",
+  "standards": "API / ASME / ISO",
+  "shapes": "Round / Rectangular",
+  "endConnection": "Flanged / Butt Weld",
+  "rectangularSize": "Up to 5000 mm",
+  "technicalSpecs": [
+    { "parameter": "Damper Type", "details": "Guillotine Damper Valve" },
+    { "parameter": "Leakage Performance", "details": "Up to 99.99%" },
+    { "parameter": "Size Range", "details": "Ø300 mm to Ø5000 mm" },
+    { "parameter": "End Connection", "details": "Flanged / Butt Weld" },
+    { "parameter": "Rectangular Size", "details": "Up to 5000 mm" },
+    { "parameter": "Blade Design", "details": "Single / Double Blade" },
+    { "parameter": "Design Temperature", "details": "-25°C to 825°C" },
+    { "parameter": "Mounting", "details": "Vertical / Horizontal" },
+    { "parameter": "Pressure Rating", "details": "Up to PN1" },
+    { "parameter": "Standards", "details": "API / ASME / ISO" },
+    { "parameter": "Automation", "details": "Manual / Pneumatic / Electric / Hydraulic" }
+  ],
+  "mocTable": [
+    { "component": "Body", "material": "IS2062 / SA516 Gr-70 / SS304 / Customer Specific" },
+    { "component": "Disc", "material": "SS304 / SS316 / Customer Specific" },
+    { "component": "Shaft", "material": "EN8D / SS410 / SS316 / Customer Specific" },
+    { "component": "Seat", "material": "Metallic" },
+    { "component": "Seal", "material": "Metallic / Soft" },
+    { "component": "Bearings", "material": "Heavy Duty Self Lubricated" }
+  ],
+  "automationOptions": [
+    { "name": "Pneumatic", "desc": "Pneumatic cylinder actuation with solenoid valves, limit switches & fail-safe air reservoir tank" },
+    { "name": "Electric", "desc": "Electric motor drive with precision rack & pinion or lead screw mechanism for smooth blade travel" },
+    { "name": "Hydraulic", "desc": "Electro-hydraulic power pack cylinder drives for high thrust and emergency rapid closure" },
+    { "name": "Manual", "desc": "Manual handwheel or chain pulley operated rack & pinion / lead screw mechanisms" }
+  ],
   "features": [
-    "Heavy structural steel framework with guide rollers and scraper blades",
-    "Flexible metallic Inconel or stainless perimeter leaf seals",
-    "External seal air pressurization plenum",
-    "Motorized rack & pinion or heavy-duty twin lead screw actuation"
+    "Positive Isolation Design",
+    "Full Bore Unobstructed Opening",
+    "Suitable for Dusty & Abrasive Media",
+    "Heavy Duty Sliding Blade Construction",
+    "Large Size Capability",
+    "Low Pressure Drop in Open Position",
+    "Rack & Pinion Drive Options",
+    "Maintenance Friendly Design"
+  ],
+  "engineeringAdvantages": [
+    "Overcomes Conventional Damper Challenges (Incomplete shut-off under dusty service & high turbulence)",
+    "Positive sliding blade isolation slices through heavy particulates and dense ash build-up",
+    "Full flow opening with minimal flow obstruction and zero pressure drop in open position",
+    "Reinforced high temperature construction prevents blade distortion at elevated temperatures up to 825°C",
+    "Reliable large duct isolation with robust blade guiding and sealing arrangement",
+    "Eliminates difficult maintenance access with modular maintenance-friendly design"
+  ],
+  "inspectionTesting": [
+    "Leakage Testing",
+    "Seal Air Performance Testing",
+    "Functional Testing",
+    "Dimensional Inspection",
+    "NDT Examination",
+    "PMI Testing",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered."
   ],
   "applications": [
-    "Thermal Power Plant Utility Boiler Outlets",
-    "Electrostatic Precipitator (ESP) Inlet & Outlet Isolation",
-    "Flue Gas Desulfurization (FGD) System Isolation",
-    "Cement Raw Mill and Kiln Exhaust Ducts"
+    "Boiler Isolation Systems",
+    "ESP Systems (Electrostatic Precipitators)",
+    "Bag Filter Systems",
+    "Kiln Process Systems",
+    "Hot Gas Isolation",
+    "Dust Handling Systems",
+    "Process Shutdown Isolation",
+    "Pollution Control Systems",
+    "Ash Handling Systems",
+    "Maintenance Isolation Applications"
+  ],
+  "majorReferences": [
+    { "endUser": "TATA STEEL", "application": "Process Isolation Systems", "logo": "/images/clients/tata-steel-logo.png" },
+    { "endUser": "Shree Cement", "application": "At Recirculation Duct", "logo": "/images/clients/shree-cement-logo.png" },
+    { "endUser": "JSW", "application": "Fitted at Reactor Inlet", "logo": "/images/clients/jsw-logo.png" },
+    { "endUser": "ADITYA BIRLA CARBON", "application": "Flue Gas Isolation", "logo": "/images/clients/aditya-birla-carbon-logo.png" }
+  ],
+  "galleryImages": [
+    { "title": "MOTORISED GUILLOTINE DAMPER", "subtitle": "Size Dia 3600 mm", "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-3600.webp" },
+    { "title": "MOTORISED GUILLOTINE DAMPER", "subtitle": "Size 2200 X 1300 mm", "image": "/images/gallery/be90/BE90-Motorised-Guillotine-2200x1300.webp" },
+    { "title": "MOTORISED GUILLOTINE DAMPER", "subtitle": "Size Dia 1400 mm (SS304)", "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-1400-SS304.webp" },
+    { "title": "CHAIN PULLEY OPERATED GUILLOTINE", "subtitle": "Rack N Pinion Mechanism Size 1000X800 mm", "image": "/images/gallery/be90/BE90-Chain-Pulley-Rack-Pinion-1000x800.webp" },
+    { "title": "MOTORISED RACK N PINION GUILLOTINE", "subtitle": "Size Dia 1200 mm", "image": "/images/gallery/be90/BE90-Motorised-Rack-Pinion-Dia-1200.webp" },
+    { "title": "PNEUMATIC GUILLOTINE DAMPER", "subtitle": "With Air Reservoir (Fail safe) Size Dia 800 mm", "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-Air-Reservoir-Dia-800.webp" },
+    { "title": "PNEUMATIC GUILLOTINE DAMPER", "subtitle": "Size 2000X2000 mm", "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-2000x2000.webp" },
+    { "title": "MOTORISED LEAD SCREW GUILLOTINE", "subtitle": "Size Dia 1600 mm • Export Job to Saudi • 99.99% Sealing", "image": "/images/gallery/be90/BE90-Motorised-Lead-Screw-Dia-1600.webp" },
+    { "title": "MANUAL LEAD SCREW GUILLOTINE", "subtitle": "Size Sq. 600 mm", "image": "/images/gallery/be90/BE90-Manual-Lead-Screw-Sq-600.webp" }
+  ],
+  "industriesServed": [
+    { "name": "Power & Thermal Plants", "image": "/images/industries/industry-power-gen.jpg" },
+    { "name": "Steel & Metallurgy", "image": "/images/industries/industry-steel.jpg" },
+    { "name": "Cement & Minerals", "image": "/images/industries/industry-cement.jpg" },
+    { "name": "Carbon Black & Chemical", "image": "/images/industries/industry-chemical.jpg" },
+    { "name": "Pollution Control & ESP", "image": "/images/industries/industry-process.jpg" },
+    { "name": "Oil, Gas & Petrochemical", "image": "/images/industries/industry-oil-gas.jpg" }
   ]
 }

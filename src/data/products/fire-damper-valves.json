@@ -1,36 +1,125 @@
 {
   "id": "fire-damper-valves",
-  "title": "Fire Damper Valves",
-  "model": "BE-FD Series",
+  "title": "BE130 : FIRE DAMPER VALVES",
+  "model": "BE130 SERIES",
   "image": "/images/products/Fire-Damper.png",
   "category": "severe",
-  "categoryLabel": "Fire & Smoke Barrier",
-  "tagline": "Certified life-safety fire damper with thermal fusible link release and spring-return barrier closure.",
-  "desc": "Life-safety certified dampers engineered for marine vessel air distribution, offshore platforms, and hazardous industrial ventilation ducts. Rapid mechanical spring-closure triggered by thermal fusible link or electric fire alarm signal to compartmentalize smoke and fire.",
-  "longDesc": "Bellator BE-FD Series Fire Dampers are certified passive fire protection barriers designed to prevent the spread of flames and lethal smoke through HVAC ducts. Upon detecting temperatures exceeding the fusible link rating (72°C/95°C) or receiving a central fire alarm signal, the spring-loaded mechanism instantly snaps the damper shut.",
+  "categoryLabel": "Engineered for Fire Protection & Life Safety",
+  "tagline": "Engineered for Fire Protection & Life Safety to prevent the spread of fire and high temperature gases.",
+  "desc": "Bellator BE130 Series Fire Damper Valves are specially engineered to prevent the spread of fire and high temperature gases through ventilation and air conditioning duct systems. These dampers are designed to automatically close upon detection of elevated temperature conditions, thereby isolating fire zones and minimizing fire propagation through duct networks.",
+  "longDesc": "Bellator BE130 Series Fire Damper Valves are specially engineered to prevent the spread of fire and high temperature gases through ventilation and air conditioning duct systems. These dampers are designed to automatically close upon detection of elevated temperature conditions, thereby isolating fire zones and minimizing fire propagation through duct networks.\n\nThe BE130 Series combines reliable thermal response mechanisms, heavy-duty construction, and low leakage performance to ensure dependable operation under emergency fire conditions.\n\nThese dampers are widely used in HVAC systems, industrial ventilation systems, commercial buildings, process industries, tunnels, utility plants, and critical infrastructure facilities.",
+  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
   "keyHighlights": [
-    "Certified fire barrier integrity up to 120 / 180 minutes",
-    "Thermal fusible link release options (72°C, 95°C, 140°C)",
-    "Approved for marine vessels, offshore rigs, and industrial complexes",
-    "Fail-safe mechanical spring return closure"
+    "Automatic Fire Isolation with Rapid Emergency Thermal Closing Response",
+    "Fire Rating options: 60 / 90 / 120 / 180 Minutes Integrity Protection",
+    "Available in Fusible Link Operated, Motorised, and Pneumatic Fire Damper configurations",
+    "Curtain & Multi-Blade design in Round, Square & Rectangular shapes from 150 mm to 2000 mm",
+    "Compliant with UL / NFPA / SMACNA and Project Specific Life-Safety Standards"
   ],
-  "leakage": "Certified Fire & Smoke Barrier",
-  "temp": "72°C / 95°C / 140°C Fusible Link Trigger Options",
-  "pressure": "HVAC Duct Working Pressure",
-  "sizes": "Custom Square & Round Dimensions",
-  "materials": "Heavy Galvanized Steel, SS304L, Marine Grade SS316L",
-  "actuation": "Certified Thermal Fusible Link + Spring Return / Motorized Spring Return",
-  "standards": "Tested to International Fire Integrity Standards, Marine Society Approved",
+  "leakage": "Low Leakage Design",
+  "temp": "HVAC & Fire Rated Applications",
+  "pressure": "HVAC & Fire Rated Duct Systems",
+  "sizes": "150 mm to 2000 mm (Round / Square / Rectangular)",
+  "materials": "Frame: GI / SS304 / CRCA | Blades: GI / SS304 | Shaft: SS410 / SS304 | Seals: Fire Resistant Seals",
+  "actuation": "Automatic Thermal / Motorized / Pneumatic Actuation",
+  "standards": "UL / NFPA / SMACNA / Project Specific",
+  "shapes": "Round / Square / Rectangular",
+  "endConnection": "Flanged / Slip Fit",
+  "technicalSpecs": [
+    { "parameter": "Damper Type", "details": "Fire Damper Valve" },
+    { "parameter": "Size Range", "details": "150 mm to 2000 mm" },
+    { "parameter": "Fire Rating", "details": "60 / 90 / 120 / 180 Minutes" },
+    { "parameter": "Design Temperature", "details": "HVAC & Fire Rated Applications" },
+    { "parameter": "Operation", "details": "Automatic Thermal / Motorized" },
+    { "parameter": "Configurations", "details": "Curtain / Multi-Blade" },
+    { "parameter": "Shapes", "details": "Round / Square / Rectangular" },
+    { "parameter": "End Connection", "details": "Flanged / Slip Fit" },
+    { "parameter": "Leakage Performance", "details": "Low Leakage Design" },
+    { "parameter": "Standards", "details": "UL / NFPA / SMACNA / Project Specific" }
+  ],
+  "mocTable": [
+    { "component": "Frame", "material": "GI / SS304 / CRCA" },
+    { "component": "Blades", "material": "GI / SS304" },
+    { "component": "Shaft", "material": "SS410 / SS304" },
+    { "component": "Seals", "material": "Fire Resistant Seals" },
+    { "component": "Bearings", "material": "Maintenance Free Bearings" },
+    { "component": "Linkages", "material": "Heavy Duty Reinforced" }
+  ],
+  "automationOptions": [
+    { "name": "Fusible Link Operated", "desc": "Thermal fusible link release trigger mechanism (72°C / 95°C / 140°C) with mechanical spring-return" },
+    { "name": "Motorised Fire Damper", "desc": "Electric spring-return fail-safe actuator with thermal sensor and fire alarm panel integration" },
+    { "name": "Pneumatic Fire Damper", "desc": "Pneumatic cylinder actuator with solenoid valve and quick-exhaust fail-safe closure" }
+  ],
   "features": [
-    "Precision calibrated thermal fusible link mechanism",
-    "Intumescent smoke perimeter seals that swell under heat",
-    "Heavy-gauge galvanized or stainless steel sleeve frame",
-    "Remote electric reset actuator option with status limit switches"
+    "Automatic Fire Isolation",
+    "Thermal Triggered Closing Mechanism",
+    "Fire Resistant Construction",
+    "Low Leakage Performance",
+    "Heavy Duty Blade Construction",
+    "Suitable for HVAC & Industrial Systems",
+    "Rapid Emergency Closing Response",
+    "Reliable Life Safety Protection",
+    "Multiple Mounting Configurations",
+    "Maintenance Friendly Design"
+  ],
+  "optionalFeatures": [
+    "Fire & Smoke Combination Design",
+    "Dynamic Fire Rated Design",
+    "Explosion Proof Actuators",
+    "Corrosion Resistant Construction",
+    "Stainless Steel Construction",
+    "High Velocity Design",
+    "C5 Paint System",
+    "External Insulation Option",
+    "Duct Access Door Integration"
+  ],
+  "engineeringAdvantages": [
+    "Automatic fire isolation (Eliminates fire propagation through duct systems)",
+    "Reliable compartment separation (Prevents unsafe smoke & heat transfer)",
+    "Rapid thermal response (Overcomes failure of compartment isolation)",
+    "Reduced fire spread risk (Eliminates delayed emergency response)",
+    "Improved ventilation safety & code compliance"
+  ],
+  "inspectionTesting": [
+    "Functional Closing Testing",
+    "Leakage Testing",
+    "Dimensional Inspection",
+    "FAT Support",
+    "Third Party Inspection",
+    "QA Dossier Documentation",
+    "Inspection by BV / TUV / SGS / DNV / Client TPI can be offered."
   ],
   "applications": [
-    "Marine Ships, Cruise Liners & Offshore Oil Platforms",
-    "High-Rise Commercial & Industrial Ventilation Ducts",
-    "Hazardous Chemical and Petrochemical Control Rooms",
-    "Underground Tunnels & Metro Rail Substation HVAC"
+    "HVAC Duct Systems",
+    "Commercial Buildings",
+    "Industrial Ventilation Systems",
+    "Utility Tunnels",
+    "Power Plants",
+    "Process Ventilation",
+    "Clean Room Ventilation",
+    "Data Centers",
+    "Underground Facilities",
+    "Critical Infrastructure"
+  ],
+  "majorReferences": [
+    { "endUser": "Airports Authority of India", "application": "Terminal HVAC Fire Isolation" },
+    { "endUser": "Industrial Plants & Refineries", "application": "Critical Fire Zone Compartmentation" },
+    { "endUser": "Commercial Towers & IT Parks", "application": "Life Safety Smoke & Fire Isolation" }
+  ],
+  "galleryImages": [
+    { "title": "FIRE DAMPER VALVE CONFIGURATIONS", "subtitle": "Motorised, Fusible Link & Pneumatic (Sq. 400 mm)", "image": "/images/gallery/be130/BE130-Fire-Damper-Valves-Showcase.webp" },
+    { "title": "FUNCTIONING SEQUENCE OF FIRE DAMPER VALVES", "subtitle": "Step 1: Fire | Step 2: Damper Closed | Step 3: Damper Holding Fire", "image": "/images/gallery/be130/BE130-Functioning-Fire-Damper-Sequence.webp" },
+    { "title": "STAGE 1: FIRE CONDITION", "subtitle": "Elevated temperature detection in ductwork", "image": "/images/gallery/be130/BE130-Stage-1-Fire-Condition.webp" },
+    { "title": "STAGE 2: DAMPER CLOSED", "subtitle": "Instantaneous fail-safe thermal trip closure", "image": "/images/gallery/be130/BE130-Stage-2-Damper-Closed.webp" },
+    { "title": "STAGE 3: DAMPER HOLDING THE FIRE", "subtitle": "60 to 180 minutes structural flame barrier", "image": "/images/gallery/be130/BE130-Stage-3-Damper-Holding-Fire.webp" },
+    { "title": "FIRE DAMPERS: PROTECTING LIFE & PRESERVING SAFETY", "subtitle": "Airports, Industrial Plants, Commercial Buildings", "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp" }
+  ],
+  "industriesServed": [
+    { "name": "Airports", "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp" },
+    { "name": "Industrial Plants", "image": "/images/industries/industry-process.jpg" },
+    { "name": "Commercial Buildings", "image": "/images/industries/General.jpg" },
+    { "name": "Power Plants", "image": "/images/industries/THERMAL.jpg" },
+    { "name": "Data Centers", "image": "/images/industries/industry-power-gen.jpg" },
+    { "name": "Marine & Offshore", "image": "/images/industries/MARINE.jpg" }
   ]
 }
