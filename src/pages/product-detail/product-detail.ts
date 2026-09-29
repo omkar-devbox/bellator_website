@@ -64,7 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (detailTagline) detailTagline.textContent = data.tagline || data.desc;
 
   const detailDesc = document.getElementById('detail-desc');
-  if (detailDesc) detailDesc.textContent = data.longDesc || data.desc;
+  if (detailDesc) {
+    const text = data.longDesc || data.desc;
+    if (text.includes('\n\n')) {
+      detailDesc.innerHTML = text.split('\n\n').map(p => `<p class="mb-3 last:mb-0">${p.trim()}</p>`).join('');
+    } else {
+      detailDesc.textContent = text;
+    }
+  }
 
   // Key Highlights
   const detailHighlights = document.getElementById('detail-highlights');
@@ -364,12 +371,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (gallerySection && galleryGrid) {
     if (data.galleryImages && data.galleryImages.length > 0) {
       gallerySection.classList.remove('hidden');
-      galleryGrid.innerHTML = data.galleryImages.map(item => {
+
+      const renderGalleryCards = (items: typeof data.galleryImages) => (items || []).map(item => {
         const itemImg = item.image ? (item.image.startsWith('/') ? `${cleanBase}${item.image.slice(1)}` : item.image) : data.image;
         return `
-          <div class="rounded-2xl border border-slate-200 overflow-hidden bg-white flex flex-col group hover:border-[#EE6226] hover:shadow-xl transition-all duration-300">
-            <div class="w-full h-64 sm:h-72 bg-slate-100 flex items-center justify-center p-2 relative overflow-hidden">
-              <img src="${itemImg}" alt="${item.title}" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" />
+          <div class="gallery-card-item rounded-2xl border border-slate-200 overflow-hidden bg-white flex flex-col group hover:border-[#EE6226] hover:shadow-xl transition-all duration-300 shrink-0">
+            <div class="w-full h-60 sm:h-64 bg-slate-100 flex items-center justify-center p-2 relative overflow-hidden">
+              <img src="${itemImg}" alt="${item.title}" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
             <div class="p-4 bg-white border-t border-slate-100 flex flex-col text-left">
               <span class="text-xs sm:text-sm font-extrabold text-slate-900 group-hover:text-[#EE6226] transition-colors line-clamp-1">${item.title}</span>
@@ -378,6 +386,9 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         `;
       }).join('');
+
+      // Duplicate list twice for seamless right-to-left marquee
+      galleryGrid.innerHTML = renderGalleryCards(data.galleryImages) + renderGalleryCards(data.galleryImages);
     } else {
       gallerySection.classList.add('hidden');
     }
