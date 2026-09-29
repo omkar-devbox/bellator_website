@@ -84,7 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Direct Page Navigation (No Popup)
   function navigateToProductDetail(productId: string) {
     if (productId && productsData[productId]) {
-      window.location.href = `/product-detail.html?id=${encodeURIComponent(productId)}`;
+      const base = import.meta.env.BASE_URL || '/';
+      const cleanBase = base.endsWith('/') ? base : base + '/';
+      window.location.href = `${cleanBase}product-detail.html?id=${encodeURIComponent(productId)}`;
     }
   }
 

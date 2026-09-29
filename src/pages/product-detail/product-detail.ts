@@ -38,9 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const detailModelBadge = document.getElementById('detail-model-badge');
   if (detailModelBadge) detailModelBadge.textContent = data.model;
 
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base : base + '/';
+
   const detailImage = document.getElementById('detail-image') as HTMLImageElement | null;
   if (detailImage) {
-    detailImage.src = data.image;
+    const imgSrc = data.image.startsWith('/') ? `${cleanBase}${data.image.slice(1)}` : data.image;
+    detailImage.src = imgSrc;
     detailImage.alt = `${data.title} (${data.model})`;
   }
 
@@ -156,9 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const otherProducts = allProducts.filter(p => p.id !== data.id).slice(0, 6);
 
     otherGrid.innerHTML = otherProducts.map(p => `
-      <a href="/product-detail.html?id=${p.id}" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#EE6226] bg-slate-50 hover:bg-white transition-all group flex flex-col items-center text-center">
+      <a href="${cleanBase}product-detail.html?id=${p.id}" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#EE6226] bg-slate-50 hover:bg-white transition-all group flex flex-col items-center text-center">
         <div class="w-full h-16 flex items-center justify-center mb-2 bg-white rounded-lg p-1 border border-slate-100">
-          <img src="${p.image}" alt="${p.title}" class="max-h-14 max-w-full object-contain group-hover:scale-105 transition-transform" />
+          <img src="${p.image.startsWith('/') ? cleanBase + p.image.slice(1) : p.image}" alt="${p.title}" class="max-h-14 max-w-full object-contain group-hover:scale-105 transition-transform" />
         </div>
         <span class="text-[11px] font-bold text-slate-800 group-hover:text-[#EE6226] line-clamp-1">${p.title}</span>
         <span class="text-[10px] font-mono text-slate-400 font-medium">${p.model}</span>

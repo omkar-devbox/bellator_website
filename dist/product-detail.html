@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/bellator_website/cropped-fav-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/bellator_website/cropped-fav-192x192.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/cropped-fav-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/test_web/cropped-fav-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/test_web/cropped-fav-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/test_web/cropped-fav-180x180.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
@@ -23,11 +23,11 @@
     href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
 
-  <script type="module" crossorigin src="/bellator_website/assets/product-detail-CWjUc3V4.js"></script>
-  <link rel="modulepreload" crossorigin href="/bellator_website/assets/modulepreload-polyfill-P2Xu9kJm.js">
-  <link rel="modulepreload" crossorigin href="/bellator_website/assets/nav-xUi3SNx4.js">
-  <link rel="modulepreload" crossorigin href="/bellator_website/assets/products-Cl2austL.js">
-  <link rel="stylesheet" crossorigin href="/bellator_website/assets/product-detail-iGLA1J8q.css">
+  <script type="module" crossorigin src="/test_web/assets/product-detail-C-isc1Bz.js"></script>
+  <link rel="modulepreload" crossorigin href="/test_web/assets/modulepreload-polyfill-P2Xu9kJm.js">
+  <link rel="modulepreload" crossorigin href="/test_web/assets/nav-xUi3SNx4.js">
+  <link rel="modulepreload" crossorigin href="/test_web/assets/products-Cl2austL.js">
+  <link rel="stylesheet" crossorigin href="/test_web/assets/product-detail-CdbtquSx.css">
 </head>
 
 <body
@@ -39,8 +39,8 @@
     <div id="navbar-dock" class="w-full mx-auto flex items-center justify-between transition-all duration-500">
       <!-- Left side: Brand Logo -->
       <div class="relative flex items-center flex-shrink-0 z-50">
-        <a href="/" class="flex items-center gap-2.5 sm:gap-3 group py-1" aria-label="Bellator Engineers Homepage">
-          <img src="/bellator_website/logo-emblem-clean.png" alt="Bellator Engineers"
+        <a href="/test_web/" class="flex items-center gap-2.5 sm:gap-3 group py-1" aria-label="Bellator Engineers Homepage">
+          <img src="/test_web/logo-emblem-clean.png" alt="Bellator Engineers"
             class="nav-brand-logo h-8 sm:h-9 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
 
           <div class="flex flex-col leading-none select-none">
@@ -54,34 +54,369 @@
         </a>
       </div>
 
-      <!-- Centered Floating Frosted Pill Capsule -->
+      <!-- Centered Floating Frosted Pill Capsule (Exact Match) -->
       <div class="hidden lg:flex items-center justify-center flex-1 mx-6">
         <div class="nav-pill-capsule">
-          <a href="/" class="nav-pill-link">
+          <a href="/test_web/" class="nav-pill-link">
             Home
           </a>
-          <a href="/about-us.html" class="nav-pill-link">
+          <a href="/test_web/about-us.html" class="nav-pill-link">
             About Us
           </a>
-          <a href="/products.html" class="nav-pill-link active" aria-current="page">
-            Products
-          </a>
-          <a href="/careers.html" class="nav-pill-link">
+
+          <!-- Products Dropdown (Referring to products page) -->
+          <div class="relative group/pill">
+            <a href="/test_web/products.html" class="nav-pill-link active cursor-pointer" aria-current="page">
+              <span>Products</span>
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover/pill:rotate-180 opacity-75"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-2 group-hover/pill:translate-y-0 group-hover/pill:opacity-100 group-hover/pill:visible transition-all duration-200 z-[100] min-w-[880px] lg:min-w-[960px]">
+              <div
+                class="bg-white/98 backdrop-blur-2xl border border-slate-200/90 rounded-2xl shadow-[0_25px_50px_-12px_rgba(15,23,42,0.18),0_4px_12px_rgba(0,0,0,0.04)] p-5 flex flex-col space-y-3.5 relative text-left text-[#0F172A]">
+                <!-- Dropdown Header -->
+                <div class="px-1 pb-3 border-b border-slate-100 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EE6226] opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#EE6226]"></span>
+                    </span>
+                    <span class="text-xs font-extrabold uppercase tracking-wider text-[#0F172A]">
+                      Industrial Damper Valve Directory
+                    </span>
+                    <span
+                      class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-orange-50 text-[#EE6226] border border-orange-200">
+                      21 Models
+                    </span>
+                  </div>
+                  <a href="/test_web/products.html"
+                    class="group/all inline-flex items-center gap-1.5 text-xs font-bold text-[#EE6226] hover:text-[#d8551d] transition-colors">
+                    <span>View All Products</span>
+                    <svg class="w-3.5 h-3.5 transition-transform group-hover/all:translate-x-1" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- 3 Categories Grid: 21 Models Total (7 per column) -->
+                <div class="grid grid-cols-3 gap-3.5">
+                  <!-- Cat 1: Isolation Dampers (7 Models) -->
+                  <div class="space-y-1 bg-slate-50/70 p-3 rounded-xl border border-slate-100/90">
+                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Butterfly Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE10
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=triple-offset-butterfly-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Triple Offset Dampers</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE30
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=double-offset-butterfly-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Double Offset Dampers</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE20
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=air-seal-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Air Seal Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE50
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Guillotine Gate Dampers</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE90
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=double-disc-gate-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Double Disc Gate Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE100
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=twin-seal-flap-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Twin Seal Flap Dampers</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">TSFD
+                        Series</span>
+                    </a>
+                  </div>
+
+                  <!-- Cat 2: Control & Diverter (7 Models) -->
+                  <div class="space-y-1 bg-slate-50/70 p-3 rounded-xl border border-slate-100/90">
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Multi-Louver Dampers</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE70
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=three-way-diverter-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Three Way Diverters</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE60
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=poppet-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Poppet Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE80
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=straight-pattern-inline-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Straight Pattern Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE200
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=crystallizer-discharge-gate-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Crystallizer Discharge Gates</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">CDGV
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=right-angle-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Right Angle Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE190
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=ventilation-channel-closing-device"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Ventilation Channel Closing</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE110
+                        Series</span>
+                    </a>
+                  </div>
+
+                  <!-- Cat 3: Severe-Duty & Safety (7 Models) -->
+                  <div class="space-y-1 bg-slate-50/70 p-3 rounded-xl border border-slate-100/90">
+                    <a href="/test_web/product-detail.html?id=refractory-lined-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Refractory Lined Dampers</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE140
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=back-draft-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Back Draft Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE120
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=double-flap-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Double Flap Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE150
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=stack-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Stack Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE-SD
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=three-lever-shut-off-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Three Lever Shut Off</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE40
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=fabricated-double-beat-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Fabricated Double Beat</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">FDBV
+                        Series</span>
+                    </a>
+                    <a href="/test_web/product-detail.html?id=fire-damper-valves"
+                      class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-xs font-medium text-slate-700 hover:text-[#EE6226] hover:bg-white hover:shadow-xs transition-all duration-150">
+                      <div class="flex items-center gap-1.5 truncate">
+                        <span
+                          class="text-slate-300 group-hover:text-[#EE6226] text-[10px] transition-colors">&blacktriangleright;</span>
+                        <span class="truncate">Fire Damper Valves</span>
+                      </div>
+                      <span
+                        class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-orange-50 text-[#EE6226] border border-orange-200/80 group-hover:bg-[#EE6226] group-hover:text-white group-hover:border-[#EE6226] transition-colors shrink-0 ml-1.5 whitespace-nowrap">BE130
+                        Series</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Dropdown Footer Strip -->
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <div class="flex items-center gap-2 text-slate-500">
+                    <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor"
+                      viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <span>Custom duct sizing from <strong class="text-slate-800 font-semibold">DN100</strong> to <strong
+                        class="text-slate-800 font-semibold">DN6000+</strong> &bull; Temps to <strong
+                        class="text-slate-800 font-semibold">1200°C</strong></span>
+                  </div>
+                  <a href="/test_web/contact-us.html"
+                    class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#EE6226] hover:bg-[#d8551d] text-white text-[11px] font-bold uppercase tracking-wider shadow-sm hover:shadow-md transition-all hover:scale-105">
+                    <span>Get Technical RFQ</span>
+                    <span class="text-xs">&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="/test_web/careers.html" class="nav-pill-link">
             Careers
           </a>
-          <a href="/contact-us.html" class="nav-pill-link">
+          <a href="/test_web/contact-us.html" class="nav-pill-link">
             Contact Us
           </a>
         </div>
       </div>
 
-      <!-- Right Side CTA -->
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="/contact-us.html"
-          class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#EE6226] hover:bg-[#d8551d] text-white shadow-md transition-all">
-          Request Quote
+      <!-- Right Action: Talk To Experts Pill CTA + Mobile Menu Button -->
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="/test_web/contact-us.html"
+          class="hidden sm:inline-flex items-center justify-center rounded-full bg-[#EE6226] px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#d8551d] hover:shadow-[0_8px_25px_rgba(238,98,38,0.45)]">
+          Talk To Experts
         </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn"
+          class="lg:hidden p-2 text-slate-800 hover:text-[#EE6226] transition-colors rounded-xl bg-slate-100 border border-slate-200"
+          aria-label="Toggle mobile menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu"
+      class="hidden lg:hidden border border-slate-200 mt-3 py-3 px-5 rounded-2xl bg-white/95 backdrop-blur-2xl shadow-2xl flex flex-col space-y-2 text-[#0F172A]">
+      <a href="/test_web/"
+        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-lg hover:bg-slate-50">Home</a>
+      <a href="/test_web/about-us.html"
+        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-lg hover:bg-slate-50">About
+        Us</a>
+      <a href="/test_web/products.html"
+        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-[#EE6226] bg-orange-50 rounded-lg">Products</a>
+      <a href="/test_web/careers.html"
+        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-lg hover:bg-slate-50">Careers</a>
+      <a href="/test_web/contact-us.html"
+        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-lg hover:bg-slate-50">Contact
+        Us</a>
+      <a href="/test_web/contact-us.html"
+        class="mt-2 text-center rounded-full bg-[#EE6226] py-2.5 text-xs font-bold uppercase tracking-wider text-white">Talk
+        To Experts</a>
     </div>
   </nav>
 
@@ -89,9 +424,9 @@
     <!-- Breadcrumb & Back Link -->
     <div class=" mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
       <nav class="flex items-center gap-2 text-xs font-medium text-slate-500">
-        <a href="/" class="hover:text-[#EE6226] transition-colors">Home</a>
+        <a href="/test_web/" class="hover:text-[#EE6226] transition-colors">Home</a>
         <span>&rsaquo;</span>
-        <a href="/products.html" class="hover:text-[#EE6226] transition-colors">Products</a>
+        <a href="/test_web/products.html" class="hover:text-[#EE6226] transition-colors">Products</a>
         <span>&rsaquo;</span>
         <span id="breadcrumb-current" class="text-slate-900 font-semibold">Product Overview</span>
       </nav>
@@ -114,7 +449,7 @@
                 class="absolute top-4 right-4 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider bg-slate-900 text-white shadow-sm">
                 BE-10
               </span>
-              <img id="detail-image" src="/bellator_website/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png"
+              <img id="detail-image" src="/test_web/BE10-Motorized-Single-Flap-Butterfly-Damper-Valve.png"
                 alt="Damper Valve Photo"
                 class="max-h-72 max-w-full object-contain filter drop-shadow-lg transition-transform duration-500 group-hover:scale-105" />
             </div>
@@ -183,7 +518,7 @@
                 class="px-6 py-3 rounded-xl bg-[#EE6226] hover:bg-[#d8551d] text-white text-xs font-bold uppercase tracking-wider shadow-md transition-all">
                 Request Sizing &amp; Quote
               </a>
-              <a href="/products.html"
+              <a href="/test_web/products.html"
                 class="px-6 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold uppercase tracking-wider transition-all">
                 &larr; Back to Directory
               </a>
@@ -339,7 +674,7 @@
             <span class="text-[10px] font-bold uppercase tracking-wider text-[#EE6226]">Directory Navigation</span>
             <h3 class="text-base sm:text-lg font-bold text-[#0F172A]">Explore Other Industrial Damper Models</h3>
           </div>
-          <a href="/products.html" class="text-xs font-bold text-[#EE6226] hover:underline">
+          <a href="/test_web/products.html" class="text-xs font-bold text-[#EE6226] hover:underline">
             View All 21 Models &rarr;
           </a>
         </div>
@@ -365,7 +700,7 @@
         <!-- Col 1: Brand Info -->
         <div class="md:col-span-2 lg:col-span-3 flex flex-col items-start text-left pr-4">
           <div class="flex items-center gap-2.5 mb-5">
-            <img src="/bellator_website/logo-white.png" alt="Bellator Engineers" class="h-9 sm:h-10 w-auto object-contain" />
+            <img src="/test_web/logo-white.png" alt="Bellator Engineers" class="h-9 sm:h-10 w-auto object-contain" />
           </div>
           <p class="text-gray-400 text-sm md:text-[15px] leading-relaxed">
             Bellator Engineers provides specialized damper valve engineering and precision manufacturing across nuclear,
@@ -404,11 +739,11 @@
         <div class="md:col-span-1 lg:col-span-2">
           <h3 class="text-white text-[15px] font-semibold uppercase tracking-wider mb-5">Quick Links</h3>
           <ul class="space-y-2.5 text-sm">
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/">Home</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/about-us.html">About Us</a></li>
-            <li><a class="text-[#EE6226] font-semibold transition-colors duration-300" href="/products.html">Products</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/careers.html">Careers</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/contact-us.html">Contact Us</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/">Home</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/about-us.html">About Us</a></li>
+            <li><a class="text-[#EE6226] font-semibold transition-colors duration-300" href="/test_web/products.html">Products</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/careers.html">Careers</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/contact-us.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -416,12 +751,12 @@
         <div class="md:col-span-1 lg:col-span-3">
           <h3 class="text-white text-[15px] font-semibold uppercase tracking-wider mb-5">Valve Solutions</h3>
           <ul class="space-y-2.5 text-sm">
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/products.html#butterfly-family">Butterfly Damper Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/products.html#gate-family">Double Disc Gate Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/products.html#louver-family">Multi-Louver Damper Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/products.html#diverter-family">Three Way Diverter Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/products.html#air-seal-family">Air Seal Damper Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/products.html#severe-family">Refractory Lined Dampers (1200°C)</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/products.html#butterfly-family">Butterfly Damper Valves</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/products.html#gate-family">Double Disc Gate Valves</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/products.html#louver-family">Multi-Louver Damper Valves</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/products.html#diverter-family">Three Way Diverter Valves</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/products.html#air-seal-family">Air Seal Damper Valves</a></li>
+            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/products.html#severe-family">Refractory Lined Dampers (1200°C)</a></li>
           </ul>
         </div>
 
@@ -467,7 +802,7 @@
         <div class="flex items-center gap-6">
           <a class="hover:text-gray-300 transition-colors" href="#">Privacy Policy</a>
           <a class="hover:text-gray-300 transition-colors" href="#">Terms &amp; Conditions</a>
-          <a class="hover:text-gray-300 transition-colors" href="/about-us.html">Quality Directives</a>
+          <a class="hover:text-gray-300 transition-colors" href="/test_web/about-us.html">Quality Directives</a>
         </div>
       </div>
     </div>

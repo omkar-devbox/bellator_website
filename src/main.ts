@@ -446,11 +446,11 @@ function initHeroTypewriter() {
   const textEl = target;
 
   const phrases = [
-    "Specialized in Motorized, Pneumatic, and Severe-Duty Damper Valves",
-    "Precision 3D CAD, FEA Stress Verification & CFD Flow Aerodynamics",
-    "SIL-2 / SIL-3 Certified Sealing Integrity for Flue Gas & Scrubber Ducts",
-    "100% Factory Pressure & Hydrostatic Leakage Tested Before Dispatch",
-    "Engineered for Marine Shipyards, Power Stations & Heavy Process Plants Worldwide"
+    "Global Leaders in Customized Damper Valve Solutions",
+    "Advanced Engineering for Industrial & Marine Damper Valves",
+    "Precision-Engineered Damper Valves for Demanding Applications",
+    "Innovative Damper Valve Solutions for Global Industries",
+    "Engineering Excellence in Industrial & Marine Flow Control"
   ];
 
   let phraseIndex = 0;
@@ -873,6 +873,58 @@ function initSectorMatrixCarousel() {
   });
 }
 
+/* ==========================================================================
+   AI Assistant Search Interaction
+   ========================================================================== */
+function initAiAssistant() {
+  const inputEl = document.getElementById('ai-assistant-input') as HTMLInputElement | null;
+  const submitBtn = document.getElementById('ai-submit-btn');
+  const voiceBtn = document.getElementById('ai-voice-btn');
+  const responseBox = document.getElementById('ai-response-box');
+  const responseText = document.getElementById('ai-response-text');
+  const promptChips = document.querySelectorAll('.ai-prompt-chip');
+
+  if (!inputEl) return;
+
+  const handleQuery = (query: string) => {
+    if (!query.trim()) return;
+    if (responseBox && responseText) {
+      responseBox.classList.remove('hidden');
+      responseText.innerHTML = `<span class="font-semibold text-[#EE6226]">Bellator AI:</span> Searching technical directory for "<em>${query}</em>"...<br><span class="text-slate-500 mt-1 inline-block">Analyzing Bellator damper valve specifications, 3D CAD/FEA datasheets, and severe-duty solutions.</span>`;
+    }
+  };
+
+  promptChips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const text = chip.textContent?.trim() || '';
+      inputEl.value = text;
+      handleQuery(text);
+    });
+  });
+
+  if (submitBtn) {
+    submitBtn.addEventListener('click', () => {
+      handleQuery(inputEl.value);
+    });
+  }
+
+  inputEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      handleQuery(inputEl.value);
+    }
+  });
+
+  if (voiceBtn) {
+    voiceBtn.addEventListener('click', () => {
+      inputEl.focus();
+      inputEl.placeholder = 'Listening... Speak your question';
+      setTimeout(() => {
+        inputEl.placeholder = 'Ask about Damper Valves, Flue Gas Solutions, Custom Designs...';
+      }, 3000);
+    });
+  }
+}
+
 // Initialize all interactive components
 init3DFluidWave();
 initHeroTypewriter();
@@ -882,3 +934,4 @@ initScrollLoadUnload();
 initWhatWeDoCarousel();
 initIndustriesDossier();
 initSectorMatrixCarousel();
+initAiAssistant();
