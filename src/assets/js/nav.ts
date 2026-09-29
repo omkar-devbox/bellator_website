@@ -1,6 +1,8 @@
 /**
  * Shared layout navigation handler for all Bella HTML pages
  */
+import { initChatbot } from '../../components/chatbot';
+
 export function initSharedNavigation(activePageId: string): void {
   // Mobile menu toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -65,4 +67,7 @@ export function initSharedNavigation(activePageId: string): void {
     window.addEventListener('scroll', handleTechnoScroll, { passive: true });
     handleTechnoScroll();
   }
+
+  // Initialize Global Bellator AI Chatbot
+  initChatbot();
 }

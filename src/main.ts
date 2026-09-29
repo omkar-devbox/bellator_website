@@ -910,8 +910,13 @@ function initSectorMatrixCarousel() {
 }
 
 /* ==========================================================================
-   AI Assistant Search Interaction
+   AI Assistant Search Interaction (Inline Rich Answers directly on page)
    ========================================================================== */
+import { getAiBotResponse, initChatbot } from './components/chatbot';
+
+import { marked } from 'marked';
+import DOMPurify from 'dompurify';
+
 function initAiAssistant() {
   const inputEl = document.getElementById('ai-assistant-input') as HTMLInputElement | null;
   const submitBtn = document.getElementById('ai-submit-btn');
@@ -926,7 +931,92 @@ function initAiAssistant() {
     if (!query.trim()) return;
     if (responseBox && responseText) {
       responseBox.classList.remove('hidden');
-      responseText.innerHTML = `<span class="font-semibold text-[#EE6226]">Bellator AI:</span> Searching technical directory for "<em>${query}</em>"...<br><span class="text-slate-500 mt-1 inline-block">Analyzing Bellator damper valve specifications, 3D CAD/FEA datasheets, and severe-duty solutions.</span>`;
+      responseText.innerHTML = `
+        <div class="flex items-center gap-2 text-slate-500 text-xs py-1">
+          <div class="w-4 h-4 border-2 border-[#EE6226] border-t-transparent rounded-full animate-spin"></div>
+          <span>Analyzing Bellator database for <em>"${query}"</em>...</span>
+        </div>
+      `;
+
+      setTimeout(() => {
+        const botResponse = getAiBotResponse(query);
+        const rawHtml = marked.parse(botResponse.text, { async: false }) as string;
+        const formattedText = DOMPurify.sanitize(rawHtml);
+
+        let cardHtml = '';
+        if (botResponse.card) {
+          cardHtml = `
+            <div class="mt-3 bg-white rounded-xl border border-orange-500/20 shadow-sm p-3.5 space-y-2.5">
+              <div class="flex flex-col sm:flex-row gap-3 items-start">
+                ${botResponse.card.image ? `
+                  <div class="w-full sm:w-28 h-24 bg-slate-50 rounded-lg flex items-center justify-center p-1 flex-shrink-0 border border-slate-100">
+                    <img src="${botResponse.card.image}" alt="${botResponse.card.title}" class="max-h-full max-w-full object-contain" />
+                  </div>
+                ` : ''}
+                <div class="flex-1 min-w-0">
+                  ${botResponse.card.model ? `<span class="inline-block px-2 py-0.5 rounded bg-orange-100 text-[#EE6226] font-mono font-bold text-[10px] mb-1">${botResponse.card.model}</span>` : ''}
+                  <h4 class="font-bold text-slate-900 text-sm leading-tight">${botResponse.card.title}</h4>
+                  ${botResponse.card.desc ? `<p class="text-slate-600 text-xs mt-1 leading-relaxed">${botResponse.card.desc.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>` : ''}
+                </div>
+              </div>
+
+              ${botResponse.card.specs && botResponse.card.specs.length ? `
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-100 text-xs">
+                  ${botResponse.card.specs.map(s => `
+                    <div class="bg-slate-50 p-2 rounded border border-slate-100">
+                      <span class="text-slate-400 block text-[9px] uppercase font-semibold">${s.label}</span>
+                      <span class="text-slate-800 font-medium text-xs">${s.value}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              ` : ''}
+
+              ${botResponse.card.link ? `
+                <div class="pt-2 flex items-center justify-between gap-3">
+                  <a href="${botResponse.card.link}" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#EE6226] hover:bg-[#d8551d] text-white font-semibold text-xs transition-all shadow-sm">
+                    <span>${botResponse.card.linkText || 'View Product Datasheet'}</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                  </a>
+                  <a href="https://wa.me/919028219202?text=Hello%20Bellator%2C%20inquiry%20regarding%20${encodeURIComponent(query)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-emerald-600 hover:text-emerald-700 font-bold text-xs">
+                    <span>WhatsApp Inquiry &rarr;</span>
+                  </a>
+                </div>
+              ` : ''}
+            </div>
+          `;
+        }
+
+        let suggestionsHtml = '';
+        if (botResponse.suggestions && botResponse.suggestions.length) {
+          suggestionsHtml = `
+            <div class="mt-3 pt-2 border-t border-slate-200/60 flex flex-wrap items-center gap-1.5">
+              <span class="text-[11px] text-slate-400 font-medium mr-1">Related:</span>
+              ${botResponse.suggestions.map(s => `
+                <button type="button" class="inline-ai-chip px-2.5 py-1 rounded-md bg-white border border-slate-200 hover:border-orange-400 hover:text-[#EE6226] text-[11px] text-slate-700 font-medium transition-all shadow-2xs">
+                  ${s}
+                </button>
+              `).join('')}
+            </div>
+          `;
+        }
+
+        responseText.innerHTML = `
+          <div class="text-slate-800 text-xs sm:text-sm leading-relaxed">
+            ${formattedText}
+            ${cardHtml}
+            ${suggestionsHtml}
+          </div>
+        `;
+
+        // Bind clicks for related chips
+        responseText.querySelectorAll('.inline-ai-chip').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const nextQuery = btn.textContent?.trim() || '';
+            if (inputEl) inputEl.value = nextQuery;
+            handleQuery(nextQuery);
+          });
+        });
+      }, 350);
     }
   };
 
@@ -952,11 +1042,28 @@ function initAiAssistant() {
 
   if (voiceBtn) {
     voiceBtn.addEventListener('click', () => {
-      inputEl.focus();
-      inputEl.placeholder = 'Listening... Speak your question';
-      setTimeout(() => {
+      if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        inputEl.focus();
+        inputEl.placeholder = 'Type your question here...';
+        return;
+      }
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      inputEl.placeholder = '🎙️ Listening... Speak your question';
+      voiceBtn.classList.add('animate-pulse');
+
+      recognition.onresult = (event: any) => {
+        const transcript = event.results[0][0].transcript;
+        inputEl.value = transcript;
+        handleQuery(transcript);
+      };
+      recognition.onend = () => {
+        voiceBtn.classList.remove('animate-pulse');
         inputEl.placeholder = 'Ask about Damper Valves, Flue Gas Solutions, Custom Designs...';
-      }, 3000);
+      };
+      recognition.start();
     });
   }
 }
@@ -971,3 +1078,4 @@ initWhatWeDoCarousel();
 initIndustriesDossier();
 initSectorMatrixCarousel();
 initAiAssistant();
+initChatbot();
