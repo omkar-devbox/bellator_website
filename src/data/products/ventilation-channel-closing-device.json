@@ -2,13 +2,13 @@
   "id": "ventilation-channel-closing-device",
   "title": "BE110 : VENTILATION CHANNEL CLOSING DEVICE",
   "model": "BE110 SERIES",
-  "image": "/images/gallery/be110/BE110-VCHCD-Without-Adaptor.webp",
+  "image": "/images/gallery/BE110 SERIES_VENTILATION CHANNEL CLOSING DEVICE/BE110 SERIES - VENTILATION CHANNEL CLOSING DEVICE WITHOUT ADAPTER.png",
   "category": "severe",
   "categoryLabel": "Passive Nuclear & Blast Safety Protection",
   "tagline": "Engineered for Passive Nuclear Safety Protection against blast waves, deflagration, pressure surges, and shock events.",
   "desc": "Bellator BE110 Series Ventilation Channel Closing Devices (VChCD) are specially engineered passive safety isolation devices designed to protect critical ventilation systems against blast waves, pressure surges, and accidental shock events. These devices remain fully open during normal ventilation airflow conditions while automatically closing under sudden pressure wave conditions to prevent propagation of blast energy and hazardous contamination.",
   "longDesc": "Bellator BE110 Series Ventilation Channel Closing Devices (VChCD) are specially engineered passive safety isolation devices designed to protect critical ventilation systems against blast waves, pressure surges, and accidental shock events.\n\nThese devices are designed to remain fully open during normal ventilation airflow conditions while automatically closing under sudden pressure wave conditions to prevent propagation of blast energy and hazardous contamination.\n\nThe BE110 Series combines aerodynamic stability, optimized spring-assisted closing dynamics, and robust heavy-duty construction to ensure dependable operation under severe emergency conditions. Widely suitable for nuclear facilities, critical infrastructure ventilation systems, defense applications, hazardous process environments, and containment ventilation systems.",
-  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "taglineBrochure": "\u201cEngineered for Reliability \u2022 Built for Performance \u2022 Designed for Critical Applications\u201d",
   "keyHighlights": [
     "Passive Self-Actuating Safety Design with zero external power dependency",
     "Automatic Blast Wave, Deflagration Wave & High Wind Velocity Protection",
@@ -18,7 +18,7 @@
     "Engineered for Nuclear Safety, Rocket Launching Stations, and Defense Bunkers"
   ],
   "leakage": "Critical Isolation Design (100% Sealing to Atmosphere)",
-  "temp": "-25°C to 350°C",
+  "temp": "-25\u00b0C to 350\u00b0C",
   "pressure": "Shock Wave Impact / Deflagration Wave Impact",
   "sizes": "400 mm to 2600 mm",
   "materials": "Body/Flap/Axle/Link: SS321 / SS304 / Customer Specific | Spring: Spring Steel | Bush: Self Lubricated",
@@ -154,34 +154,24 @@
   ],
   "galleryImages": [
     {
-      "title": "VCHCD WITHOUT ADAPTOR",
-      "subtitle": "Double Flanged Stainless Steel Construction",
-      "image": "/images/gallery/be110/BE110-VCHCD-Without-Adaptor.webp"
+      "title": "VENTILATION CHANNEL CLOSING DEVICE",
+      "subtitle": "Direct Duct Mount Configuration",
+      "image": "/images/gallery/BE110 SERIES_VENTILATION CHANNEL CLOSING DEVICE/BE110 SERIES - VENTILATION CHANNEL CLOSING DEVICE WITHOUT ADAPTER.png"
     },
     {
-      "title": "VCHCD WITH INTEGRAL ADAPTOR",
-      "subtitle": "Single Unit with Transition Box",
-      "image": "/images/gallery/be110/BE110-VCHCD-With-Adaptor-Single.webp"
+      "title": "VENTILATION CHANNEL CLOSING DEVICE",
+      "subtitle": "With Wall Adaptor Configuration",
+      "image": "/images/gallery/BE110 SERIES_VENTILATION CHANNEL CLOSING DEVICE/_BE110 SERIES - VENTILATION CHANNEL CLOSING DEVICE WITH ADAPTOR.png"
     },
     {
-      "title": "VCHCD WITH ADAPTOR PRODUCTION BATCH",
-      "subtitle": "Nuclear & Defense Grade Delivery Batch",
-      "image": "/images/gallery/be110/BE110-VCHCD-With-Adaptor-Batch.webp"
+      "title": "VCHCD CLOSING MECHANISM",
+      "subtitle": "High Shock Wave & Blast Protection",
+      "image": "/images/gallery/BE110 SERIES_VENTILATION CHANNEL CLOSING DEVICE/_BE110 SERIES - VENTILATION CHANNEL CLOSING DEVICE APPLICATION1.png"
     },
     {
-      "title": "CLOSURE MODE: SHOCK WAVE IMPACT",
-      "subtitle": "Instantaneous passive barrier triggering",
-      "image": "/images/gallery/be110/BE110-Closure-Shock-Wave-Impact.webp"
-    },
-    {
-      "title": "CLOSURE MODE: DEFLAGRATION WAVE IMPACT",
-      "subtitle": "Rapid closure isolating fire and blast fronts",
-      "image": "/images/gallery/be110/BE110-Closure-Deflagration-Wave-Impact.webp"
-    },
-    {
-      "title": "CLOSURE MODE: WIND VELOCITY 55 M/S IMPACT",
-      "subtitle": "Automatic closure at extreme dynamic pressure (1.88 kPa)",
-      "image": "/images/gallery/be110/BE110-Closure-Wind-Velocity-55ms.webp"
+      "title": "VCHCD DEFLAGRATION CLOSURE",
+      "subtitle": "Critical Safety & Bunker Application",
+      "image": "/images/gallery/BE110 SERIES_VENTILATION CHANNEL CLOSING DEVICE/_BE110 SERIES - VENTILATION CHANNEL CLOSING DEVICE APPLICATION 2.png"
     }
   ],
   "industriesServed": [

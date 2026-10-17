@@ -2,7 +2,7 @@
   "id": "fabricated-double-beat-valves",
   "title": "Fabricated Double Beat Valves",
   "model": "FDBV Series",
-  "image": "/images/products/Double-Beat-Valve.png",
+  "image": "/images/gallery/BE210 SERIES_FABRICATED DOUBLE BEAT VALVES/BE210 SERIES - FABRICATED DOUBLE BEAT VALVE.png",
   "category": "severe",
   "categoryLabel": "Balanced Equilibrium",
   "tagline": "Dual-seat pressure balanced throttle valve for large volumetric flow control of hot steam and process gas.",
@@ -32,5 +32,12 @@
     "Paper Mill Black Liquor Gas and Steam Throttling",
     "Steel Mill Gas Mixing and Blast Furnace Gas Lines",
     "High-Volume Low-Pressure Steam Pressure Reduction"
+  ],
+  "galleryImages": [
+    {
+      "title": "FABRICATED DOUBLE BEAT VALVE",
+      "subtitle": "BE210 Series Balanced Equilibrium Throttling",
+      "image": "/images/gallery/BE210 SERIES_FABRICATED DOUBLE BEAT VALVES/BE210 SERIES - FABRICATED DOUBLE BEAT VALVE.png"
+    }
   ]
 }

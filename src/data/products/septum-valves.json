@@ -2,13 +2,13 @@
   "id": "septum-valves",
   "title": "BE260 : SEPTUM VALVES",
   "model": "BE260 SERIES",
-  "image": "/images/products/BE260-Septum-Valves.png",
+  "image": "/images/gallery/BE260 SERIES_SEPTUM VALVE/BE260 SERIES - SEPTUM VALVE.png",
   "category": "severe",
   "categoryLabel": "Blast Furnace Top Pressure Control Valves",
   "tagline": "Specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems.",
   "desc": "The Bellator BE260 Series Septum Valve is a specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems. It is primarily used for precise regulation of blast furnace top pressure while handling clean, semi-cleaned, or partially dust-laden blast furnace gas streams.",
   "longDesc": "The Bellator BE260 Series Septum Valve is a specialized multi-stage pressure control valve designed for Blast Furnace Gas (BFG) systems. It is primarily used for precise regulation of blast furnace top pressure while handling clean, semi-cleaned, or partially dust-laden blast furnace gas streams.\n\nThe valve is installed in the Blast Furnace Top Pressure Control System, generally located in piping of blast furnace throat or within the gas cleaning plant. By employing multiple independently controlled butterfly dampers housed within a common body, the Septum Valve provides highly accurate pressure modulation over a wide operating range while ensuring reliable operation under severe process conditions.\n\nThe valve plays a critical role in maintaining stable furnace top pressure, thereby improving furnace efficiency, process stability, and gas recovery performance.",
-  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "taglineBrochure": "\u201cEngineered for Reliability \u2022 Built for Performance \u2022 Designed for Critical Applications\u201d",
   "keyHighlights": [
     "Multi-Stage Pressure Control with multiple independently operated control butterfly elements",
     "Engineered specifically for Blast Furnace Throat and Gas Cleaning Plant Top Pressure regulation",
@@ -162,19 +162,19 @@
   ],
   "galleryImages": [
     {
-      "title": "SEPTUM VALVE PERSPECTIVE VIEW",
-      "subtitle": "Size Dia 1800 mm with Multi-Actuator Stanchions",
-      "image": "/images/gallery/be260/BE260-Septum-Valve-Dia-1800-Perspective.webp"
+      "title": "SEPTUM VALVE",
+      "subtitle": "BE260 Series Multi-Port BFG Pressure Control",
+      "image": "/images/gallery/BE260 SERIES_SEPTUM VALVE/BE260 SERIES - SEPTUM VALVE.png"
     },
     {
-      "title": "SEPTUM VALVE FRONT PORT CONFIGURATION",
-      "subtitle": "Size 1800 mm (Coarse & Fine Trimming Ports)",
-      "image": "/images/gallery/be260/BE260-Septum-Valve-Front-Port-Configuration.webp"
+      "title": "SEPTUM VALVE PORT CONFIGURATION",
+      "subtitle": "Multi-Stage Differential Pressure Regulation",
+      "image": "/images/gallery/BE260 SERIES_SEPTUM VALVE/BE260 SERIES - SEPTUM VALVE_HOLOGRAPHIC .png"
     },
     {
-      "title": "OPERATING PRINCIPLE & TESTING PROTOCOL",
-      "subtitle": "Multi-Stage Pressure Regulation Dynamics",
-      "image": "/images/gallery/be260/BE260-Operating-Principle-Multi-Stage-Control.webp"
+      "title": "SEPTUM VALVE",
+      "subtitle": "Blast Furnace Site Installation Photo",
+      "image": "/images/gallery/BE260 SERIES_SEPTUM VALVE/BE260 SERIES - SEPTUM VALVE_SITE PHOTO.png"
     }
   ],
   "industriesServed": [

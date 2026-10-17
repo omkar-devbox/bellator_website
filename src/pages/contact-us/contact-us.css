@@ -46,18 +46,16 @@
   position: relative;
   background-color: #ffffff;
   border: 1px solid #E2E8F0;
-  border-radius: 1.25rem;
+  border-radius: 0.25rem;
   padding: 1.75rem;
-  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, border-color, box-shadow;
 }
 
 .contact-channel-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(238, 98, 38, 0.45);
-  box-shadow: 
-    0 20px 35px -8px rgba(15, 23, 42, 0.08),
-    0 0 0 1px rgba(238, 98, 38, 0.15);
+  transform: translateY(-3px);
+  border-color: #EE6226;
+  box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.08);
 }
 
 /* RFQ Form Card */
@@ -65,14 +63,14 @@
   position: relative;
   background-color: #ffffff;
   border: 1px solid #E2E8F0;
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 45px -12px rgba(15, 23, 42, 0.08);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
 }
 
 /* Interactive Form Field Polish */
 .rfq-input {
   width: 100%;
-  border-radius: 0.75rem;
+  border-radius: 0.25rem;
   border: 1px solid #CBD5E1;
   background-color: #FFFFFF;
   color: #0F172A;
@@ -85,7 +83,7 @@
 .rfq-input:focus {
   outline: none;
   border-color: #EE6226;
-  box-shadow: 0 0 0 3px rgba(238, 98, 38, 0.15);
+  box-shadow: 0 0 0 2px rgba(238, 98, 38, 0.2);
 }
 
 .rfq-input::placeholder {
@@ -96,7 +94,7 @@
 .map-frame-card {
   position: relative;
   overflow: hidden;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
   border: 1px solid #E2E8F0;
   background-color: #FFFFFF;
   box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.08);

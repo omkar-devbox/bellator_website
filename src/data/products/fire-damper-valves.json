@@ -2,13 +2,13 @@
   "id": "fire-damper-valves",
   "title": "BE130 : FIRE DAMPER VALVES",
   "model": "BE130 SERIES",
-  "image": "/images/products/Fire-Damper.png",
+  "image": "/images/gallery/BE130 SERIES_FIRE DAMPER VALVES/_BE130 SERIES - FIRE DAMPER VALVES 1.png",
   "category": "severe",
   "categoryLabel": "Engineered for Fire Protection & Life Safety",
   "tagline": "Engineered for Fire Protection & Life Safety to prevent the spread of fire and high temperature gases.",
   "desc": "Bellator BE130 Series Fire Damper Valves are specially engineered to prevent the spread of fire and high temperature gases through ventilation and air conditioning duct systems. These dampers are designed to automatically close upon detection of elevated temperature conditions, thereby isolating fire zones and minimizing fire propagation through duct networks.",
   "longDesc": "Bellator BE130 Series Fire Damper Valves are specially engineered to prevent the spread of fire and high temperature gases through ventilation and air conditioning duct systems. These dampers are designed to automatically close upon detection of elevated temperature conditions, thereby isolating fire zones and minimizing fire propagation through duct networks.\n\nThe BE130 Series combines reliable thermal response mechanisms, heavy-duty construction, and low leakage performance to ensure dependable operation under emergency fire conditions.\n\nThese dampers are widely used in HVAC systems, industrial ventilation systems, commercial buildings, process industries, tunnels, utility plants, and critical infrastructure facilities.",
-  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "taglineBrochure": "\u201cEngineered for Reliability \u2022 Built for Performance \u2022 Designed for Critical Applications\u201d",
   "keyHighlights": [
     "Automatic Fire Isolation with Rapid Emergency Thermal Closing Response",
     "Fire Rating options: 60 / 90 / 120 / 180 Minutes Integrity Protection",
@@ -96,7 +96,7 @@
   "automationOptions": [
     {
       "name": "Fusible Link Operated",
-      "desc": "Thermal fusible link release trigger mechanism (72°C / 95°C / 140°C) with mechanical spring-return"
+      "desc": "Thermal fusible link release trigger mechanism (72\u00b0C / 95\u00b0C / 140\u00b0C) with mechanical spring-return"
     },
     {
       "name": "Motorised Fire Damper",
@@ -174,34 +174,19 @@
   ],
   "galleryImages": [
     {
-      "title": "FIRE DAMPER VALVE CONFIGURATIONS",
-      "subtitle": "Motorised, Fusible Link & Pneumatic (Sq. 400 mm)",
-      "image": "/images/gallery/be130/BE130-Fire-Damper-Valves-Showcase.webp"
+      "title": "FIRE DAMPER VALVE",
+      "subtitle": "BE130 Series Fire Barrier Isolation",
+      "image": "/images/gallery/BE130 SERIES_FIRE DAMPER VALVES/_BE130 SERIES - FIRE DAMPER VALVES 1.png"
     },
     {
-      "title": "FUNCTIONING SEQUENCE OF FIRE DAMPER VALVES",
-      "subtitle": "Step 1: Fire | Step 2: Damper Closed | Step 3: Damper Holding Fire",
-      "image": "/images/gallery/be130/BE130-Functioning-Fire-Damper-Sequence.webp"
+      "title": "FIRE DAMPER VALVE",
+      "subtitle": "Fusible Link & Thermal Release System",
+      "image": "/images/gallery/BE130 SERIES_FIRE DAMPER VALVES/_BE130 SERIES - FIRE DAMPER VALVES 2.png"
     },
     {
-      "title": "STAGE 1: FIRE CONDITION",
-      "subtitle": "Elevated temperature detection in ductwork",
-      "image": "/images/gallery/be130/BE130-Stage-1-Fire-Condition.webp"
-    },
-    {
-      "title": "STAGE 2: DAMPER CLOSED",
-      "subtitle": "Instantaneous fail-safe thermal trip closure",
-      "image": "/images/gallery/be130/BE130-Stage-2-Damper-Closed.webp"
-    },
-    {
-      "title": "STAGE 3: DAMPER HOLDING THE FIRE",
-      "subtitle": "60 to 180 minutes structural flame barrier",
-      "image": "/images/gallery/be130/BE130-Stage-3-Damper-Holding-Fire.webp"
-    },
-    {
-      "title": "FIRE DAMPERS: PROTECTING LIFE & PRESERVING SAFETY",
-      "subtitle": "Airports, Industrial Plants, Commercial Buildings",
-      "image": "/images/gallery/be130/BE130-Industries-Served-Protection.webp"
+      "title": "FIRE DAMPER VALVE",
+      "subtitle": "Heavy Duty Duct Fire Containment",
+      "image": "/images/gallery/BE130 SERIES_FIRE DAMPER VALVES/_BE130 SERIES - FIRE DAMPER VALVES 3.png"
     }
   ],
   "industriesServed": [

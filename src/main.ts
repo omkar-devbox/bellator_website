@@ -649,8 +649,16 @@ function initTestimonialSlider() {
    Bidirectional Scroll Text & Element Load / Unload Animation System
    ========================================================================== */
 function initScrollLoadUnload() {
+  // Auto-stagger children in grid rows
+  document.querySelectorAll<HTMLElement>('.techno-why-card, .industry-card').forEach((card, idx) => {
+    card.classList.add('scroll-reveal-item');
+    if (!card.style.getPropertyValue('--stagger-delay')) {
+      card.style.setProperty('--stagger-delay', `${(idx % 3) * 110}ms`);
+    }
+  });
+
   const elements = document.querySelectorAll<HTMLElement>(
-    '.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .scroll-heading, .scroll-subtext, .scroll-badge, .scroll-mask-wrap'
+    '.scroll-reveal, .scroll-reveal-item, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .scroll-heading, .scroll-subtext, .scroll-badge, .scroll-mask-wrap'
   );
   if (elements.length === 0) return;
 
@@ -669,7 +677,7 @@ function initScrollLoadUnload() {
     entries.forEach((entry) => {
       const el = entry.target as HTMLElement;
       if (entry.isIntersecting) {
-        // Load effect when scrolled into view
+        // Load effect 1 by 1 when scrolled into view
         el.classList.add('is-loaded');
       } else {
         // Unload effect when scrolled out of view
@@ -779,35 +787,36 @@ function initWhatWeDoCarousel() {
 }
 
 /* ==========================================================================
-   Industries We Serve - Interactive Sector Dossier Controller
+   Industries We Serve - Modern Bento Grid Navigation Controller
    ========================================================================== */
 function initIndustriesDossier() {
-  const tabs = document.querySelectorAll<HTMLButtonElement>('.sector-tab-btn');
-  const panels = document.querySelectorAll<HTMLElement>('.sector-dossier-panel');
+  const filterPills = document.querySelectorAll<HTMLButtonElement>('.bento-filter-pill');
+  if (filterPills.length === 0) return;
 
-  if (tabs.length === 0 || panels.length === 0) return;
+  filterPills.forEach((pill) => {
+    pill.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = pill.getAttribute('data-bento-target');
+      if (!targetId) return;
 
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const targetSector = tab.getAttribute('data-sector');
-      if (!targetSector) return;
+      const targetCard = document.getElementById(targetId);
+      if (!targetCard) return;
 
-      // Update Tab States
-      tabs.forEach((t) => {
-        t.classList.remove('is-active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      tab.classList.add('is-active');
-      tab.setAttribute('aria-selected', 'true');
+      // Update active pill state
+      filterPills.forEach((p) => p.classList.remove('is-active'));
+      pill.classList.add('is-active');
 
-      // Update Panel States with smooth transition
-      panels.forEach((panel) => {
-        if (panel.id === `dossier-${targetSector}`) {
-          panel.classList.add('is-active');
-        } else {
-          panel.classList.remove('is-active');
-        }
-      });
+      // Smooth scroll to card
+      targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Add temporary highlight pulse
+      targetCard.classList.remove('highlight-card');
+      // Trigger reflow for restart animation
+      void targetCard.offsetWidth;
+      targetCard.classList.add('highlight-card');
+      setTimeout(() => {
+        targetCard.classList.remove('highlight-card');
+      }, 1900);
     });
   });
 }

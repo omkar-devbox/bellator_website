@@ -2,7 +2,7 @@
   "id": "twin-seal-flap-damper-valves",
   "title": "Twin Seal Flap Damper Valves",
   "model": "TSFD Series",
-  "image": "/images/products/Twin-Seal-Flap-Damper-Valve.png",
+  "image": "/images/gallery/BE170 SERIES_TWIN FLAP DAMPER VALVES/BE170 SERIES - TWIN SEAL FLAP DAMPER VALVE.png",
   "category": "severe",
   "categoryLabel": "100% Gas Tightness",
   "tagline": "Dual perimeter seal damper with intermediate seal air pressure chamber for 100% human-safe isolation.",
@@ -32,5 +32,12 @@
     "DeNOx Selective Catalytic Reduction (SCR) Ducts",
     "Incineration Plants & Toxic Gas Thermal Oxidizers",
     "Smelter Acid Plant Scrubber & Blower Isolation"
+  ],
+  "galleryImages": [
+    {
+      "title": "TWIN SEAL FLAP DAMPER VALVE",
+      "subtitle": "BE170 Series 100% Dual Perimeter Sealing",
+      "image": "/images/gallery/BE170 SERIES_TWIN FLAP DAMPER VALVES/BE170 SERIES - TWIN SEAL FLAP DAMPER VALVE.png"
+    }
   ]
 }

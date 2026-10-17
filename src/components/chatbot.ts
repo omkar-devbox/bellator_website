@@ -384,7 +384,7 @@ export class BellatorChatbot {
       </div>
 
       <!-- Chat Modal Window -->
-      <div id="bellator-chat-modal" class="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[420px] md:w-[460px] h-[580px] max-h-[calc(100vh-7.5rem)] bg-white/95 backdrop-blur-2xl rounded-3xl border border-slate-200/90 shadow-[0_25px_70px_rgba(15,23,42,0.25),0_0_0_1px_rgba(238,98,38,0.15)] flex flex-col overflow-hidden transition-all duration-300 transform scale-90 opacity-0 pointer-events-none origin-bottom-right">
+      <div id="bellator-chat-modal" class="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[420px] md:w-[460px] h-[580px] max-h-[calc(100vh-7.5rem)] bg-white/95 backdrop-blur-2xl rounded-2xl border border-slate-200/90 shadow-[0_25px_70px_rgba(15,23,42,0.25),0_0_0_1px_rgba(238,98,38,0.15)] flex flex-col overflow-hidden transition-all duration-300 transform scale-90 opacity-0 pointer-events-none origin-bottom-right">
         
         <!-- Header -->
         <div class="bg-gradient-to-r from-[#0B1220] via-[#111C30] to-[#0B1220] px-5 py-4 flex items-center justify-between border-b border-white/10 text-white select-none">

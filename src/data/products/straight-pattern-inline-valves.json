@@ -2,7 +2,7 @@
   "id": "straight-pattern-inline-valves",
   "title": "Straight Pattern (Inline) Valves",
   "model": "BE-200 Series",
-  "image": "/images/products/BE200-Manual-Straight-Pattern-Inline-Valve.png",
+  "image": "/images/gallery/BE200 SERIES_STRAIGHT PATTERN VALVES/BE200 SERIES - MANUAL STRAIGHT PATTERN INLINE VALVE.png",
   "category": "control",
   "categoryLabel": "Straight Pipeline Run",
   "tagline": "Coaxial in-line shutoff and flow balancing valve engineered for continuous gas and air pipelines.",
@@ -32,5 +32,12 @@
     "Combustion Air Supply to Burner Arrays",
     "Ventilation and Process Gas Headers",
     "Chemical Process Vapors and Steam Exhaust Lines"
+  ],
+  "galleryImages": [
+    {
+      "title": "MANUAL STRAIGHT PATTERN INLINE VALVE",
+      "subtitle": "BE200 Series Inline Process Piping",
+      "image": "/images/gallery/BE200 SERIES_STRAIGHT PATTERN VALVES/BE200 SERIES - MANUAL STRAIGHT PATTERN INLINE VALVE.png"
+    }
   ]
 }

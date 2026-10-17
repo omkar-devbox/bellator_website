@@ -2,22 +2,22 @@
   "id": "refractory-lined-damper-valves",
   "title": "BE140 : REFRACTORY LINED DAMPER VALVES",
   "model": "BE140 SERIES",
-  "image": "/images/products/BE140-Pneumatic-Refractory-Lined-Damper-Valves.png",
+  "image": "/images/gallery/BE140 SERIES_REFRACTORY LINED DAMPER VALVES/BE14010 SERIES_REFRACTORY LINED BUTTERFLY DAMPER VALVES/BE14010 SERIES - REFRACTORY LINED BUTTERFLY DAMPER VALVES.png",
   "category": "severe",
   "categoryLabel": "Engineered for Extreme Temperature Service",
-  "tagline": "Engineered for Extreme Temperature Service in severe high temperature process applications up to 1400°C.",
+  "tagline": "Engineered for Extreme Temperature Service in severe high temperature process applications up to 1400\u00b0C.",
   "desc": "Bellator BE140 Series Refractory Lined Damper Valves are specially engineered for severe high temperature process applications involving hot gases, thermal cycling, abrasive media, and elevated thermal loads. These dampers incorporate specially designed refractory lining systems that protect the metallic structure from direct exposure to high temperature process media while ensuring reliable operational integrity and extended service life.",
   "longDesc": "Bellator BE140 Series Refractory Lined Damper Valves are specially engineered for severe high temperature process applications involving hot gases, thermal cycling, abrasive media, and elevated thermal loads. These dampers incorporate specially designed refractory lining systems that protect the metallic structure from direct exposure to high temperature process media while ensuring reliable operational integrity and extended service life.\n\nThe BE140 Series combines heavy-duty fabricated construction, optimized thermal expansion design, and advanced refractory engineering to deliver dependable isolation and flow control performance under extreme operating conditions. The refractory lining arrangement minimizes thermal stress on the valve body while enhancing durability and operational reliability during continuous high temperature service.\n\nManufactured using advanced engineering and application-oriented design practices, the BE140 Series is suitable for critical process applications involving furnaces, kilns, incinerators, WHRB systems, and high temperature process gas handling systems requiring dependable long-term performance.",
-  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "taglineBrochure": "\u201cEngineered for Reliability \u2022 Built for Performance \u2022 Designed for Critical Applications\u201d",
   "keyHighlights": [
-    "Advanced Refractory Lined Construction suitable for extreme continuous service up to 1400°C",
+    "Advanced Refractory Lined Construction suitable for extreme continuous service up to 1400\u00b0C",
     "Multi-layer refractory protection reducing outer shell and skin temperature",
     "Optimized thermal expansion compensation and thermal shock resistant engineering",
     "Available in Pneumatic, Electric, Hydraulic, and Manual actuation configurations",
     "Custom fabricated in Round, Square & Rectangular shapes from 100 mm to 5000 mm"
   ],
   "leakage": "Up to 99.95%",
-  "temp": "Up to 1400°C",
+  "temp": "Up to 1400\u00b0C",
   "pressure": "Up to PN1",
   "sizes": "100 mm to 5000 mm (Round / Square / Rectangular)",
   "materials": "Body: SA516 Gr-70 / SS | Disc: SS310S / Inconel / Refractory Lined | Shaft: SS410 / SS316 / High Temp. Alloy",
@@ -36,7 +36,7 @@
     },
     {
       "parameter": "Design Temperature",
-      "details": "Up to 1400°C"
+      "details": "Up to 1400\u00b0C"
     },
     {
       "parameter": "Pressure Rating",
@@ -109,7 +109,7 @@
   ],
   "features": [
     "Advanced Refractory Lined Construction",
-    "Suitable up to 1400°C",
+    "Suitable up to 1400\u00b0C",
     "Reduced Outer Skin Temperature",
     "Thermal Shock Resistant Design",
     "Heavy Duty Reinforced Construction",
@@ -180,49 +180,29 @@
   ],
   "galleryImages": [
     {
-      "title": "MOTORISED REFRACTORY LINED DAMPERS PAIR",
-      "subtitle": "Size 3650/3500 & 2560/2500 mm (Refractory on site)",
-      "image": "/images/gallery/be140/BE140-Motorised-Refractory-Lined-Dampers-Pair.webp"
+      "title": "REFRACTORY LINED BUTTERFLY DAMPER",
+      "subtitle": "High Temperature Castable Lining",
+      "image": "/images/gallery/BE140 SERIES_REFRACTORY LINED DAMPER VALVES/BE14010 SERIES_REFRACTORY LINED BUTTERFLY DAMPER VALVES/BE14010 SERIES - REFRACTORY LINED BUTTERFLY DAMPER VALVES.png"
     },
     {
-      "title": "GEARED REFRACTORY DAMPER",
-      "subtitle": "Size Dia 500 / 300 mm Fabricated Unit",
-      "image": "/images/gallery/be140/BE140-Geared-Refractory-Damper-Dia-500-300.webp"
+      "title": "PNEUMATIC REFRACTORY BUTTERFLY DAMPER",
+      "subtitle": "Size 150 mm",
+      "image": "/images/gallery/BE140 SERIES_REFRACTORY LINED DAMPER VALVES/BE14010 SERIES_REFRACTORY LINED BUTTERFLY DAMPER VALVES/BE14010 SERIES - PNEUMATIC REFRACTORY LINED BUTTERFLY DAMPER VALVES SIZE 150MM.png"
     },
     {
-      "title": "PNEUMATIC CONTROL DUTY REFRACTORY DAMPER",
-      "subtitle": "Size Dia 1200 / 800 mm with Positioner",
-      "image": "/images/gallery/be140/BE140-Pneumatic-Control-Duty-Refractory-Damper-Dia-1200-800.webp"
+      "title": "PNEUMATIC REFRACTORY BUTTERFLY DAMPER",
+      "subtitle": "Pneumatic Cylinder Actuator",
+      "image": "/images/gallery/BE140 SERIES_REFRACTORY LINED DAMPER VALVES/BE14010 SERIES_REFRACTORY LINED BUTTERFLY DAMPER VALVES/BE14010 SERIES - PNEUMATIC REFRACTORY LINED BUTTERFLY DAMPER VALVES.png"
     },
     {
-      "title": "MOTORISED REFRACTORY LINED MULTI-LOUVER",
-      "subtitle": "Size Dia 2350 / 2500 mm Large Diameter",
-      "image": "/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-2350-2500.webp"
+      "title": "MOTORIZED REFRACTORY MULTILOUVER DAMPER",
+      "subtitle": "Size 2400 mm Large Duct Isolation",
+      "image": "/images/gallery/BE140 SERIES_REFRACTORY LINED DAMPER VALVES/BE14070 SERIES_REFRACTORY LINED MULTILOUVER DAMPER VALVES/BE14070 SERIES - MOTORIZED REFRACTORY LINED MULTILOUVER DAMPER VALVES SIZE 2400 MM.png"
     },
     {
-      "title": "PNEUMATIC REFRACTORY LINED COFFEE POT DAMPER",
-      "subtitle": "Size Dia 800 / 600 mm Severe Duty Valve",
-      "image": "/images/gallery/be140/BE140-Pneumatic-Refractory-Coffee-Pot-Damper.webp"
-    },
-    {
-      "title": "MOTORISED REFRACTORY LINED MULTI-LOUVER",
-      "subtitle": "Size Dia 2250 / 2100 mm High Temperature",
-      "image": "/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-2250-2100.webp"
-    },
-    {
-      "title": "MOTORISED REFRACTORY LINED MULTI-LOUVER",
-      "subtitle": "Size Dia 3650 / 3500 mm Giant Industrial Damper",
-      "image": "/images/gallery/be140/BE140-Motorised-Refractory-Louver-Dia-3650-3500.webp"
-    },
-    {
-      "title": "PNEUMATIC REFRACTORY LINED BUTTERFLY",
-      "subtitle": "Size 550 / 150 mm Thermal Process Valve",
-      "image": "/images/gallery/be140/BE140-Pneumatic-Refractory-Butterfly-550-150.webp"
-    },
-    {
-      "title": "PNEUMATIC REFRACTORY LINED BUTTERFLY",
-      "subtitle": "Size 700 / 300 mm Flanged High Temp Damper",
-      "image": "/images/gallery/be140/BE140-Pneumatic-Refractory-Butterfly-700-300.webp"
+      "title": "REFRACTORY MULTILOUVER DAMPER VALVE",
+      "subtitle": "Size 3600 mm Heavy Thermal Isolation",
+      "image": "/images/gallery/BE140 SERIES_REFRACTORY LINED DAMPER VALVES/BE14070 SERIES_REFRACTORY LINED MULTILOUVER DAMPER VALVES/BE14070 SERIES - REFRACTORY LINED MULTILOUVER DAMPER VALVES SIZE 3600 MM.png"
     }
   ],
   "industriesServed": [

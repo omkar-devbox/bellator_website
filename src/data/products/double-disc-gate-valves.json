@@ -2,13 +2,13 @@
   "id": "double-disc-gate-valves",
   "title": "BE100 : DOUBLE DISC GATE VALVES",
   "model": "BE100 SERIES",
-  "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1400.webp",
+  "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MOTORIZED DOUBLE DISC GATE VALVES SIZE 1200MM.png",
   "category": "isolation",
   "categoryLabel": "Metal-to-Metal Wedging Isolation",
   "tagline": "Engineered for Superior Gas Isolation with robust fabricated construction and metal-to-metal wedging type sealing arrangement.",
   "desc": "Bellator BE100 Series Double Disc Gate Valves are specially engineered for superior gas isolation applications involving dusty, abrasive, and high temperature process media. Designed with robust fabricated construction and metal-to-metal wedging type sealing arrangement, these valves provide dependable shut-off performance and high sealing reliability under demanding operating conditions.",
   "longDesc": "Bellator BE100 Series Double Disc Gate Valves are specially engineered for superior gas isolation applications involving dusty, abrasive, and high temperature process media. Designed with robust fabricated construction and metal-to-metal wedging type sealing arrangement, these valves provide dependable shut-off performance and high sealing reliability under demanding operating conditions.\n\nThe advanced double disc and wedge mechanism allows flexible seating action during valve closure, ensuring uniform contact between the disc and body seating surfaces. During opening operation, the disc plates retract smoothly, minimizing friction and enabling reliable movement of the complete disc assembly. Hard-faced seating surfaces further enhance wear resistance and long-term sealing performance.\n\nThe BE100 Series features a rising spindle design with heavy-duty guiding and stuffing box arrangements to ensure smooth operation and prevention of gas leakage to atmosphere. Manufactured using advanced engineering practices, these valves are suitable for critical process isolation applications and are available in Manual, Electric, Pneumatic, and Hydraulic operated configurations with AUMA or equivalent actuator options.",
-  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "taglineBrochure": "\u201cEngineered for Reliability \u2022 Built for Performance \u2022 Designed for Critical Applications\u201d",
   "keyHighlights": [
     "100% Leak Proof [Through Body and Stem] & 100% at Downstream with taper seat design",
     "Stress relief using the VSR method before final assembly, ensuring a long service life",
@@ -18,7 +18,7 @@
     "Size range from 300 mm to 3000 mm (DN300 to DN3000)"
   ],
   "leakage": "100% Leak Proof [Through Body and Stem] & 100% at Downstream",
-  "temp": "-25°C to 350°C",
+  "temp": "-25\u00b0C to 350\u00b0C",
   "pressure": "PN1 / PN3",
   "sizes": "300 mm to 3000 mm (DN300 to DN3000)",
   "materials": "ASTM A 36 / IS2062 E250 A, B, Br / ASTM A 516 Gr-70 / As per Client Requirement",
@@ -41,7 +41,7 @@
     },
     {
       "parameter": "Design Temp.",
-      "details": "-25°C to 350°C"
+      "details": "-25\u00b0C to 350\u00b0C"
     },
     {
       "parameter": "Pressure Ratings",
@@ -170,34 +170,39 @@
   ],
   "galleryImages": [
     {
-      "title": "MOTORISED DOUBLE DISC GATE VALVE",
-      "subtitle": "Size Dia 1400 mm",
-      "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1400.webp"
+      "title": "MOTORIZED DOUBLE DISC GATE VALVE",
+      "subtitle": "Size 1200 mm",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MOTORIZED DOUBLE DISC GATE VALVES SIZE 1200MM.png"
     },
     {
-      "title": "MOTORISED DOUBLE DISC GATE VALVE",
-      "subtitle": "Size Dia 1200 mm",
-      "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Dia-1200.webp"
+      "title": "MOTORIZED DOUBLE DISC GATE VALVE",
+      "subtitle": "BE100 Series Parallel Slide",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MOTORIZED DOUBLE DISC GATE VALVES.png"
     },
     {
-      "title": "MOTORISED DOUBLE DISC GATE VALVE",
-      "subtitle": "Vertical Rising Spindle Construction",
-      "image": "/images/gallery/be100/BE100-Motorised-Double-Disc-Vertical-Assembly.webp"
+      "title": "MANUAL DOUBLE DISC GATE VALVE",
+      "subtitle": "Geared Handwheel Operation",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MANUAL DOUBLE DISC GATE VALVES.png"
     },
     {
-      "title": "LEAKAGE TESTING - BODY HYDRO TEST",
-      "subtitle": "Body Test 1.5x Design Pressure",
-      "image": "/images/gallery/be100/BE100-Leakage-Testing-Body-Hydro-Test.webp"
+      "title": "MOTORIZED DOUBLE DISC GATE VALVE",
+      "subtitle": "Workshop Functional Cycling Test",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MOTORIZED DOUBLE DISC GATE VALVES_FUNCTIONAL TEST.png"
     },
     {
-      "title": "LEAKAGE TESTING - SEAT HYDRO TEST",
-      "subtitle": "Seat Test 1.1x Design Pressure • 100% Leak Proof",
-      "image": "/images/gallery/be100/BE100-Leakage-Testing-Seat-Hydro-Test.webp"
+      "title": "DOUBLE DISC GATE VALVE",
+      "subtitle": "Hydrostatic Body Pressure Test",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - DOUBLE DISC GATE VALVES_BODY TEST.png"
     },
     {
-      "title": "DIMENSIONAL DRAWING & GA DATA",
-      "subtitle": "DN300 to DN2000 Standard Dimensions",
-      "image": "/images/gallery/be100/BE100-Dimensional-Drawing.webp"
+      "title": "DOUBLE DISC GATE VALVE",
+      "subtitle": "Seat Leakage Verification Test",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - DOUBLE DISC GATE VALVES_SEAT TEST.png"
+    },
+    {
+      "title": "DOUBLE DISC GATE VALVE",
+      "subtitle": "Site Installation Photo",
+      "image": "/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - DOUBLE DISC GATE VALVES_SITE PHOTO.png"
     }
   ],
   "industriesServed": [

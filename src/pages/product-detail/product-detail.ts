@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inspectionBox.classList.remove('hidden');
       inspectionList.innerHTML = data.inspectionTesting.map(t => `
         <div class="flex items-center gap-2.5 py-1">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+          <span class="w-2 h-2 rounded-full bg-[#EE6226] shrink-0"></span>
           <span class="truncate font-medium text-slate-700">${t}</span>
         </div>
       `).join('');
@@ -444,23 +444,23 @@ document.addEventListener('DOMContentLoaded', () => {
     if (data.galleryImages && data.galleryImages.length > 0) {
       gallerySection.classList.remove('hidden');
 
-      const renderGalleryCards = (items: typeof data.galleryImages) => (items || []).map(item => {
+      galleryGrid.innerHTML = (data.galleryImages || []).map((item, idx) => {
         const itemImg = item.image ? (item.image.startsWith('/') ? `${cleanBase}${item.image.slice(1)}` : item.image) : data.image;
+        const mainTitle = item.subtitle || item.title;
+        const subLabel = item.subtitle ? item.title : 'Manufactured Assembly';
+        const delay = (idx % 4) * 110;
         return `
-          <div class="gallery-card-item rounded-2xl border border-slate-200 overflow-hidden bg-white flex flex-col group hover:border-[#EE6226] hover:shadow-xl transition-all duration-300 shrink-0">
-            <div class="w-full h-60 sm:h-64 bg-slate-100 flex items-center justify-center p-2 relative overflow-hidden">
-              <img src="${itemImg}" alt="${item.title}" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="scroll-reveal-item rounded-lg border border-slate-200 overflow-hidden bg-white hover:border-slate-300 hover:shadow-xs transition-all flex flex-col group" style="--stagger-delay: ${delay}ms;">
+            <div class="w-full h-48 sm:h-52 bg-slate-50 flex items-center justify-center p-3 overflow-hidden border-b border-slate-100">
+              <img src="${itemImg}" alt="${mainTitle}" class="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" loading="lazy" />
             </div>
-            <div class="p-4 bg-white border-t border-slate-100 flex flex-col text-left">
-              <span class="text-xs sm:text-sm font-extrabold text-slate-900 group-hover:text-[#EE6226] transition-colors line-clamp-1">${item.title}</span>
-              ${item.subtitle ? `<span class="text-xs font-mono font-semibold text-[#EE6226] mt-0.5">${item.subtitle}</span>` : ''}
+            <div class="p-3.5 flex flex-col flex-1 justify-between bg-white">
+              <h4 class="text-xs sm:text-sm font-semibold text-slate-900 leading-snug line-clamp-2">${mainTitle}</h4>
+              <span class="text-[11px] text-slate-500 mt-1 block">${subLabel}</span>
             </div>
           </div>
         `;
       }).join('');
-
-      // Duplicate list twice for seamless right-to-left marquee
-      galleryGrid.innerHTML = renderGalleryCards(data.galleryImages) + renderGalleryCards(data.galleryImages);
     } else {
       gallerySection.classList.add('hidden');
     }
@@ -551,9 +551,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const theme = themeGradients[idx % themeGradients.length];
       const pImg = p.image.startsWith('/') ? `${cleanBase}${p.image.slice(1)}` : p.image;
       const shortDesc = p.tagline || p.desc;
+      const delay = idx * 110;
 
       return `
-        <a class="infosys-damper-card group block" href="${cleanBase}product-detail.html?id=${p.id}">
+        <a class="infosys-damper-card scroll-reveal-item group block" href="${cleanBase}product-detail.html?id=${p.id}" style="--stagger-delay: ${delay}ms;">
           <div class="infosys-damper-visual ${theme.bg}">
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.45),transparent_60%)]"></div>
             <div class="absolute top-3.5 right-3.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase ${theme.badgeBg} shadow-xs border border-white/60">
@@ -582,4 +583,74 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }).join('');
   }
+
+  // Initialize 1-by-1 Row & Card Scroll Reveal Animations
+  initScrollLoadUnload();
 });
+
+/**
+ * 1-by-1 Row & Item Load / Unload Animation System
+ */
+function initScrollLoadUnload(): void {
+  // Stagger rows in specs table
+  document.querySelectorAll<HTMLElement>('#specs-table-container .spec-table-row').forEach((row, i) => {
+    row.style.setProperty('--stagger-delay', `${i * 65}ms`);
+  });
+
+  // Stagger feature items
+  document.querySelectorAll<HTMLElement>('#features-list > li, #optional-features-list > li').forEach((li, i) => {
+    li.classList.add('scroll-reveal-item');
+    li.style.setProperty('--stagger-delay', `${i * 60}ms`);
+  });
+
+  // Stagger inspection items
+  document.querySelectorAll<HTMLElement>('#inspection-list > div').forEach((item, i) => {
+    item.classList.add('scroll-reveal-item');
+    item.style.setProperty('--stagger-delay', `${(i % 3) * 85}ms`);
+  });
+
+  // Stagger applications
+  document.querySelectorAll<HTMLElement>('#detail-applications > div').forEach((app, i) => {
+    app.classList.add('scroll-reveal-item');
+    app.style.setProperty('--stagger-delay', `${i * 60}ms`);
+  });
+
+  // Stagger industries
+  document.querySelectorAll<HTMLElement>('#industries-grid > div').forEach((ind, i) => {
+    ind.classList.add('scroll-reveal-item');
+    ind.style.setProperty('--stagger-delay', `${(i % 6) * 70}ms`);
+  });
+
+  const allElements = document.querySelectorAll<HTMLElement>(
+    '.scroll-reveal, .scroll-reveal-item, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .scroll-heading, .scroll-subtext, .scroll-badge, .scroll-mask-wrap, .spec-table-row'
+  );
+  if (allElements.length === 0) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    allElements.forEach((el) => el.classList.add('is-loaded'));
+    return;
+  }
+
+  const observerOptions: IntersectionObserverInit = {
+    root: null,
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const el = entry.target as HTMLElement;
+      if (entry.isIntersecting) {
+        // Loads row/card 1 by 1 based on its staggered delay
+        el.classList.add('is-loaded');
+      } else {
+        // Unloads when scrolled out of view so it re-triggers 1 by 1 on re-entry
+        el.classList.remove('is-loaded');
+      }
+    });
+  }, observerOptions);
+
+  allElements.forEach((el) => observer.observe(el));
+}
+
+

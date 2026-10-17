@@ -36,6 +36,43 @@ function initScrollLoadUnload(): void {
   elements.forEach((el) => observer.observe(el));
 }
 
+/* ==========================================================================
+   Hero Metrics Counter Animation
+   ========================================================================== */
+function initStatCounters(): void {
+  const statNumbers = document.querySelectorAll<HTMLElement>('.stat-count');
+  if (statNumbers.length === 0) return;
+
+  const countedSet = new WeakSet<HTMLElement>();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const stat = entry.target as HTMLElement;
+      if (entry.isIntersecting && !countedSet.has(stat)) {
+        countedSet.add(stat);
+        const target = parseInt(stat.getAttribute('data-target') || '0', 10);
+        const suffix = stat.getAttribute('data-suffix') || '';
+        const prefix = stat.getAttribute('data-prefix') || '';
+        let count = 0;
+        const speed = 25;
+        const step = Math.max(1, Math.ceil(target / 40));
+
+        const timer = setInterval(() => {
+          count += step;
+          if (count >= target) {
+            stat.textContent = `${prefix}${target.toLocaleString()}${suffix}`;
+            clearInterval(timer);
+          } else {
+            stat.textContent = `${prefix}${count.toLocaleString()}${suffix}`;
+          }
+        }, speed);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  statNumbers.forEach(stat => observer.observe(stat));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize shared navigation for Careers page
   initSharedNavigation('careers');
@@ -56,6 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Home-style Bidirectional Scroll Animation System
   initScrollLoadUnload();
+
+  // Initialize Stat Counter Animation
+  initStatCounters();
 
   // Mobile menu toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');

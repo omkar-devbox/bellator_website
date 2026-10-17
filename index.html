@@ -455,19 +455,12 @@
       <div class="absolute inset-0 z-[1] bg-black/45"></div>
       <div class="absolute inset-0 z-[2] bg-gradient-to-b from-black/40 via-black/20 to-black/70"></div>
 
-      <!-- Technorithm Ambient Orange Blurred Glows -->
-      <div class="pointer-events-none absolute inset-0 z-[3] overflow-hidden">
-        <div class="absolute left-[-5%] top-[20%] h-[320px] w-[320px] rounded-full bg-orange-500/20 blur-[130px]"></div>
-        <div class="absolute bottom-[10%] right-[-5%] h-[320px] w-[320px] rounded-full bg-orange-400/15 blur-[130px]">
-        </div>
-      </div>
-
       <!-- Hero Typography & CTAs -->
       <div
         class="relative z-10 mx-auto flex min-h-screen  flex-col items-center justify-center px-6 pt-[22vh] pb-16 text-center">
-        <!-- Floating Eyebrow Badge -->
+        <!-- Eyebrow Badge -->
         <div
-          class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 backdrop-blur-md">
+          class="mb-5 inline-flex items-center gap-2 rounded-sm border border-white/20 bg-white/10 px-4 py-1.5 backdrop-blur-md">
           <span class="w-2 h-2 rounded-full bg-[#EE6226] animate-pulse"></span>
           <span class="text-xs uppercase tracking-[0.2em] font-semibold text-white/90">Global Industrial Engineering
             &amp; Manufacturing</span>
@@ -489,13 +482,13 @@
           </div>
         </div>
 
-        <!-- Two Technorithm Pill Buttons -->
+        <!-- Two Action Buttons -->
         <div class="mt-10 flex w-full max-w-md flex-col justify-center gap-4 px-6 sm:max-w-xl sm:flex-row sm:px-0">
-          <a class="w-full rounded-full bg-[#EE6226] px-8 py-4 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#d8551d] hover:shadow-[0_15px_40px_rgba(238,98,38,0.45)] sm:w-auto text-center"
+          <a class="w-full rounded-sm bg-[#EE6226] px-8 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white transition-colors duration-200 hover:bg-[#d8551d] sm:w-auto text-center"
             href="#what-we-do">
             Explore Capabilities
           </a>
-          <a class="w-full rounded-full border border-white/50 bg-white/10 px-8 py-4 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-orange-400/40 hover:bg-white/20 sm:w-auto text-center"
+          <a class="w-full rounded-sm border border-white/40 bg-white/10 px-8 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white backdrop-blur-md transition-colors duration-200 hover:bg-white/20 hover:border-white sm:w-auto text-center"
             href="/contact-us.html#connect-desk">
             Talk To Experts
           </a>
@@ -503,478 +496,395 @@
       </div>
     </section>
 
-    <!-- AI ASSISTANT SEARCH BAR SECTION -->
-    <section id="ai-assistant-section" class="relative z-20 -mt-10 sm:-mt-14 mb-4 px-4 sm:px-6 lg:px-10">
-      <div class="max-w-4xl mx-auto">
-        <div
-          class="relative bg-white/95 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-[0_20px_50px_-10px_rgba(15,23,42,0.15),0_0_0_1px_rgba(238,98,38,0.08)] p-4 sm:p-6 transition-all duration-300 hover:shadow-[0_25px_60px_-10px_rgba(238,98,38,0.18)]">
 
-          <!-- Top Floating Microphone Badge -->
-          <div class="absolute -top-7 left-1/2 -translate-x-1/2 z-10">
-            <button id="ai-voice-btn" type="button" aria-label="Voice Search"
-              class="group relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white shadow-[0_8px_30px_rgba(37,99,235,0.35)] ring-4 ring-white transition-all duration-300 hover:scale-110 active:scale-95 overflow-hidden">
-              <span
-                class="absolute inset-0 rounded-full bg-blue-500 animate-ping opacity-20 pointer-events-none"></span>
-              <img src="/images/ai-star-sparkle.jpg" alt="AI Voice Assistant"
-                class="w-full h-full object-cover relative z-10 transition-transform duration-300 group-hover:scale-105" />
-            </button>
-          </div>
+    <!-- 2. WHO WE ARE (New Design - Full-Screen Edge-to-Edge Layout) -->
+    <section id="who-we-are"
+      class="w-full bg-white px-4 py-16 border-b border-slate-200 sm:px-6 md:px-12 md:py-24 lg:px-16">
+      <div class="mx-auto">
 
-          <!-- Input Area -->
-          <div class="pt-3 sm:pt-2">
-            <div class="relative flex items-start gap-2.5">
-              <!-- AI Sparkle Icon -->
-              <div class="pt-1 text-blue-500 flex-shrink-0">
-                <div class="w-6 h-6 rounded-lg overflow-hidden flex items-center justify-center bg-black/5 shadow-xs">
-                  <img src="/images/ai-star-sparkle.jpg" alt="AI Sparkle"
-                    class="w-full h-full object-cover animate-pulse" />
-                </div>
-              </div>
-
-              <!-- Input text box -->
-              <input id="ai-assistant-input" type="text"
-                placeholder="Ask about Damper Valves, Flue Gas Solutions, Custom Designs..."
-                class="w-full bg-transparent text-slate-800 placeholder-slate-400 font-medium text-sm sm:text-base md:text-lg focus:outline-none border-0 p-0" />
-            </div>
-          </div>
-
-          <!-- Suggested Quick Chips -->
-          <div class="mt-4 sm:mt-5 flex flex-wrap items-center gap-2">
-            <button type="button"
-              class="ai-prompt-chip group inline-flex items-center px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50/80 hover:bg-orange-50 hover:border-orange-300 text-xs text-slate-700 hover:text-[#EE6226] font-medium transition-all duration-200">
-              <span>Navigate <strong>High-Temp Dampers</strong> with Bellator</span>
-            </button>
-            <button type="button"
-              class="ai-prompt-chip group inline-flex items-center px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50/80 hover:bg-orange-50 hover:border-orange-300 text-xs text-slate-700 hover:text-[#EE6226] font-medium transition-all duration-200">
-              <span>Discover the engineering power of <strong>Bellator Engineers</strong></span>
-            </button>
-            <button type="button"
-              class="ai-prompt-chip group inline-flex items-center px-3 py-1.5 rounded-lg border border-slate-200 bg-slate-50/80 hover:bg-orange-50 hover:border-orange-300 text-xs text-slate-700 hover:text-[#EE6226] font-medium transition-all duration-200">
-              <span>Explore <strong>Zero-Leakage Valve Solutions</strong></span>
-            </button>
-          </div>
-
-          <!-- Bottom Footer Info & Action -->
-          <div class="mt-3 sm:mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-            <span class="text-[11px] sm:text-xs text-slate-400 italic">
-              Content is generated with AI assistance
-            </span>
-            <div class="flex items-center gap-3">
-              <!-- Security / Privacy Shield Icon -->
-              <span class="text-emerald-500 hover:text-emerald-600 transition-colors"
-                title="Secure & Private AI Assistant">
-                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </span>
-              <!-- Submit Arrow Button -->
-              <button id="ai-submit-btn" type="button" aria-label="Send query"
-                class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-slate-200 hover:bg-[#EE6226] text-slate-600 hover:text-white flex items-center justify-center transition-all duration-200 active:scale-90">
-                <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" stroke-width="2.2"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Dynamic Response Box (Hidden by default) -->
-          <div id="ai-response-box"
-            class="hidden mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 transition-all">
-            <div class="flex items-start gap-3">
-              <div class="w-2 h-2 rounded-full bg-[#EE6226] mt-1.5 animate-ping"></div>
-              <div id="ai-response-text" class="flex-1 leading-relaxed"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 2. WHO WE ARE (Technorithm Exact Match with Rich Engineering Effects) -->
-    <section id="who-we-are" class="relative w-full overflow-hidden bg-[#F8FAFC] px-4 py-16 md:py-24 lg:px-12">
-      <!-- Ambient Engineering Glows & Grid Patterns -->
-      <div
-        class="absolute inset-0 z-0 pointer-events-none opacity-[0.06] bg-[radial-gradient(#EE6226_1.5px,transparent_1.5px)] [background-size:28px_28px]">
-      </div>
-      <div
-        class="pointer-events-none absolute -left-24 top-10 h-[380px] w-[380px] rounded-full bg-orange-500/12 blur-[130px]">
-      </div>
-      <div
-        class="pointer-events-none absolute -right-24 bottom-10 h-[380px] w-[380px] rounded-full bg-sky-500/10 blur-[130px]">
-      </div>
-
-      <div class="relative z-10 mx-auto ">
         <!-- Section Header -->
-        <div class="mb-12 text-center">
-          <h2 class="font-poppins text-3xl md:text-4xl font-[600] text-[#0F172A] scroll-heading">Who We Are</h2>
-          <div class="mx-auto mt-4 h-[3px] w-16 rounded-full bg-[#EE6226] scroll-reveal delay-100"></div>
-        </div>
+        <div class="mb-10 text-left sm:mb-12">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+            WHO WE ARE
+          </span>
 
-        <!-- Main Content Grid -->
-        <div class="mb-14 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div class="space-y-6">
-            <div
-              class="inline-flex items-center gap-2 rounded-full border border-orange-200/80 bg-orange-500/10 px-3.5 py-1 text-xs font-semibold text-[#EE6226] scroll-badge">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#EE6226] animate-ping"></span>
-              Engineering Excellence from Pune, Maharashtra
-            </div>
-            <h3
-              class="font-poppins text-2xl md:text-3xl lg:text-4xl font-[600] leading-tight text-[#0F172A] scroll-heading delay-100">
-              Damper Valve Manufacturers in Pune
-            </h3>
-            <p
-              class="font-poppins text-sm md:text-base font-[500] leading-relaxed text-[#475569] scroll-subtext delay-150">
-              We are a specialized company based in Pune, India, and we take pride in our expertise in the design,
-              manufacturing, and supply of <span class="font-semibold text-[#0F172A]">Motorized Damper Valves</span>,
-              <span class="font-semibold text-[#0F172A]">Pneumatic Damper Valves</span>, <span
-                class="font-semibold text-[#0F172A]">Hydraulic Damper Valves</span>, and <span
-                class="font-semibold text-[#0F172A]">Manual Damper Valves</span>.
-            </p>
-            <p
-              class="font-poppins text-sm md:text-base font-[500] leading-relaxed text-[#475569] scroll-subtext delay-200">
-              At <span class="font-bold text-[#0F172A]">Bellator Engineers</span>, we understand the importance of
-              delivering tailored solutions to meet specific application requirements. Our products are meticulously
-              designed through in-depth application studies and utilizing cutting-edge 3D CAD technology. To ensure
-              optimal performance, we employ Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD) during
-              the product design process. This attention to detail allows us to meet and exceed application requirements
-              and enables our Damper Valve Designs to comply with <span class="font-semibold text-[#EE6226]">SIL</span>
-              and <span class="font-semibold text-[#EE6226]">CE</span> requirements.
-            </p>
-
-            <!-- Quick Engineering Metrics Row -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
-              <div
-                class="rounded-xl border border-slate-200/80 bg-white/90 p-3 shadow-xs transition-all hover:border-[#EE6226]/40 hover:shadow-md scroll-reveal-scale delay-200">
-                <div class="text-xl sm:text-2xl font-extrabold text-[#EE6226]">25+</div>
-                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-tight mt-0.5">Years Experience
-                </div>
-              </div>
-              <div
-                class="rounded-xl border border-slate-200/80 bg-white/90 p-3 shadow-xs transition-all hover:border-[#EE6226]/40 hover:shadow-md scroll-reveal-scale delay-250">
-                <div class="text-xl sm:text-2xl font-extrabold text-[#EE6226]">5,000+</div>
-                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-tight mt-0.5">Valves Deployed
-                </div>
-              </div>
-              <div
-                class="rounded-xl border border-slate-200/80 bg-white/90 p-3 shadow-xs transition-all hover:border-[#EE6226]/40 hover:shadow-md scroll-reveal-scale delay-300">
-                <div class="text-xl sm:text-2xl font-extrabold text-[#EE6226]">100%</div>
-                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-tight mt-0.5">Tested In-House
-                </div>
-              </div>
-              <div
-                class="rounded-xl border border-slate-200/80 bg-white/90 p-3 shadow-xs transition-all hover:border-[#EE6226]/40 hover:shadow-md scroll-reveal-scale delay-350">
-                <div class="text-xl sm:text-2xl font-extrabold text-[#EE6226]">30+</div>
-                <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-tight mt-0.5">Countries Export
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Interactive Glowing Plant Photo Card -->
-          <div class="relative flex items-center justify-center scroll-reveal-right">
-            <!-- Background Halo Glow -->
-            <div
-              class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-[#EE6226]/20 via-orange-400/10 to-sky-400/20 blur-2xl opacity-60 transition-all duration-500 group-hover:opacity-100">
-            </div>
-
-            <div
-              class="group relative w-full max-w-[540px] overflow-hidden rounded-3xl bg-white shadow-[0px_20px_60px_rgba(15,23,42,0.12)] border border-slate-200 transition-all duration-500 hover:border-[#EE6226]/50 hover:shadow-[0px_25px_70px_rgba(238,98,38,0.2)]">
-              <!-- Top Live Status Badge -->
-              <div
-                class="absolute top-4 left-4 z-20 inline-flex items-center gap-2 rounded-full border border-white/20 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 text-[11px] font-semibold text-white shadow-md">
-                <span class="relative flex h-2 w-2">
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                </span>
-                <span>Active Manufacturing &amp; Testing Facility</span>
-              </div>
-
-              <!-- Facility Photo with Zoom Transition -->
-              <div class="relative h-[320px] sm:h-[380px] w-full overflow-hidden bg-slate-900">
-                <img alt="Bellator Engineers Pune Damper Valve Manufacturing Facility"
-                  src="/images/general/valve-manufacturing-plant.jpg"
-                  class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 pointer-events-none">
-                </div>
-              </div>
-
-              <!-- Bottom Facility Specs Strip -->
-              <div
-                class="p-4.5 bg-slate-900 text-white flex items-center justify-between text-xs border-t border-white/10">
-                <div>
-                  <div class="font-bold text-white tracking-wide flex items-center gap-1.5">
-                    <span>Pune Works &bull; Design, Fabrication &amp; Test Bays</span>
-                  </div>
-                  <div class="text-[11px] text-slate-400 mt-0.5">Bellator Engineers &bull; Pune, Maharashtra, India
-                  </div>
-                </div>
-                <span
-                  class="px-3 py-1 rounded-md bg-[#EE6226] text-[10px] font-bold text-white uppercase tracking-wider shadow-xs">ISO
-                  9001:2015</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 Credibility Cards with Signature Technorithm Dynamic Hover Effects -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
-          <!-- Card 1 -->
-          <div class="techno-credibility-card group scroll-reveal-scale delay-100">
-            <div
-              class="icon-box flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-[#DBEAFE] bg-[#EFF6FF] text-blue-600">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div>
-              <p
-                class="font-poppins text-xs md:text-sm font-semibold leading-snug text-[#334155] group-hover:text-[#0F172A]">
-                100% Factory Tested</p>
-              <p class="text-[11px] text-slate-500 mt-0.5">Pressure &amp; Hydrostatic Sealing</p>
-            </div>
-            <div class="techno-bottom-bar"></div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="techno-credibility-card group scroll-reveal-scale delay-200">
-            <div
-              class="icon-box flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-[#DBEAFE] bg-[#EFF6FF] text-blue-600">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <div>
-              <p
-                class="font-poppins text-xs md:text-sm font-semibold leading-snug text-[#334155] group-hover:text-[#0F172A]">
-                SIL-2 / SIL-3 Certified</p>
-              <p class="text-[11px] text-slate-500 mt-0.5">CE &amp; Functional Safety Ready</p>
-            </div>
-            <div class="techno-bottom-bar"></div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="techno-credibility-card group scroll-reveal-scale delay-300">
-            <div
-              class="icon-box flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-[#DBEAFE] bg-[#EFF6FF] text-blue-600">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
-              </svg>
-            </div>
-            <div>
-              <p
-                class="font-poppins text-xs md:text-sm font-semibold leading-snug text-[#334155] group-hover:text-[#0F172A]">
-                Global Export Logistics</p>
-              <p class="text-[11px] text-slate-500 mt-0.5">Direct to USA, Europe &amp; Middle East</p>
-            </div>
-            <div class="techno-bottom-bar"></div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="techno-credibility-card group scroll-reveal-scale delay-400">
-            <div
-              class="icon-box flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-[#DBEAFE] bg-[#EFF6FF] text-blue-600">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-              </svg>
-            </div>
-            <div>
-              <p
-                class="font-poppins text-xs md:text-sm font-semibold leading-snug text-[#334155] group-hover:text-[#0F172A]">
-                3D CAD, FEA &amp; CFD</p>
-              <p class="text-[11px] text-slate-500 mt-0.5">Stress &amp; Thermal Aerodynamics</p>
-            </div>
-            <div class="techno-bottom-bar"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- STRATEGIC PARTNERSHIP: ACTUATECH S.P.A., ITALY (Company Overview Global Collaboration) -->
-    <section id="partnership"
-      class="relative w-full overflow-hidden bg-white px-4 py-16 md:py-24 lg:px-12 border-t border-slate-200">
-      <!-- Subtle Technical Dot Grid -->
-      <div
-        class="absolute inset-0 z-0 pointer-events-none opacity-[0.04] bg-[radial-gradient(#EE6226_1.5px,transparent_1.5px)] [background-size:28px_28px]">
-      </div>
-      <div
-        class="pointer-events-none absolute -left-20 top-1/3 h-[380px] w-[380px] rounded-full bg-emerald-500/5 blur-[120px]">
-      </div>
-      <div
-        class="pointer-events-none absolute -right-20 bottom-1/4 h-[380px] w-[380px] rounded-full bg-orange-500/8 blur-[120px]">
-      </div>
-
-      <div class="relative z-10 mx-auto">
-        <!-- Section Header Matching Company Overview Brochure -->
-        <div class="mb-14 text-center">
-          <div
-            class="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-bold text-[#EE6226] mb-3.5 scroll-badge tracking-wide uppercase">
-            <span class="w-1.5 h-1.5 rounded-full bg-[#EE6226] animate-pulse"></span>
-            Company Overview &bull; Global Collaboration
-          </div>
           <h2
-            class="font-poppins text-3xl sm:text-4xl md:text-5xl font-[700] text-[#0F172A] tracking-tight scroll-heading">
-            In Strategic Partnership with Actuatech S.p.A., Italy
+            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            Industrial Damper Valve Engineering &amp; Manufacturing
           </h2>
-          <div class="mx-auto mt-4 h-[3px] w-20 rounded-full bg-[#EE6226] scroll-reveal delay-100"></div>
-          <p
-            class="max-w-3xl mx-auto mt-4 text-slate-600 text-sm sm:text-base leading-relaxed scroll-subtext delay-150">
-            Partnering across continents &mdash; uniting Indian damper manufacturing craftsmanship with Italian
-            pneumatic actuator precision to deliver integrated, high-reliability flow control systems.
+
+          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100">
+            Pune, Maharashtra, India
           </p>
         </div>
 
-        <!-- 2-Column Partnership Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          <!-- Left Column: Detailed Narrative from Brochure -->
-          <div class="lg:col-span-6 space-y-5 text-left scroll-reveal-left">
+        <!-- Main Content -->
+        <div class="mb-12 grid grid-cols-1 items-center gap-8 sm:mb-16 lg:grid-cols-12 lg:gap-14">
+
+          <!-- Manufacturing Image -->
+          <div class="lg:col-span-5 scroll-reveal-left delay-100">
             <div
-              class="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-slate-100 border border-slate-200 text-xs font-mono font-bold text-slate-700">
-              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span>TWO CONTINENTS &bull; ONE PARTNERSHIP &bull; LIMITLESS POSSIBILITIES</span>
-            </div>
-
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-              <strong class="text-[#0F172A] font-semibold">Bellator Engineers India Pvt. Ltd.</strong> is a specialized
-              Indian engineering company focused on the design and manufacturing of custom-fabricated industrial damper
-              valves for critical process and HVAC applications. With strong expertise in high-temperature applications,
-              large-size fabricated dampers, sealing efficiency optimization, and actuator integration, Bellator
-              delivers engineered solutions tailored to demanding industries including <strong
-                class="text-slate-900 font-semibold">Power, Steel, Cement, Oil &amp; Gas, and Process Plants</strong>.
-            </p>
-
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-              In strategic partnership with <strong class="text-[#0F172A] font-semibold">Actuatech S.p.A.,
-                Italy</strong> &mdash; a globally recognized manufacturer of pneumatic actuators &mdash; Bellator offers
-              integrated damper and actuator solutions designed for reliability, performance, and long-term operational
-              efficiency.
-            </p>
-
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-              Combining advanced engineering practices, robust manufacturing capabilities, and application-driven design
-              philosophy, Bellator ensures every solution is optimized for real operating conditions, including thermal
-              expansion, continuous duty cycles, and critical shut-off requirements.
-            </p>
-
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-              Backed by advanced engineering tools such as <strong class="text-[#0F172A] font-semibold">FEA and CFD
-                analysis</strong>, structured quality systems, and compliance-oriented design practices, Bellator
-              continues to serve as a trusted partner for advanced industrial flow control solutions worldwide.
-            </p>
-
-            <!-- 4 Collaborative Pillars from Brochure -->
-            <div class="grid grid-cols-2 gap-3 pt-2">
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-2.5">
-                <div class="p-2 rounded-lg bg-orange-100/70 text-[#EE6226] shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold text-slate-800 uppercase tracking-tight">Global Perspective</h4>
-                  <p class="text-[11px] text-slate-500">International standards</p>
-                </div>
-              </div>
-
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-2.5">
-                <div class="p-2 rounded-lg bg-orange-100/70 text-[#EE6226] shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold text-slate-800 uppercase tracking-tight">Shared Values</h4>
-                  <p class="text-[11px] text-slate-500">Quality &amp; integrity</p>
-                </div>
-              </div>
-
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-2.5">
-                <div class="p-2 rounded-lg bg-orange-100/70 text-[#EE6226] shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold text-slate-800 uppercase tracking-tight">Stronger Together</h4>
-                  <p class="text-[11px] text-slate-500">Combined engineering</p>
-                </div>
-              </div>
-
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-2.5">
-                <div class="p-2 rounded-lg bg-orange-100/70 text-[#EE6226] shrink-0">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="text-xs font-bold text-slate-800 uppercase tracking-tight">Better Tomorrow</h4>
-                  <p class="text-[11px] text-slate-500">Sustainable flow control</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Two Hubs Strip -->
-            <div class="pt-3 flex flex-wrap items-center gap-4">
-              <a href="https://www.actuatech.com" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-slate-900 hover:bg-[#EE6226] text-white text-xs font-semibold transition-all shadow-sm hover:shadow-md hover:scale-105">
-                <span>Visit Actuatech S.p.A. (Italy)</span>
-                <span class="text-xs">&rarr;</span>
-              </a>
-              <a href="/products.html"
-                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-slate-300 hover:border-[#EE6226] hover:text-[#EE6226] text-slate-700 text-xs font-semibold transition-all">
-                <span>View Integrated Products</span>
-              </a>
+              class="group overflow-hidden rounded-sm border border-slate-200 bg-slate-50 transition-colors duration-300 hover:border-[#EE6226]">
+              <img src="/images/general/valve-manufacturing-plant.jpg"
+                alt="Bellator Engineers industrial damper valve manufacturing facility"
+                class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] sm:h-80 lg:h-[400px]"
+                loading="lazy" decoding="async" />
             </div>
           </div>
 
-          <!-- Right Column: Visual Partnership Card from Brochure -->
-          <div class="lg:col-span-6 scroll-reveal-right">
-            <div
-              class="partnership-card p-4 sm:p-6 bg-gradient-to-b from-white to-slate-50/70 rounded-2xl overflow-hidden border border-slate-200/90 shadow-xl group">
-              <div class="relative rounded-xl overflow-hidden shadow-inner bg-slate-100/80 border border-slate-200/70">
-                <picture>
-                  <source srcset="/images/clients/partnering-across-continents.webp" type="image/webp" />
-                  <img src="/images/clients/partnering-across-continents.png"
-                    alt="Partnering Across Continents - Bellator Engineers India and Actuatech S.p.A. Italy"
-                    class="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]" />
-                </picture>
-              </div>
+          <!-- About Content -->
+          <div class="space-y-5 text-left lg:col-span-7 scroll-reveal-right delay-150">
 
-              <!-- Brescia & Pune Highlights -->
-              <div class="grid grid-cols-2 gap-3 mt-4 pt-3 border-t border-slate-100 text-xs">
-                <div class="p-2.5 rounded-xl bg-emerald-50/60 border border-emerald-200/60 text-left">
-                  <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-700 block">Italy
-                    &bull; Brescia</span>
-                  <span class="font-bold text-slate-800 text-xs block mt-0.5">Actuatech S.p.A.</span>
-                  <span class="text-[11px] text-slate-600 block mt-0.5">Innovation &bull; Quality &bull;
-                    Tradition</span>
-                </div>
-                <div class="p-2.5 rounded-xl bg-blue-50/60 border border-blue-200/60 text-left">
-                  <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-700 block">India
-                    &bull; Pune</span>
-                  <span class="font-bold text-slate-800 text-xs block mt-0.5">Bellator Engineers</span>
-                  <span class="text-[11px] text-slate-600 block mt-0.5">Talent &bull; Technology &bull;
-                    Transformation</span>
-                </div>
-              </div>
+            <div>
+              <span class="mb-2 block text-xs font-semibold uppercase tracking-wider text-[#EE6226]">
+                ABOUT BELLATOR ENGINEERS
+              </span>
+
+              <h3 class="font-poppins text-xl font-bold leading-snug text-[#0F172A] sm:text-2xl md:text-3xl">
+                Engineering Solutions for Industrial Flow Control
+              </h3>
             </div>
+
+            <p class="font-poppins text-sm leading-7 text-slate-600 sm:text-base">
+              Bellator Engineers specializes in the engineering and manufacturing
+              of industrial damper valves for process applications. Our focus is
+              on understanding application requirements and developing solutions
+              suited to operating conditions, system specifications and industrial
+              requirements.
+            </p>
+
+            <p class="font-poppins text-sm leading-7 text-slate-600 sm:text-base">
+              Our manufacturing approach brings together engineering design,
+              fabrication, assembly and quality inspection. We emphasize practical
+              engineering, dimensional accuracy and consistent workmanship to
+              support dependable performance in industrial environments.
+            </p>
+
+            <p class="font-poppins text-sm leading-7 text-slate-600 sm:text-base">
+              From product requirements to manufacturing considerations, our
+              objective is to provide industrial customers with damper valve
+              solutions aligned with their equipment and process needs.
+            </p>
+
+            <!-- Contact CTA -->
+            <div class="pt-3 scroll-reveal delay-200">
+              <a href="/contact"
+                class="inline-flex items-center gap-3 rounded-sm bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#EE6226]">
+                Discuss Your Requirements
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
           </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="mb-10 border-t border-slate-200 sm:mb-12"></div>
+
+        <!-- Capabilities Heading -->
+        <div class="mb-8 scroll-reveal">
+          <h3 class="font-poppins text-xl font-bold text-[#0F172A] sm:text-2xl">
+            Our Engineering Capabilities
+          </h3>
+        </div>
+
+        <!-- Capabilities Grid -->
+        <div class="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-4">
+
+          <!-- Capability 1 -->
+          <div
+            class="border-b border-slate-200 py-6 sm:border-r sm:px-6 sm:first:pl-0 lg:border-b-0 lg:py-4 scroll-reveal delay-100">
+            <span class="mb-4 block text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+              01 / ENGINEERING
+            </span>
+
+            <h4 class="mb-3 text-lg font-bold text-[#0F172A] sm:text-xl">
+              Design &amp; Engineering
+            </h4>
+
+            <p class="text-sm leading-6 text-slate-600">
+              Engineering considerations based on application requirements,
+              operating conditions and equipment specifications.
+            </p>
+          </div>
+
+          <!-- Capability 2 -->
+          <div class="border-b border-slate-200 py-6 sm:px-6 lg:border-b-0 lg:border-r lg:py-4 scroll-reveal delay-150">
+            <span class="mb-4 block text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+              02 / MANUFACTURING
+            </span>
+
+            <h4 class="mb-3 text-lg font-bold text-[#0F172A] sm:text-xl">
+              Fabrication &amp; Assembly
+            </h4>
+
+            <p class="text-sm leading-6 text-slate-600">
+              Manufacturing and assembly processes focused on product
+              specifications, fit and workmanship.
+            </p>
+          </div>
+
+          <!-- Capability 3 -->
+          <div class="border-b border-slate-200 py-6 sm:border-r sm:px-6 lg:border-b-0 lg:py-4 scroll-reveal delay-200">
+            <span class="mb-4 block text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+              03 / QUALITY
+            </span>
+
+            <h4 class="mb-3 text-lg font-bold text-[#0F172A] sm:text-xl">
+              Inspection &amp; Quality Control
+            </h4>
+
+            <p class="text-sm leading-6 text-slate-600">
+              Inspection and quality checks aligned with applicable product
+              specifications and manufacturing requirements.
+            </p>
+          </div>
+
+          <!-- Capability 4 -->
+          <div class="py-6 sm:px-6 lg:py-4 scroll-reveal delay-250">
+            <span class="mb-4 block text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+              04 / APPLICATIONS
+            </span>
+
+            <h4 class="mb-3 text-lg font-bold text-[#0F172A] sm:text-xl">
+              Industrial Flow Control
+            </h4>
+
+            <p class="text-sm leading-6 text-slate-600">
+              Damper valve solutions for compatible industrial air and gas
+              flow control applications.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
+
+
+    <!-- 3. STRATEGIC PARTNERSHIP -->
+    <section id="partnership"
+      class="w-full border-t border-slate-200 bg-white px-4 py-16 sm:px-6 md:px-12 md:py-24 lg:px-16">
+      <div class="mx-auto">
+
+        <!-- HEADER -->
+        <div class="mb-10 text-left sm:mb-12">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+            STRATEGIC PARTNERSHIP
+          </span>
+
+          <h2
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            Bellator Engineers &amp; Actuatech S.p.A.
+          </h2>
+
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100">
+            India &amp; Italy &bull; Two Continents, One Engineering Partnership
+          </p>
+        </div>
+
+        <!-- CONTENT LEFT, IMAGE RIGHT -->
+        <div class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12 lg:gap-12">
+
+          <!-- LEFT: CONTENT -->
+          <div class="flex flex-col justify-center lg:col-span-7 scroll-reveal-left delay-100">
+
+            <span class="mb-3 block text-xs font-bold uppercase tracking-[0.18em] text-[#EE6226]">
+              ENGINEERING COLLABORATION
+            </span>
+
+            <h3 class="mb-5 max-w-2xl font-poppins text-2xl font-bold leading-snug text-[#0F172A] sm:text-3xl">
+              Bringing Damper Valve Engineering and Pneumatic Actuation Together
+            </h3>
+
+            <p class="mb-4 text-sm leading-7 text-slate-600 sm:text-base">
+              <strong class="font-semibold text-[#0F172A]">
+                Bellator Engineers India Pvt. Ltd.
+              </strong>
+              specializes in the engineering and manufacturing of fabricated
+              industrial damper valves for process and HVAC applications.
+              Our approach focuses on application requirements, equipment
+              specifications and industrial operating conditions.
+            </p>
+
+            <p class="mb-4 text-sm leading-7 text-slate-600 sm:text-base">
+              Through our strategic partnership with
+              <strong class="font-semibold text-[#0F172A]">
+                Actuatech S.p.A., Italy,
+              </strong>
+              we combine damper valve engineering with pneumatic actuator
+              technology to support integrated solutions for compatible
+              industrial applications.
+            </p>
+
+            <p class="mb-7 text-sm leading-7 text-slate-600 sm:text-base">
+              Product configuration and actuator selection are considered
+              according to application requirements, operating conditions
+              and equipment specifications.
+            </p>
+
+            <!-- TECHNICAL HIGHLIGHTS -->
+            <div class="grid grid-cols-1 gap-0 border-y border-slate-200 sm:grid-cols-2">
+
+              <div
+                class="group flex gap-3 border-b border-slate-200 py-5 sm:border-r sm:pr-5 transition-colors hover:bg-slate-50/60">
+                <span
+                  class="mt-1 h-2 w-2 shrink-0 bg-[#EE6226] group-hover:scale-125 transition-transform duration-200"></span>
+                <div>
+                  <h4 class="text-sm font-bold text-[#0F172A] group-hover:text-[#EE6226] transition-colors">
+                    Damper Valve Engineering
+                  </h4>
+                  <p class="mt-1 text-xs leading-5 text-slate-500">
+                    Application-oriented design and manufacturing.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="group flex gap-3 border-b border-slate-200 py-5 sm:pl-5 transition-colors hover:bg-slate-50/60">
+                <span
+                  class="mt-1 h-2 w-2 shrink-0 bg-[#EE6226] group-hover:scale-125 transition-transform duration-200"></span>
+                <div>
+                  <h4 class="text-sm font-bold text-[#0F172A] group-hover:text-[#EE6226] transition-colors">
+                    Pneumatic Actuation
+                  </h4>
+                  <p class="mt-1 text-xs leading-5 text-slate-500">
+                    Actuator integration for compatible applications.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="group flex gap-3 py-5 sm:border-r sm:border-slate-200 sm:pr-5 transition-colors hover:bg-slate-50/60">
+                <span
+                  class="mt-1 h-2 w-2 shrink-0 bg-[#EE6226] group-hover:scale-125 transition-transform duration-200"></span>
+                <div>
+                  <h4 class="text-sm font-bold text-[#0F172A] group-hover:text-[#EE6226] transition-colors">
+                    Application Requirements
+                  </h4>
+                  <p class="mt-1 text-xs leading-5 text-slate-500">
+                    Consideration of operating conditions and specifications.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="group flex gap-3 border-t border-slate-200 py-5 sm:pl-5 transition-colors hover:bg-slate-50/60">
+                <span
+                  class="mt-1 h-2 w-2 shrink-0 bg-[#EE6226] group-hover:scale-125 transition-transform duration-200"></span>
+                <div>
+                  <h4 class="text-sm font-bold text-[#0F172A] group-hover:text-[#EE6226] transition-colors">
+                    Integrated Solutions
+                  </h4>
+                  <p class="mt-1 text-xs leading-5 text-slate-500">
+                    Damper and actuator compatibility considerations.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="mt-7 flex flex-wrap gap-3 scroll-reveal delay-200">
+
+              <a href="https://www.actuatech.com" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-3 rounded-sm bg-[#0F172A] px-5 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#EE6226]">
+                Visit Actuatech
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10" />
+                </svg>
+              </a>
+
+              <a href="/products.html"
+                class="inline-flex items-center gap-2 rounded-sm border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors duration-200 hover:border-[#EE6226] hover:text-[#EE6226]">
+                Explore Products
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M5 12h14m-7-7 7 7-7 7" />
+                </svg>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- RIGHT: IMAGE AND COMPANY INFORMATION -->
+          <div class="lg:col-span-5 scroll-reveal-right delay-150">
+
+            <div
+              class="sticky top-8 rounded-sm overflow-hidden border border-slate-200 bg-white transition-all duration-300 hover:border-[#EE6226] hover:shadow-md group">
+
+              <!-- Image -->
+              <div class="overflow-hidden bg-slate-50">
+                <picture>
+                  <source srcset="/images/clients/India-Italy.webp" type="image/webp" />
+
+                  <img src="/images/clients/India-Italy.png"
+                    alt="Bellator Engineers India and Actuatech S.p.A. Italy strategic partnership"
+                    class="h-auto max-h-[560px] min-h-64 w-full object-contain transition-transform duration-500 group-hover:scale-[1.02] sm:min-h-80"
+                    loading="lazy" decoding="async" />
+                </picture>
+              </div>
+
+              <!-- Company Information -->
+              <div class="grid grid-cols-2 border-t border-slate-200">
+
+                <div class="p-4 sm:p-5 transition-colors hover:bg-slate-50/60">
+                  <span class="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    ITALY
+                  </span>
+
+                  <h4 class="text-sm font-bold text-[#0F172A] sm:text-base">
+                    Actuatech S.p.A.
+                  </h4>
+
+                  <p class="mt-2 text-xs leading-5 text-slate-500">
+                    Pneumatic actuator technology
+                  </p>
+
+                  <a href="https://www.actuatech.com" target="_blank" rel="noopener noreferrer"
+                    class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-[#EE6226] transition-colors group/link">
+                    <span>Official Website</span>
+                    <span class="transition-transform duration-200 group-hover/link:translate-x-1">&rarr;</span>
+                  </a>
+                </div>
+
+                <div class="border-l border-slate-200 p-4 sm:p-5 transition-colors hover:bg-slate-50/60">
+                  <span class="mb-2 block text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    INDIA
+                  </span>
+
+                  <h4 class="text-sm font-bold text-[#0F172A] sm:text-base">
+                    Bellator Engineers
+                  </h4>
+
+                  <p class="mt-2 text-xs leading-5 text-slate-500">
+                    Industrial damper valve engineering
+                  </p>
+
+                  <a href="/products.html"
+                    class="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-[#EE6226] transition-colors group/link">
+                    <span>View Products</span>
+                    <span class="transition-transform duration-200 group-hover/link:translate-x-1">&rarr;</span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
     <!-- 2.5 SCOPE OF WORK (End-to-End Solutions for Damper Valve Systems) -->
     <section id="scope-of-work"
       class="relative w-full overflow-hidden bg-[#F8FAFC] px-4 py-16 md:py-24 lg:px-12 text-[#0F172A] border-t border-b border-slate-200">
@@ -994,17 +904,14 @@
         <div
           class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 border-b border-slate-200/80 pb-8">
           <div>
-            <div
-              class="inline-flex items-center gap-2 rounded-full border border-orange-200/80 bg-orange-500/10 px-4 py-1.5 text-xs font-bold text-[#EE6226] mb-3 scroll-badge tracking-wider uppercase">
-              <span class="w-2 h-2 rounded-full bg-[#EE6226] animate-ping"></span>
+            <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
               Complete Lifecycle Engineering
-            </div>
+            </span>
             <h2
-              class="font-poppins text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[#0F172A] scroll-heading uppercase">
+              class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
               Scope of Work
             </h2>
-            <div class="mt-2.5 h-[3px] w-24 bg-[#EE6226] rounded-full"></div>
-            <p class="text-sm sm:text-base md:text-lg font-semibold text-[#EE6226] mt-3">
+            <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100">
               End-to-End Solutions for Damper Valve Systems
             </p>
           </div>
@@ -1368,51 +1275,22 @@
     <!-- 3. WHAT WE DO / DAMPER SOLUTIONS (Infosys Right-to-Left Moving & Expanding Showcase) -->
     <section id="what-we-do"
       class="relative scroll-mt-24 overflow-hidden bg-white py-16 md:py-24 border-t border-slate-200">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#FDBA7420,transparent_35%)]"></div>
-
-      <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Section Header with Title and Interactive Controls -->
-        <div class="mb-10 text-center relative max-w-4xl mx-auto">
-          <div
-            class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold bg-orange-500/10 text-[#EE6226] border border-[#EE6226]/20 mb-3 tracking-wider uppercase">
-            <span class="w-1.5 h-1.5 rounded-full bg-[#EE6226] animate-ping"></span>
-            Aerodynamic Air &amp; Gas Control
-          </div>
-          <h2
-            class="mb-3 font-poppins text-3xl font-[600] text-[#0F172A] md:text-4xl lg:text-5xl scroll-heading tracking-tight">
-            What We Do
-          </h2>
-          <div class="mx-auto mt-2 mb-4 h-[3px] w-16 rounded-full bg-[#EE6226] scroll-reveal delay-100"></div>
-          <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base scroll-subtext delay-150">
-            Delivering precision damper valve engineering, 100% man-safe isolation, and aerodynamic air control across
-            marine, power, and heavy industrial process sectors.
-          </p>
-
-          <!-- Slider Controls & Live Hint -->
-          <div class="mt-6 flex items-center justify-center sm:justify-between max-w-md sm:max-w-xl mx-auto pt-2">
-            <div
-              class="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-500 bg-white/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-slate-200/80 shadow-xs">
-              <svg class="w-3.5 h-3.5 text-[#EE6226]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-              </svg>
-              <span>Hover card to expand &amp; pause</span>
-            </div>
-
-            <div class="flex items-center gap-2">
-              <button id="what-carousel-prev" type="button" aria-label="Slide Left"
-                class="w-9 h-9 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#EE6226] hover:bg-orange-50 hover:text-[#EE6226] flex items-center justify-center shadow-xs transition-all duration-300 active:scale-95">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button id="what-carousel-next" type="button" aria-label="Slide Right"
-                class="w-9 h-9 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#EE6226] hover:bg-orange-50 hover:text-[#EE6226] flex items-center justify-center shadow-xs transition-all duration-300 active:scale-95">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
+      <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12">
+        <!-- Section Top Header & Eyebrow -->
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 border-b border-slate-200/80 pb-8">
+          <div>
+            <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+              Aerodynamic Air &amp; Gas Control
+            </span>
+            <h2
+              class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+              What We Do
+            </h2>
+            <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-2xl">
+              Delivering precision damper valve engineering, 100% man-safe isolation, and aerodynamic air control across
+              marine, power, and heavy industrial process sectors.
+            </p>
           </div>
         </div>
 
@@ -1433,7 +1311,7 @@
                   Modulating
                 </div>
                 <img alt="Butterfly Damper Valves"
-                  src="/images/products/BE20-Pneumatic-Double-Offset-Butterfly-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE20 SERIES_DOUBLE OFFSET BUTTERFLY DAMPER VALVE/BE20 SERIES - PNEUMATIC DOUBLE OFFSET BUTTERFLY DAMPER VALVE SIZE 860 MM.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1470,7 +1348,7 @@
                   Zero Leakage
                 </div>
                 <img alt="Double Disc Gate Valves"
-                  src="/images/products/Motorized-Double-Disc-Gate-Valve-main-image.webp" loading="lazy" />
+                  src="/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MOTORIZED DOUBLE DISC GATE VALVES SIZE 1200MM.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1507,7 +1385,7 @@
                   Flow Balancing
                 </div>
                 <img alt="Multi-Louver Damper Valves"
-                  src="/images/products/BE70-Pneumatic-Opposed-Blade-Multilouver-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - MOTORIZED AND MANUAL MULTILOUVER DAMPER VALVES.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1544,7 +1422,7 @@
                   CCGT Bypass
                 </div>
                 <img alt="Tandem / Diverter Valves"
-                  src="/images/products/BE50-Motorized-Air-Seal-Diverter-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE50 SERIES_AIR SEAL DAMPER VALVES/BE50 SERIES - MOTORIZED AIR SEAL DIVERTER DAMPER VALVE.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1581,7 +1459,7 @@
                   Heavy Particulate
                 </div>
                 <img alt="Inline & Slide Gate Valves"
-                  src="/images/products/BE200-Manual-Straight-Pattern-Inline-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE200 SERIES_STRAIGHT PATTERN VALVES/BE200 SERIES - MANUAL STRAIGHT PATTERN INLINE VALVE.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1618,7 +1496,7 @@
                   Full Duct Isolation
                 </div>
                 <img alt="Motorized Guillotine Damper Valves"
-                  src="/images/products/BE90-Motorized-Guillotine-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORIZED GUILLOTINE DAMPER VALVES.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1657,7 +1535,7 @@
                   Modulating
                 </div>
                 <img alt="Butterfly Damper Valves"
-                  src="/images/products/BE20-Pneumatic-Double-Offset-Butterfly-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE20 SERIES_DOUBLE OFFSET BUTTERFLY DAMPER VALVE/BE20 SERIES - PNEUMATIC DOUBLE OFFSET BUTTERFLY DAMPER VALVE SIZE 860 MM.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1695,7 +1573,7 @@
                   Zero Leakage
                 </div>
                 <img alt="Double Disc Gate Valves"
-                  src="/images/products/Motorized-Double-Disc-Gate-Valve-main-image.webp" loading="lazy" />
+                  src="/images/gallery/BE100 SERIES_DOUBLE DISC GATE VALVES/BE100 SERIES - MOTORIZED DOUBLE DISC GATE VALVES SIZE 1200MM.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1733,7 +1611,7 @@
                   Flow Balancing
                 </div>
                 <img alt="Multi-Louver Damper Valves"
-                  src="/images/products/BE70-Pneumatic-Opposed-Blade-Multilouver-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - MOTORIZED AND MANUAL MULTILOUVER DAMPER VALVES.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1771,7 +1649,7 @@
                   CCGT Bypass
                 </div>
                 <img alt="Tandem / Diverter Valves"
-                  src="/images/products/BE50-Motorized-Air-Seal-Diverter-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE50 SERIES_AIR SEAL DAMPER VALVES/BE50 SERIES - MOTORIZED AIR SEAL DIVERTER DAMPER VALVE.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1809,7 +1687,7 @@
                   Heavy Particulate
                 </div>
                 <img alt="Inline & Slide Gate Valves"
-                  src="/images/products/BE200-Manual-Straight-Pattern-Inline-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE200 SERIES_STRAIGHT PATTERN VALVES/BE200 SERIES - MANUAL STRAIGHT PATTERN INLINE VALVE.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1847,7 +1725,7 @@
                   Full Duct Isolation
                 </div>
                 <img alt="Motorized Guillotine Damper Valves"
-                  src="/images/products/BE90-Motorized-Guillotine-Damper-Valve.png" loading="lazy" />
+                  src="/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORIZED GUILLOTINE DAMPER VALVES.png" loading="lazy" />
               </div>
               <div class="infosys-damper-body">
                 <h3
@@ -1879,378 +1757,269 @@
 
     <!-- 4. INDUSTRIES WE SERVE (Bespoke Industrial Engineering Showcase & Sector Dossier) -->
     <section id="industries" class="industries-engineering-section py-16 md:py-24 border-t border-slate-200">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Architectural Section Header -->
-        <div class="mb-10 lg:mb-12">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-slate-200">
-            <div>
-              <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 text-[#EE6226] text-xs font-mono font-semibold tracking-wider uppercase mb-3">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#EE6226] animate-pulse"></span>
-                Field Deployments &bull; Critical Applications
-              </div>
-              <h2
-                class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0F172A] scroll-heading">
-                Industries We Serve
-              </h2>
-            </div>
-            <p class="text-slate-600 text-sm sm:text-base max-w-xl leading-relaxed scroll-subtext">
+      <div class="mx-auto px-4 sm:px-6 lg:px-12">
+        <!-- Section Top Header & Eyebrow -->
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 border-b border-slate-200/80 pb-8">
+          <div>
+            <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+              Field Deployments &bull; Critical Applications
+            </span>
+            <h2
+              class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+              Industries We Serve
+            </h2>
+            <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-2xl">
               Precision-engineered damper valves built to survive extreme temperatures, abrasive particulate loading,
               and aggressive chemical atmospheres across 500+ global installations.
+            </p>
           </div>
         </div>
 
-        <!-- Interactive Sector Dossier System -->
-        <div class="mb-16 scroll-reveal delay-150">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
-            <!-- Left Side: Sector Navigation Tabs (5 Key Industrial Sectors) -->
-            <div class="lg:col-span-4 flex flex-col space-y-2.5" role="tablist" aria-label="Industrial Sectors">
-              <!-- Tab 1: Power & Nuclear -->
-              <button type="button" class="sector-tab-btn is-active" data-sector="power" role="tab" aria-selected="true"
-                aria-controls="dossier-power" id="tab-power">
-                <span class="tab-index">SEC 01</span>
-                <div class="flex-1 min-w-0">
-                  <div class="tab-title">Power &amp; Nuclear</div>
-                  <div class="tab-sub">Thermal boilers, HRSG bypass &amp; nuclear containment</div>
-                </div>
-                <svg class="w-4 h-4 text-slate-400 opacity-60 flex-shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              <!-- Tab 2: Marine & Offshore -->
-              <button type="button" class="sector-tab-btn" data-sector="marine" role="tab" aria-selected="false"
-                aria-controls="dossier-marine" id="tab-marine">
-                <span class="tab-index">SEC 02</span>
-                <div class="flex-1 min-w-0">
-                  <div class="tab-title">Marine &amp; Offshore</div>
-                  <div class="tab-sub">EGCS scrubbers, engine room &amp; IMO SOx compliance</div>
-                </div>
-                <svg class="w-4 h-4 text-slate-400 opacity-60 flex-shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              <!-- Tab 3: Oil, Gas & Petrochemical -->
-              <button type="button" class="sector-tab-btn" data-sector="oilgas" role="tab" aria-selected="false"
-                aria-controls="dossier-oilgas" id="tab-oilgas">
-                <span class="tab-index">SEC 03</span>
-                <div class="flex-1 min-w-0">
-                  <div class="tab-title">Oil, Gas &amp; Refineries</div>
-                  <div class="tab-sub">Flare gas lines, cat cracking &amp; offshore platforms</div>
-                </div>
-                <svg class="w-4 h-4 text-slate-400 opacity-60 flex-shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              <!-- Tab 4: Cement & Heavy Metals -->
-              <button type="button" class="sector-tab-btn" data-sector="cement" role="tab" aria-selected="false"
-                aria-controls="dossier-cement" id="tab-cement">
-                <span class="tab-index">SEC 04</span>
-                <div class="flex-1 min-w-0">
-                  <div class="tab-title">Cement &amp; Heavy Metals</div>
-                  <div class="tab-sub">Rotary kilns, clinker coolers &amp; blast furnace off-gas</div>
-                </div>
-                <svg class="w-4 h-4 text-slate-400 opacity-60 flex-shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              <!-- Tab 5: Process & Environmental -->
-              <button type="button" class="sector-tab-btn" data-sector="process" role="tab" aria-selected="false"
-                aria-controls="dossier-process" id="tab-process">
-                <span class="tab-index">SEC 05</span>
-                <div class="flex-1 min-w-0">
-                  <div class="tab-title">Process &amp; Environmental</div>
-                  <div class="tab-sub">Flue gas FGD, wastewater scrubbers &amp; chemical lines</div>
-                </div>
-                <svg class="w-4 h-4 text-slate-400 opacity-60 flex-shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-
-            <!-- Right Side: Active Dossier Display Cards -->
-            <div class="lg:col-span-8">
-              <!-- Panel 1: Power & Nuclear -->
-              <div id="dossier-power" class="sector-dossier-panel is-active" role="tabpanel"
-                aria-labelledby="tab-power">
-                <div class="industry-dossier-card grid grid-cols-1 md:grid-cols-12 h-full">
-                  <div class="md:col-span-5 industry-photo-viewport">
-                    <img src="/images/industries/THERMAL.jpg" alt="Thermal and Nuclear Power Plant Damper Valves"
-                      class="industry-photo-img" loading="lazy" />
-                    <div class="industry-photo-hud">
-                      <div class="text-[10px] font-mono uppercase tracking-widest text-[#EE6226] font-semibold">
-                        Operational Environment</div>
-                      <div class="text-xs font-bold text-white mt-0.5">Flue Gas &bull; Pulverized Coal &bull; Nuclear
-                        Safety</div>
-                      <div class="text-[11px] text-slate-300 font-mono mt-0.5">Rating: 100% Man-Safe Zero Leakage</div>
-                    </div>
-                  </div>
-                  <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center gap-2 mb-2">
-                        <span
-                          class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold uppercase bg-orange-100 text-[#EE6226]">Critical
-                          Sector 01</span>
-                        <span class="text-xs font-semibold text-slate-400">Continuous 24/7 Duty</span>
-                      </div>
-                      <h3 class="text-xl sm:text-2xl font-bold text-[#0F172A] mb-3">
-                        Power Generation &amp; Nuclear Facilities
-                      </h3>
-                      <div class="space-y-3 mb-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Operating Reality:</strong> Extreme thermal
-                          cycles, heavy fly ash entrainment, and strict personnel safety protocols require flue gas
-                          isolation where <em>zero downstream leakage</em> is legally guaranteed during live unit
-                          maintenance.
-                        </p>
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Bellator Solution:</strong> Engineered Tandem
-                          Louver Dampers and Guillotine Slide Gates fitted with continuous pressurized seal-air cavities
-                          to deliver 100% man-safe shutoff under severe positive/negative draft pressures.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Engineered Damper Deployments -->
-                    <div class="pt-4 border-t border-slate-100">
-                      <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold mb-2">Engineered Damper
-                        Deployments:</div>
-                      <div class="flex flex-wrap gap-2">
-                        <a href="#what-we-do" class="industry-valve-pill">Tandem Louver Damper &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Heavy Guillotine Gate &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Poppet Isolation Damper &rarr;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <!-- Industries Showcase (5 Core Industrial Sectors) -->
+        <div class="mb-16">
+          
+          <!-- Top Row: 2 Key Primary Sectors -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            
+            <!-- Card 1: Power & Nuclear -->
+            <div class="industry-card group scroll-reveal delay-100">
+              <div class="industry-card-img-wrap h-64 sm:h-72">
+                <img src="/images/industries/THERMAL.jpg" alt="Thermal and Nuclear Power Plant Damper Valves"
+                  loading="lazy" />
               </div>
-
-              <!-- Panel 2: Marine & Offshore -->
-              <div id="dossier-marine" class="sector-dossier-panel" role="tabpanel" aria-labelledby="tab-marine">
-                <div class="industry-dossier-card grid grid-cols-1 md:grid-cols-12 h-full">
-                  <div class="md:col-span-5 industry-photo-viewport">
-                    <img src="/images/industries/MARINE.jpg" alt="Marine Scrubber and Ship Exhaust Damper Valves"
-                      class="industry-photo-img" loading="lazy" />
-                    <div class="industry-photo-hud">
-                      <div class="text-[10px] font-mono uppercase tracking-widest text-[#EE6226] font-semibold">
-                        Operational Environment</div>
-                      <div class="text-xs font-bold text-white mt-0.5">Marine Exhaust &bull; EGCS Scrubbers &bull; High
-                        Salinity</div>
-                      <div class="text-[11px] text-slate-300 font-mono mt-0.5">Compliance: IMO MARPOL Annex VI &bull;
-                        Class BV/DNV</div>
-                    </div>
+              <div class="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+                      Power &amp; Nuclear Energy
+                    </span>
+                    <span class="text-xs font-medium text-slate-400">Continuous 24/7 Duty</span>
                   </div>
-                  <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center gap-2 mb-2">
-                        <span
-                          class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold uppercase bg-orange-100 text-[#EE6226]">Critical
-                          Sector 02</span>
-                        <span class="text-xs font-semibold text-slate-400">Marine Certified</span>
+                  <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#EE6226] transition-colors mb-3">
+                    Power Generation &amp; Nuclear Facilities
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                    Engineered for extreme thermal cycling, heavy fly ash loading, and live-unit maintenance. Continuous pressurized seal-air cavities guarantee 100% man-safe zero leakage shutoff under severe positive and negative draft pressures.
+                  </p>
+                  
+                  <!-- Key Engineering Parameters -->
+                  <div class="industry-spec-box mb-6">
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                      <div>
+                        <span class="block text-[11px] font-semibold text-slate-400 uppercase tracking-wide">Key Media</span>
+                        <span class="font-semibold text-slate-800">Flue Gas, Fly Ash, Pulverized Coal</span>
                       </div>
-                      <h3 class="text-xl sm:text-2xl font-bold text-[#0F172A] mb-3">
-                        Marine Vessels &amp; Offshore Platforms
-                      </h3>
-                      <div class="space-y-3 mb-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Operating Reality:</strong> Exhaust gas
-                          cleaning systems (EGCS) produce highly acidic sulfuric acid condensate (pH &lt; 2) under
-                          violent shipboard vibration, demanding corrosion-proof alloys with zero-leakage diverter
-                          valves.
-                        </p>
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Bellator Solution:</strong>
-                          Purpose-engineered Marine Butterfly and Diverter Dampers cast and fabricated in Super Duplex
-                          and Hastelloy C-276, equipped with marine-certified pneumatic fail-safe actuators and
-                          anti-seize high-nickel stems.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Engineered Damper Deployments -->
-                    <div class="pt-4 border-t border-slate-100">
-                      <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold mb-2">Engineered Damper
-                        Deployments:</div>
-                      <div class="flex flex-wrap gap-2">
-                        <a href="#what-we-do" class="industry-valve-pill">Marine Scrubber Butterfly &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">3-Way Scrubber Diverter &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Engine Room Fire Damper &rarr;</a>
+                      <div>
+                        <span class="block text-[11px] font-semibold text-slate-400 uppercase tracking-wide">Isolation Rating</span>
+                        <span class="font-semibold text-slate-800">100% Man-Safe Zero Leakage</span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Panel 3: Oil, Gas & Petrochemical -->
-              <div id="dossier-oilgas" class="sector-dossier-panel" role="tabpanel" aria-labelledby="tab-oilgas">
-                <div class="industry-dossier-card grid grid-cols-1 md:grid-cols-12 h-full">
-                  <div class="md:col-span-5 industry-photo-viewport">
-                    <img src="/images/industries/OIL-_-GAS-Copy.jpg"
-                      alt="Oil Refinery and Petrochemical Gas Damper Valves" class="industry-photo-img"
-                      loading="lazy" />
-                    <div class="industry-photo-hud">
-                      <div class="text-[10px] font-mono uppercase tracking-widest text-[#EE6226] font-semibold">
-                        Operational Environment</div>
-                      <div class="text-xs font-bold text-white mt-0.5">Hydrocarbon Flare Gas &bull; Cat Cracking FCCU
-                        &bull; ATEX</div>
-                      <div class="text-[11px] text-slate-300 font-mono mt-0.5">Compliance: ASME B16.34 &bull; API 598
-                        &bull; ATEX Zone 1/2</div>
-                    </div>
-                  </div>
-                  <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center gap-2 mb-2">
-                        <span
-                          class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold uppercase bg-orange-100 text-[#EE6226]">Critical
-                          Sector 03</span>
-                        <span class="text-xs font-semibold text-slate-400">ATEX Hazardous Area</span>
-                      </div>
-                      <h3 class="text-xl sm:text-2xl font-bold text-[#0F172A] mb-3">
-                        Oil, Gas &amp; Petrochemical Refineries
-                      </h3>
-                      <div class="space-y-3 mb-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Operating Reality:</strong> Fluid catalytic
-                          cracking units (FCCU) and refinery flare headers expose valves to severe differential
-                          pressures, explosive gas mixtures, and high thermal transients where unintended leakage
-                          triggers catastrophic plant trips.
-                        </p>
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Bellator Solution:</strong> Double Disc
-                          Through-Conduit Gate Valves with mechanical wedge sealing and ATEX-certified Louver Dampers
-                          featuring inert gas purge chambers and fire-safe shaft seals.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Engineered Damper Deployments -->
-                    <div class="pt-4 border-t border-slate-100">
-                      <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold mb-2">Engineered Damper
-                        Deployments:</div>
-                      <div class="flex flex-wrap gap-2">
-                        <a href="#what-we-do" class="industry-valve-pill">Double Disc Gate Valve &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Flare Gas Louver Damper &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">FCCU Severe Service Gate &rarr;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Panel 4: Cement & Heavy Metals -->
-              <div id="dossier-cement" class="sector-dossier-panel" role="tabpanel" aria-labelledby="tab-cement">
-                <div class="industry-dossier-card grid grid-cols-1 md:grid-cols-12 h-full">
-                  <div class="md:col-span-5 industry-photo-viewport">
-                    <img src="/images/industries/CEMENT-1.jpg" alt="Cement Rotary Kiln and Clinker Damper Valves"
-                      class="industry-photo-img" loading="lazy" />
-                    <div class="industry-photo-hud">
-                      <div class="text-[10px] font-mono uppercase tracking-widest text-[#EE6226] font-semibold">
-                        Operational Environment</div>
-                      <div class="text-xs font-bold text-white mt-0.5">Kiln Preheaters &bull; Clinker Coolers &bull;
-                        Smelter Exhaust</div>
-                      <div class="text-[11px] text-slate-300 font-mono mt-0.5">Abrasive Loading: &gt; 180 g/Nm³ Dust
-                        Entrainment</div>
-                    </div>
-                  </div>
-                  <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center gap-2 mb-2">
-                        <span
-                          class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold uppercase bg-orange-100 text-[#EE6226]">Critical
-                          Sector 04</span>
-                        <span class="text-xs font-semibold text-slate-400">Severe Abrasive Service</span>
-                      </div>
-                      <h3 class="text-xl sm:text-2xl font-bold text-[#0F172A] mb-3">
-                        Cement Plants, Smelters &amp; Heavy Metals
-                      </h3>
-                      <div class="space-y-3 mb-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Operating Reality:</strong> Preheater
-                          cyclones and clinker cooler lines subject dampers to sand-blast abrasive clinker dust velocity
-                          exceeding 25 m/s, causing ordinary valve guides to seize and erode within months.
-                        </p>
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Bellator Solution:</strong> Self-cleaning
-                          Guillotine Slide Gates fitted with external hardened roller tracks away from the gas stream,
-                          Hardox 500 replaceable wear plates, and internal castable ceramic refractory insulation.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Engineered Damper Deployments -->
-                    <div class="pt-4 border-t border-slate-100">
-                      <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold mb-2">Engineered Damper
-                        Deployments:</div>
-                      <div class="flex flex-wrap gap-2">
-                        <a href="#what-we-do" class="industry-valve-pill">Severe Guillotine Slide Gate &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Refractory Louver Damper &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Heavy Counterweight Flap &rarr;</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Panel 5: Process & Environmental -->
-              <div id="dossier-process" class="sector-dossier-panel" role="tabpanel" aria-labelledby="tab-process">
-                <div class="industry-dossier-card grid grid-cols-1 md:grid-cols-12 h-full">
-                  <div class="md:col-span-5 industry-photo-viewport">
-                    <img src="/images/industries/WATER.jpg"
-                      alt="Water, Wastewater and Environmental Scrubber Damper Valves" class="industry-photo-img"
-                      loading="lazy" />
-                    <div class="industry-photo-hud">
-                      <div class="text-[10px] font-mono uppercase tracking-widest text-[#EE6226] font-semibold">
-                        Operational Environment</div>
-                      <div class="text-xs font-bold text-white mt-0.5">FGD Flue Gas Desulfurization &bull; Wastewater
-                        Scrubbers</div>
-                      <div class="text-[11px] text-slate-300 font-mono mt-0.5">Fugitive Emissions: TA-Luft &bull; EPA
-                        Method 21 Clean Air</div>
-                    </div>
-                  </div>
-                  <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center gap-2 mb-2">
-                        <span
-                          class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold uppercase bg-orange-100 text-[#EE6226]">Critical
-                          Sector 05</span>
-                        <span class="text-xs font-semibold text-slate-400">Zero Fugitive Emissions</span>
-                      </div>
-                      <h3 class="text-xl sm:text-2xl font-bold text-[#0F172A] mb-3">
-                        Environmental, Chemical &amp; Process Utilities
-                      </h3>
-                      <div class="space-y-3 mb-6 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Operating Reality:</strong> Wet FGD
-                          scrubbers, wastewater aeration, and sugar distillery bio-gas carry aggressive halogen vapors
-                          and hydrogen sulfide (H2S), requiring absolute vapor containment and zero fugitive shaft
-                          leakage.
-                        </p>
-                        <p>
-                          <strong class="text-slate-900 font-semibold">The Bellator Solution:</strong> High-integrity
-                          Butterfly and Multi-Louver Dampers with spring-loaded live PTFE packing, fluoropolymer
-                          resilient elastomer blade seals, and 316L/Hastelloy bodies engineered for decades of
-                          maintenance-free isolation.
-                      </div>
-                    </div>
-                    <!-- Engineered Damper Deployments -->
-                    <div class="pt-4 border-t border-slate-100">
-                      <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold mb-2">Engineered Damper
-                        Deployments:</div>
-                      <div class="flex flex-wrap gap-2">
-                        <a href="#what-we-do" class="industry-valve-pill">FGD Scrubber Damper &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Butterfly Control Damper &rarr;</a>
-                        <a href="#what-we-do" class="industry-valve-pill">Aeration Louver Valve &rarr;</a>
-                      </div>
-                    </div>
+                <!-- Valve Solutions -->
+                <div class="pt-4 border-t border-slate-100">
+                  <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2.5">Recommended Damper Systems:</span>
+                  <div class="flex flex-wrap gap-2">
+                    <a href="/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Tandem Louver Damper &rarr;</a>
+                    <a href="/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">Heavy Guillotine Gate &rarr;</a>
+                    <a href="/product-detail.html?id=poppet-damper-valves" class="industry-product-pill">Poppet Isolation Damper &rarr;</a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Card 2: Marine & Offshore -->
+            <div class="industry-card group scroll-reveal delay-200">
+              <div class="industry-card-img-wrap h-64 sm:h-72">
+                <img src="/images/industries/MARINE.jpg" alt="Marine Scrubber and Ship Exhaust Damper Valves"
+                  loading="lazy" />
+              </div>
+              <div class="p-6 sm:p-8 flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+                      Marine &amp; Offshore
+                    </span>
+                    <span class="text-xs font-medium text-slate-400">Class Certified</span>
+                  </div>
+                  <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#EE6226] transition-colors mb-3">
+                    Marine Vessels &amp; Offshore Platforms
+                  </h3>
+                  <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                    Built for exhaust gas cleaning systems (EGCS), engine rooms, and marine boilers. Cast in Super Duplex and Hastelloy C-276 to resist acidic sulfuric condensate (pH &lt; 2) and violent shipboard vibration with fail-safe actuation.
+                  </p>
+                  
+                  <!-- Key Engineering Parameters -->
+                  <div class="industry-spec-box mb-6">
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                      <div>
+                        <span class="block text-[11px] font-semibold text-slate-400 uppercase tracking-wide">Compliance</span>
+                        <span class="font-semibold text-slate-800">IMO MARPOL Annex VI &bull; BV/DNV</span>
+                      </div>
+                      <div>
+                        <span class="block text-[11px] font-semibold text-slate-400 uppercase tracking-wide">Materials</span>
+                        <span class="font-semibold text-slate-800">Super Duplex, 254SMO, Hastelloy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Valve Solutions -->
+                <div class="pt-4 border-t border-slate-100">
+                  <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2.5">Recommended Damper Systems:</span>
+                  <div class="flex flex-wrap gap-2">
+                    <a href="/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">Marine Scrubber Butterfly &rarr;</a>
+                    <a href="/product-detail.html?id=three-way-diverter-damper-valves" class="industry-product-pill">3-Way Scrubber Diverter &rarr;</a>
+                    <a href="/product-detail.html?id=fire-damper-valves" class="industry-product-pill">Engine Room Fire Damper &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Bottom Row: 3 Specialized Industrial Sectors -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 3: Oil, Gas & Petrochemical -->
+            <div class="industry-card group scroll-reveal delay-100">
+              <div class="industry-card-img-wrap h-48 sm:h-52">
+                <img src="/images/industries/OIL-_-GAS-Copy.jpg" alt="Oil Refinery and Petrochemical Gas Damper Valves"
+                  loading="lazy" />
+              </div>
+              <div class="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2.5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+                      Oil, Gas &amp; Refining
+                    </span>
+                    <span class="text-xs font-medium text-slate-400">ATEX Rated</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-[#EE6226] transition-colors mb-2.5">
+                    Oil, Gas &amp; Petrochemicals
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    Severe-service isolation for catalytic cracking (FCCU), flare gas headers, and offshore platforms. Mechanical wedge sealing and purge chambers prevent hazardous leakage.
+                  </p>
+                  
+                  <div class="industry-spec-box mb-5">
+                    <div class="text-xs space-y-1">
+                      <div class="flex justify-between">
+                        <span class="text-slate-400">Standard:</span>
+                        <span class="font-semibold text-slate-800">ASME B16.34 &bull; API 598</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-400">Area Rating:</span>
+                        <span class="font-semibold text-slate-800">ATEX Zone 1/2 Certified</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3.5 border-t border-slate-100">
+                  <div class="flex flex-wrap gap-1.5">
+                    <a href="/product-detail.html?id=double-disc-gate-valves" class="industry-product-pill">Double Disc Gate &rarr;</a>
+                    <a href="/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Flare Louver &rarr;</a>
+                    <a href="/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">FCCU Gate &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Cement & Heavy Metals -->
+            <div class="industry-card group scroll-reveal delay-200">
+              <div class="industry-card-img-wrap h-48 sm:h-52">
+                <img src="/images/industries/CEMENT-1.jpg" alt="Cement Rotary Kiln and Clinker Damper Valves"
+                  loading="lazy" />
+              </div>
+              <div class="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2.5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+                      Cement &amp; Smelting
+                    </span>
+                    <span class="text-xs font-medium text-slate-400">Abrasive Service</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-[#EE6226] transition-colors mb-2.5">
+                    Cement Plants &amp; Heavy Metals
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    Engineered to withstand sand-blast abrasive clinker dust velocity (> 25 m/s) with external roller tracks, Hardox 500 replaceable wear plates, and ceramic refractory insulation.
+                  </p>
+                  
+                  <div class="industry-spec-box mb-5">
+                    <div class="text-xs space-y-1">
+                      <div class="flex justify-between">
+                        <span class="text-slate-400">Dust Load:</span>
+                        <span class="font-semibold text-slate-800">&gt; 180 g/Nm³ Entrainment</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-400">Wear Protection:</span>
+                        <span class="font-semibold text-slate-800">Hardox 500 Wear Liners</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3.5 border-t border-slate-100">
+                  <div class="flex flex-wrap gap-1.5">
+                    <a href="/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">Slide Gate &rarr;</a>
+                    <a href="/product-detail.html?id=refractory-lined-damper-valves" class="industry-product-pill">Refractory Louver &rarr;</a>
+                    <a href="/product-detail.html?id=double-flap-damper-valves" class="industry-product-pill">Counterweight Flap &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Environmental & Process Utilities -->
+            <div class="industry-card group scroll-reveal delay-300">
+              <div class="industry-card-img-wrap h-48 sm:h-52">
+                <img src="/images/industries/WATER.jpg" alt="Water, Wastewater and Environmental Scrubber Damper Valves"
+                  loading="lazy" />
+              </div>
+              <div class="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2.5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
+                      Process &amp; Utilities
+                    </span>
+                    <span class="text-xs font-medium text-slate-400">Clean Air</span>
+                  </div>
+                  <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-[#EE6226] transition-colors mb-2.5">
+                    Process, Chemical &amp; Water
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    Vapor containment for wet FGD scrubbers, wastewater treatment, and bio-gas systems. Equipped with live-loaded PTFE shaft packing and resilient fluoropolymer seals.
+                  </p>
+                  
+                  <div class="industry-spec-box mb-5">
+                    <div class="text-xs space-y-1">
+                      <div class="flex justify-between">
+                        <span class="text-slate-400">Emission Standard:</span>
+                        <span class="font-semibold text-slate-800">TA-Luft &bull; EPA Method 21</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-400">Shaft Sealing:</span>
+                        <span class="font-semibold text-slate-800">Spring-Loaded Live PTFE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3.5 border-t border-slate-100">
+                  <div class="flex flex-wrap gap-1.5">
+                    <a href="/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">FGD Damper &rarr;</a>
+                    <a href="/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">Control Damper &rarr;</a>
+                    <a href="/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Aeration Louver &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
         <!-- Section Transition Bar: Complete 9-Sector Engineering Field Matrix -->
@@ -3047,41 +2816,45 @@
       </div>
     </section>
 
-    <!-- 9. NEED RELIABLE ENGINEERING SUPPORT? (Technorithm Exact CTA Box) -->
-    <section
-      class="relative overflow-hidden bg-[#0B1220] border border-slate-800/80 px-6 py-16 md:px-12 md:py-20 mx-auto rounded-3xl my-16 shadow-2xl text-white scroll-reveal-scale">
-      <div class="absolute inset-0 opacity-20 pointer-events-none">
-        <div class="absolute left-1/2 top-0 h-[320px] w-[320px] -translate-x-1/2 rounded-full bg-[#EE6226] blur-3xl">
-        </div>
-      </div>
-      <div class="relative z-10 mx-auto max-w-4xl text-center">
+    <!-- 9. NEED RELIABLE ENGINEERING SUPPORT? -->
+    <section class="mx-auto px-4 sm:px-6 lg:px-8 my-16">
+      <div
+        class="relative overflow-hidden bg-[#0B1220] px-6 py-14 md:px-12 md:py-16 rounded-2xl md:rounded-3xl shadow-2xl text-center">
+        <!-- Ambient Radial Glow & Grid Pattern -->
         <div
-          class="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm scroll-badge">
-          <span class="font-poppins text-xs uppercase tracking-[0.2em] text-[#CBD5E1]">Industrial Valve Solutions</span>
+          class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(238,98,38,0.22),transparent_65%)] pointer-events-none">
         </div>
-        <h2
-          class="font-poppins text-2xl sm:text-3xl md:text-5xl font-[600] leading-tight text-white scroll-heading delay-100">
-          Need Reliable Damper Valve Engineering Support<br /><span class="text-[#94A3B8]">for Your Next Project?</span>
-        </h2>
-        <p
-          class="mx-auto mt-6 max-w-2xl font-poppins text-sm sm:text-base leading-relaxed text-[#CBD5E1] scroll-subtext delay-150">
-          Partner with Bellator Engineers to deliver validated, cost-effective, and SIL-compliant damper solutions for
-          marine, power, and severe process applications worldwide.
-        </p>
-        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row scroll-reveal delay-200">
-          <a class="rounded-full bg-[#EE6226] px-8 py-4 font-poppins text-xs sm:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#d8551d] hover:shadow-[0_15px_40px_rgba(238,98,38,0.45)] text-center"
-            href="/contact-us.html#connect-desk">
-            Contact / Request RFQ
-          </a>
-          <a class="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] px-8 py-4 font-poppins text-xs sm:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_35px_rgba(37,211,102,0.4)] text-center shadow-lg"
-            href="https://wa.me/919028219202?text=Hello%20Bellator%20Engineers%2C%20I%20would%20like%20to%20inquire%20about%20Damper%20Valve%20Solutions"
-            target="_blank" rel="noopener noreferrer">
-            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
-              <path
-                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.544 1.772.8 2.796.8 3.183 0 5.769-2.586 5.769-5.766.001-3.181-2.584-5.787-5.769-5.787zm0 10.45c-.886 0-1.579-.228-2.348-.684l-.168-.1-1.574.413.42-1.534-.11-.176c-.496-.793-.758-1.503-.758-2.303 0-2.571 2.092-4.662 4.664-4.662 2.573 0 4.664 2.091 4.664 4.662 0 2.571-2.091 4.664-4.664 4.664zm7.969-4.664c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 1.411.366 2.738 1.006 3.889l-1.006 3.675 3.76-1c1.109.61 2.378.936 3.64.936 4.418 0 8-3.582 8-8z" />
-            </svg>
-            <span>Chat on WhatsApp (+91 90282 19202)</span>
-          </a>
+        <div
+          class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none">
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-4xl text-center">
+          <div class="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md">
+            <span class="font-poppins text-xs uppercase tracking-[0.2em] text-white/70 font-semibold">Industrial Valve Solutions</span>
+          </div>
+          <h2
+            class="font-poppins text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight text-white tracking-tight">
+            Need Reliable Damper Valve<br class="hidden sm:inline" /> Engineering Support for Your Next Project?
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl font-poppins text-sm sm:text-base leading-relaxed text-slate-300">
+            Partner with Bellator Engineers to deliver validated, cost-effective, and SIL-compliant damper solutions for
+            marine, power, and severe process applications worldwide.
+          </p>
+          <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a class="rounded-full bg-[#EE6226] hover:bg-[#d8551d] px-8 py-3.5 font-poppins text-xs sm:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(238,98,38,0.4)] text-center"
+              href="/contact-us.html#connect-desk">
+              Contact / Request RFQ
+            </a>
+            <a class="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] px-8 py-3.5 font-poppins text-xs sm:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(37,211,102,0.35)] text-center shadow-md"
+              href="https://wa.me/919028219202?text=Hello%20Bellator%20Engineers%2C%20I%20would%20like%20to%20inquire%20about%20Damper%20Valve%20Solutions"
+              target="_blank" rel="noopener noreferrer">
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path
+                  d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.544 1.772.8 2.796.8 3.183 0 5.769-2.586 5.769-5.766.001-3.181-2.584-5.787-5.769-5.787zm0 10.45c-.886 0-1.579-.228-2.348-.684l-.168-.1-1.574.413.42-1.534-.11-.176c-.496-.793-.758-1.503-.758-2.303 0-2.571 2.092-4.662 4.664-4.662 2.573 0 4.664 2.091 4.664 4.662 0 2.571-2.091 4.664-4.664 4.664zm7.969-4.664c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 1.411.366 2.738 1.006 3.889l-1.006 3.675 3.76-1c1.109.61 2.378.936 3.64.936 4.418 0 8-3.582 8-8z" />
+              </svg>
+              <span>Chat on WhatsApp (+91 90282 19202)</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

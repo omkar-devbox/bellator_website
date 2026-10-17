@@ -2,13 +2,13 @@
   "id": "multi-louver-damper-valves",
   "title": "BE70 : MULTI-LOUVER DAMPER VALVES",
   "model": "BE70 SERIES",
-  "image": "/images/gallery/be70/BE70-Pneumatic-Control-Duty-Dia-450.webp",
+  "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - MOTORIZED MULTILOUVER DAMPER VALVES SIZE 2200MM.png",
   "category": "control",
   "categoryLabel": "Engineered for Precision Flow Control",
   "tagline": "Engineered for Precision Flow Control with multiple synchronized aerodynamic blades providing superior modulation and low pressure loss.",
   "desc": "Bellator BE70 Series Multi-Louver Damper Valves are specially engineered for accurate airflow control, modulation, and isolation in industrial ventilation and process systems. The multiple blade arrangement provides improved flow distribution, enhanced throttling characteristics, and smooth control performance compared to conventional single blade dampers.",
   "longDesc": "Designed for reliable airflow management and stable process control, the BE70 Series ensures dependable operation under continuous duty conditions. The optimized blade design and linkage mechanism provide uniform flow control, reduced pressure loss, and improved operational efficiency.\n\nManufactured with robust fabricated construction and application-oriented engineering, the BE70 Series dampers are available in Parallel Blade, Opposed Blade, and customized mixed blade configurations with Manual, Pneumatic, Electric, or Hydraulic operation options.",
-  "taglineBrochure": "“Engineered for Precision Flow Control • Smooth Blade Synchronization • Heavy Duty Performance”",
+  "taglineBrochure": "\u201cEngineered for Precision Flow Control \u2022 Smooth Blade Synchronization \u2022 Heavy Duty Performance\u201d",
   "keyHighlights": [
     "Precision Airflow Modulation with multiple synchronized aerodynamic blades",
     "Parallel & Opposed Blade Designs for rapid cutoff or precise linear throttling",
@@ -18,9 +18,9 @@
     "Smooth Blade Synchronization with heavy-duty precision linkage mechanisms"
   ],
   "leakage": "Up to 99.95%",
-  "temp": "-25°C to 825°C",
+  "temp": "-25\u00b0C to 825\u00b0C",
   "pressure": "Up to PN1",
-  "sizes": "Ø300 mm to Ø3000 mm (Round) / Up to 12000 mm (Rectangular)",
+  "sizes": "\u00d8300 mm to \u00d83000 mm (Round) / Up to 12000 mm (Rectangular)",
   "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft | Bearings: Heavy Duty Self Lubricated",
   "actuation": "Manual / Pneumatic / Electric / Hydraulic",
   "standards": "API / ASME / ISO",
@@ -37,7 +37,7 @@
     },
     {
       "parameter": "Size Range",
-      "details": "Ø300 mm to Ø3000 mm"
+      "details": "\u00d8300 mm to \u00d83000 mm"
     },
     {
       "parameter": "End Connection",
@@ -53,7 +53,7 @@
     },
     {
       "parameter": "Design Temperature",
-      "details": "-25°C to 825°C"
+      "details": "-25\u00b0C to 825\u00b0C"
     },
     {
       "parameter": "Standards",
@@ -182,24 +182,54 @@
   ],
   "galleryImages": [
     {
-      "title": "PNEUMATIC CONTROL DUTY MULTI-LOUVER DAMPER",
-      "subtitle": "Size Dia 450 mm",
-      "image": "/images/gallery/be70/BE70-Pneumatic-Control-Duty-Dia-450.webp"
+      "title": "MOTORIZED MULTILOUVER DAMPER VALVE",
+      "subtitle": "Size 2200 mm",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - MOTORIZED MULTILOUVER DAMPER VALVES SIZE 2200MM.png"
     },
     {
-      "title": "PNEUMATIC CONTROL DUTY MULTI-LOUVER DAMPER",
-      "subtitle": "Size Sq. 850 mm",
-      "image": "/images/gallery/be70/BE70-Pneumatic-Control-Duty-Sq-850.webp"
+      "title": "PNEUMATIC MULTILOUVER DAMPER VALVE",
+      "subtitle": "Size 2600 mm",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES -PNEUMATIC MULTILOUVER DAMPER VALVES SIZE 2600MM .png"
     },
     {
-      "title": "MOTORISED MULTI-LOUVER DAMPER",
-      "subtitle": "Size Dia 2400 mm",
-      "image": "/images/gallery/be70/BE70-Motorised-Multi-Louver-Dia-2400.webp"
+      "title": "PNEUMATIC MULTILOUVER DAMPER VALVE",
+      "subtitle": "Size Sq. 900 mm",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - PNEUMATIC MULTILOUVER DAMPER VALVES SQ.900MM.png"
     },
     {
-      "title": "PNEUMATIC MULTI-LOUVER DAMPER",
-      "subtitle": "Size 2600 x 1600 mm",
-      "image": "/images/gallery/be70/BE70-Pneumatic-Multi-Louver-2600x1600.webp"
+      "title": "PNEUMATIC MULTILOUVER DAMPER VALVE",
+      "subtitle": "Size 650 mm PN16",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/_BE70 SERIES - PNEUMATIC MULTILOUVER DAMPER VALVES SIZE 650 MM PN16.png"
+    },
+    {
+      "title": "PNEUMATIC MULTILOUVER DAMPER VALVE",
+      "subtitle": "Size Sq. 2000 mm",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/_BE70 SERIES - PNEUMATIC MULTILOUVER DAMPER VALVES SIZE SQ.2000.png"
+    },
+    {
+      "title": "PNEUMATIC MULTILOUVER DAMPER VALVE",
+      "subtitle": "Export Package Execution",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - PNEUMATIC MULTILOUVER DAMPER VALVES EXPORT .png"
+    },
+    {
+      "title": "MOTORIZED & MANUAL MULTILOUVER DAMPER",
+      "subtitle": "Dual Actuation Setup",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - MOTORIZED AND MANUAL MULTILOUVER DAMPER VALVES.png"
+    },
+    {
+      "title": "MANUAL MULTILOUVER DAMPER VALVE",
+      "subtitle": "Furnace Flue Gas Control",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 Series_ Manual Multi-louver Damper_Furnace.png"
+    },
+    {
+      "title": "PNEUMATIC MULTILOUVER DAMPER VALVE",
+      "subtitle": "Opposed Blade Control Duty",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - PNEUMATIC MULTILOUVER DAMPER VALVES..png"
+    },
+    {
+      "title": "MULTILOUVER DAMPER VALVE",
+      "subtitle": "Site Installation Photo",
+      "image": "/images/gallery/BE70 SERIES_MULTILOUVER DAMPER VALVES/BE70 SERIES - PNEUMATIC MULTILOUVER DAMPER VALVES SITE PHOTO.png"
     }
   ],
   "industriesServed": [

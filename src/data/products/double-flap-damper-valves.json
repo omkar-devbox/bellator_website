@@ -2,13 +2,13 @@
   "id": "double-flap-damper-valves",
   "title": "BE150 : DOUBLE FLAP DAMPER VALVES",
   "model": "BE150 SERIES",
-  "image": "/images/products/Counter-Weight-Operated-Double-Flap-Valve.png",
+  "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - MOTORIZED DOUBLE FLAP DAMPER VALVES.png",
   "category": "severe",
   "categoryLabel": "Engineered for Controlled Material Discharge",
   "tagline": "Engineered for Controlled Material Discharge of bulk materials, ash, dust, and particulate media.",
   "desc": "Bellator BE150 Series Twin Flap Damper Valves are specially engineered for controlled discharge of bulk materials, ash, dust, and particulate media while maintaining reliable air sealing between upstream and downstream process systems.",
   "longDesc": "Bellator BE150 Series Twin Flap Damper Valves are specially engineered for controlled discharge of bulk materials, ash, dust, and particulate media while maintaining reliable air sealing between upstream and downstream process systems.\n\nThe dual flap arrangement operates sequentially to ensure uninterrupted material discharge with minimal pressure loss and reduced air leakage, making these dampers highly suitable for pneumatic conveying and dust handling applications.\n\nThese dampers are widely used in thermal power plants, cement plants, steel plants, pollution control systems, and bulk material handling industries where controlled discharge and air lock performance are essential.\n\nAvailable in pneumatic, hydraulic, electric, and counterweight operated configurations.",
-  "taglineBrochure": "“Engineered for Reliability • Built for Performance • Designed for Critical Applications”",
+  "taglineBrochure": "\u201cEngineered for Reliability \u2022 Built for Performance \u2022 Designed for Critical Applications\u201d",
   "keyHighlights": [
     "Sequential Twin Flap Design ensuring uninterrupted material discharge with zero air leakage",
     "Reliable Air Locking Performance between upstream and downstream vacuum/pressure systems",
@@ -17,7 +17,7 @@
     "Wide size envelope from 150 mm to 2500 mm in Round, Square & Rectangular shapes"
   ],
   "leakage": "Reliable Air Locking Performance",
-  "temp": "-25°C to 850°C",
+  "temp": "-25\u00b0C to 850\u00b0C",
   "pressure": "Low Pressure Material Handling Systems",
   "sizes": "150 mm to 2500 mm (Round / Square / Rectangular)",
   "materials": "Body: IS2062 / SA516 Gr-70 / SS | Flaps: SA516 Gr-70 / SS304 / SS310S / Wear Resistant Steel | Shaft: EN8D / SS410 / SS316",
@@ -36,7 +36,7 @@
     },
     {
       "parameter": "Design Temp.",
-      "details": "-25°C to 850°C"
+      "details": "-25\u00b0C to 850\u00b0C"
     },
     {
       "parameter": "Pressure Rating",
@@ -178,39 +178,44 @@
   ],
   "galleryImages": [
     {
-      "title": "GEARED MOTOR OPERATED DOUBLE FLAP",
-      "subtitle": "Size Sq. 1000 mm Heavy Duty Unit",
-      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-1000-Pair.webp"
+      "title": "MOTORIZED DOUBLE FLAP DAMPER VALVE",
+      "subtitle": "BE150 Series Dust Discharge Isolation",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - MOTORIZED DOUBLE FLAP DAMPER VALVES.png"
     },
     {
-      "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH",
-      "subtitle": "Size Sq. 300 mm Production Assembly Line",
-      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-300-Line.webp"
+      "title": "GEARED MOTOR DOUBLE FLAP DAMPER",
+      "subtitle": "Size Sq. 950 mm",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - GEARED MOTOR OPERATED DOUBLE FLAP DAMPER VALVES SIZE SQ.950MM .png"
     },
     {
-      "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP",
-      "subtitle": "Size Dia 300 mm Circular Flanged Stainless Steel",
-      "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Dia-300.webp"
+      "title": "GEARED MOTOR DOUBLE FLAP DAMPER",
+      "subtitle": "Size 200 mm",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - GEARED MOTOR OPERATED DOUBLE FLAP DAMPER VALVES SIZE 200MM.png"
     },
     {
-      "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH",
-      "subtitle": "Size Sq. 200 mm Factory Floor Alignment",
-      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-200-Batch.webp"
+      "title": "GEARED MOTOR DOUBLE FLAP DAMPER",
+      "subtitle": "Intermittent Sequential Discharge",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - GEARED MOTOR OPERATED DOUBLE FLAP DAMPER VALVES.png"
     },
     {
-      "title": "COUNTER WEIGHT OPERATED DOUBLE FLAP",
-      "subtitle": "Size Sq. 600 mm Heavy Duty Airlock Unit",
-      "image": "/images/gallery/be150/BE150-Counter-Weight-Double-Flap-Sq-600.webp"
+      "title": "COUNTERWEIGHT DOUBLE FLAP DAMPER",
+      "subtitle": "Size Sq. 800 mm Gravity Operation",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - COUNTER WEIGHT OPERATED DOUBLE FLAP DAMPER VALVES SIZE SQ.800MM.png"
     },
     {
-      "title": "GEARED MOTOR OPERATED DOUBLE FLAP",
-      "subtitle": "Size Sq. 250 mm Drive Shaft Unit",
-      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Single.webp"
+      "title": "COUNTERWEIGHT DOUBLE FLAP DAMPER",
+      "subtitle": "Mechanical Arm & Weight Balancing",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES -COUNTER WEIGHT OPERATED DOUBLE FLAP DAMPER VALVES.png"
     },
     {
-      "title": "GEARED MOTOR OPERATED DOUBLE FLAP BATCH",
-      "subtitle": "Size Sq. 250 mm Ready for Dispatch",
-      "image": "/images/gallery/be150/BE150-Geared-Motor-Double-Flap-Sq-250-Batch.webp"
+      "title": "DOUBLE FLAP DAMPER VALVE",
+      "subtitle": "Fabricated Dual Chamber Body",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - DOUBLE FLAP DAMPER VALVES.png"
+    },
+    {
+      "title": "DOUBLE FLAP DAMPER VALVE",
+      "subtitle": "Site Installation Photo",
+      "image": "/images/gallery/BE150 SERIES_DOUBLE FLAP DAMPER VALVES/BE150 SERIES - COUNTER WEIGHT OPERATED DOUBLE FLAP DAMPER VALVES_SITE PHOTO.png"
     }
   ],
   "industriesServed": [

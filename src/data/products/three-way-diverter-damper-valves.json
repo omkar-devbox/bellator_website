@@ -2,25 +2,25 @@
   "id": "three-way-diverter-damper-valves",
   "title": "BE60 : THREE WAY DIVERTER DAMPER VALVES",
   "model": "BE60 SERIES",
-  "image": "/images/gallery/be60/BE60-Pneumatic-Diverter-Dia-500.webp",
+  "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES.png",
   "category": "control",
   "categoryLabel": "Intelligent Flow Diversion Technology",
   "tagline": "Intelligent Flow Diversion Technology specially engineered for reliable diversion, isolation, and routing of hot gases and process media.",
   "desc": "Bellator BE60 Series Three Way Diverter Damper Valves are specially engineered for reliable diversion, isolation, and routing of hot gases and process media in critical industrial systems. Designed to handle high temperature, dusty, and corrosive gas applications, these dampers ensure low pressure drop, dependable sealing performance, and smooth operational switching between multiple process lines.",
   "longDesc": "The BE60 Series is designed for demanding service conditions where reliable diversion control is essential for safe and efficient plant operation. Optimized flow path geometry and robust fabricated construction ensure stable operation, reduced thermal stress, and long operational life under continuous duty conditions.\n\nManufactured using advanced engineering and validation practices, the BE60 Series dampers are available in multiple orientation configurations with Pneumatic, Electric, Hydraulic, or Manual operation options to suit specific application requirements.",
-  "taglineBrochure": "“Intelligent Flow Diversion • Robust Construction • Reliable Performance”",
+  "taglineBrochure": "\u201cIntelligent Flow Diversion \u2022 Robust Construction \u2022 Reliable Performance\u201d",
   "keyHighlights": [
     "Reliable Flow Diversion Technology with smooth operational switching",
     "Low Pressure Drop Design with optimized flow path geometry",
     "Available in Multiple Orientations (BE-1 through BE-7 configurations)",
     "Heavy Duty Fabricated Construction ensuring long operational life",
-    "Smooth Switching Operation & High Temperature Handling up to 825°C",
+    "Smooth Switching Operation & High Temperature Handling up to 825\u00b0C",
     "Suitable for Dusty & Corrosive Media in harsh industrial environments"
   ],
   "leakage": "Up to 99.95%",
-  "temp": "-25°C to 825°C",
+  "temp": "-25\u00b0C to 825\u00b0C",
   "pressure": "Up to PN1",
-  "sizes": "Ø150 mm to Ø3000 mm (Round) / Up to 3000 mm (Rectangular)",
+  "sizes": "\u00d8150 mm to \u00d83000 mm (Round) / Up to 3000 mm (Rectangular)",
   "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft",
   "actuation": "Manual / Pneumatic / Electric / Hydraulic",
   "standards": "API / ASME / ISO",
@@ -37,7 +37,7 @@
     },
     {
       "parameter": "Size Range",
-      "details": "Ø150 mm to Ø3000 mm"
+      "details": "\u00d8150 mm to \u00d83000 mm"
     },
     {
       "parameter": "End Connection",
@@ -53,7 +53,7 @@
     },
     {
       "parameter": "Design Temperature",
-      "details": "-25°C to 825°C"
+      "details": "-25\u00b0C to 825\u00b0C"
     },
     {
       "parameter": "Standards",
@@ -173,24 +173,49 @@
   ],
   "galleryImages": [
     {
+      "title": "MOTORIZED THREE WAY DIVERTER DAMPER",
+      "subtitle": "BE60 Series High Flow Diverter",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES.png"
+    },
+    {
+      "title": "MOTORIZED THREE WAY DIVERTER DAMPER",
+      "subtitle": "Size 1200 mm",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES SIZE 1200.png"
+    },
+    {
+      "title": "MOTORIZED THREE WAY DIVERTER DAMPER",
+      "subtitle": "Size 1250 mm",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES SIZE 1250MM.png"
+    },
+    {
+      "title": "MOTORIZED SQUARE DIVERTER DAMPER",
+      "subtitle": "Size Sq. 1500 mm",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES SIZE SQ. 1500.png"
+    },
+    {
       "title": "PNEUMATIC THREE WAY DIVERTER DAMPER",
-      "subtitle": "Dia 500 mm",
-      "image": "/images/gallery/be60/BE60-Pneumatic-Diverter-Dia-500.webp"
+      "subtitle": "Size 450 mm",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - PNEUMATIC THREE WAY DIVERTER DAMPER VALVES SIZE 450MM.png"
     },
     {
-      "title": "MOTORISED THREE WAY DIVERTER DAMPER",
-      "subtitle": "Dia 1200 mm (Pair)",
-      "image": "/images/gallery/be60/BE60-Motorised-Diverter-Dia-1200-Pair.webp"
+      "title": "PNEUMATIC THREE WAY DIVERTER DAMPER",
+      "subtitle": "Size 700 mm",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - PNEUMATIC THREE WAY DIVERTER DAMPER VALVES SIZE 700 MM .png"
     },
     {
-      "title": "MOTORISED THREE WAY DIVERTER DAMPER",
-      "subtitle": "Dia 1200 mm (Production Line)",
-      "image": "/images/gallery/be60/BE60-Motorised-Diverter-Dia-1200-Line.webp"
+      "title": "PNEUMATIC THREE WAY DIVERTER DAMPER",
+      "subtitle": "Supply to Unilever Mexico",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - PNEUMATIC THREE WAY DIVERTER DAMPER VALVES_UNILEVER MEXICO.png"
     },
     {
-      "title": "BE60 ORIENTATION OPTIONS",
-      "subtitle": "BE-1 to BE-7 Flow Routing Configurations",
-      "image": "/images/gallery/be60/BE60-Orientation-Options-Chart.webp"
+      "title": "THREE WAY DIVERTER DAMPER VALVE",
+      "subtitle": "Site Installation Photo",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES_SITE PHOTO.JPG"
+    },
+    {
+      "title": "THREE WAY DIVERTER DAMPER VALVE",
+      "subtitle": "Site Installation View",
+      "image": "/images/gallery/BE60 SERIES_THREE WAY DIVERTER DAMPER VALVES/BE60 SERIES - MOTORIZED THREE WAY DIVERTER DAMPER VALVES_SITE PHOTO1.JPG"
     }
   ],
   "industriesServed": [

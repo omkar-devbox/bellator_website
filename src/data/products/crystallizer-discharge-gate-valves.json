@@ -2,7 +2,7 @@
   "id": "crystallizer-discharge-gate-valves",
   "title": "Crystallizer Discharge Gate Valves",
   "model": "CDGV Series",
-  "image": "/images/products/Motorized-Crystallizer-Discharge-Gate-Valve.png",
+  "image": "/images/gallery/CDGV SERIES_CRYSTALLIZER DISCHARGE GATE VALVES/CDGV SERIES - MOTORIZED CRYSTALLIZER DISCHARGE GATE VALVE.png",
   "category": "control",
   "categoryLabel": "Flush Bottom Seat",
   "tagline": "Sanitary pocketless flush-bottom discharge gate valve for sugar, ethanol, and slurry crystallization vessels.",
@@ -32,5 +32,12 @@
     "Ethanol Fermentation Vessel Bottom Drainage",
     "Chemical & Fertilizer Slurry Crystallizers",
     "Pharmaceutical Evaporator & Thickener Tanks"
+  ],
+  "galleryImages": [
+    {
+      "title": "MOTORIZED CRYSTALLIZER DISCHARGE GATE VALVE",
+      "subtitle": "CDGV Series Flush Tank Bottom Seating",
+      "image": "/images/gallery/CDGV SERIES_CRYSTALLIZER DISCHARGE GATE VALVES/CDGV SERIES - MOTORIZED CRYSTALLIZER DISCHARGE GATE VALVE.png"
+    }
   ]
 }

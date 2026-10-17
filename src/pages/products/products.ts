@@ -101,8 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Clicking anywhere on card itself navigates to dedicated detail page
-  cards.forEach(card => {
+  cards.forEach((card, idx) => {
     card.style.cursor = 'pointer';
+    card.classList.add('scroll-reveal-item');
+    card.style.setProperty('--stagger-delay', `${(idx % 3) * 110}ms`);
     card.addEventListener('click', () => {
       const cardId = card.getAttribute('data-id');
       if (cardId) {
@@ -110,4 +112,42 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Initialize 1-by-1 Scroll Load/Unload Animations
+  initScrollLoadUnload();
 });
+
+function initScrollLoadUnload(): void {
+  const elements = document.querySelectorAll<HTMLElement>(
+    '.scroll-reveal, .scroll-reveal-item, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .scroll-heading, .scroll-subtext, .scroll-badge, .scroll-mask-wrap'
+  );
+  if (elements.length === 0) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    elements.forEach((el) => el.classList.add('is-loaded'));
+    return;
+  }
+
+  const observerOptions: IntersectionObserverInit = {
+    root: null,
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const el = entry.target as HTMLElement;
+      if (entry.isIntersecting) {
+        // Loads row item 1 by 1
+        el.classList.add('is-loaded');
+      } else {
+        // Unloads when scrolled out of view
+        el.classList.remove('is-loaded');
+      }
+    });
+  }, observerOptions);
+
+  elements.forEach((el) => observer.observe(el));
+}
+
+

@@ -2,25 +2,25 @@
   "id": "poppet-damper-valves",
   "title": "BE80 : POPPET DAMPER VALVES",
   "model": "BE80 SERIES",
-  "image": "/images/gallery/be80/BE80-Hero-Pneumatic-Three-Way-Dia-1200.webp",
+  "image": "/images/gallery/BE80 SERIES_POPPET DAMPER VALVES/BE80 SERIES - PNEUMATIC POPPET DAMPER VALVES.png",
   "category": "control",
   "categoryLabel": "Advanced Vertical Isolation Technology",
   "tagline": "Advanced Vertical Isolation Technology specially engineered for reliable shut-off, flow diversion, and positive isolation applications.",
   "desc": "Bellator BE80 Series Poppet Damper Valves are specially engineered for reliable shut-off, flow diversion, and positive isolation applications involving dusty, corrosive, and high temperature process media. The vertical reciprocating disc arrangement provides dependable sealing performance, reduced pressure loss, and reliable operation under demanding service conditions.",
   "longDesc": "Designed for critical process isolation applications, the BE80 Series ensures smooth vertical sealing movement and enhanced operational reliability during continuous operation. The optimized sealing arrangement minimizes leakage and improves long-term performance in challenging industrial environments.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE80 Series dampers are available in Two-Way and Three-Way configurations with Vertical or Horizontal mounting orientations and multiple automation options.",
-  "taglineBrochure": "“Advanced Vertical Isolation Technology • High Performance • Reliable Shut-Off”",
+  "taglineBrochure": "\u201cAdvanced Vertical Isolation Technology \u2022 High Performance \u2022 Reliable Shut-Off\u201d",
   "keyHighlights": [
     "Vertical Reciprocating Sealing Design with dependable positive shut-off",
     "Available in Two-Way & Three-Way Designs for versatile process layouts",
-    "High Temperature Capability suitable up to 825°C",
+    "High Temperature Capability suitable up to 825\u00b0C",
     "Low Pressure Drop Design & Heavy Duty Fabricated Construction",
     "Anti-Gravity Lock Protection & multiple automation options",
     "Suitable for Dusty & Corrosive Media in harsh industrial environments"
   ],
   "leakage": "Up to 99.95%",
-  "temp": "-25°C to 825°C",
+  "temp": "-25\u00b0C to 825\u00b0C",
   "pressure": "Up to PN1",
-  "sizes": "Ø300 mm to Ø3500 mm (Round) / Up to 2500 mm (Rectangular)",
+  "sizes": "\u00d8300 mm to \u00d83500 mm (Round) / Up to 2500 mm (Rectangular)",
   "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316 | Seat: Metallic | Seal: Metallic / Soft",
   "actuation": "Manual / Pneumatic / Electric / Hydraulic",
   "standards": "API / ASME / ISO",
@@ -37,7 +37,7 @@
     },
     {
       "parameter": "Size Range",
-      "details": "Ø300 mm to Ø3500 mm"
+      "details": "\u00d8300 mm to \u00d83500 mm"
     },
     {
       "parameter": "End Connection",
@@ -53,7 +53,7 @@
     },
     {
       "parameter": "Design Temperature",
-      "details": "-25°C to 825°C"
+      "details": "-25\u00b0C to 825\u00b0C"
     },
     {
       "parameter": "Mounting",
@@ -120,7 +120,7 @@
     "Vertical Reciprocating Sealing Design",
     "Reliable Positive Isolation",
     "Available in Two-Way & Three-Way Designs",
-    "Suitable up to 825°C",
+    "Suitable up to 825\u00b0C",
     "Low Pressure Drop Design",
     "Heavy Duty Fabricated Construction",
     "Anti-Gravity Lock Protection",
@@ -189,24 +189,29 @@
   ],
   "galleryImages": [
     {
-      "title": "PNEUMATIC TWO WAY POPPET DAMPER",
-      "subtitle": "Size Dia 1400 mm (RTO Application)",
-      "image": "/images/gallery/be80/BE80-Pneumatic-Two-Way-Dia-1400.webp"
+      "title": "PNEUMATIC POPPET DAMPER VALVE",
+      "subtitle": "BE80 Series Fast-Acting Isolation",
+      "image": "/images/gallery/BE80 SERIES_POPPET DAMPER VALVES/BE80 SERIES - PNEUMATIC POPPET DAMPER VALVES.png"
     },
     {
       "title": "PNEUMATIC TWO WAY POPPET DAMPER",
-      "subtitle": "Size Dia 500 mm (RTO Application)",
-      "image": "/images/gallery/be80/BE80-Pneumatic-Two-Way-Dia-500.webp"
+      "subtitle": "RTO (Regenerative Thermal Oxidizer) Duty",
+      "image": "/images/gallery/BE80 SERIES_POPPET DAMPER VALVES/_BE80 SERIES - PNEUAMTIC TWO WAY POPPET DAMPER VALVES_FOR RTO.png"
     },
     {
-      "title": "PNEUMATIC TWO WAY HORIZONTAL ORIENTATION POPPET DAMPER",
-      "subtitle": "Size Dia 900 mm (RTO Application)",
-      "image": "/images/gallery/be80/BE80-Pneumatic-Two-Way-Horizontal-Dia-900.webp"
+      "title": "PNEUMATIC TWO WAY POPPET DAMPER",
+      "subtitle": "Size 1400 mm for RTO System",
+      "image": "/images/gallery/BE80 SERIES_POPPET DAMPER VALVES/_BE80 SERIES - PNEUAMTIC TWO WAY POPPET DAMPER VALVES_SIZE 1400_FOR RTO.png"
     },
     {
-      "title": "MOTORISED THREE WAY POPPET DAMPER",
-      "subtitle": "Size Dia 700 mm (Bag Filter Application)",
-      "image": "/images/gallery/be80/BE80-Motorised-Three-Way-Dia-700.webp"
+      "title": "PNEUMATIC THREE WAY POPPET DAMPER",
+      "subtitle": "Size 1200 mm High Temperature",
+      "image": "/images/gallery/BE80 SERIES_POPPET DAMPER VALVES/_BE80 SERIES - PNEUMATIC THREE WAY POPPET DAMPER VALVES SIZE 1200.png"
+    },
+    {
+      "title": "PNEUMATIC THREE WAY POPPET DAMPER",
+      "subtitle": "Severe Service Flow Diversion",
+      "image": "/images/gallery/BE80 SERIES_POPPET DAMPER VALVES/_BE80 SERIES - PNEUMATIC THREE WAY POPPET DAMPER VALVES.png"
     }
   ],
   "industriesServed": [

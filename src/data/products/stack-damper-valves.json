@@ -2,7 +2,7 @@
   "id": "stack-damper-valves",
   "title": "Stack Damper Valves",
   "model": "BE-SD Series",
-  "image": "/images/products/Motorized-Stack-Damper-Valve.png",
+  "image": "/images/gallery/BE160 SERIES_STACK DAMPER VALVES/BE160 SERIES - MOTORIZED STACK DAMPER VALVE.png",
   "category": "severe",
   "categoryLabel": "Chimney Heat Retention",
   "tagline": "Top-of-stack cap damper retaining boiler warmth and shielding chimneys against monsoon weather ingress.",
@@ -32,5 +32,12 @@
     "Combined Cycle Bypass Stack Outlets",
     "Waste Heat Recovery Boiler (WHRB) Stack Tops",
     "Industrial Incinerator and Smelter Discharge Stacks"
+  ],
+  "galleryImages": [
+    {
+      "title": "MOTORIZED STACK DAMPER VALVE",
+      "subtitle": "BE160 Series Top-of-Stack Weather & Heat Cap",
+      "image": "/images/gallery/BE160 SERIES_STACK DAMPER VALVES/BE160 SERIES - MOTORIZED STACK DAMPER VALVE.png"
+    }
   ]
 }

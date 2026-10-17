@@ -2,24 +2,24 @@
   "id": "guillotine-damper-valves",
   "title": "BE90 : GUILLOTINE DAMPER VALVES",
   "model": "BE90 SERIES",
-  "image": "/images/products/BE90-Motorized-Guillotine-Damper-Valve.png",
+  "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORISED GUILLOTINE DAMPER VALVES DIA 3600.png",
   "category": "isolation",
   "categoryLabel": "Sliding Blade Isolation",
   "tagline": "Engineered for Positive Isolation Performance in severe, dirty, and high-temperature gas handling systems.",
   "desc": "Bellator BE90 Series Guillotine Damper Valves are specially engineered for reliable positive isolation applications involving dusty, abrasive, high temperature, and process gas handling systems. The sliding blade arrangement provides dependable shut-off performance with minimal flow obstruction in the fully open position, making these dampers highly suitable for severe service conditions.",
   "longDesc": "Bellator BE90 Series Guillotine Damper Valves are specially engineered for reliable positive isolation applications involving dusty, abrasive, high temperature, and process gas handling systems. The sliding blade arrangement provides dependable shut-off performance with minimal flow obstruction in the fully open position, making these dampers highly suitable for severe service conditions.\n\nDesigned for heavy-duty industrial applications, the BE90 Series ensures reliable maintenance isolation and stable operation under continuous duty conditions. The robust blade guiding and sealing arrangement enhances operational reliability while minimizing wear during repeated operation cycles.\n\nManufactured with heavy-duty fabricated construction and advanced engineering practices, the BE90 Series dampers are available in Pneumatic, Hydraulic, Electric, and Manual operated configurations with customized designs to suit specific process requirements.",
-  "taglineBrochure": "“Engineered for Positive Isolation Performance • Heavy Duty Construction • Minimal Flow Obstruction”",
+  "taglineBrochure": "\u201cEngineered for Positive Isolation Performance \u2022 Heavy Duty Construction \u2022 Minimal Flow Obstruction\u201d",
   "keyHighlights": [
     "Positive Isolation Design with sliding blade shut-off technology",
     "Full Bore Unobstructed Opening with low pressure drop in open position",
-    "Suitable for Dusty, Abrasive & High Temperature Media up to 825°C",
+    "Suitable for Dusty, Abrasive & High Temperature Media up to 825\u00b0C",
     "Heavy Duty Sliding Blade Construction with robust guide & sealing system",
-    "Large Size Capability: Ø300 mm to Ø5000 mm Round / Rectangular up to 5000 mm"
+    "Large Size Capability: \u00d8300 mm to \u00d85000 mm Round / Rectangular up to 5000 mm"
   ],
   "leakage": "Up to 99.99%",
-  "temp": "-25°C to 825°C",
+  "temp": "-25\u00b0C to 825\u00b0C",
   "pressure": "Up to PN1",
-  "sizes": "Ø300 mm to Ø5000 mm (Rectangular up to 5000 mm)",
+  "sizes": "\u00d8300 mm to \u00d85000 mm (Rectangular up to 5000 mm)",
   "materials": "Body: IS2062 / SA516 Gr-70 / SS304 | Disc: SS304 / SS316 | Shaft: EN8D / SS410 / SS316",
   "actuation": "Manual / Pneumatic / Electric / Hydraulic",
   "standards": "API / ASME / ISO",
@@ -37,7 +37,7 @@
     },
     {
       "parameter": "Size Range",
-      "details": "Ø300 mm to Ø5000 mm"
+      "details": "\u00d8300 mm to \u00d85000 mm"
     },
     {
       "parameter": "End Connection",
@@ -53,7 +53,7 @@
     },
     {
       "parameter": "Design Temperature",
-      "details": "-25°C to 825°C"
+      "details": "-25\u00b0C to 825\u00b0C"
     },
     {
       "parameter": "Mounting",
@@ -130,7 +130,7 @@
     "Overcomes Conventional Damper Challenges (Incomplete shut-off under dusty service & high turbulence)",
     "Positive sliding blade isolation slices through heavy particulates and dense ash build-up",
     "Full flow opening with minimal flow obstruction and zero pressure drop in open position",
-    "Reinforced high temperature construction prevents blade distortion at elevated temperatures up to 825°C",
+    "Reinforced high temperature construction prevents blade distortion at elevated temperatures up to 825\u00b0C",
     "Reliable large duct isolation with robust blade guiding and sealing arrangement",
     "Eliminates difficult maintenance access with modular maintenance-friendly design"
   ],
@@ -182,49 +182,54 @@
   ],
   "galleryImages": [
     {
-      "title": "MOTORISED GUILLOTINE DAMPER",
-      "subtitle": "Size Dia 3600 mm",
-      "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-3600.webp"
+      "title": "MOTORISED GUILLOTINE DAMPER VALVE",
+      "subtitle": "Size Dia 3600 mm Heavy Duty",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORISED GUILLOTINE DAMPER VALVES DIA 3600.png"
     },
     {
-      "title": "MOTORISED GUILLOTINE DAMPER",
-      "subtitle": "Size 2200 X 1300 mm",
-      "image": "/images/gallery/be90/BE90-Motorised-Guillotine-2200x1300.webp"
+      "title": "MOTORIZED GUILLOTINE DAMPER VALVE",
+      "subtitle": "Size Dia 1400 mm",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORIZED GUILLOTINE DAMPER VALVES DIA1400.png"
     },
     {
-      "title": "MOTORISED GUILLOTINE DAMPER",
-      "subtitle": "Size Dia 1400 mm (SS304)",
-      "image": "/images/gallery/be90/BE90-Motorised-Guillotine-Dia-1400-SS304.webp"
+      "title": "MOTORISED SS GUILLOTINE DAMPER VALVE",
+      "subtitle": "Size 1200 mm Stainless Steel",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORISED GUILLOTINE DAMPER VALVES SIZE 1200 MM STAINLESS STEEL.png"
     },
     {
-      "title": "CHAIN PULLEY OPERATED GUILLOTINE",
-      "subtitle": "Rack N Pinion Mechanism Size 1000X800 mm",
-      "image": "/images/gallery/be90/BE90-Chain-Pulley-Rack-Pinion-1000x800.webp"
+      "title": "MOTORISED RECTANGULAR GUILLOTINE DAMPER",
+      "subtitle": "Rectangular Duct Isolation",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORISED GUILLOTINE DAMPER VALVES_RECT.png"
     },
     {
-      "title": "MOTORISED RACK N PINION GUILLOTINE",
-      "subtitle": "Size Dia 1200 mm",
-      "image": "/images/gallery/be90/BE90-Motorised-Rack-Pinion-Dia-1200.webp"
+      "title": "PNEUMATIC GUILLOTINE DAMPER VALVE",
+      "subtitle": "Size 2000 mm Quick-Acting",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - PNEUMATIC GUILLOTINE DAMPER VALVES SIZE 2000MM.png"
     },
     {
-      "title": "PNEUMATIC GUILLOTINE DAMPER",
-      "subtitle": "With Air Reservoir (Fail safe) Size Dia 800 mm",
-      "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-Air-Reservoir-Dia-800.webp"
+      "title": "PNEUMATIC GUILLOTINE DAMPER VALVE",
+      "subtitle": "With Fail-Safe Air Volume Tank",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - PNEUMATIC GUILLOTINE DAMPER VALVES WITH AIR RESERVIOR .png"
     },
     {
-      "title": "PNEUMATIC GUILLOTINE DAMPER",
-      "subtitle": "Size 2000X2000 mm",
-      "image": "/images/gallery/be90/BE90-Pneumatic-Guillotine-2000x2000.webp"
+      "title": "MANUAL CHAIN PULLEY GUILLOTINE DAMPER",
+      "subtitle": "Chain Pulley & Gear Mechanism",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MANUAL CHAIN PULLEY OPERATED GUILLOTINE DAMPER VALVES.png"
     },
     {
-      "title": "MOTORISED LEAD SCREW GUILLOTINE",
-      "subtitle": "Size Dia 1600 mm • Export Job to Saudi • 99.99% Sealing",
-      "image": "/images/gallery/be90/BE90-Motorised-Lead-Screw-Dia-1600.webp"
+      "title": "MANUAL GUILLOTINE DAMPER VALVE",
+      "subtitle": "Screw Driven Handwheel Operation",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MANUAL GUILLOTINE DAMPER VALVES_.png"
     },
     {
-      "title": "MANUAL LEAD SCREW GUILLOTINE",
-      "subtitle": "Size Sq. 600 mm",
-      "image": "/images/gallery/be90/BE90-Manual-Lead-Screw-Sq-600.webp"
+      "title": "GUILLOTINE DAMPER VALVE",
+      "subtitle": "Shop Leakage & Seal Testing",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - GUILLOTINE DAMPER VALVES_LEAK TESTING.png"
+    },
+    {
+      "title": "GUILLOTINE DAMPER VALVE",
+      "subtitle": "Site Installation Photo",
+      "image": "/images/gallery/BE90 SERIES_GUILLOTINE DAMPER VALVES/BE90 SERIES - MOTORISED GUILLOTINE DAMPER VALVES_SITE PHOTO.png"
     }
   ],
   "industriesServed": [

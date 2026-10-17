@@ -2,7 +2,7 @@
   "id": "right-angle-valves",
   "title": "Right Angle Valves",
   "model": "BE-190 Series",
-  "image": "/images/products/BE190-Manual-Right-Angle-Valve-manual.png",
+  "image": "/images/gallery/BE190 SERIES_RIGHT ANGLE VALVES/BE190 SERIES - MANUAL RIGHT ANGLE VALVE.png",
   "category": "control",
   "categoryLabel": "Elbow Diversion",
   "tagline": "Space-saving 90-degree directional elbow valve combining piping turn and process gas isolation.",
@@ -32,5 +32,12 @@
     "Corner Duct Transitions in Cement & Steel Plants",
     "Furnace Exhaust and Flue Gas Chimney Take-Offs",
     "Compact Industrial Skid Piping Systems"
+  ],
+  "galleryImages": [
+    {
+      "title": "MANUAL RIGHT ANGLE VALVE",
+      "subtitle": "BE190 Series 90° Directional Elbow",
+      "image": "/images/gallery/BE190 SERIES_RIGHT ANGLE VALVES/BE190 SERIES - MANUAL RIGHT ANGLE VALVE.png"
+    }
   ]
 }
