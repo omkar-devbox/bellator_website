@@ -508,7 +508,7 @@ function initHeroTypewriter() {
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       currentIndex = (currentIndex + 1) % slidesData.length;
-      
+
       // Synchronously switch the main headline too
       changeHeadline(slidesData[currentIndex].title);
 
