@@ -1312,25 +1312,36 @@ textarea:hover {
 /* ==========================================================================
    Floating Light Glassy Pill Navigation (Reference Design)
    ========================================================================== */
-.nav-pill-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex: 1 1 auto;
-  margin-left: auto;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+/* Hide desktop navigation pill menus on mobile (< 1024px) */
+@media (max-width: 1023px) {
+  .nav-pill-wrapper,
+  .nav-pill-capsule {
+    display: none !important;
+  }
 }
 
-.nav-pill-capsule {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.25rem;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin-left: auto;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+/* Show desktop navigation pill menus ONLY on desktop (>= 1024px) */
+@media (min-width: 1024px) {
+  .nav-pill-wrapper {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    margin-left: auto;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .nav-pill-capsule {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 1.25rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-left: auto;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
 }
 
 .nav-pill-link {
@@ -1362,7 +1373,7 @@ textarea:hover {
 }
 
 #navbar-dock {
-  background: #f1f3f5;
+  background: #ffffff;
   border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: 9999px;
   padding: 0.35rem 0.85rem 0.35rem 0.75rem;
@@ -1459,76 +1470,109 @@ textarea:hover {
 
 /* Hide hamburger menu button on desktop (>= 1024px) */
 @media (min-width: 1024px) {
-
   #mobile-menu-btn,
+  .hamburger-btn,
   .nav-circle-menu-btn {
     display: none !important;
   }
 }
 
-/* Show hamburger menu button ONLY on mobile devices (< 1024px) */
+/* Show animated hamburger menu button ONLY on mobile devices (< 1024px) */
 @media (max-width: 1023px) {
-
-  #mobile-menu-btn,
-  .nav-circle-menu-btn {
+  .hamburger-btn,
+  #mobile-menu-btn {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    border-radius: 0.75rem;
-    transition: all 0.22s ease;
+    flex-direction: column;
+    gap: 4.5px;
+    width: 38px;
+    height: 38px;
+    padding: 6px;
+    border-radius: 9999px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
     cursor: pointer;
+    transition: all 0.2s ease;
+    color: #0f172a !important;
     flex-shrink: 0;
+  }
+
+  .hamburger-btn:hover,
+  #mobile-menu-btn:hover {
+    background: rgba(15, 23, 42, 0.06) !important;
+  }
+
+  .hamburger-btn:active,
+  #mobile-menu-btn:active {
+    transform: scale(0.95);
+  }
+
+  .hamburger-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #0f172a;
+    border-radius: 2px;
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, background-color 0.2s ease;
+    transform-origin: center;
+  }
+
+  .hamburger-btn:hover .hamburger-bar,
+  #mobile-menu-btn:hover .hamburger-bar {
+    background-color: #EE6226;
+  }
+
+  /* Animated Hamburger to X transformation */
+  .hamburger-btn.is-open .hamburger-bar:nth-child(1),
+  #mobile-menu-btn.is-open .hamburger-bar:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+    background-color: #EE6226;
+  }
+
+  .hamburger-btn.is-open .hamburger-bar:nth-child(2),
+  #mobile-menu-btn.is-open .hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .hamburger-btn.is-open .hamburger-bar:nth-child(3),
+  #mobile-menu-btn.is-open .hamburger-bar:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+    background-color: #EE6226;
   }
 }
 
-/* When unscrolled: on dark hero background */
-#techno-navbar:not(.navbar-scrolled) #mobile-menu-btn,
-#techno-navbar:not(.navbar-scrolled) .nav-circle-menu-btn {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+/* Mobile Navbar Dock optimizations on smaller viewports */
+@media (max-width: 640px) {
+  #techno-navbar {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  #navbar-dock {
+    padding: 0.35rem 0.65rem 0.35rem 0.65rem !important;
+  }
 }
 
-#techno-navbar:not(.navbar-scrolled) #mobile-menu-btn:hover,
-#techno-navbar:not(.navbar-scrolled) .nav-circle-menu-btn:hover {
-  background: rgba(255, 255, 255, 0.25) !important;
-  color: #EE6226 !important;
-  border-color: rgba(238, 98, 38, 0.5) !important;
+/* Mobile Dropdown Menu animations */
+#mobile-menu:not(.hidden) {
+  animation: mobileMenuFadeIn 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top center;
 }
 
-/* When scrolled: on white pill dock (Fixes white-on-white hamburger bug) */
-#techno-navbar.navbar-scrolled #mobile-menu-btn,
-.navbar-scrolled #mobile-menu-btn,
-#techno-navbar.navbar-scrolled .nav-circle-menu-btn,
-.navbar-scrolled .nav-circle-menu-btn {
-  background: #f1f5f9 !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08) !important;
-}
-
-#techno-navbar.navbar-scrolled #mobile-menu-btn:hover,
-.navbar-scrolled #mobile-menu-btn:hover,
-#techno-navbar.navbar-scrolled .nav-circle-menu-btn:hover,
-.navbar-scrolled .nav-circle-menu-btn:hover {
-  background: #fff7ed !important;
-  border-color: #EE6226 !important;
-  color: #EE6226 !important;
-}
-
-#techno-navbar #mobile-menu-btn svg,
-#techno-navbar .nav-circle-menu-btn svg {
-  stroke: currentColor !important;
-}
-
-/* When mobile menu is actively open */
-#mobile-menu-btn.is-open,
-.nav-circle-menu-btn.is-open {
-  background: #fff7ed !important;
-  border-color: #EE6226 !important;
-  color: #EE6226 !important;
+@keyframes mobileMenuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* Inner pill capsule inside scrolled white bar */

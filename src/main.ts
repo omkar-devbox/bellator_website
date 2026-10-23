@@ -1,37 +1,6 @@
 import './style.css';
 import { initSharedNavigation } from './assets/js/nav';
 
-// Navigation menu toggle (mobile button & dock circle button)
-const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-const dockMenuBtn = document.getElementById('dock-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-
-function toggleMenu() {
-  if (!mobileMenu) return;
-  const isHidden = mobileMenu.classList.contains('hidden');
-  if (isHidden) {
-    mobileMenu.classList.remove('hidden');
-  } else {
-    mobileMenu.classList.add('hidden');
-  }
-}
-
-if (mobileMenuBtn && mobileMenu) {
-  mobileMenuBtn.addEventListener('click', toggleMenu);
-}
-
-if (dockMenuBtn && mobileMenu) {
-  dockMenuBtn.addEventListener('click', toggleMenu);
-}
-
-if (mobileMenu) {
-  // Close mobile menu when clicking navigation links
-  mobileMenu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-  });
-}
 
 // Quick Enquiry Form Submission handler
 const enquiryForm = document.getElementById('home-enquiry-form') as HTMLFormElement | null;

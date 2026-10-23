@@ -467,38 +467,141 @@
           </a>
         </div>
       </div>
-
-      <!-- Right Action: Mobile Menu Button -->
-      <div class="flex items-center gap-3 flex-shrink-0">
-        <!-- Mobile Menu Trigger -->
+      <!-- Right Action: Mobile Menu Button (Clean Pill Integration) -->
+      <div class="flex items-center gap-2 flex-shrink-0 lg:hidden">
+        <!-- Mobile Menu Trigger (Animated 3-Bar Hamburger) -->
         <button id="mobile-menu-btn"
-          class="lg:hidden p-2 text-white hover:text-[#EE6226] transition-colors rounded-xl bg-white/10 backdrop-blur-md border border-white/20"
-          aria-label="Toggle mobile menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+          class="hamburger-btn"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Dropdown Menu -->
+    <!-- Mobile Dropdown Menu (Same Clean Design System) -->
     <div id="mobile-menu"
-      class="hidden lg:hidden border border-white/15 mt-3 py-3 px-5 rounded-2xl bg-[#070c18]/95 backdrop-blur-2xl shadow-2xl flex flex-col space-y-2">
+      class="hidden lg:hidden border border-slate-200/90 mt-3 py-3 px-3.5 rounded-2xl bg-white/98 backdrop-blur-2xl shadow-[0_20px_45px_rgba(15,23,42,0.16)] flex flex-col space-y-1.5 text-left text-slate-800">
       <a href="/"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Home</a>
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>Home</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
       <a href="/about-us.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-[#EE6226] bg-white/10 rounded-lg"
-        aria-current="page">About Us</a>
-      <a href="/products.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Products</a>
+        class="py-2.5 px-3.5 text-xs font-bold uppercase tracking-wider text-[#EE6226] bg-orange-50/90 rounded-xl flex items-center justify-between border-l-3 border-[#EE6226]">
+        <span>About Us</span>
+        <span class="text-xs text-[#EE6226]">&rarr;</span>
+      </a>
+      <!-- Mobile Products Dropdown Accordion -->
+      <div class="mobile-products-accordion rounded-xl border border-slate-100/80 bg-slate-50/50 overflow-hidden">
+        <button id="mobile-products-toggle" type="button"
+          class="w-full group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between cursor-pointer"
+          aria-expanded="false" aria-controls="mobile-products-submenu">
+          <div class="flex items-center gap-2">
+            <span>Products</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-orange-50 text-[#EE6226] border border-orange-200/80">22 Models</span>
+          </div>
+          <svg id="mobile-products-chevron" class="w-4 h-4 text-slate-400 group-hover:text-[#EE6226] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <!-- Submenu Accordion Panel -->
+        <div id="mobile-products-submenu" class="hidden px-2 pt-1 pb-2 space-y-1 bg-white border-t border-slate-100">
+          <!-- All Products Direct Link -->
+          <a href="/products.html"
+            class="flex items-center justify-between py-2 px-3 rounded-lg text-xs font-bold text-[#EE6226] bg-orange-50/70 border border-orange-200/60 hover:bg-[#EE6226] hover:text-white transition-all">
+            <span>Explore All 22 Damper Valves</span>
+            <span class="text-xs">&rarr;</span>
+          </a>
+
+          <!-- Popular Models Quick Directory -->
+          <div class="pt-1 space-y-0.5 max-h-[38vh] overflow-y-auto pr-0.5 divide-y divide-slate-50">
+            <a href="/product-detail.html?id=butterfly-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Butterfly Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE10</span>
+            </a>
+            <a href="/product-detail.html?id=double-offset-butterfly-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Double Offset Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE20</span>
+            </a>
+            <a href="/product-detail.html?id=guillotine-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Guillotine Gate Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE90</span>
+            </a>
+            <a href="/product-detail.html?id=multi-louver-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Multi-Louver Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE70</span>
+            </a>
+            <a href="/product-detail.html?id=poppet-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Poppet Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE80</span>
+            </a>
+            <a href="/product-detail.html?id=double-disc-gate-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Double Disc Gate Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE100</span>
+            </a>
+            <a href="/product-detail.html?id=three-way-diverter-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Three-Way Diverters</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE60</span>
+            </a>
+            <a href="/product-detail.html?id=refractory-lined-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Refractory Lined (1200°C)</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE-REF</span>
+            </a>
+            <a href="/product-detail.html?id=air-seal-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Air Seal Zero-Leakage</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE50</span>
+            </a>
+            <a href="/product-detail.html?id=stack-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Stack Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE140</span>
+            </a>
+            <a href="/product-detail.html?id=fire-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Fire Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE130</span>
+            </a>
+            <a href="/product-detail.html?id=slide-gate-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Slide Gate Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE150</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <a href="/careers.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Careers</a>
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>Careers</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
       <a href="/contact-us.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Contact
-        Us</a>
-      <a href="/contact-us.html#connect-desk"
-        class="mt-2 text-center rounded-full bg-[#EE6226] py-2.5 text-xs font-bold uppercase tracking-wider text-white">Talk
-        To Experts</a>
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>Contact Us</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
+      <div class="pt-2 border-t border-slate-100 mt-1">
+        <a href="/contact-us.html#connect-desk"
+          class="block text-center rounded-xl bg-gradient-to-r from-[#EE6226] to-[#d8551d] py-3 text-xs font-bold uppercase tracking-wider text-white shadow-md shadow-orange-500/20 hover:brightness-110 transition-all">
+          Talk To Engineering Experts
+        </a>
+        <p class="text-center text-[10px] text-slate-400 mt-2 font-medium uppercase tracking-wider">
+          Bellator Engineers &bull; Pune, India
+        </p>
+      </div>
     </div>
   </nav>
 
@@ -595,25 +698,21 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start">
 
           <!-- Left Column: Headers, Engineering Core & 4 Actuation Cards -->
-          <div class="lg:col-span-7 xl:col-span-7 space-y-5 text-left scroll-reveal-left delay-100">
+          <div class="lg:col-span-7 xl:col-span-7 space-y-4 text-left scroll-reveal-left delay-100">
 
-            <!-- Section Eyebrow with Orange Accent Line -->
-            <div class="flex items-center gap-2.5">
-              <span class="w-6 h-[2.5px] bg-[#FC5814] rounded-full inline-block"></span>
-              <span class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
-                SPECIALIZED ENGINEERING &bull; PUNE, INDIA
-              </span>
-            </div>
+            <!-- Section Eyebrow -->
+            <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
+              SPECIALIZED ENGINEERING &bull; PUNE, INDIA
+            </span>
 
-            <!-- Primary Section Heading with 'In-Depth' highlighted in orange -->
+            <!-- Primary Section Heading -->
             <h2
-              class="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-black leading-[1.12] tracking-tight text-[#0B132A] scroll-heading">
-              Tailored Solutions Built Through<br />
-              <span class="text-[#FC5814]">In-Depth</span> Application Studies
+              class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+              Tailored Solutions Built Through In-Depth Application Studies
             </h2>
 
             <!-- Subtitle -->
-            <p class="text-xs sm:text-sm md:text-base font-normal text-slate-500 scroll-subtext delay-100 max-w-2xl">
+            <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-2xl">
               Engineered to Application Requirements, Operating Pressures &amp; Thermal Envelopes
             </p>
 
@@ -842,133 +941,163 @@
       </div>
     </section>
 
-    <!-- 3. QUALITY ASSURANCE, TESTING & ASME SECTION IX (60% White, 30% Slate Cards, 10% Flame Accents) -->
-    <section class="relative w-full overflow-hidden bg-white px-4 py-16 md:py-24 lg:px-12 border-b border-slate-200">
+    <!-- 3. QUALITY ASSURANCE, TESTING & ASME SECTION IX (Pixel-Perfect Pure Code) -->
+    <section
+      class="relative w-full overflow-hidden bg-[#FAFCFF] px-4 py-16 md:py-20 lg:px-12 border-b border-slate-200">
+
       <div class="relative z-10 mx-auto">
         <!-- Section Header -->
         <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
             QUALITY ASSURANCE &bull; TESTING EXCELLENCE
           </span>
 
           <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
             ASNT Level-II Certified Engineers &bull; ASME Section IX Qualified Welders
           </h2>
 
-          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-3xl">
-            From manufacturing to dispatch, we adhere to our own rigorous procedures, developed in line with
-            international standards and SOPs, to ensure the delivery of world-class quality Damper Valves.
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl leading-relaxed">
+            From manufacturing to dispatch, we adhere to our own rigorous procedures, developed in line with international standards and EQP, to ensure the delivery of world-class quality Damper Valves.
           </p>
         </div>
 
         <!-- 4 Quality Pillars Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Pillar 1: ASNT Level-II Team -->
-          <div class="quality-card scroll-reveal delay-100">
-            <div
-              class="w-11 h-11 rounded-xl bg-orange-50 text-[#EE6226] flex items-center justify-center font-bold text-lg mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Card 1: ASNT Level-II QA/QC -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-lg hover:border-orange-300 transition-all duration-300 group scroll-reveal delay-100">
+            <div>
+              <div
+                class="w-11 h-11 rounded-xl bg-[#FFF5F0] border border-[#FFE2D5] flex items-center justify-center text-[#EE6226] mb-5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="9" r="4" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 13v8m-3.5-3l3.5 3 3.5-3" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 15l-3 4 3-1 2 2" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 15l3 4-3-1-2 2" />
+                </svg>
+              </div>
+              <h3 class="text-[16px] font-bold text-[#0F172A] mb-2 leading-snug">ASNT Level-II QA/QC</h3>
+              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
+                We have a team of experienced ASNT Level-II Certified engineers to perform precise tests before
+                dispatch.
+              </p>
             </div>
-            <h3 class="text-base font-bold text-[#0F172A] mb-2">ASNT Level-II QA/QC</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              We boast a strong in-house team of QA &amp; QC Engineers certified as <strong class="text-[#0F172A]">ASNT
-                Level-II</strong>. Every valve undergoes certified inspection before clearance.
-            </p>
-            <div
-              class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-[#EE6226] font-semibold">
-              <span>NDT Certified</span>
-              <span>100% In-House</span>
-            </div>
-          </div>
-
-          <!-- Pillar 2: ASME Section IX Welders -->
-          <div class="quality-card scroll-reveal delay-150">
-            <div
-              class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-lg mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold text-[#0F172A] mb-2">ASME Section IX Welders</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Our welding professionals are fully qualified as per <strong class="text-[#0F172A]">ASME Section
-                IX</strong>,
-              guaranteeing structural integrity under severe thermal shock and cycloid pressure pulses.
-            </p>
-            <div
-              class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-blue-600 font-semibold">
-              <span>GTAW / GMAW / SAW</span>
-              <span>ASME Sec IX</span>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+              <span class="text-slate-500 font-medium">NDT Certified</span>
+              <a href="/contact-us.html"
+                class="inline-flex items-center gap-1 text-[#EE6226] hover:translate-x-0.5 transition-transform">
+                <span>View Details</span>
+                <span>&rarr;</span>
+              </a>
             </div>
           </div>
 
-          <!-- Pillar 3: 100% Damper Testing -->
-          <div class="quality-card scroll-reveal delay-200">
-            <div
-              class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-              </svg>
+          <!-- Card 2: ASME Section IX Welders -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-lg hover:border-blue-300 transition-all duration-300 group scroll-reveal delay-150">
+            <div>
+              <div
+                class="w-11 h-11 rounded-xl bg-[#EFF6FF] border border-[#DBEAFE] flex items-center justify-center text-[#2563EB] mb-5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 2a7 7 0 00-7 7v4a7 7 0 0014 0V9a7 7 0 00-7-7z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 10h6v3H9z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 17h4" />
+                </svg>
+              </div>
+              <h3 class="text-[16px] font-bold text-[#0F172A] mb-2 leading-snug">ASME Section IX Welders</h3>
+              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
+                Our welding personnel are <strong class="text-[#0F172A] font-semibold">ASME Section IX</strong>
+                qualified, ensuring structural integrity and reliable performance.
+              </p>
             </div>
-            <h3 class="text-base font-bold text-[#0F172A] mb-2">100% Engineer Testing</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Each damper undergoes <strong class="text-[#0F172A]">100% testing by our ASNT Level-II Engineer</strong>,
-              ensuring the highest level of quality assurance prior to factory dispatch.
-            </p>
-            <div
-              class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-emerald-600 font-semibold">
-              <span>Zero-Bypass Check</span>
-              <span>100% Tested</span>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+              <span class="text-blue-600 font-medium font-mono text-[11px]">PQR / WPS / WPQ</span>
+              <a href="/contact-us.html"
+                class="inline-flex items-center gap-1 text-[#2563EB] hover:translate-x-0.5 transition-transform">
+                <span>View Details</span>
+                <span>&rarr;</span>
+              </a>
             </div>
           </div>
 
-          <!-- Pillar 4: International SOPs -->
-          <div class="quality-card scroll-reveal delay-250">
-            <div
-              class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
+          <!-- Card 3: 100% Engineer Testing -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-lg hover:border-emerald-300 transition-all duration-300 group scroll-reveal delay-200">
+            <div>
+              <div
+                class="w-11 h-11 rounded-xl bg-[#F0FDF4] border border-[#DCFCE7] flex items-center justify-center text-[#16A34A] mb-5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 13l2 2 4-4" />
+                </svg>
+              </div>
+              <h3 class="text-[16px] font-bold text-[#0F172A] mb-2 leading-snug">100% Engineer Testing</h3>
+              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
+                Each damper valve undergoes 100% testing by our <strong class="text-[#0F172A] font-semibold">ASNT
+                  Level-II</strong> engineers, ensuring high standards of quality and performance.
+              </p>
             </div>
-            <h3 class="text-base font-bold text-[#0F172A] mb-2">Standard Operating SOPs</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Proprietary quality manual crafted in line with ISO 9001:2015, AMCA 500-D, and EN/BS standards covering
-              raw materials, metallurgy, welding, machining, and coating.
-            </p>
-            <div
-              class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-amber-600 font-semibold">
-              <span>International SOP</span>
-              <span>Traceable QA</span>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+              <span class="text-emerald-600 font-medium">Zero Defects Goal</span>
+              <a href="/contact-us.html"
+                class="inline-flex items-center gap-1 text-[#16A34A] hover:translate-x-0.5 transition-transform">
+                <span>View Details</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Standard Operating SOPs -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-lg hover:border-amber-300 transition-all duration-300 group scroll-reveal delay-250">
+            <div>
+              <div
+                class="w-11 h-11 rounded-xl bg-[#FFFBEB] border border-[#FEF3C7] flex items-center justify-center text-[#D97706] mb-5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 class="text-[16px] font-bold text-[#0F172A] mb-2 leading-snug">Standard Operating SOPs</h3>
+              <p class="text-[13px] text-slate-500 leading-relaxed font-normal">
+                Properly defined and maintained in-house SOPs cover manufacturing, QA/QC, testing and final dispatch to
+                ensure consistent quality.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+              <span class="text-amber-700 font-medium">Standardized QA</span>
+              <a href="/contact-us.html"
+                class="inline-flex items-center gap-1 text-[#D97706] hover:translate-x-0.5 transition-transform">
+                <span>View Details</span>
+                <span>&rarr;</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Testing Facility Photography Strip -->
+        <!-- Testing Facility FAT Rig Banner (Matching Screenshot Exact Bar Layout) -->
         <div
-          class="mt-12 p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
+          class="mt-7 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4 scroll-reveal delay-300">
           <div class="flex items-center gap-4">
             <div
-              class="w-12 h-12 rounded-xl bg-[#EE6226] text-white flex items-center justify-center flex-shrink-0 font-bold">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF5722] to-[#EE6226] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
               </svg>
             </div>
             <div>
-              <h4 class="text-sm font-bold text-[#0F172A]">Complete In-House Factory Acceptance Testing (FAT) Rig</h4>
-              <p class="text-xs text-slate-600 mt-0.5">Air-seal zero leakage testing, actuator torque measurement, limit
-                switch calibration, and high-temp cycle testing.</p>
+              <h4 class="text-[15px] font-bold text-[#0F172A] leading-snug">Comprehensive In-House Factory Acceptance
+                Testing (FAT) Rig</h4>
+              <p class="text-[13px] text-slate-500 mt-0.5">Our dedicated in-house FAT rig allows us to simulate actual
+                operating conditions, verify performance and ensure compliance before dispatch.</p>
             </div>
           </div>
           <a href="/contact-us.html"
-            class="inline-flex items-center gap-2 rounded-full bg-[#0F172A] px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-[#EE6226] transition-colors flex-shrink-0">
+            class="inline-flex items-center gap-2 rounded-xl bg-[#0F172A] px-5 py-2.5 text-xs font-semibold text-white hover:bg-[#EE6226] transition-colors flex-shrink-0 shadow-sm">
             <span>Request QA Manual / SOP</span>
             <span class="text-xs">&rarr;</span>
           </a>
@@ -982,18 +1111,17 @@
       <div class="relative z-10 mx-auto">
         <!-- Section Header -->
         <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
             PROACTIVE RELIABILITY &bull; FAILURE PREVENTION
           </span>
 
           <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
             Design Failure Modes &amp; Effect Analysis (DFMEA)
           </h2>
 
-          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-3xl">
-            A structured engineering discipline to anticipate, identify, and mitigate potential failure modes before
-            commissioning.
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl leading-relaxed">
+            A structured engineering discipline to anticipate, identify, and mitigate potential failure modes before commissioning.
           </p>
         </div>
 
@@ -1099,18 +1227,17 @@
       <div class="relative z-10 mx-auto">
         <!-- Section Header -->
         <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
             CONTINUOUS TECHNOLOGICAL INNOVATION
           </span>
 
           <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
             Dedicated Research &amp; Development Facility for Damper Valves
           </h2>
 
-          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-3xl">
-            Bellator Engineers has a Separate Research &amp; Development facility for Damper Valves with a dedicated
-            team of R&amp;D Engineers having experience of 14+ Years in Damper Valves Designing.
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl leading-relaxed">
+            Bellator Engineers has a Separate Research &amp; Development facility for Damper Valves with a dedicated team of R&amp;D Engineers having experience of 14+ Years in Damper Valves Designing.
           </p>
         </div>
 
@@ -1202,18 +1329,17 @@
       <div class="relative z-10 mx-auto">
         <!-- Section Header -->
         <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
             COMPANY LEADERSHIP &bull; DIRECTORS
           </span>
 
           <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
             Visionary Leadership Driving Engineering Excellence
           </h2>
 
-          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-3xl">
-            Pioneering industrial damper valve innovation and precision actuator engineering across mission-critical
-            sectors worldwide from Pune, India.
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl leading-relaxed">
+            Pioneering industrial damper valve innovation and precision actuator engineering across mission-critical sectors worldwide from Pune, India.
           </p>
         </div>
 
@@ -1451,18 +1577,17 @@
       <div class="relative z-10 mx-auto">
         <!-- Section Header -->
         <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
             GLOBAL PROCESS APPLICATIONS
           </span>
 
           <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
             Automated Damper Valves for 9 Critical Industries
           </h2>
 
-          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-3xl">
-            Our wide range of Automated Damper Valves caters to Oil &amp; Gas, Marine, Steel Plants, Thermal Power
-            Plants, Nuclear Plants, Water, Cement, Paper &amp; Pulp, and Sugar Industries worldwide.
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl leading-relaxed">
+            Our wide range of Automated Damper Valves caters to Oil &amp; Gas, Marine, Steel Plants, Thermal Power Plants, Nuclear Plants, Water, Cement, Paper &amp; Pulp, and Sugar Industries worldwide.
           </p>
         </div>
 
@@ -1660,136 +1785,305 @@
       </div>
     </section>
 
-    <!-- 8. "LOOKING FOR A RELIABLE PARTNER?" (Exact Match to Live Site CTA Box) -->
-    <section class="relative w-full overflow-hidden bg-[#060E1D] px-4 py-16 md:py-24 lg:px-12 text-white">
-      <div class="relative z-10 max-w-5xl mx-auto text-center scroll-reveal">
-        <!-- Section Header -->
-        <div class="mb-8 text-center sm:mb-10">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 sm:text-sm">
-            INTEGRATED GLOBAL SUPPLY CHAIN
-          </span>
+    <!-- 8. "LOOKING FOR A RELIABLE PARTNER?" (Exact Match to Reference Mockup) -->
+    <section
+      class="relative w-full overflow-hidden bg-[#FAFCFF] px-4 py-16 md:py-20 lg:px-12 border-b border-slate-200">
+      <div class="relative z-10  mx-auto">
+        <!-- Main Top Content Grid: Left Text & CTAs with World Map, Right Large Valve Image -->
+        <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[380px]">
 
-          <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
-            Looking for a Reliable Partner?
-          </h2>
-
-          <p
-            class="mt-3 text-sm font-medium text-slate-300 sm:text-base scroll-subtext delay-100 max-w-3xl mx-auto leading-relaxed">
-            At <strong class="text-white">Bellator Engineers India Private Limited</strong>, we aim to build long-term
-            partnerships with our clients in order to ensure a world-class integrated supply chain. We strive to
-            consistently meet extremely high standards for quality, delivery, cost, and customer satisfaction for our
-            clients.
-          </p>
-        </div>
-
-        <!-- Direct Action CTAs -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
-          <!-- Call Now Button from Live Site -->
-          <a href="tel:+919511876925"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#EE6226] px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#d8551d] hover:shadow-[0_15px_40px_rgba(238,98,38,0.45)]">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z">
-              </path>
-            </svg>
-            <span>Call Now: +91 9511876925</span>
-          </a>
-
-          <!-- Secondary Call / RFQ -->
-          <a href="/contact-us.html#connect-desk"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-orange-400 hover:bg-white/20">
-            <span>Request Engineering RFQ</span>
-            <span class="text-xs">&rarr;</span>
-          </a>
-        </div>
-
-        <!-- Direct Contact Strip -->
-        <div class="mt-12 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
-          <!-- Direct Desk with 2 Separate WhatsApp & Call Links -->
+          <!-- Background Dotted World Map Graphic with Supply Routes (Pure SVG with subtle reference image) -->
           <div
-            class="p-4 rounded-xl bg-white/[0.04] border border-white/10 hover:border-emerald-500/40 transition-all duration-300">
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-[10px] uppercase font-mono tracking-widest text-[#EE6226] font-bold">Direct Desk</span>
-              <span class="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-400">
-                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                  <path
-                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.544 1.772.8 2.796.8 3.183 0 5.769-2.586 5.769-5.766.001-3.181-2.584-5.787-5.769-5.787zm0 10.45c-.886 0-1.579-.228-2.348-.684l-.168-.1-1.574.413.42-1.534-.11-.176c-.496-.793-.758-1.503-.758-2.303 0-2.571 2.092-4.662 4.664-4.662 2.573 0 4.664 2.091 4.664 4.662 0 2.571-2.091 4.664-4.664 4.664zm7.969-4.664c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 1.411.366 2.738 1.006 3.889l-1.006 3.675 3.76-1c1.109.61 2.378.936 3.64.936 4.418 0 8-3.582 8-8z" />
-                </svg>
-                WhatsApp Desk
+            class="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden flex items-center justify-center opacity-85">
+            <svg viewBox="0 0 1000 450" class="w-full h-full object-contain" fill="none">
+              <defs>
+                <!-- Dotted world map dots pattern -->
+                <pattern id="worldMapDots" width="16" height="16" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1.2" fill="#94A3B8" fill-opacity="0.25" />
+                </pattern>
+                <!-- Soft fade out on edges -->
+                <linearGradient id="mapFadeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+                  <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.8" />
+                  <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.8" />
+                  <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+                </linearGradient>
+                <mask id="mapMask">
+                  <rect width="100%" height="100%" fill="url(#mapFadeGrad)" />
+                </mask>
+              </defs>
+
+              <!-- Optional World Map PNG Background Layer softly overlaid -->
+              <image href="/images/gallery/Blue Minimalist World Map Instagram Post (420 x 594 mm).png" x="260" y="-30"
+                width="460" height="480" opacity="0.12" preserveAspectRatio="xMidYMid meet" mask="url(#mapMask)" />
+
+              <!-- Global Supply Route Dotted Arcs connecting USA -> Europe -> Middle East -> India -->
+              <g stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 4" stroke-opacity="0.6">
+                <!-- USA to Europe Arc -->
+                <path d="M 450 120 Q 510 70 580 95" />
+                <!-- Europe to Middle East Arc -->
+                <path d="M 580 95 Q 600 135 600 195" />
+                <!-- Middle East to India Arc -->
+                <path d="M 600 195 Q 630 190 670 195" />
+              </g>
+
+              <!-- Location Pins & Text Badges -->
+              <!-- USA Node -->
+              <circle cx="450" cy="120" r="3.5" fill="#EE6226" />
+              <text x="450" y="140" font-family="sans-serif" font-size="10" fill="#64748B" font-weight="600"
+                text-anchor="middle">USA</text>
+
+              <!-- Europe Node -->
+              <circle cx="580" cy="95" r="4.5" fill="#EE6226" />
+              <circle cx="580" cy="95" r="8" stroke="#EE6226" stroke-width="1" stroke-opacity="0.3" />
+              <text x="595" y="88" font-family="sans-serif" font-size="10.5" fill="#475569"
+                font-weight="700">Europe</text>
+
+              <!-- Middle East Node -->
+              <circle cx="600" cy="195" r="4" fill="#EE6226" />
+              <text x="600" y="215" font-family="sans-serif" font-size="10" fill="#64748B" font-weight="600"
+                text-anchor="middle">Middle East</text>
+
+              <!-- India Hub Node -->
+              <circle cx="670" cy="195" r="4.5" fill="#EE6226" />
+              <circle cx="670" cy="195" r="9" stroke="#EE6226" stroke-width="1" stroke-opacity="0.35" />
+              <text x="670" y="220" font-family="sans-serif" font-size="10.5" fill="#0F172A" font-weight="700"
+                text-anchor="middle">India</text>
+            </svg>
+          </div>
+
+          <!-- Left Column: Copy & Action CTAs -->
+          <div class="relative z-10 lg:col-span-7 pr-0 lg:pr-6 text-left">
+            <!-- Orange Section Line Accent & Title -->
+            <div class="flex items-center gap-2.5 mb-3">
+              <span class="w-8 h-[2px] bg-[#EE6226] inline-block rounded-full"></span>
+              <span class="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-500">
+                INTEGRATED GLOBAL SUPPLY CHAIN
               </span>
             </div>
 
-            <div class="space-y-1.5">
-              <!-- Number 1 -->
-              <div class="flex items-center justify-between text-xs py-1 border-b border-white/5">
-                <a href="tel:+919028219202" class="font-bold text-white hover:text-[#EE6226] transition-colors">
-                  +91 90282 19202
+            <h2
+              class="font-poppins text-3xl sm:text-4xl lg:text-[46px] font-extrabold leading-tight tracking-tight text-[#0F172A] scroll-heading">
+              Looking for a <br />
+              <span class="text-[#EE6226]">Reliable</span> Partner?
+            </h2>
+
+            <p
+              class="mt-4 text-sm sm:text-[14.5px] leading-relaxed text-slate-600 max-w-xl font-normal scroll-subtext delay-100">
+              At Bellator Engineers India Private Limited, we aim to build long-term partnerships with our clients in
+              order to ensure a world-class integrated supply chain. We strive to consistently meet extremely high
+              standards for quality, delivery, cost, and customer satisfaction for our clients.
+            </p>
+
+            <!-- Direct Action Buttons -->
+            <div class="mt-7 flex flex-wrap items-center gap-4">
+              <!-- Call Now Button -->
+              <a href="tel:+919511876925"
+                class="inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-[#FF5722] to-[#EE6226] px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-md hover:shadow-lg hover:from-[#e64a19] hover:to-[#d8551d] transition-all duration-300 group">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
+                </svg>
+                <span>Call Now: +91 9511876925</span>
+                <span class="text-xs group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </a>
+
+              <!-- Request Engineering RFQ Button -->
+              <a href="/contact-us.html#connect-desk"
+                class="inline-flex items-center gap-2 rounded-xl border border-orange-300 bg-white px-6 py-3.5 text-xs sm:text-sm font-bold text-[#0F172A] hover:border-orange-400 hover:bg-orange-50/40 transition-all duration-300 group shadow-xs">
+                <svg class="w-4 h-4 text-[#EE6226]" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Request Engineering RFQ</span>
+                <span class="text-xs group-hover:translate-x-1 transition-transform text-orange-500">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Industrial Damper Valve Factory Assembly Image (Actuatech Italy Factory2 / italy-plant) -->
+          <div class="relative z-10 lg:col-span-5 flex items-center justify-center lg:justify-end">
+            <div
+              class="relative w-full max-w-[480px] rounded-2xl overflow-hidden shadow-lg border border-slate-200/80 bg-white group">
+              <!-- Actual Industrial Plant Workshop Image -->
+              <img src="/images/gallery/Actuatech Italy Factory2.jpg"
+                alt="Bellator & Actuatech Industrial Damper Valve Assembly Workshop"
+                class="w-full h-[280px] sm:h-[320px] object-cover group-hover:scale-105 transition-transform duration-700" />
+              <!-- Subtle white vignette gradient to match the screenshot blend -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent pointer-events-none">
+              </div>
+              <!-- Quality Tag -->
+              <div
+                class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-white/95 backdrop-blur-md border border-slate-200/80 text-[11px] font-bold text-[#0F172A] shadow-xs flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Active Production &amp; Testing Works</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Contact Cards Strip (Direct Desk, Email Support, Plant Location) -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <!-- Card 1: Direct Desk -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs hover:shadow-md transition-all duration-300">
+            <div class="flex items-center gap-3.5 mb-4">
+              <div
+                class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#EE6226] flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#EE6226]">DIRECT DESK</span>
+                <h4 class="text-base font-bold text-[#0F172A] leading-snug">Talk to Our Team</h4>
+                <p class="text-[11px] text-slate-500">Bhosari MIDC Direct WhatsApp &amp; Call</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-2 border-t border-slate-100 text-xs">
+              <div class="flex items-center justify-between py-1">
+                <a href="tel:+919028219202"
+                  class="font-bold text-[#0F172A] hover:text-[#EE6226] transition-colors flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>+91 90282 19202</span>
                 </a>
                 <a href="https://wa.me/919028219202?text=Hello%20Bellator%20Engineers%2C%20I%20would%20like%20to%20inquire%20about%20Damper%20Valves"
                   target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 hover:text-emerald-300 hover:underline">
-                  Chat &rarr;
+                  class="inline-flex items-center gap-1 text-emerald-600 hover:text-emerald-700 font-semibold">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.544 1.772.8 2.796.8 3.183 0 5.769-2.586 5.769-5.766.001-3.181-2.584-5.787-5.769-5.787zm0 10.45c-.886 0-1.579-.228-2.348-.684l-.168-.1-1.574.413.42-1.534-.11-.176c-.496-.793-.758-1.503-.758-2.303 0-2.571 2.092-4.662 4.664-4.662 2.573 0 4.664 2.091 4.664 4.662 0 2.571-2.091 4.664-4.664 4.664z" />
+                  </svg>
+                  <span>WhatsApp</span>
+                  <span>&rarr;</span>
                 </a>
               </div>
 
-              <!-- Number 2 -->
-              <div class="flex items-center justify-between text-xs py-1">
-                <a href="tel:+919511876925" class="font-bold text-white hover:text-[#EE6226] transition-colors">
-                  +91 95118 76925
+              <div class="flex items-center justify-between py-1 border-t border-slate-50">
+                <a href="tel:+919511876925"
+                  class="font-bold text-[#0F172A] hover:text-[#EE6226] transition-colors flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>+91 95118 76925</span>
                 </a>
                 <a href="https://wa.me/919511876925?text=Hello%20Bellator%20Engineers%2C%20I%20would%20like%20to%20inquire%20about%20Damper%20Valves"
                   target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 hover:text-emerald-300 hover:underline">
-                  Chat &rarr;
+                  class="inline-flex items-center gap-1 text-slate-600 hover:text-[#EE6226] font-semibold">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                  <span>Chat Now</span>
+                  <span>&rarr;</span>
                 </a>
               </div>
             </div>
-
-            <div class="text-[11px] text-slate-400 mt-1 pt-1">Bhosari MIDC Direct WhatsApp &amp; Call</div>
           </div>
 
-          <!-- Email Support with Mailto Link -->
-          <a href="mailto:sales@bellatorengineers.com?subject=Technical%20Inquiry%20-%20Bellator%20Damper%20Valves"
-            class="group p-4 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 hover:border-orange-500/50 transition-all duration-300 block">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-mono tracking-widest text-[#EE6226] font-bold">Email
-                Support</span>
-              <span
-                class="inline-flex items-center gap-1 text-[10px] font-semibold text-orange-400 group-hover:text-orange-300">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          <!-- Card 2: Email Support -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs hover:shadow-md transition-all duration-300">
+            <div class="flex items-center gap-3.5 mb-4">
+              <div
+                class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#EE6226] flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                Open Email &rarr;
-              </span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#EE6226]">EMAIL SUPPORT</span>
+                <h4 class="text-base font-bold text-[#0F172A] leading-snug">Send Your Requirement</h4>
+                <p class="text-[11px] text-slate-500">Technical Proposals, Drawings &amp; RFQs</p>
+              </div>
             </div>
-            <div class="text-xs font-bold text-white group-hover:text-orange-400 mt-1 transition-colors">
-              sales@bellatorengineers.com</div>
-            <div class="text-[11px] text-slate-400 mt-0.5">Technical Proposals, Drawings &amp; RFQs</div>
-          </a>
 
-          <!-- Plant Location with Direct Jump Link -->
-          <a href="/contact-us.html#map-section"
-            class="group p-4 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 hover:border-orange-500/50 transition-all duration-300 block">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-mono tracking-widest text-[#EE6226] font-bold">Plant
-                Location</span>
-              <span
-                class="inline-flex items-center gap-1 text-[10px] font-semibold text-orange-400 group-hover:text-orange-300">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                Visit Our Works &rarr;
-              </span>
+            <div class="space-y-2 pt-2 border-t border-slate-100 text-xs">
+              <a href="mailto:sales@bellatorengineers.com?subject=Technical%20Inquiry%20-%20Bellator%20Damper%20Valves"
+                class="flex items-center justify-between py-1 group">
+                <span
+                  class="font-bold text-[#0F172A] group-hover:text-[#EE6226] transition-colors flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                  </svg>
+                  <span>sales@bellatorengineers.com</span>
+                </span>
+                <span
+                  class="text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+              </a>
+
+              <a href="mailto:sales@bellatorengineers.com"
+                class="flex items-center justify-between py-1 border-t border-slate-50 group">
+                <span class="text-slate-600 group-hover:text-[#0F172A] font-medium flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>Open Email Client</span>
+                </span>
+                <span
+                  class="text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+              </a>
             </div>
-            <div class="text-xs font-bold text-white group-hover:text-orange-400 mt-1 transition-colors">Plot 207, J
-              Block, MIDC Bhosari</div>
-            <div class="text-[11px] text-slate-400 mt-0.5">Visit Our Works in MIDC Bhosari, Pune</div>
-          </a>
+          </div>
+
+          <!-- Card 3: Plant Location -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-xs hover:shadow-md transition-all duration-300">
+            <div class="flex items-center gap-3.5 mb-4">
+              <div
+                class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#EE6226] flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-[#EE6226]">PLANT LOCATION</span>
+                <h4 class="text-base font-bold text-[#0F172A] leading-snug">Visit Our Works</h4>
+                <p class="text-[11px] text-slate-500">See our manufacturing facility</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-2 border-t border-slate-100 text-xs">
+              <a href="/contact-us.html#map-section" class="flex items-center justify-between py-1 group">
+                <span
+                  class="font-bold text-[#0F172A] group-hover:text-[#EE6226] transition-colors flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                  <span>Plot 207, J Block, MIDC Bhosari</span>
+                </span>
+                <span
+                  class="text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+              </a>
+
+              <a href="https://maps.google.com/?q=Bellator+Engineers+Bhosari+Pune" target="_blank"
+                rel="noopener noreferrer" class="flex items-center justify-between py-1 border-t border-slate-50 group">
+                <span class="text-slate-600 group-hover:text-[#0F172A] font-medium flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  <span>View on Google Maps</span>
+                </span>
+                <span
+                  class="text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

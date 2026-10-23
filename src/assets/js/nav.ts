@@ -6,30 +6,93 @@ import { initChatbot } from '../../components/chatbot';
 export function initSharedNavigation(activePageId: string): void {
   // Mobile menu toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const dockMenuBtn = document.getElementById('dock-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
-  if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-      mobileMenuBtn.setAttribute('aria-expanded', (!isExpanded).toString());
-      mobileMenu.classList.toggle('hidden');
-      mobileMenuBtn.classList.toggle('is-open');
-    });
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+  if (mobileMenu && (mobileMenuBtn || dockMenuBtn)) {
+    const closeMenu = () => {
+      mobileMenu.classList.add('hidden');
+      if (mobileMenuBtn) {
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
         mobileMenuBtn.classList.remove('is-open');
+      }
+      if (dockMenuBtn) {
+        dockMenuBtn.setAttribute('aria-expanded', 'false');
+        dockMenuBtn.classList.remove('is-open');
+      }
+    };
+
+    const toggleMenu = (e?: Event) => {
+      if (e) e.stopPropagation();
+      const isClosed = mobileMenu.classList.contains('hidden');
+      if (isClosed) {
+        mobileMenu.classList.remove('hidden');
+        if (mobileMenuBtn) {
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+          mobileMenuBtn.classList.add('is-open');
+        }
+        if (dockMenuBtn) {
+          dockMenuBtn.setAttribute('aria-expanded', 'true');
+          dockMenuBtn.classList.add('is-open');
+        }
+      } else {
+        closeMenu();
+      }
+    };
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', toggleMenu);
+    }
+    if (dockMenuBtn) {
+      dockMenuBtn.addEventListener('click', toggleMenu);
+    }
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        closeMenu();
       });
     });
 
+    // Mobile Products Dropdown Accordion Toggle
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsSubmenu = document.getElementById('mobile-products-submenu');
+    const mobileProductsChevron = document.getElementById('mobile-products-chevron');
+
+    if (mobileProductsToggle && mobileProductsSubmenu) {
+      mobileProductsToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isClosed = mobileProductsSubmenu.classList.contains('hidden');
+        if (isClosed) {
+          mobileProductsSubmenu.classList.remove('hidden');
+          mobileProductsToggle.setAttribute('aria-expanded', 'true');
+          if (mobileProductsChevron) {
+            mobileProductsChevron.classList.add('rotate-180');
+          }
+        } else {
+          mobileProductsSubmenu.classList.add('hidden');
+          mobileProductsToggle.setAttribute('aria-expanded', 'false');
+          if (mobileProductsChevron) {
+            mobileProductsChevron.classList.remove('rotate-180');
+          }
+        }
+      });
+    }
+
     document.addEventListener('click', (e) => {
-      if (!mobileMenu.contains(e.target as Node) && !mobileMenuBtn.contains(e.target as Node)) {
-        mobileMenu.classList.add('hidden');
-        mobileMenuBtn.setAttribute('aria-expanded', 'false');
-        mobileMenuBtn.classList.remove('is-open');
+      const target = e.target as Node;
+      const clickedInsideMenu = mobileMenu.contains(target);
+      const clickedBtn =
+        (mobileMenuBtn && mobileMenuBtn.contains(target)) ||
+        (dockMenuBtn && dockMenuBtn.contains(target));
+      if (!clickedInsideMenu && !clickedBtn) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        closeMenu();
       }
     });
   }

@@ -7,10 +7,34 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.local
+deployment
+
+# Build outputs (Note: dist contains tracked static assets, keep dist commented if tracked in git)
 # dist
 # dist-ssr
-*.local
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Scratch & temporary workspace files
+scratch_scope.html
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +46,5 @@ node_modules
 *.njsproj
 *.sln
 *.sw?
+*.bak
+

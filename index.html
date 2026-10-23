@@ -400,38 +400,141 @@
           </a>
         </div>
       </div>
-
-      <!-- Right Action: Mobile Menu Button -->
-      <div class="flex items-center gap-3 flex-shrink-0">
-        <!-- Mobile Menu Trigger -->
+      <!-- Right Action: Mobile Menu Button (Clean Pill Integration) -->
+      <div class="flex items-center gap-2 flex-shrink-0 lg:hidden">
+        <!-- Mobile Menu Trigger (Animated 3-Bar Hamburger) -->
         <button id="mobile-menu-btn"
-          class="lg:hidden p-2 text-white hover:text-[#EE6226] transition-colors rounded-xl bg-white/10 backdrop-blur-md border border-white/20"
-          aria-label="Toggle mobile menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+          class="hamburger-btn"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Dropdown Menu -->
+    <!-- Mobile Dropdown Menu (Same Clean Design System) -->
     <div id="mobile-menu"
-      class="hidden lg:hidden border border-white/15 mt-3 py-3 px-5 rounded-2xl bg-[#070c18]/95 backdrop-blur-2xl shadow-2xl flex flex-col space-y-2">
+      class="hidden lg:hidden border border-slate-200/90 mt-3 py-3 px-3.5 rounded-2xl bg-white/98 backdrop-blur-2xl shadow-[0_20px_45px_rgba(15,23,42,0.16)] flex flex-col space-y-1.5 text-left text-slate-800">
       <a href="/"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-[#EE6226] bg-white/5 rounded-lg">Home</a>
+        class="py-2.5 px-3.5 text-xs font-bold uppercase tracking-wider text-[#EE6226] bg-orange-50/90 rounded-xl flex items-center justify-between border-l-3 border-[#EE6226]">
+        <span>Home</span>
+        <span class="text-xs text-[#EE6226]">&rarr;</span>
+      </a>
       <a href="/about-us.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">About
-        Us</a>
-      <a href="/products.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Products</a>
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>About Us</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
+      <!-- Mobile Products Dropdown Accordion -->
+      <div class="mobile-products-accordion rounded-xl border border-slate-100/80 bg-slate-50/50 overflow-hidden">
+        <button id="mobile-products-toggle" type="button"
+          class="w-full group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between cursor-pointer"
+          aria-expanded="false" aria-controls="mobile-products-submenu">
+          <div class="flex items-center gap-2">
+            <span>Products</span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-orange-50 text-[#EE6226] border border-orange-200/80">22 Models</span>
+          </div>
+          <svg id="mobile-products-chevron" class="w-4 h-4 text-slate-400 group-hover:text-[#EE6226] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <!-- Submenu Accordion Panel -->
+        <div id="mobile-products-submenu" class="hidden px-2 pt-1 pb-2 space-y-1 bg-white border-t border-slate-100">
+          <!-- All Products Direct Link -->
+          <a href="/products.html"
+            class="flex items-center justify-between py-2 px-3 rounded-lg text-xs font-bold text-[#EE6226] bg-orange-50/70 border border-orange-200/60 hover:bg-[#EE6226] hover:text-white transition-all">
+            <span>Explore All 22 Damper Valves</span>
+            <span class="text-xs">&rarr;</span>
+          </a>
+
+          <!-- Popular Models Quick Directory -->
+          <div class="pt-1 space-y-0.5 max-h-[38vh] overflow-y-auto pr-0.5 divide-y divide-slate-50">
+            <a href="/product-detail.html?id=butterfly-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Butterfly Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE10</span>
+            </a>
+            <a href="/product-detail.html?id=double-offset-butterfly-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Double Offset Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE20</span>
+            </a>
+            <a href="/product-detail.html?id=guillotine-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Guillotine Gate Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE90</span>
+            </a>
+            <a href="/product-detail.html?id=multi-louver-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Multi-Louver Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE70</span>
+            </a>
+            <a href="/product-detail.html?id=poppet-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Poppet Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE80</span>
+            </a>
+            <a href="/product-detail.html?id=double-disc-gate-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Double Disc Gate Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE100</span>
+            </a>
+            <a href="/product-detail.html?id=three-way-diverter-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Three-Way Diverters</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE60</span>
+            </a>
+            <a href="/product-detail.html?id=refractory-lined-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Refractory Lined (1200°C)</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE-REF</span>
+            </a>
+            <a href="/product-detail.html?id=air-seal-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Air Seal Zero-Leakage</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE50</span>
+            </a>
+            <a href="/product-detail.html?id=stack-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Stack Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE140</span>
+            </a>
+            <a href="/product-detail.html?id=fire-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Fire Damper Valves</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE130</span>
+            </a>
+            <a href="/product-detail.html?id=slide-gate-damper-valves"
+              class="flex items-center justify-between py-1.5 px-2 rounded-lg text-[11px] font-medium text-slate-700 hover:text-[#EE6226] hover:bg-slate-50 transition-colors">
+              <span class="truncate">Slide Gate Dampers</span>
+              <span class="text-[9px] font-mono px-1 py-0.5 rounded bg-orange-50/80 text-[#EE6226] font-semibold border border-orange-200/50">BE150</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <a href="/careers.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Careers</a>
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>Careers</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
       <a href="/contact-us.html"
-        class="py-2 px-3 text-xs font-semibold uppercase tracking-wider text-white hover:text-[#EE6226] rounded-lg hover:bg-white/5">Contact
-        Us</a>
-      <a href="/contact-us.html#connect-desk"
-        class="mt-2 text-center rounded-full bg-[#EE6226] py-2.5 text-xs font-bold uppercase tracking-wider text-white">Talk
-        To Experts</a>
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>Contact Us</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
+      <div class="pt-2 border-t border-slate-100 mt-1">
+        <a href="/contact-us.html#connect-desk"
+          class="block text-center rounded-xl bg-gradient-to-r from-[#EE6226] to-[#d8551d] py-3 text-xs font-bold uppercase tracking-wider text-white shadow-md shadow-orange-500/20 hover:brightness-110 transition-all">
+          Talk To Engineering Experts
+        </a>
+        <p class="text-center text-[10px] text-slate-400 mt-2 font-medium uppercase tracking-wider">
+          Bellator Engineers &bull; Pune, India
+        </p>
+      </div>
     </div>
   </nav>
 
@@ -548,24 +651,20 @@
 
           <!-- Left Column -->
           <div class="lg:col-span-6 xl:col-span-6 text-left">
-            <!-- Header Tag with Orange Line -->
-            <div class="flex items-center gap-2.5 mb-3 scroll-subtext">
-              <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                WHO WE ARE
-              </span>
-              <span class="h-[2px] w-9 bg-[#EE6226] rounded-full inline-block"></span>
-            </div>
+            <!-- Header Tag -->
+            <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
+              WHO WE ARE
+            </span>
 
             <!-- Heading -->
             <h2
-              class="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-[#0F172A] leading-[1.15] scroll-heading">
-              Industrial Damper Valve<br>
-              Engineering &amp; <span class="text-[#EE6226]">Manufacturing</span>
+              class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+              Industrial Damper Valve Engineering &amp; Manufacturing
             </h2>
 
             <!-- Location & Solutions Tag -->
             <div
-              class="mt-3 flex flex-wrap items-center gap-2 text-xs sm:text-sm font-medium text-slate-500 scroll-subtext delay-100">
+              class="mt-2 flex flex-wrap items-center gap-2 text-xs sm:text-sm font-medium text-slate-500 scroll-subtext delay-100">
               <svg class="w-4 h-4 text-[#EE6226] shrink-0" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
@@ -1884,21 +1983,18 @@
           <div class="w-full lg:w-[28%] xl:w-[26%] shrink-0 flex flex-col justify-between self-stretch relative z-10">
             <div>
               <div>
-                <!-- Small Uppercase Eyebrow (Exact Match to Scope of Work Header Design) -->
-                <span class="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-[#475569] sm:text-sm scroll-subtext">
-                  Aerodynamic Air &amp; Gas Control
+                <!-- Uppercase Eyebrow -->
+                <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
+                  AERODYNAMIC AIR &amp; GAS CONTROL
                 </span>
-                <!-- Large Bold Heading (Exact Match to Scope of Work Header Design) -->
+                <!-- Headline -->
                 <h2
-                  class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0B192C] sm:text-3xl md:text-4xl lg:text-[44px] scroll-heading">
+                  class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
                   What We Do
                 </h2>
-                <!-- Orange accent bar directly below title (Exact Match to Scope of Work Header Design) -->
-                <div class="mt-2.5 w-12 h-1 bg-[#EE6226] rounded-full"></div>
-                <!-- Short Description (Exact Match to Scope of Work Header Design) -->
-                <p class="mt-3 text-xs sm:text-sm font-medium text-slate-500 max-w-sm leading-relaxed scroll-subtext delay-100">
-                  Delivering precision damper valve engineering, 100% man-safe isolation, and aerodynamic air control
-                  across marine, power, and heavy industrial process sectors.
+                <!-- Short Description -->
+                <p class="mt-2 text-xs sm:text-sm font-medium text-slate-500 max-w-sm leading-relaxed scroll-subtext delay-100">
+                  Delivering precision damper valve engineering, 100% man-safe isolation, and aerodynamic air control across marine, power, and heavy industrial process sectors.
                 </p>
               </div>
 
@@ -3160,22 +3256,17 @@
 
       <div class="relative z-10 mx-auto px-4 sm:px-6 lg:px-12 mb-10 sm:mb-14">
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12">
-          <!-- Left Header & Eyebrow (Exact Match to Screenshot) -->
+          <!-- Left Header & Eyebrow -->
           <div class="max-w-2xl text-left">
-            <span
-              class="mb-2.5 inline-flex items-center text-xs font-semibold uppercase tracking-[0.18em] text-[#475569] sm:text-sm scroll-subtext">
-              GLOBAL ACCREDITATIONS <span class="text-[#EE6226] font-bold mx-1.5 text-base leading-none">&bull;</span>
-              CLIENT APPROVALS
+            <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
+              GLOBAL ACCREDITATIONS &bull; CLIENT APPROVALS
             </span>
             <h2
-              class="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-[1.15] tracking-tight text-[#0F172A] scroll-heading">
-              Trusted by Industry Leaders &amp;<br />
-              <span class="text-[#EE6226]">Global Standards</span>
+              class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+              Trusted by Industry Leaders &amp; Global Standards
             </h2>
-            <div class="mt-3.5 w-14 h-1 bg-[#EE6226] rounded-full"></div>
-            <p class="mt-3.5 text-xs sm:text-sm font-medium text-slate-500 max-w-xl leading-relaxed scroll-subtext delay-100">
-              Our products and processes comply with international standards and are trusted by leading EPCs, OEMs, and
-              global organizations across power, oil &amp; gas, marine, and heavy industries.
+            <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-xl leading-relaxed">
+              Our products and processes comply with international standards and are trusted by leading EPCs, OEMs, and global organizations across power, oil &amp; gas, marine, and heavy industries.
             </p>
           </div>
 
@@ -3452,20 +3543,16 @@
       <div class="relative z-10 mx-auto">
         <!-- Section Header -->
         <div class="mb-10 text-left sm:mb-12">
-          <div class="flex items-center gap-2.5 mb-3.5">
-            <span class="w-6 h-[3px] bg-[#EE6226] rounded-full inline-block"></span>
-            <span class="font-poppins text-xs font-bold uppercase tracking-[0.2em] text-[#556987]">
-              Testimonials &bull; Client Voices
-            </span>
-          </div>
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
+            TESTIMONIALS &bull; CLIENT VOICES
+          </span>
 
           <h2
-            class="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0A1629] scroll-heading">
-            What Our <span class="text-[#EE6226]">Clients</span> Say
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            What Our Clients Say
           </h2>
 
-          <p
-            class="mt-2 text-xs sm:text-sm md:text-[15px] font-medium text-[#64748B] scroll-subtext delay-100 max-w-3xl leading-relaxed">
+          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl leading-relaxed">
             Proven performance and trusted engineering relationships across mission-critical installations worldwide.
           </p>
         </div>
@@ -3707,27 +3794,20 @@
         <!-- Left Content Area -->
         <div
           class="relative z-10 py-10 px-6 sm:py-12 sm:px-10 md:py-14 md:px-14 lg:py-16 lg:px-16 max-w-2xl lg:max-w-3xl text-left">
-          <!-- Tagline with Orange Dash -->
-          <div class="flex items-center gap-2.5 mb-3.5 scroll-subtext">
-            <span class="w-6 h-[3px] bg-[#EE6226] rounded-full inline-block"></span>
-            <span class="font-poppins text-xs font-bold uppercase tracking-[0.2em] text-[#475569]">
-              Industrial Valve Solutions
-            </span>
-          </div>
+          <!-- Tagline -->
+          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
+            INDUSTRIAL VALVE SOLUTIONS
+          </span>
 
-          <!-- Headline with Orange Underline -->
+          <!-- Headline -->
           <h2
-            class="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold leading-[1.16] text-[#0A1629] tracking-tight scroll-heading">
-            Need Reliable Damper Valve<br class="hidden sm:inline" />
-            Engineering Support for Your<br class="hidden sm:inline" />
-            Next Project?
+            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
+            Need Reliable Damper Valve Engineering Support for Your Next Project?
           </h2>
-          <div class="w-12 h-1 bg-[#EE6226] rounded-full mt-3.5 mb-4"></div>
 
           <!-- Description -->
-          <p class="font-poppins text-sm sm:text-[15px] md:text-base leading-relaxed text-[#4A5568] max-w-xl scroll-subtext delay-100">
-            Partner with Bellator Engineers to deliver validated, cost-effective, and SIL-compliant damper solutions for
-            marine, power, and severe process applications worldwide.
+          <p class="mt-2 text-xs sm:text-sm font-medium text-slate-500 max-w-xl leading-relaxed scroll-subtext delay-100">
+            Partner with Bellator Engineers to deliver validated, cost-effective, and SIL-compliant damper solutions for marine, power, and severe process applications worldwide.
           </p>
 
           <!-- Buttons -->
