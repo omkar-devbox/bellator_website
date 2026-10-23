@@ -35,9 +35,9 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Judson:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
 
-  <script type="module" crossorigin src="/test_web/assets/main-D3CQdUEG.js"></script>
+  <script type="module" crossorigin src="/test_web/assets/main-BuThp_BC.js"></script>
   <link rel="modulepreload" crossorigin href="/test_web/assets/nav-Cbb4lcxT.js">
-  <link rel="stylesheet" crossorigin href="/test_web/assets/main-BWK-Ens5.css">
+  <link rel="stylesheet" crossorigin href="/test_web/assets/main-BL3Xvqys.css">
 </head>
 
 <body
@@ -394,6 +394,9 @@
             </div>
           </div>
 
+          <a href="#industries" class="nav-pill-link">
+            Industries
+          </a>
           <a href="/test_web/careers.html" class="nav-pill-link">
             Careers
           </a>
@@ -401,6 +404,15 @@
             Contact Us
           </a>
         </div>
+
+        <!-- Get a Quote Button in Header (Reference Design) -->
+        <a href="/test_web/contact-us.html"
+          class="ml-3.5 hidden xl:inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-[#EE6226] hover:bg-[#d8551d] text-white text-xs sm:text-sm font-bold shadow-sm hover:shadow-md transition-all">
+          <span>Get a Quote</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
       </div>
       <!-- Right Action: Mobile Menu Button (Clean Pill Integration) -->
       <div class="flex items-center gap-2 flex-shrink-0 lg:hidden">
@@ -518,6 +530,11 @@
           </div>
         </div>
       </div>
+      <a href="#industries"
+        class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
+        <span>Industries</span>
+        <span class="text-xs text-slate-400 group-hover:text-[#EE6226] group-hover:translate-x-0.5 transition-all">&rarr;</span>
+      </a>
       <a href="/test_web/careers.html"
         class="group py-2.5 px-3.5 text-xs font-semibold uppercase tracking-wider text-slate-700 hover:text-[#EE6226] rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-between">
         <span>Careers</span>
@@ -2372,479 +2389,770 @@
     <!-- 4. INDUSTRIES WE SERVE (Bespoke Industrial Engineering Showcase & Sector Dossier) -->
     <section id="industries" class="industries-engineering-section py-16 md:py-24 border-t border-slate-200">
       <div class="mx-auto px-4 sm:px-6 lg:px-12">
-        <!-- Section Top Header & Eyebrow -->
-        <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm scroll-subtext">
-            FIELD DEPLOYMENTS &bull; CRITICAL APPLICATIONS
-          </span>
+        <!-- Section Header with Metrics & Dotted Map Watermark -->
+        <div class="relative flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-10 sm:mb-14">
+          <!-- Left: Title, Eyebrow & Subtext -->
+          <div class="max-w-2xl text-left">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="w-6 h-1 bg-[#EE6226] rounded-full inline-block"></span>
+              <span class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+                FIELD DEPLOYMENTS &bull; CRITICAL APPLICATIONS
+              </span>
+            </div>
 
-          <h2
-            class="font-poppins text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
-            Industries We Serve
-          </h2>
+            <h2 class="font-poppins text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[#0F172A] leading-tight">
+              Industries We <span class="text-[#EE6226]">Serve</span>
+            </h2>
 
-          <p class="mt-2 text-xs font-medium text-slate-500 sm:text-sm scroll-subtext delay-100 max-w-3xl">
-            Precision-engineered damper valves built to survive extreme temperatures, abrasive particulate loading,
-            and aggressive chemical atmospheres across 500+ global installations.
-          </p>
+            <p class="mt-2.5 text-xs sm:text-sm font-medium text-slate-500 leading-relaxed max-w-xl">
+              Precision-engineered damper valves built to survive extreme temperatures, abrasive particulate loading,
+              and aggressive chemical atmospheres across 500+ global installations.
+            </p>
+          </div>
+
+          <!-- Right: 3 Metric Counters with Dotted World Map Watermark -->
+          <div class="relative flex items-center justify-start lg:justify-end shrink-0 pt-2 lg:pt-0">
+            <!-- Subtle Dotted World Map Background -->
+            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[340px] sm:w-[420px] h-[110px] pointer-events-none select-none opacity-40 -z-0 overflow-hidden">
+              <svg viewBox="0 0 450 160" fill="none" class="w-full h-full text-slate-300">
+                <g fill="currentColor">
+                  <!-- North America dots -->
+                  <circle cx="45" cy="40" r="2.2" /><circle cx="55" cy="38" r="2.2" /><circle cx="65" cy="36" r="2.2" /><circle cx="75" cy="34" r="2.2" />
+                  <circle cx="50" cy="48" r="2.2" /><circle cx="60" cy="46" r="2.2" /><circle cx="70" cy="44" r="2.2" /><circle cx="80" cy="42" r="2.2" /><circle cx="90" cy="40" r="2.2" />
+                  <circle cx="55" cy="56" r="2.2" /><circle cx="65" cy="54" r="2.2" /><circle cx="75" cy="52" r="2.2" /><circle cx="85" cy="50" r="2.2" /><circle cx="95" cy="48" r="2.2" />
+                  <circle cx="60" cy="64" r="2.2" /><circle cx="70" cy="62" r="2.2" /><circle cx="80" cy="60" r="2.2" /><circle cx="90" cy="58" r="2.2" />
+                  <circle cx="75" cy="72" r="2.2" /><circle cx="85" cy="70" r="2.2" />
+                  <!-- South America dots -->
+                  <circle cx="100" cy="88" r="2.2" /><circle cx="110" cy="86" r="2.2" /><circle cx="105" cy="96" r="2.2" /><circle cx="115" cy="94" r="2.2" />
+                  <circle cx="110" cy="104" r="2.2" /><circle cx="120" cy="102" r="2.2" /><circle cx="115" cy="112" r="2.2" /><circle cx="125" cy="110" r="2.2" />
+                  <circle cx="120" cy="120" r="2.2" /><circle cx="125" cy="128" r="2.2" />
+                  <!-- Europe dots -->
+                  <circle cx="210" cy="36" r="2.2" /><circle cx="220" cy="34" r="2.2" /><circle cx="230" cy="32" r="2.2" /><circle cx="240" cy="30" r="2.2" />
+                  <circle cx="215" cy="44" r="2.2" /><circle cx="225" cy="42" r="2.2" /><circle cx="235" cy="40" r="2.2" /><circle cx="245" cy="38" r="2.2" />
+                  <circle cx="220" cy="52" r="2.2" /><circle cx="230" cy="50" r="2.2" /><circle cx="240" cy="48" r="2.2" /><circle cx="250" cy="46" r="2.2" />
+                  <!-- Africa dots -->
+                  <circle cx="225" cy="66" r="2.2" /><circle cx="235" cy="64" r="2.2" /><circle cx="245" cy="62" r="2.2" />
+                  <circle cx="230" cy="76" r="2.2" /><circle cx="240" cy="74" r="2.2" /><circle cx="250" cy="72" r="2.2" /><circle cx="260" cy="70" r="2.2" />
+                  <circle cx="235" cy="86" r="2.2" /><circle cx="245" cy="84" r="2.2" /><circle cx="255" cy="82" r="2.2" />
+                  <circle cx="240" cy="96" r="2.2" /><circle cx="250" cy="94" r="2.2" /><circle cx="245" cy="106" r="2.2" />
+                  <!-- Asia dots -->
+                  <circle cx="270" cy="32" r="2.2" /><circle cx="280" cy="30" r="2.2" /><circle cx="290" cy="28" r="2.2" /><circle cx="300" cy="26" r="2.2" /><circle cx="310" cy="24" r="2.2" />
+                  <circle cx="275" cy="40" r="2.2" /><circle cx="285" cy="38" r="2.2" /><circle cx="295" cy="36" r="2.2" /><circle cx="305" cy="34" r="2.2" /><circle cx="315" cy="32" r="2.2" /><circle cx="325" cy="30" r="2.2" />
+                  <circle cx="280" cy="48" r="2.2" /><circle cx="290" cy="46" r="2.2" /><circle cx="300" cy="44" r="2.2" /><circle cx="310" cy="42" r="2.2" /><circle cx="320" cy="40" r="2.2" />
+                  <circle cx="295" cy="56" r="2.2" /><circle cx="305" cy="54" r="2.2" /><circle cx="315" cy="52" r="2.2" /><circle cx="325" cy="50" r="2.2" />
+                  <circle cx="310" cy="64" r="2.2" /><circle cx="320" cy="62" r="2.2" /><circle cx="330" cy="60" r="2.2" />
+                  <!-- Australia dots -->
+                  <circle cx="370" cy="100" r="2.2" /><circle cx="380" cy="98" r="2.2" /><circle cx="390" cy="96" r="2.2" />
+                  <circle cx="375" cy="108" r="2.2" /><circle cx="385" cy="106" r="2.2" /><circle cx="395" cy="104" r="2.2" />
+                  <circle cx="380" cy="116" r="2.2" /><circle cx="390" cy="114" r="2.2" />
+                </g>
+              </svg>
+            </div>
+
+            <!-- 3 Stat Badges -->
+            <div class="relative z-10 flex flex-wrap sm:flex-nowrap items-center gap-6 sm:gap-7 lg:gap-8">
+              <!-- Metric 1: 500+ Global Installations -->
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-orange-200/90 bg-orange-50/60 flex items-center justify-center text-[#EE6226] shrink-0 shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3a14.5 14.5 0 014 9 14.5 14.5 0 01-4 9 14.5 14.5 0 01-4-9 14.5 14.5 0 014-9z" />
+                  </svg>
+                </div>
+                <div class="text-left">
+                  <div class="font-poppins text-xl sm:text-2xl font-black text-[#0F172A] tracking-tight leading-none">
+                    500+
+                  </div>
+                  <div class="text-[11px] sm:text-xs font-medium text-slate-500 mt-1 whitespace-nowrap">
+                    Global Installations
+                  </div>
+                </div>
+              </div>
+
+              <!-- Metric 2: 30+ Years Experience -->
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-orange-200/90 bg-orange-50/60 flex items-center justify-center text-[#EE6226] shrink-0 shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <div class="text-left">
+                  <div class="font-poppins text-xl sm:text-2xl font-black text-[#0F172A] tracking-tight leading-none">
+                    30+
+                  </div>
+                  <div class="text-[11px] sm:text-xs font-medium text-slate-500 mt-1 whitespace-nowrap">
+                    Years Experience
+                  </div>
+                </div>
+              </div>
+
+              <!-- Metric 3: 9 Key Industries -->
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-orange-200/90 bg-orange-50/60 flex items-center justify-center text-[#EE6226] shrink-0 shadow-2xs">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div class="text-left">
+                  <div class="font-poppins text-xl sm:text-2xl font-black text-[#0F172A] tracking-tight leading-none">
+                    9
+                  </div>
+                  <div class="text-[11px] sm:text-xs font-medium text-slate-500 mt-1 whitespace-nowrap">
+                    Key Industries
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Industries Showcase (All 9 Core Industrial Sectors) -->
-        <div class="mb-16">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Industries Showcase Cards Grid (All 9 Core Industrial Sectors) -->
+        <div class="mb-14">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <!-- Card 1: Power Generation & Nuclear -->
-            <div class="industry-card group scroll-reveal delay-100">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/THERMAL.jpg" alt="Thermal and Nuclear Power Plant Damper Valves"
-                  loading="lazy" />
+            <!-- Card 01: Power Generation & Thermal -->
+            <div class="industry-serve-card group scroll-reveal delay-100">
+              <!-- Left: Angled Image Box with 01 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  01
+                </span>
+                <img src="/test_web/images/industries/THERMAL.jpg" alt="Power Generation & Thermal Power Plant Dampers" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Power &amp; Energy
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Continuous 24/7 Duty</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Power Generation &amp; Thermal
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
                     Engineered for extreme thermal cycling, heavy fly ash loading, and live-unit maintenance.
-                    Pressurized seal-air cavities guarantee 100% man-safe shutoff.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Key Media:</span>
-                        <span class="font-semibold text-slate-800">Flue Gas, Fly Ash, Hot Air</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Isolation Rating:</span>
-                        <span class="font-semibold text-slate-800">100% Man-Safe Zero Leakage</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Up to 850°C</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">FGD, ESP, Boilers</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">100% Man-safe</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Tandem
-                      Louver &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">Heavy
-                      Guillotine &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=poppet-damper-valves" class="industry-product-pill">Poppet Damper
-                      &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-serve-pill">Tandem Louver</a>
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-serve-pill">Heavy Guillotine</a>
+                    <a href="/test_web/product-detail.html?id=poppet-damper-valves" class="industry-serve-pill">Poppet Damper</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" aria-label="Explore Power Generation Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 2: Marine & Offshore -->
-            <div class="industry-card group scroll-reveal delay-150">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/MARINE.jpg" alt="Marine Scrubber and Ship Exhaust Damper Valves"
-                  loading="lazy" />
+            <!-- Card 02: Marine Vessels & Offshore -->
+            <div class="industry-serve-card group scroll-reveal delay-150">
+              <!-- Left: Angled Image Box with 02 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  02
+                </span>
+                <img src="/test_web/images/industries/MARINE.jpg" alt="Marine Vessels & Offshore Scrubbers Damper Valves" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Marine &amp; Offshore
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Class Certified</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l3.5-3.5L12 14.5l8.5-8.5" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M5 21h14" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Marine Vessels &amp; Offshore
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Built for exhaust gas cleaning systems (EGCS), engine rooms, and marine boilers with Super Duplex
-                    and Hastelloy metallurgy against sulfuric condensate.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Built for exhaust gas cleaning systems (EGCS), engine rooms, and marine boilers.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Compliance:</span>
-                        <span class="font-semibold text-slate-800">IMO MARPOL Annex VI &bull; BV/DNV</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Materials:</span>
-                        <span class="font-semibold text-slate-800">Super Duplex, 254SMO, Hastelloy</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">EGCS, Ventilation</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">SS316, Duplex, Carbon Steel</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Class Certified</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">Scrubber
-                      Butterfly &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=three-way-diverter-damper-valves"
-                      class="industry-product-pill">3-Way Diverter &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=fire-damper-valves" class="industry-product-pill">Fire Damper
-                      &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-serve-pill">Scrubber Butterfly</a>
+                    <a href="/test_web/product-detail.html?id=three-way-diverter-damper-valves" class="industry-serve-pill">3-Way Diverter</a>
+                    <a href="/test_web/product-detail.html?id=fire-damper-valves" class="industry-serve-pill">Fire Damper</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=butterfly-damper-valves" aria-label="Explore Marine Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 3: Oil, Gas & Petrochemical -->
-            <div class="industry-card group scroll-reveal delay-200">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/OIL-_-GAS-Copy.jpg" alt="Oil Refinery and Petrochemical Gas Damper Valves"
-                  loading="lazy" />
+            <!-- Card 03: Steel Plants & Metallurgy -->
+            <div class="industry-serve-card group scroll-reveal delay-200">
+              <!-- Left: Angled Image Box with 03 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  03
+                </span>
+                <img src="/test_web/images/industries/METAL.jpg" alt="Steel Plants & Metallurgy Damper Valves" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Oil, Gas &amp; Refining
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">ATEX Rated</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343a7.975 7.975 0 012.344 5.657c0 2.12-.832 4.135-2.343 5.657z" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
-                    Oil, Gas &amp; Petrochemicals
-                  </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Severe-service isolation for catalytic cracking (FCCU), flare gas headers, and offshore platforms.
-                    Purge chambers prevent hazardous gas escape.
-                  </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Standard:</span>
-                        <span class="font-semibold text-slate-800">ASME B16.34 &bull; API 598</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Area Rating:</span>
-                        <span class="font-semibold text-slate-800">ATEX Zone 1/2 Certified</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=double-disc-gate-valves" class="industry-product-pill">Double Disc
-                      Gate &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Flare
-                      Louver &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">FCCU Gate
-                      &rarr;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 4: Steel Plants & Metallurgy -->
-            <div class="industry-card group scroll-reveal delay-100">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/METAL.jpg" alt="Steel and Metallurgy Damper Valves" loading="lazy" />
-              </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
-                <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Steel &amp; Metallurgy
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Ultra-High Temp</span>
-                  </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Steel Plants &amp; Metallurgy
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Blast furnace hot blast valves, sinter plant dedusting isolation, reheat furnace air control, and
-                    coke oven gas handling up to 1,200°C.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Blast furnace hot blast valves, sinter plant dedusting isolation, and coke oven gas handling.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Thermal Rating:</span>
-                        <span class="font-semibold text-slate-800">Up to 1,200°C (Refractory Lined)</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Service:</span>
-                        <span class="font-semibold text-slate-800">Hot Blast, Sinter, Coke Oven Gas</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Up to 1,200°C</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Hot Blast, Sinter, Coke Oven</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Heavy Duty Design</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=refractory-lined-damper-valves"
-                      class="industry-product-pill">Refractory Damper &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=hot-gas-damper-valves" class="industry-product-pill">Hot Gas Valve
-                      &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">Blast
-                      Furnace Gate &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=refractory-lined-damper-valves" class="industry-serve-pill">Refractory Damper</a>
+                    <a href="/test_web/product-detail.html?id=hot-gas-damper-valves" class="industry-serve-pill">Hot Gas Valve</a>
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-serve-pill">Blast Furnace Gate</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=refractory-lined-damper-valves" aria-label="Explore Steel Plant Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 5: Nuclear Plants -->
-            <div class="industry-card group scroll-reveal delay-150">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/NUCLEAR.jpg" alt="Nuclear Reactor Containment Dampers" loading="lazy" />
+            <!-- Card 04: Oil, Gas & Petrochemicals -->
+            <div class="industry-serve-card group scroll-reveal delay-100">
+              <!-- Left: Angled Image Box with 04 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  04
+                </span>
+                <img src="/test_web/images/industries/OIL-_-GAS-Copy.jpg" alt="Oil Refinery & Petrochemical Damper Valves" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Nuclear Power
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Safety Class</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
-                    Nuclear Energy Facilities
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
+                    Oil, Gas &amp; Petrochemicals
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Critical reactor containment ventilation closing devices, radiation-hardened seals, fast-acting trip
-                    dampers, and full seismic qualification.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Severe-service isolation for catalytic cracking (FCCU), flare gas systems, and offshore platforms.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Qualification:</span>
-                        <span class="font-semibold text-slate-800">IEEE 323 / 344 &bull; ASME AG-1</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Fail-Safe Time:</span>
-                        <span class="font-semibold text-slate-800">&lt; 2.0 s Emergency Trip</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Refinery, Flare, Process</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">ATEX Zone 1/2 Certified</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Zero Leakage</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">Containment
-                      Damper &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=poppet-damper-valves" class="industry-product-pill">Fast Trip
-                      Damper &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">HVAC
-                      Isolation &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=double-disc-gate-valves" class="industry-serve-pill">Double Disc Gate</a>
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-serve-pill">Flare Louver</a>
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-serve-pill">FCCU Gate</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=double-disc-gate-valves" aria-label="Explore Oil and Gas Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 6: Cement Plants & Heavy Minerals -->
-            <div class="industry-card group scroll-reveal delay-200">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/CEMENT-1.jpg" alt="Cement Rotary Kiln and Clinker Damper Valves"
-                  loading="lazy" />
+            <!-- Card 05: Nuclear Plants -->
+            <div class="industry-serve-card group scroll-reveal delay-150">
+              <!-- Left: Angled Image Box with 05 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  05
+                </span>
+                <img src="/test_web/images/industries/NUCLEAR.jpg" alt="Nuclear Reactor Containment Damper Valves" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Cement &amp; Minerals
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Abrasive Service</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="3" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
+                    Nuclear Plants
+                  </h3>
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Critical reactor containment ventilation closing devices, radiation-hardened seals, and seismic qualification.
+                  </p>
+
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9a3 3 0 000 6m0-6a3 3 0 010 6m0-6V3m0 18v-6m-6-3h6m6 0h-6" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Seismic Qualified</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">ASME NQA-1</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Safety Class</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-serve-pill">Containment Damper</a>
+                    <a href="/test_web/product-detail.html?id=poppet-damper-valves" class="industry-serve-pill">Fast Trip Damper</a>
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-serve-pill">HVAC Isolation</a>
+                  </div>
+                  <a href="/test_web/product-detail.html?id=butterfly-damper-valves" aria-label="Explore Nuclear Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 06: Cement Plants & Clinker -->
+            <div class="industry-serve-card group scroll-reveal delay-200">
+              <!-- Left: Angled Image Box with 06 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  06
+                </span>
+                <img src="/test_web/images/industries/CEMENT-1.jpg" alt="Cement Plants & Rotary Kiln Clinker Damper Valves" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
+              </div>
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
+                <div>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Cement Plants &amp; Clinker
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Engineered to withstand sand-blast abrasive clinker dust velocity (> 25 m/s) with external roller
-                    tracks and Hardox 500 replaceable wear plates.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Engineered to withstand sand-blast abrasive clinker dust with external roller tracks.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Dust Load:</span>
-                        <span class="font-semibold text-slate-800">&gt; 180 g/Nm³ Entrainment</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Wear Protection:</span>
-                        <span class="font-semibold text-slate-800">Hardox 500 Wear Liners</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">High Abrasive Duty</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">&gt; 180 g/Nm³ Dust Load</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Wear Resistant</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">Slide Gate
-                      &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=refractory-lined-damper-valves"
-                      class="industry-product-pill">Refractory Louver &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=double-flap-damper-valves"
-                      class="industry-product-pill">Counterweight Flap &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-serve-pill">Slide Gate</a>
+                    <a href="/test_web/product-detail.html?id=refractory-lined-damper-valves" class="industry-serve-pill">Refractory Louver</a>
+                    <a href="/test_web/product-detail.html?id=double-flap-damper-valves" class="industry-serve-pill">Counterweight Flap</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=guillotine-damper-valves" aria-label="Explore Cement Plant Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 7: Water & Wastewater Utilities -->
-            <div class="industry-card group scroll-reveal delay-100">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/WATER.jpg" alt="Water, Wastewater and Environmental Scrubber Damper Valves"
-                  loading="lazy" />
+            <!-- Card 07: Water Management & Utilities -->
+            <div class="industry-serve-card group scroll-reveal delay-100">
+              <!-- Left: Angled Image Box with 07 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  07
+                </span>
+                <img src="/test_web/images/industries/WATER.jpg" alt="Water Management & Wastewater Scrubber Dampers" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Water &amp; Wastewater
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Clean Air</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Water Management &amp; Utilities
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Vapor containment for aeration blower balancing, wet FGD scrubbers, and bio-gas systems equipped
-                    with live-loaded PTFE shaft packing.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Vapor containment for aeration blower balancing, wet FGD scrubbers, and live-loaded PTFE shaft packing.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Emission Standard:</span>
-                        <span class="font-semibold text-slate-800">TA-Luft &bull; EPA Method 21</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Shaft Sealing:</span>
-                        <span class="font-semibold text-slate-800">Spring-Loaded Live PTFE</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">TA-Luft / EPA 21</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Spring Live PTFE</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Clean Air Rated</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">Aeration
-                      Butterfly &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Balancing
-                      Louver &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=check-damper-valves" class="industry-product-pill">Blower
-                      Non-Return &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-serve-pill">Aeration Butterfly</a>
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-serve-pill">Balancing Louver</a>
+                    <a href="/test_web/product-detail.html?id=check-damper-valves" class="industry-serve-pill">Blower Non-Return</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=butterfly-damper-valves" aria-label="Explore Water Utilities Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 8: Paper & Pulp -->
-            <div class="industry-card group scroll-reveal delay-150">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/General.jpg" alt="Paper & Pulp Recovery Boiler Dampers" loading="lazy" />
+            <!-- Card 08: Paper, Pulp & Recovery -->
+            <div class="industry-serve-card group scroll-reveal delay-150">
+              <!-- Left: Angled Image Box with 08 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  08
+                </span>
+                <img src="/test_web/images/industries/General.jpg" alt="Paper & Pulp Recovery Boiler Damper Valves" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Paper &amp; Pulp
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Severe Chemical</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Paper, Pulp &amp; Recovery
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Chemical recovery boiler flue isolation, lime kiln exhaust dampers, and chlorine dioxide corrosive
-                    vapor sealing gates built with 316L / 904L alloys.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Chemical recovery boiler flue isolation, lime kiln exhaust dampers, and corrosive vapor sealing gates.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Chemical Duty:</span>
-                        <span class="font-semibold text-slate-800">Chlorine Dioxide, Black Liquor Flue</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Alloy Selection:</span>
-                        <span class="font-semibold text-slate-800">AISI 316L &bull; 904L &bull; Titanium</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Chlorine Dioxide Flue</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">AISI 316L / 904L / Ti</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Chemical Duty</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">Recovery
-                      Gate &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-product-pill">Lime Kiln
-                      Butterfly &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Process
-                      Louver &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-serve-pill">Recovery Gate</a>
+                    <a href="/test_web/product-detail.html?id=butterfly-damper-valves" class="industry-serve-pill">Lime Kiln Butterfly</a>
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-serve-pill">Process Louver</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=guillotine-damper-valves" aria-label="Explore Paper and Pulp Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
-            <!-- Card 9: Sugar & Ethanol -->
-            <div class="industry-card group scroll-reveal delay-200">
-              <div class="industry-card-img-wrap h-48 sm:h-52">
-                <img src="/test_web/images/industries/SUGAR-_-ETHANOL.jpg" alt="Sugar & Ethanol Bagasse Boiler Dampers"
-                  loading="lazy" />
+            <!-- Card 09: Sugar, Distillery & Biofuels -->
+            <div class="industry-serve-card group scroll-reveal delay-200">
+              <!-- Left: Angled Image Box with 09 Badge & Seam Accent -->
+              <div class="industry-serve-img-wrap">
+                <span class="absolute top-3 left-3 z-20 bg-[#EE6226] text-white text-xs font-black px-2.5 py-1 rounded-md shadow-sm tracking-wider">
+                  09
+                </span>
+                <img src="/test_web/images/industries/SUGAR-_-ETHANOL.jpg" alt="Sugar & Ethanol Bagasse Boiler Dampers" loading="lazy" />
+                <div class="industry-serve-seam-accent"></div>
               </div>
-              <div class="p-6 flex flex-col flex-1 justify-between">
+
+              <!-- Right: Content Area -->
+              <div class="flex-1 p-5 flex flex-col justify-between text-left">
                 <div>
-                  <div class="flex items-center justify-between mb-2.5">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#EE6226]">
-                      Sugar &amp; Agro-Biofuel
-                    </span>
-                    <span class="text-xs font-medium text-slate-400">Biomass Combustion</span>
+                  <!-- Sector Icon -->
+                  <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white border border-orange-200/90 shadow-[0_2px_8px_rgba(238,98,38,0.12)] flex items-center justify-center text-[#EE6226] mb-2 sm:mb-2.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
                   </div>
-                  <h3
-                    class="font-inter text-lg sm:text-xl font-semibold text-[#0F172A] group-hover:text-[#EE6226] transition-colors mb-2.5">
+
+                  <!-- Title -->
+                  <h3 class="font-poppins text-base sm:text-[17px] font-bold text-[#0F172A] tracking-tight group-hover:text-[#EE6226] transition-colors mb-1.5">
                     Sugar, Distillery &amp; Biofuels
                   </h3>
-                  <p class="font-inter text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                    Bagasse-fired boiler flue gas dampers, evaporator vapor bypass valves, and distillery spent-wash
-                    incinerator dampers handling sticky flue ash.
+
+                  <!-- Description -->
+                  <p class="text-xs text-slate-500 font-normal leading-relaxed line-clamp-2 mb-3">
+                    Bagasse-fired boiler flue gas dampers, evaporator vapor bypass, and self-cleaning scraper blade seats.
                   </p>
 
-                  <div class="industry-spec-box mb-5">
-                    <div class="text-xs space-y-1">
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Boiler Type:</span>
-                        <span class="font-semibold text-slate-800">Bagasse &amp; Biomass Fired</span>
-                      </div>
-                      <div class="flex justify-between">
-                        <span class="text-slate-400">Self-Cleaning:</span>
-                        <span class="font-semibold text-slate-800">Scraper Blade Seat Design</span>
-                      </div>
+                  <!-- 3 Highlight Specs -->
+                  <div class="grid grid-cols-3 gap-1.5 py-2 mb-2 border-t border-slate-100 text-left">
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Bagasse &amp; Biomass</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Scraper Blade Seat</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 min-w-0">
+                      <svg class="w-4 h-4 text-[#EE6226] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                      <span class="text-[10px] sm:text-[11px] font-medium text-slate-600 leading-tight">Sticky Ash Resistant</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="pt-3.5 border-t border-slate-100">
-                  <div class="flex flex-wrap gap-1.5">
-                    <a href="/test_web/product-detail.html?id=double-flap-damper-valves" class="industry-product-pill">Bagasse
-                      Flap &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-product-pill">Boiler
-                      Louver &rarr;</a>
-                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-product-pill">ESP
-                      Isolation Gate &rarr;</a>
+                <!-- Bottom Row: Pills + Arrow Button -->
+                <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2 mt-auto">
+                  <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+                    <a href="/test_web/product-detail.html?id=double-flap-damper-valves" class="industry-serve-pill">Bagasse Flap</a>
+                    <a href="/test_web/product-detail.html?id=multi-louver-damper-valves" class="industry-serve-pill">Flue Gas Louver</a>
+                    <a href="/test_web/product-detail.html?id=guillotine-damper-valves" class="industry-serve-pill">Ash Isolation Gate</a>
                   </div>
+                  <a href="/test_web/product-detail.html?id=double-flap-damper-valves" aria-label="Explore Sugar & Distillery Dampers" class="w-8 h-8 rounded-full border border-[#EE6226] text-[#EE6226] flex items-center justify-center shrink-0 hover:bg-[#EE6226] hover:text-white transition-all duration-200 group-hover:scale-105">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
-
-
-        <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+<div class=" mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Architectural Bottom Engineering Consultation Strip -->
           <div
             class="mt-4 sm:mt-6 p-6 sm:p-8 rounded-2xl bg-[#0F172A] text-white flex flex-col sm:flex-row items-center justify-between gap-6 scroll-reveal delay-200">
