@@ -102,10 +102,9 @@
     href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
 
-  <script type="module" crossorigin src="/test_web/assets/about-us-CgllNv98.js"></script>
-  <link rel="modulepreload" crossorigin href="/test_web/assets/chatbot-BvMC4zPH.js">
-  <link rel="modulepreload" crossorigin href="/test_web/assets/nav-P46k54Jq.js">
-  <link rel="stylesheet" crossorigin href="/test_web/assets/about-us-BOdmMR3t.css">
+  <script type="module" crossorigin src="/test_web/assets/about-us-B-gfCW8V.js"></script>
+  <link rel="modulepreload" crossorigin href="/test_web/assets/nav-Yk9V3EGY.js">
+  <link rel="stylesheet" crossorigin href="/test_web/assets/about-us-h2kkBMKn.css">
 </head>
 
 <body
@@ -133,8 +132,8 @@
         </a>
       </div>
 
-      <!-- Centered Floating Frosted Pill Capsule (Exact Match) -->
-      <div class="hidden lg:flex items-center justify-center flex-1 mx-6">
+      <!-- Right-Aligned Navigation Links -->
+      <div class="hidden lg:flex items-center justify-end flex-1 ml-auto nav-pill-wrapper">
         <div class="nav-pill-capsule">
           <a href="/test_web/" class="nav-pill-link">
             Home
@@ -153,7 +152,7 @@
               </svg>
             </a>
             <div
-              class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-2 group-hover/pill:translate-y-0 group-hover/pill:opacity-100 group-hover/pill:visible transition-all duration-200 z-[100] min-w-[880px] lg:min-w-[960px]">
+              class="absolute top-full right-0 pt-3 opacity-0 invisible translate-y-2 group-hover/pill:translate-y-0 group-hover/pill:opacity-100 group-hover/pill:visible transition-all duration-200 z-[100] w-[880px] lg:w-[940px] max-w-[92vw]">
               <div
                 class="bg-white/98 backdrop-blur-2xl border border-slate-200/90 rounded-2xl shadow-[0_25px_50px_-12px_rgba(15,23,42,0.18),0_4px_12px_rgba(0,0,0,0.04)] p-5 flex flex-col space-y-3.5 relative text-left text-[#0F172A]">
                 <!-- Dropdown Header -->
@@ -471,13 +470,8 @@
         </div>
       </div>
 
-      <!-- Right Action: Talk To Experts Pill CTA + Mobile Menu Button -->
+      <!-- Right Action: Mobile Menu Button -->
       <div class="flex items-center gap-3 flex-shrink-0">
-        <a href="/test_web/contact-us.html#connect-desk"
-          class="hidden sm:inline-flex items-center justify-center rounded-full bg-[#EE6226] px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#d8551d] hover:shadow-[0_8px_25px_rgba(238,98,38,0.45)]">
-          Talk To Experts
-        </a>
-
         <!-- Mobile Menu Trigger -->
         <button id="mobile-menu-btn"
           class="lg:hidden p-2 text-white hover:text-[#EE6226] transition-colors rounded-xl bg-white/10 backdrop-blur-md border border-white/20"
@@ -587,172 +581,260 @@
       </div>
     </section>
 
-    <!-- 2. COMPANY OVERVIEW & TAILORED SOLUTIONS (60% Light Canvas, 30% Slate Cards, 10% Flame Accents) -->
+    <!-- 2. COMPANY OVERVIEW & TAILORED SOLUTIONS (Exact match to engineering design mockup) -->
     <section id="engineering-overview"
-      class="relative w-full overflow-hidden bg-[#F8FAFC] px-4 py-16 md:py-24 lg:px-12 border-b border-slate-200">
-      <!-- Subtle Technical Dot Grid (Home Match) -->
+      class="relative w-full overflow-hidden bg-[#F9FCFE] px-4 py-12 sm:py-16 md:py-20 lg:py-24 lg:px-12 border-b border-slate-200">
+      
+      <!-- Subtle Technical Dot Grid & Accent Glow -->
       <div
-        class="absolute inset-0 z-0 pointer-events-none opacity-[0.04] bg-[radial-gradient(#EE6226_1.5px,transparent_1.5px)] [background-size:28px_28px]">
+        class="absolute inset-0 z-0 pointer-events-none opacity-[0.035] bg-[radial-gradient(#0F172A_1.5px,transparent_1.5px)] [background-size:24px_24px]">
       </div>
-      <div class="relative z-10 mx-auto">
-        <!-- Section Header -->
-        <div class="mb-10 text-left sm:mb-12">
-          <span class="mb-3 block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 sm:text-sm">
-            SPECIALIZED ENGINEERING &bull; PUNE, INDIA
-          </span>
+      <div class="absolute -right-24 top-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-          <h2
-            class="font-poppins text-2xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-3xl md:text-4xl lg:text-5xl scroll-heading">
-            Tailored Solutions Built Through In-Depth Application Studies
-          </h2>
+      <!-- Floating Chevron Accent Mark (Top-Right subtle graphic matching mockup) -->
+      <div class="absolute right-8 sm:right-16 lg:right-32 top-6 lg:top-8 z-0 pointer-events-none opacity-80 select-none">
+        <svg class="w-4 h-7 text-[#FC5814]" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3L11 9.5L3 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M3 12L11 18.5L3 25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
 
-          <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base scroll-subtext delay-100 max-w-3xl">
-            Engineered to Application Requirements, Operating Pressures &amp; Thermal Envelopes
-          </p>
-        </div>
-
-        <!-- 2-Column Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          <!-- Left Column: Core Data from Live Website -->
-          <div class="lg:col-span-7 space-y-6 text-left scroll-reveal-left delay-100">
-            <div class="inline-block px-3 py-1 rounded-lg bg-slate-200/70 text-[#0F172A] text-xs font-mono font-bold">
-              ESTABLISHED ENGINEERING EXCELLENCE
+      <div class="relative z-10 mx-auto max-w-[1440px]">
+        <!-- 2-Column Content Grid matching mockup -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-start">
+          
+          <!-- Left Column: Headers, Engineering Core & 4 Actuation Cards -->
+          <div class="lg:col-span-7 xl:col-span-7 space-y-5 text-left scroll-reveal-left delay-100">
+            
+            <!-- Section Eyebrow with Orange Accent Line -->
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-[2.5px] bg-[#FC5814] rounded-full inline-block"></span>
+              <span class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+                SPECIALIZED ENGINEERING &bull; PUNE, INDIA
+              </span>
             </div>
-            <h3 class="font-poppins text-2xl sm:text-3xl font-[600] text-[#0F172A] leading-tight">
-              State-of-the-Art 3D CAD, FEA Simulation &amp; CFD Optimization
-            </h3>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-              At <strong class="text-[#0F172A]">Bellator Engineers</strong>, we understand the importance of delivering
-              tailored solutions to meet specific application requirements. Our products are meticulously designed
-              through
-              in-depth application studies and utilizing cutting-edge <strong class="text-[#0F172A]">3D CAD
-                technology</strong>.
-            </p>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-              To ensure optimal performance, we employ <strong class="text-[#0F172A]">Finite Element Analysis
-                (FEA)</strong>
-              and <strong class="text-[#0F172A]">Computational Fluid Dynamics (CFD)</strong> during the product design
-              process.
-              This attention to detail allows us to meet and exceed application requirements and enables our Damper
-              Valve
-              Designs to comply with <strong class="text-[#EE6226]">SIL and CE requirements</strong>.
+
+            <!-- Primary Section Heading with 'In-Depth' highlighted in orange -->
+            <h2
+              class="font-poppins text-3xl sm:text-4xl lg:text-[44px] font-black leading-[1.12] tracking-tight text-[#0B132A] scroll-heading">
+              Tailored Solutions Built Through<br />
+              <span class="text-[#FC5814]">In-Depth</span> Application Studies
+            </h2>
+
+            <!-- Subtitle -->
+            <p class="text-xs sm:text-sm md:text-base font-normal text-slate-500 scroll-subtext delay-100 max-w-2xl">
+              Engineered to Application Requirements, Operating Pressures &amp; Thermal Envelopes
             </p>
 
-            <!-- 4 Actuation Specialties Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-              <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs flex items-start gap-3">
-                <div class="p-2 rounded-lg bg-orange-50 text-[#EE6226] flex-shrink-0">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
+            <!-- Established Engineering Excellence Badge & Detailed Content -->
+            <div class="pt-2">
+              <div class="inline-block px-2.5 py-1 rounded bg-[#E2E8F0] text-[#1E293B] text-[10px] sm:text-[11px] font-mono font-bold tracking-wider">
+                ESTABLISHED ENGINEERING EXCELLENCE
+              </div>
+              <h3 class="font-poppins text-xl sm:text-2xl font-bold text-[#0B132A] leading-snug mt-3">
+                State-of-the-Art 3D CAD, FEA Simulation &amp; CFD Optimization
+              </h3>
+              <div class="mt-3 space-y-2.5 text-slate-600 text-xs sm:text-[13px] leading-relaxed">
+                <p>
+                  At <strong class="text-[#0B132A] font-bold">Bellator Engineers</strong>, we understand the importance of delivering
+                  tailored solutions to meet specific application requirements. Our products are meticulously designed
+                  through in-depth application studies and utilizing cutting-edge <strong class="text-[#0B132A] font-bold">3D CAD
+                    technology</strong>.
+                </p>
+                <p>
+                  To ensure optimal performance, we employ <strong class="text-[#0B132A] font-bold">Finite Element Analysis
+                    (FEA)</strong>
+                  and <strong class="text-[#0B132A] font-bold">Computational Fluid Dynamics (CFD)</strong> during the product design
+                  process. This attention to detail allows us to meet and exceed application requirements and enables our Damper
+                  Valve Designs to comply with <strong class="text-[#FC5814] font-bold">SIL and CE requirements</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4 Actuation Specialties Grid (Single row of 4 cards on desktop, 2x2 on mobile) -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 pt-2">
+              <!-- Card 1: Motorized Dampers -->
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                 <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-[#0F172A]">Motorized Dampers</h4>
-                  <p class="text-[12px] text-slate-600 mt-0.5">Electric multi-turn actuators with modulating 4-20mA
-                    control
-                    &amp; fieldbus protocol.</p>
+                  <div class="w-8 h-8 rounded-full bg-[#FFF2EB] flex items-center justify-center text-[#FC5814] mb-3 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h4 class="text-[11px] font-bold uppercase tracking-wider text-[#0B132A] mb-1">Motorized Dampers</h4>
+                  <p class="text-[11px] text-slate-500 leading-snug">Electric multi-turn actuators with modulating 4&ndash;20mA control &amp; fieldbus protocol.</p>
                 </div>
               </div>
 
-              <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs flex items-start gap-3">
-                <div class="p-2 rounded-lg bg-orange-50 text-[#EE6226] flex-shrink-0">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                  </svg>
-                </div>
+              <!-- Card 2: Pneumatic Dampers -->
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                 <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-[#0F172A]">Pneumatic Dampers</h4>
-                  <p class="text-[12px] text-slate-600 mt-0.5">Rapid trip pneumatic cylinders with failsafe spring
-                    return
-                    or air reservoir safety systems.</p>
+                  <div class="w-8 h-8 rounded-full bg-[#FFF2EB] flex items-center justify-center text-[#FC5814] mb-3 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                  </div>
+                  <h4 class="text-[11px] font-bold uppercase tracking-wider text-[#0B132A] mb-1">Pneumatic Dampers</h4>
+                  <p class="text-[11px] text-slate-500 leading-snug">Rapid trip pneumatic cylinders with failsafe spring return or air reservoir safety systems.</p>
                 </div>
               </div>
 
-              <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs flex items-start gap-3">
-                <div class="p-2 rounded-lg bg-orange-50 text-[#EE6226] flex-shrink-0">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                  </svg>
-                </div>
+              <!-- Card 3: Hydraulic Dampers -->
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                 <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-[#0F172A]">Hydraulic Dampers</h4>
-                  <p class="text-[12px] text-slate-600 mt-0.5">High-torque hydraulic actuation packages for ultra-large
-                    ducts and heavy blast barriers.</p>
+                  <div class="w-8 h-8 rounded-full bg-[#FFF2EB] flex items-center justify-center text-[#FC5814] mb-3 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg>
+                  </div>
+                  <h4 class="text-[11px] font-bold uppercase tracking-wider text-[#0B132A] mb-1">Hydraulic Dampers</h4>
+                  <p class="text-[11px] text-slate-500 leading-snug">High-torque hydraulic actuation packages for ultra-large ducts and heavy blast barriers.</p>
                 </div>
               </div>
 
-              <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs flex items-start gap-3">
-                <div class="p-2 rounded-lg bg-orange-50 text-[#EE6226] flex-shrink-0">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
+              <!-- Card 4: Manual Damper Valves -->
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
                 <div>
-                  <h4 class="text-xs font-bold uppercase tracking-wider text-[#0F172A]">Manual Damper Valves</h4>
-                  <p class="text-[12px] text-slate-600 mt-0.5">Heavy-duty worm gearboxes, hand levers, and declutchable
-                    manual overrides.</p>
+                  <div class="w-8 h-8 rounded-full bg-[#FFF2EB] flex items-center justify-center text-[#FC5814] mb-3 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="3" stroke-width="2" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                    </svg>
+                  </div>
+                  <h4 class="text-[11px] font-bold uppercase tracking-wider text-[#0B132A] mb-1">Manual Damper Valves</h4>
+                  <p class="text-[11px] text-slate-500 leading-snug">Heavy-duty worm gearboxes, hand levers, and declutchable manual overrides.</p>
                 </div>
               </div>
             </div>
+
+            <!-- Action Buttons: Explore Our Solutions & Download Technical Brochure (Pill Shape) -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="/test_web/products.html"
+                class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#FC5814] hover:bg-[#e04a0b] text-white font-semibold text-xs sm:text-[13px] shadow-sm transition-all hover:scale-[1.02]">
+                <span>Explore Our Solutions</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              <a href="/test_web/contact-us.html#connect-desk"
+                class="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-white border border-[#FC5814] text-[#FC5814] hover:bg-orange-50/50 font-semibold text-xs sm:text-[13px] shadow-sm transition-all hover:scale-[1.02]">
+                <svg class="w-4 h-4 text-[#FC5814]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Download Technical Brochure</span>
+              </a>
+            </div>
+
           </div>
 
-          <!-- Right Column: Engineering Visual & Compliance Badges -->
-          <div class="lg:col-span-5 scroll-reveal-right delay-200">
-            <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-xl relative overflow-hidden">
-              <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-bl-full pointer-events-none"></div>
-
-              <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-                <div>
-                  <span class="text-[10px] font-mono uppercase tracking-widest text-[#EE6226] font-bold">Verification
-                    Framework</span>
-                  <h4 class="text-base font-bold text-[#0F172A] mt-0.5">Computational Design Rigor</h4>
-                </div>
-                <div
-                  class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold border border-emerald-200">
-                  SIL &amp; CE Compliant
-                </div>
-              </div>
-
-              <!-- Valve Image Showcase -->
-              <div
-                class="my-5 relative rounded-xl overflow-hidden bg-slate-900/90 p-6 border border-slate-800 flex items-center justify-center min-h-[300px] sm:min-h-[350px]">
+          <!-- Right Column: Verification Framework Showcase Card & Trust Indicators -->
+          <div class="lg:col-span-5 xl:col-span-5 space-y-4 text-left scroll-reveal-right delay-200">
+            <!-- Showcase Card -->
+            <div class="rounded-2xl bg-white border border-[#E2E8F0] shadow-xl overflow-hidden relative">
+              <!-- Visual Banner (Verification Framework & Valves Image) -->
+              <div class="relative w-full overflow-hidden bg-slate-900">
                 <img
-                  src="/test_web/images/gallery/BE10 SERIES_SINGLE FLAP BUTTERFLY DAMPER VALVE/BE10 SERIES - MOTORIZED SINGLE FLAP BUTTERFLY DAMPER VALVE.png"
-                  alt="Motorized Butterfly Damper Valve"
-                  class="h-64 sm:h-72 md:h-80 w-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-105" />
-                <div
-                  class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[10px] font-mono text-slate-400 bg-slate-950/75 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">
-                  <span>3D CAD Model: BE-10 Series</span>
-                  <span class="text-[#EE6226] font-semibold">100% FEA Analyzed</span>
-                </div>
+                  src="/test_web/images/general/be10-verification-showcase.webp"
+                  alt="BE-10 Series Butterfly Damper Valves Verification Framework"
+                  class="w-full h-auto object-cover block" />
               </div>
 
               <!-- Simulation Metrics Checklist -->
-              <div class="space-y-2.5 text-xs">
-                <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
-                  <span class="text-slate-600 font-medium">Finite Element Stress Analysis</span>
-                  <span class="text-[#0F172A] font-bold font-mono">ASME Sec VIII Div 2</span>
+              <div class="divide-y divide-slate-100 text-xs px-5 sm:px-6 py-2 bg-white">
+                <div class="flex items-center justify-between py-2.5">
+                  <div class="flex items-center gap-3 text-[#1E293B] font-medium">
+                    <svg class="w-4 h-4 text-[#1E293B] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <span>Finite Element Stress Analysis</span>
+                  </div>
+                  <span class="text-[#0B132A] font-bold font-mono text-[11px] sm:text-xs">ASME Sec VIII Div 2</span>
                 </div>
-                <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
-                  <span class="text-slate-600 font-medium">Computational Fluid Dynamics (CFD)</span>
-                  <span class="text-[#0F172A] font-bold font-mono">&Delta;P &amp; Aerodynamic Flow</span>
+
+                <div class="flex items-center justify-between py-2.5">
+                  <div class="flex items-center gap-3 text-[#1E293B] font-medium">
+                    <svg class="w-4 h-4 text-[#1E293B] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <span>Computational Fluid Dynamics (CFD)</span>
+                  </div>
+                  <span class="text-[#0B132A] font-bold font-mono text-[11px] sm:text-xs">&Delta;P &amp; Aerodynamic Flow</span>
                 </div>
-                <div class="flex items-center justify-between py-1.5 border-b border-slate-100">
-                  <span class="text-slate-600 font-medium">Thermal Expansion Compensation</span>
-                  <span class="text-[#0F172A] font-bold font-mono">Up to 1,200°C Limit</span>
+
+                <div class="flex items-center justify-between py-2.5">
+                  <div class="flex items-center gap-3 text-[#1E293B] font-medium">
+                    <svg class="w-4 h-4 text-[#1E293B] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                    </svg>
+                    <span>Thermal Expansion Compensation</span>
+                  </div>
+                  <span class="text-[#0B132A] font-bold font-mono text-[11px] sm:text-xs">Up to 1,200&deg;C Limit</span>
                 </div>
-                <div class="flex items-center justify-between py-1.5">
-                  <span class="text-slate-600 font-medium">Safety Integrity Level</span>
-                  <span class="text-[#EE6226] font-bold font-mono">SIL-2 / SIL-3 Ready</span>
+
+                <div class="flex items-center justify-between py-2.5">
+                  <div class="flex items-center gap-3 text-[#1E293B] font-medium">
+                    <svg class="w-4 h-4 text-[#FC5814] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                    <span>Safety Integrity Level</span>
+                  </div>
+                  <span class="text-[#FC5814] font-bold font-mono text-[11px] sm:text-xs">SIL-2 / SIL-3 Ready</span>
                 </div>
               </div>
             </div>
+
+            <!-- Bottom Trust Badges (3D CAD Design, Optimized Performance, SIL/CE Compliance) -->
+            <div class="flex items-center justify-between sm:justify-around px-2 pt-2 text-left">
+              <!-- Item 1: 3D CAD Design -->
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-[#FC5814] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+                <div class="text-[11px] sm:text-xs leading-tight">
+                  <span class="font-bold text-[#0B132A] block">3D CAD</span>
+                  <span class="text-slate-500 font-normal">Design</span>
+                </div>
+              </div>
+
+              <div class="h-6 w-px bg-slate-200"></div>
+
+              <!-- Item 2: Optimized Performance -->
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-[#FC5814] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 20V10"></path>
+                  <path d="M12 20V4"></path>
+                  <path d="M6 20v-6"></path>
+                </svg>
+                <div class="text-[11px] sm:text-xs leading-tight">
+                  <span class="font-bold text-[#0B132A] block">Optimized</span>
+                  <span class="text-slate-500 font-normal">Performance</span>
+                </div>
+              </div>
+
+              <div class="h-6 w-px bg-slate-200"></div>
+
+              <!-- Item 3: SIL / CE Compliance -->
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-[#FC5814] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+                <div class="text-[11px] sm:text-xs leading-tight">
+                  <span class="font-bold text-[#0B132A] block">SIL / CE</span>
+                  <span class="text-slate-500 font-normal">Compliance</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -1723,14 +1805,14 @@
     <div class="relative z-10  mx-auto px-6 md:px-12 xl:px-16 py-16 md:py-20">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 text-left">
         <!-- Col 1: Brand Info -->
-        <div class="md:col-span-2 lg:col-span-3 flex flex-col items-start text-left pr-4">
+        <div class="md:col-span-2 lg:col-span-4 flex flex-col items-start text-left pr-4">
           <div class="flex items-center gap-2.5 mb-5">
             <img src="/test_web/logo-white.png" alt="Bellator Engineers" class="h-9 sm:h-10 w-auto object-contain" />
           </div>
           <p class="text-gray-400 text-sm md:text-[15px] leading-relaxed">
             Bellator Engineers provides specialized damper valve engineering and precision manufacturing across nuclear,
-            marine,
-            power, and heavy process industries with complete 3D CAD, FEA, CFD validation, and SIL-compliant excellence.
+            marine, power, and heavy process industries with complete 3D CAD, FEA, CFD validation, and SIL-compliant
+            excellence.
           </p>
           <div class="flex items-center gap-3 mt-6">
             <a href="https://wa.me/919028219202?text=Hello%20Bellator%20Engineers%2C%20I%20would%20like%20to%20inquire%20about%20Damper%20Valves"
@@ -1773,41 +1855,21 @@
         <!-- Col 2: Quick Links -->
         <div class="md:col-span-1 lg:col-span-2">
           <h3 class="text-white text-[15px] font-semibold uppercase tracking-wider mb-5">Quick Links</h3>
-          <ul class="space-y-2.5 text-sm">
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300" href="/test_web/">Home</a></li>
-            <li><a class="text-[#EE6226] font-semibold transition-colors duration-300" href="/test_web/about-us.html">About
+          <ul class="space-y-3 text-sm">
+            <li><a class="text-slate-400 hover:text-[#EE6226] transition-colors duration-200" href="/test_web/">Home</a></li>
+            <li><a class="text-[#EE6226] font-semibold transition-colors duration-200" href="/test_web/about-us.html">About
                 Us</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
+            <li><a class="text-slate-400 hover:text-[#EE6226] transition-colors duration-200"
                 href="/test_web/products.html">Products</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
+            <li><a class="text-slate-400 hover:text-[#EE6226] transition-colors duration-200"
                 href="/test_web/careers.html">Careers</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/contact-us.html">Contact
-                Us</a></li>
+            <li><a class="text-slate-400 hover:text-[#EE6226] transition-colors duration-200"
+                href="/test_web/contact-us.html">Contact Us</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Valve Solutions -->
+        <!-- Col 3: Engineering Desk -->
         <div class="md:col-span-1 lg:col-span-3">
-          <h3 class="text-white text-[15px] font-semibold uppercase tracking-wider mb-5">Valve Solutions</h3>
-          <ul class="space-y-2.5 text-sm">
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/products.html#butterfly-family">Butterfly Damper Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/products.html#gate-family">Double Disc Gate Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/products.html#louver-family">Multi-Louver Damper Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/products.html#diverter-family">Three Way Diverter Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/products.html#air-seal-family">Air Seal Damper Valves</a></li>
-            <li><a class="text-gray-400 hover:text-[#EE6226] transition-colors duration-300"
-                href="/test_web/products.html#severe-family">Refractory Lined Dampers (1200°C)</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Engineering Desk -->
-        <div class="md:col-span-1 lg:col-span-2">
           <h3 class="text-white text-[15px] font-semibold uppercase tracking-wider mb-5">Engineering Desk</h3>
           <div class="space-y-4 text-sm">
             <div>
@@ -1825,17 +1887,17 @@
             <div>
               <p class="text-[#EE6226] uppercase tracking-[0.15em] text-xs font-bold mb-1">Direct Technical RFQ</p>
               <a href="mailto:sales@bellatorengineers.com"
-                class="text-gray-400 hover:text-white transition-colors break-words">sales@bellatorengineers.com</a>
+                class="text-slate-400 hover:text-white transition-colors break-words">sales@bellatorengineers.com</a>
             </div>
             <div>
               <p class="text-[#EE6226] uppercase tracking-[0.15em] text-xs font-bold mb-1">Founder &amp; Chairman</p>
               <a href="mailto:vijay@bellatorengineers.com"
-                class="text-gray-400 hover:text-white transition-colors break-words">vijay@bellatorengineers.com</a>
+                class="text-slate-400 hover:text-white transition-colors break-words">vijay@bellatorengineers.com</a>
             </div>
             <div>
               <p class="text-[#EE6226] uppercase tracking-[0.15em] text-xs font-bold mb-1">Co-Founder &amp; Director</p>
               <a href="mailto:sambhaji@bellatorengineers.com"
-                class="text-gray-400 hover:text-white transition-colors break-words">sambhaji@bellatorengineers.com</a>
+                class="text-slate-400 hover:text-white transition-colors break-words">sambhaji@bellatorengineers.com</a>
             </div>
             <div>
               <p class="text-[#EE6226] uppercase tracking-[0.15em] text-xs font-bold mb-1 flex items-center gap-1.5">
@@ -1854,19 +1916,37 @@
           </div>
         </div>
 
-        <!-- Col 5: Location -->
-        <div class="md:col-span-1 lg:col-span-2">
+        <!-- Col 4: Location -->
+        <div class="md:col-span-1 lg:col-span-3">
           <h3 class="text-white text-[15px] font-semibold uppercase tracking-wider mb-5">Location</h3>
-          <div class="space-y-3 text-sm">
+          <div class="space-y-3.5 text-sm">
             <div>
-              <p class="text-[#EE6226] uppercase tracking-[0.15em] text-xs font-bold mb-1">Head Office &amp; Works
-              </p>
-              <p class="text-gray-400 leading-relaxed">
+              <p class="text-[#EE6226] uppercase tracking-[0.15em] text-xs font-bold mb-1">Head Office &amp; Works</p>
+              <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
                 Bellator Engineers India Pvt Ltd,<br />
                 Plot No 207, J Block, MIDC Bhosari,<br />
-                Pune - 411026, Maharashtra,<br />
-                India.
+                Pune - 411026, Maharashtra, India.
               </p>
+            </div>
+            <!-- Small Map Section -->
+            <div class="mt-3 overflow-hidden rounded-md border border-white/10 bg-slate-900/60 shadow-inner group">
+              <div class="relative w-full h-28 sm:h-32">
+                <iframe loading="lazy"
+                  src="https://maps.google.com/maps?q=bellator%20engineers%20bhosari&t=m&z=14&output=embed&iwloc=near"
+                  title="Bellator Engineers Bhosari Location Map"
+                  class="w-full h-full border-0 opacity-80 group-hover:opacity-100 transition-opacity duration-300 filter contrast-125"
+                  allowfullscreen>
+                </iframe>
+                <a href="https://maps.google.com/maps?q=bellator%20engineers%20bhosari" target="_blank"
+                  rel="noopener noreferrer"
+                  class="absolute inset-0 flex items-end p-2 bg-gradient-to-t from-[#0B1220]/90 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity">
+                  <span
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#EE6226] text-white text-[11px] font-semibold shadow hover:bg-[#d8551d] transition-all">
+                    <span>View on Google Maps</span>
+                    <span class="text-xs">&nearr;</span>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

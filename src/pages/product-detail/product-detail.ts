@@ -541,10 +541,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const themeGradients = [
-      { bg: 'bg-damper-emerald', badgeBg: 'bg-white/90 text-[#15803D]', badgeText: 'Double Offset', subText: 'BE20 SERIES' },
-      { bg: 'bg-damper-purple', badgeBg: 'bg-white/90 text-[#7E22CE]', badgeText: 'Triple Offset', subText: 'BE30 SERIES' },
-      { bg: 'bg-damper-blue', badgeBg: 'bg-white/90 text-[#1D4ED8]', badgeText: 'Three Lever', subText: 'BE40 SERIES' },
-      { bg: 'bg-damper-orange', badgeBg: 'bg-white/90 text-[#C2410C]', badgeText: 'Air Seal', subText: 'BE50 SERIES' },
+      {
+        bg: 'bg-gradient-to-br from-[#F0FDF4] via-[#DCFCE7] to-[#BBF7D0]',
+        badgeText: 'Double Offset',
+        textColor: 'text-[#15803D]',
+        iconSvg: `<svg class="w-3.5 h-3.5 text-[#15803D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg>`
+      },
+      {
+        bg: 'bg-gradient-to-br from-[#FAF5FF] via-[#F3E8FF] to-[#DDD6FE]',
+        badgeText: 'Triple Offset',
+        textColor: 'text-[#7C3AED]',
+        iconSvg: `<svg class="w-3.5 h-3.5 text-[#7C3AED]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5" fill="currentColor"/><path d="M12 9.5V2.5C9.5 2.5 8 4 8 6.5s2 3 4 3z"/><path d="M14.5 12h7c0-2.5-1.5-4-4-4s-3 2-3 4z"/><path d="M12 14.5v7c2.5 0 4-1.5 4-4s-2-3-4-3z"/><path d="M9.5 12h-7c0 2.5 1.5 4 4 4s3-2 3-4z"/></svg>`
+      },
+      {
+        bg: 'bg-gradient-to-br from-[#EFF6FF] via-[#DBEAFE] to-[#BFDBFE]',
+        badgeText: 'Three Lever',
+        textColor: 'text-[#2563EB]',
+        iconSvg: `<svg class="w-3.5 h-3.5 text-[#2563EB]" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>`
+      },
+      {
+        bg: 'bg-gradient-to-br from-[#FFF7ED] via-[#FFEDD5] to-[#FED7AA]',
+        badgeText: 'Air Seal',
+        textColor: 'text-[#EA580C]',
+        iconSvg: `<svg class="w-3.5 h-3.5 text-[#EA580C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M8 5c-1.5 2-1.5 3.5 0 5s1.5 3.5 0 5-1.5 3.5 0 5"/><path d="M12 4c-1.5 2-1.5 3.5 0 5s1.5 3.5 0 5-1.5 3.5 0 5"/><path d="M16 5c-1.5 2-1.5 3.5 0 5s1.5 3.5 0 5-1.5 3.5 0 5"/></svg>`
+      },
     ];
 
     otherGrid.innerHTML = otherProducts.map((p, idx) => {
@@ -554,29 +574,35 @@ document.addEventListener('DOMContentLoaded', () => {
       const delay = idx * 110;
 
       return `
-        <a class="infosys-damper-card scroll-reveal-item group block" href="${cleanBase}product-detail.html?id=${p.id}" style="--stagger-delay: ${delay}ms;">
-          <div class="infosys-damper-visual ${theme.bg}">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.45),transparent_60%)]"></div>
-            <div class="absolute top-3.5 right-3.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase ${theme.badgeBg} shadow-xs border border-white/60">
-              ${p.model || theme.subText}
-            </div>
-            <img alt="${p.title}" src="${pImg}" loading="lazy" class="max-h-[140px] max-w-[85%] object-contain" />
-          </div>
-          <div class="infosys-damper-body">
-            <h3 class="mb-2 text-base font-bold leading-snug text-[#0F172A] group-hover:text-[#EE6226] transition-colors line-clamp-2">
-              ${p.title}
-            </h3>
-            <p class="text-xs leading-relaxed text-slate-600 mb-3 flex-1 line-clamp-3">
-              ${shortDesc}
-            </p>
-            <div class="infosys-damper-cta mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-800 transition-colors">
-              <span class="flex items-center gap-1.5 underline decoration-[#EE6226] underline-offset-4">
-                Learn More
-                <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 text-[#EE6226]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+        <a class="damper-showcase-card scroll-reveal-item group flex flex-col justify-between" href="${cleanBase}product-detail.html?id=${p.id}" style="--stagger-delay: ${delay}ms;">
+          <div class="damper-showcase-visual ${theme.bg}">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.65),transparent_60%)]"></div>
+            <!-- Top Left Icon + Badge -->
+            <div class="absolute top-3.5 left-3.5 flex items-center gap-2 z-10">
+              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white shadow-xs flex items-center justify-center shrink-0">
+                ${theme.iconSvg}
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-white/90 backdrop-blur-md ${theme.textColor} shadow-sm border border-white/70">
+                ${p.categoryLabel || p.category || theme.badgeText}
               </span>
-              <span class="text-[10px] font-medium text-slate-400 font-mono">${p.model}</span>
+            </div>
+            <img alt="${p.title}" src="${pImg}" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="damper-showcase-body flex flex-col flex-1 justify-between p-5 bg-white">
+            <div>
+              <h3 class="mb-1.5 text-base font-bold leading-snug text-[#0F172A] group-hover:text-[#EE6226] transition-colors line-clamp-2">
+                ${p.title}
+              </h3>
+              <p class="text-xs leading-relaxed text-slate-600 mb-3 flex-1 line-clamp-3">
+                ${shortDesc}
+              </p>
+            </div>
+            <div class="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-800 transition-colors">
+              <span class="flex items-center gap-1.5 underline decoration-slate-900 group-hover:decoration-[#EE6226] group-hover:text-[#EE6226] underline-offset-4 transition-colors">
+                Learn More
+                <span class="text-[#EE6226] text-sm leading-none transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+              </span>
+              <span class="text-[11px] font-medium text-slate-400 font-mono tracking-tight">${p.model}</span>
             </div>
           </div>
         </a>

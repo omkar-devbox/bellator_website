@@ -82,14 +82,14 @@ export function initSharedNavigation(activePageId: string): void {
 }
 
 /**
- * Slim top progress bar tracking scroll progress
+ * Slim top progress bar tracking scroll progress with orange-to-sky gradient
  */
-function initScrollProgress(): void {
+export function initScrollProgress(): void {
   let progressBar = document.getElementById('scroll-progress-bar');
   if (!progressBar) {
     progressBar = document.createElement('div');
     progressBar.id = 'scroll-progress-bar';
-    progressBar.className = 'fixed top-0 left-0 h-[3px] bg-[#EE6226] z-[9999] transition-[width] duration-75 ease-out pointer-events-none w-0';
+    progressBar.className = 'fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#EE6226] via-[#F97316] to-[#3B82F6] z-[9999] shadow-[0_0_10px_rgba(238,98,38,0.8)] transition-[width] duration-75 ease-out pointer-events-none w-0';
     document.body.appendChild(progressBar);
   }
 
@@ -97,8 +97,17 @@ function initScrollProgress(): void {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    const clampedProgress = Math.min(100, Math.max(0, progress));
     if (progressBar) {
-      progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+      progressBar.style.width = `${clampedProgress}%`;
+    }
+
+    // Update circular progress ring on back-to-top button if present
+    const circle = document.getElementById('back-to-top-progress');
+    if (circle) {
+      const circumference = 113.1; // 2 * PI * 18
+      const offset = circumference - (clampedProgress / 100) * circumference;
+      circle.style.strokeDashoffset = `${offset}`;
     }
   };
 
@@ -107,17 +116,22 @@ function initScrollProgress(): void {
 }
 
 /**
- * Floating Back-to-Top button that fades in past 300px scroll depth
+ * Floating Back-to-Top button with circular SVG scroll progress ring,
+ * positioned cleanly above the chatbot launcher (bottom-24 right-6)
  */
-function initBackToTop(): void {
+export function initBackToTop(): void {
   let btn = document.getElementById('back-to-top-btn');
   if (!btn) {
     btn = document.createElement('button');
     btn.id = 'back-to-top-btn';
     btn.setAttribute('aria-label', 'Scroll back to top');
-    btn.className = 'fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-slate-900/90 hover:bg-[#EE6226] text-white shadow-lg flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3 hover:scale-110 cursor-pointer border border-white/10 backdrop-blur-sm';
+    btn.className = 'fixed bottom-24 right-6 z-40 w-11 h-11 rounded-full bg-[#0B1220]/90 hover:bg-[#0B1220] text-white shadow-xl flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3 hover:scale-105 hover:-translate-y-0.5 cursor-pointer border border-white/15 hover:border-[#EE6226] backdrop-blur-md group';
     btn.innerHTML = `
-      <svg class="w-5 h-5 stroke-current" fill="none" stroke-width="2.5" viewBox="0 0 24 24">
+      <svg class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none p-0.5" viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r="18" stroke="rgba(255,255,255,0.12)" stroke-width="2.5" fill="none" />
+        <circle id="back-to-top-progress" cx="22" cy="22" r="18" stroke="#EE6226" stroke-width="2.5" fill="none" stroke-dasharray="113.1" stroke-dashoffset="113.1" stroke-linecap="round" class="transition-[stroke-dashoffset] duration-100 ease-out" />
+      </svg>
+      <svg class="w-4 h-4 text-white group-hover:text-[#EE6226] transition-colors relative z-10 stroke-current" fill="none" stroke-width="2.5" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
       </svg>
     `;
@@ -145,7 +159,7 @@ function initBackToTop(): void {
 /**
  * Smooth in-page anchor navigation with header offset compensation
  */
-function initSmoothAnchorScroll(): void {
+export function initSmoothAnchorScroll(): void {
   document.addEventListener('click', (e) => {
     const target = (e.target as HTMLElement).closest('a');
     if (!target) return;

@@ -1,4 +1,5 @@
 import './style.css';
+import { initSharedNavigation } from './assets/js/nav';
 
 // Navigation menu toggle (mobile button & dock circle button)
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -523,7 +524,7 @@ function initHeroTypewriter() {
 }
 
 /* ==========================================================================
-   Technorithm / Pill Navbar Scroll Effect
+   Technorithm / Pill Navbar Scroll & Active Scrollspy System
    ========================================================================== */
 function initNavbarScroll() {
   const nav = document.getElementById('techno-navbar');
@@ -540,6 +541,35 @@ function initNavbarScroll() {
 
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
+
+  // Scrollspy for in-page section links (#who-we-are, #partnership, #scope-of-work, #what-we-do, #industries, #why-us, #standards, #testimonials)
+  const sections = Array.from(document.querySelectorAll<HTMLElement>('section[id]'));
+  if (sections.length > 0) {
+    const handleScrollspy = () => {
+      const scrollPos = window.scrollY + 140;
+      let currentSectionId = '';
+      for (const sec of sections) {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentSectionId = sec.getAttribute('id') || '';
+        }
+      }
+
+      if (currentSectionId) {
+        document.querySelectorAll<HTMLAnchorElement>('.nav-pill-link').forEach((link) => {
+          const href = link.getAttribute('href');
+          if (href === `#${currentSectionId}`) {
+            link.classList.add('active');
+          } else if (href && href.startsWith('#')) {
+            link.classList.remove('active');
+          }
+        });
+      }
+    };
+    window.addEventListener('scroll', handleScrollspy, { passive: true });
+    handleScrollspy();
+  }
 }
 
 
@@ -585,15 +615,15 @@ function initTestimonialSlider() {
     const offset = currentIndex * slideWidthPercent;
     track.style.transform = `translateX(-${offset}%)`;
 
-    // Render pagination dots
+    // Render pagination dots matching mockup
     dotsContainer.innerHTML = '';
     const totalDots = maxIndex + 1;
     for (let i = 0; i < totalDots; i++) {
       const dot = document.createElement('button');
       dot.setAttribute('aria-label', `Go to testimonial slide ${i + 1}`);
       dot.className = i === currentIndex
-        ? 'rounded-full transition-all duration-500 ease-out bg-[#EE6226] w-8 h-2.5 cursor-pointer'
-        : 'rounded-full transition-all duration-500 ease-out bg-gray-300 w-2.5 h-2.5 hover:bg-gray-400 cursor-pointer';
+        ? 'rounded-full transition-all duration-300 bg-[#EE6226] w-3 h-3 cursor-pointer shadow-sm'
+        : 'rounded-full transition-all duration-300 bg-[#CBD5E1] w-2.5 h-2.5 hover:bg-slate-400 cursor-pointer';
       dot.addEventListener('click', () => {
         currentIndex = i;
         updateSlider();
@@ -601,6 +631,21 @@ function initTestimonialSlider() {
       });
       dotsContainer.appendChild(dot);
     }
+
+    // Spotlight active card matching mockup
+    const featuredIndex = currentIndex + (visibleCount === 3 ? 1 : 0);
+    slides.forEach((slide, idx) => {
+      const box = slide.querySelector('.techno-testimonial-box');
+      if (box) {
+        if (idx === featuredIndex) {
+          box.classList.add('border-2', 'border-[#EE6226]', 'shadow-lg', 'shadow-orange-500/10');
+          box.classList.remove('border-slate-200');
+        } else {
+          box.classList.remove('border-2', 'border-[#EE6226]', 'shadow-lg', 'shadow-orange-500/10');
+          box.classList.add('border-slate-200');
+        }
+      }
+    });
   }
 
   function nextSlide() {
@@ -649,16 +694,67 @@ function initTestimonialSlider() {
    Bidirectional Scroll Text & Element Load / Unload Animation System
    ========================================================================== */
 function initScrollLoadUnload() {
-  // Auto-stagger children in grid rows
-  document.querySelectorAll<HTMLElement>('.techno-why-card, .industry-card').forEach((card, idx) => {
+  // 1. Auto-stagger Who We Are capability cards
+  document.querySelectorAll<HTMLElement>('#who-we-are .grid > .group.relative').forEach((card, idx) => {
+    card.classList.add('scroll-reveal-item');
+    if (!card.style.getPropertyValue('--stagger-delay')) {
+      card.style.setProperty('--stagger-delay', `${idx * 100}ms`);
+    }
+  });
+
+  // 2. Auto-stagger Why Bellator cards
+  document.querySelectorAll<HTMLElement>('.why-bellator-card').forEach((card, idx) => {
+    card.classList.add('scroll-reveal-scale');
+    if (!card.style.getPropertyValue('--stagger-delay')) {
+      card.style.setProperty('--stagger-delay', `${(idx % 3) * 110}ms`);
+    }
+  });
+
+  // 3. Auto-stagger Industry cards in grid rows
+  document.querySelectorAll<HTMLElement>('.industry-card').forEach((card, idx) => {
     card.classList.add('scroll-reveal-item');
     if (!card.style.getPropertyValue('--stagger-delay')) {
       card.style.setProperty('--stagger-delay', `${(idx % 3) * 110}ms`);
     }
   });
 
+  // 4. Auto-stagger Standards stats counters
+  document.querySelectorAll<HTMLElement>('#standards .flex-col.items-center.text-center').forEach((stat, idx) => {
+    stat.classList.add('scroll-reveal-scale');
+    stat.style.setProperty('--stagger-delay', `${idx * 120}ms`);
+  });
+
+  // 5. Stagger Scope of Work cards and hub on scroll
+  const leftCards = document.querySelectorAll<HTMLElement>('.scope-card-01, .scope-card-02, .scope-card-03, .scope-card-04');
+  leftCards.forEach((card, idx) => {
+    card.classList.add('scroll-reveal-left');
+    if (!card.style.getPropertyValue('--stagger-delay')) {
+      card.style.setProperty('--stagger-delay', `${idx * 100}ms`);
+    }
+  });
+
+  const rightCards = document.querySelectorAll<HTMLElement>('.scope-card-05, .scope-card-06, .scope-card-07, .scope-card-08');
+  rightCards.forEach((card, idx) => {
+    card.classList.add('scroll-reveal-right');
+    if (!card.style.getPropertyValue('--stagger-delay')) {
+      card.style.setProperty('--stagger-delay', `${idx * 100}ms`);
+    }
+  });
+
+  const scopeHub = document.querySelector<HTMLElement>('.scope-central-disc');
+  if (scopeHub) {
+    scopeHub.classList.add('scroll-reveal-scale');
+    scopeHub.style.setProperty('--stagger-delay', '150ms');
+  }
+
+  // 6. Stagger Footer columns
+  document.querySelectorAll<HTMLElement>('footer .grid > div').forEach((col, idx) => {
+    col.classList.add('scroll-reveal-item');
+    col.style.setProperty('--stagger-delay', `${idx * 80}ms`);
+  });
+
   const elements = document.querySelectorAll<HTMLElement>(
-    '.scroll-reveal, .scroll-reveal-item, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .scroll-heading, .scroll-subtext, .scroll-badge, .scroll-mask-wrap'
+    '.scroll-reveal, .scroll-reveal-item, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale, .scroll-heading, .scroll-subtext, .scroll-badge, .scroll-mask-wrap, .spec-table-row'
   );
   if (elements.length === 0) return;
 
@@ -670,119 +766,323 @@ function initScrollLoadUnload() {
   const observerOptions: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px 0px -40px 0px',
-    threshold: 0.1
+    threshold: 0.08
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const el = entry.target as HTMLElement;
+      const rect = entry.boundingClientRect;
       if (entry.isIntersecting) {
         // Load effect 1 by 1 when scrolled into view
         el.classList.add('is-loaded');
       } else {
-        // Unload effect when scrolled out of view
-        el.classList.remove('is-loaded');
+        // Hysteresis unload: ONLY unload when element exits through the bottom of the screen
+        // (i.e. user scrolled back UP towards the top of the page).
+        // Never unload when scrolled past the top of the viewport, so reading is seamless without flickering.
+        if (rect.top > 0) {
+          el.classList.remove('is-loaded');
+        }
       }
     });
   }, observerOptions);
 
-  elements.forEach((el) => observer.observe(el));
+  elements.forEach((el) => {
+    observer.observe(el);
+    // Instant visibility check for elements already inside or near viewport on load
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('is-loaded');
+    }
+  });
 }
 
 /* ==========================================================================
-   Infosys-Style Moving & Expanding "What We Do" Carousel Controller
+   Interactive "What We Do" Damper Showcase Carousel Controller
    ========================================================================== */
 function initWhatWeDoCarousel() {
-  const viewport = document.getElementById('what-carousel-viewport');
-  const track = document.getElementById('what-carousel-track');
-  const prevBtn = document.getElementById('what-carousel-prev');
-  const nextBtn = document.getElementById('what-carousel-next');
+  const viewport = document.getElementById('what-carousel-viewport') as HTMLElement | null;
+  const track = document.getElementById('what-carousel-track') as HTMLElement | null;
+  const prevBtn = document.getElementById('what-carousel-prev') as HTMLButtonElement | null;
+  const nextBtn = document.getElementById('what-carousel-next') as HTMLButtonElement | null;
+  const dotsContainer = document.getElementById('what-carousel-dots') as HTMLElement | null;
 
   if (!viewport || !track) return;
-  const trackEl = track;
 
-  const cards = trackEl.querySelectorAll<HTMLElement>('.infosys-damper-card');
-  if (cards.length === 0) return;
+  const originalCards = Array.from(track.querySelectorAll<HTMLElement>('.what-product-card'));
+  if (originalCards.length === 0) return;
 
-  // Manual navigation buttons (prev / next)
-  let manualOffset = 0;
-  let resumeTimer: number | null = null;
+  // Helper to convert hex to RGBA
+  const hexToRgba = (hex: string, alpha: number) => {
+    const clean = hex.replace('#', '');
+    const r = parseInt(clean.substring(0, 2), 16) || 37;
+    const g = parseInt(clean.substring(2, 4), 16) || 99;
+    const b = parseInt(clean.substring(4, 6), 16) || 235;
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  };
 
-  function triggerManualShift(direction: 'next' | 'prev') {
-    const cardWidth = (cards[0] as HTMLElement).offsetWidth + 28; // card width + gap
-    trackEl.classList.add('is-paused');
+  // Set card accent variables on each card
+  originalCards.forEach((card) => {
+    const accent = card.getAttribute('data-accent') || '#EE6226';
+    card.style.setProperty('--card-accent', accent);
+    card.style.setProperty('--card-glow', hexToRgba(accent, 0.32));
+  });
 
-    // Get current computed transform translateX if in CSS animation
-    const style = window.getComputedStyle(trackEl);
-    const matrix = new DOMMatrixReadOnly(style.transform);
-    if (!manualOffset && matrix.m41 !== 0) {
-      manualOffset = matrix.m41;
+  // Duplicate cards to create an infinite, seamless continuous moving list
+  originalCards.forEach((card) => {
+    const clone = card.cloneNode(true) as HTMLElement;
+    clone.classList.remove('is-active');
+    clone.classList.add('is-loaded');
+    clone.setAttribute('aria-hidden', 'true');
+    track.appendChild(clone);
+  });
+
+  const allCards = Array.from(track.querySelectorAll<HTMLElement>('.what-product-card'));
+  allCards.forEach((card) => {
+    card.classList.add('is-loaded');
+    const accent = card.getAttribute('data-accent') || '#EE6226';
+    card.style.setProperty('--card-accent', accent);
+    card.style.setProperty('--card-glow', hexToRgba(accent, 0.32));
+  });
+
+  // Calculate pixel distance of one complete set of cards for seamless infinite wrapping
+  let singleLoopWidth = 0;
+  function measureLoopWidth() {
+    if (allCards.length > originalCards.length) {
+      const firstClone = allCards[originalCards.length];
+      const firstCard = allCards[0];
+      if (firstClone && firstCard) {
+        singleLoopWidth = firstClone.offsetLeft - firstCard.offsetLeft;
+      }
     }
-
-    if (direction === 'next') {
-      manualOffset -= cardWidth;
-    } else {
-      manualOffset += cardWidth;
+    if (singleLoopWidth <= 0) {
+      singleLoopWidth = track ? track.scrollWidth / 2 : 0;
     }
-
-    // Boundary check for loop
-    const halfWidth = trackEl.scrollWidth / 2;
-    if (Math.abs(manualOffset) >= halfWidth) {
-      manualOffset = 0;
-    } else if (manualOffset > 0) {
-      manualOffset = -halfWidth + cardWidth;
-    }
-
-    trackEl.style.animation = 'none';
-    trackEl.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
-    trackEl.style.transform = `translateX(${manualOffset}px)`;
-
-    if (resumeTimer) window.clearTimeout(resumeTimer);
-    resumeTimer = window.setTimeout(() => {
-      // Return to smooth CSS continuous marquee from the current position
-      const currentShift = manualOffset;
-      const progressPercent = (Math.abs(currentShift) % halfWidth) / halfWidth;
-
-      trackEl.style.transition = '';
-      trackEl.style.animation = `whatScrollRightToLeft 45s linear infinite`;
-      trackEl.style.animationDelay = `-${45 * progressPercent}s`;
-      trackEl.classList.remove('is-paused');
-    }, 4500);
   }
+
+  // Render interactive pagination dots (5 dots for the 5 distinct product cards)
+  const dots: HTMLButtonElement[] = [];
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    originalCards.forEach((card, idx) => {
+      const dot = document.createElement('button');
+      dot.className = 'what-carousel-dot';
+      dot.setAttribute('type', 'button');
+      dot.setAttribute('role', 'tab');
+      const cardTitle = card.querySelector('h3')?.textContent?.trim() || `Product ${idx + 1}`;
+      dot.setAttribute('aria-label', `View ${cardTitle}`);
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetCard = originalCards[idx];
+        if (targetCard) {
+          viewport.scrollTo({
+            left: targetCard.offsetLeft - 30,
+            behavior: 'smooth'
+          });
+          pauseGlide(3000);
+          updateActiveDot(idx);
+        }
+      });
+      dotsContainer.appendChild(dot);
+      dots.push(dot);
+    });
+  }
+
+  function updateActiveDot(index: number) {
+    const safeIdx = Math.abs(index) % originalCards.length;
+    const activeAccent = originalCards[safeIdx]?.getAttribute('data-accent') || '#EE6226';
+    dots.forEach((dot, idx) => {
+      if (idx === safeIdx) {
+        dot.classList.add('is-active');
+        dot.setAttribute('aria-selected', 'true');
+        dot.style.setProperty('--dot-color', activeAccent);
+        dot.style.setProperty('--dot-glow', hexToRgba(activeAccent, 0.45));
+      } else {
+        dot.classList.remove('is-active');
+        dot.setAttribute('aria-selected', 'false');
+      }
+    });
+  }
+
+  // Continuous gliding state
+  const glideSpeed = 0.75; // Pixels per frame (~45px per second - smooth, legible, elegant)
+  let isPaused = false;
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+  let hasMoved = false;
+  let pauseTimer: number | null = null;
+
+  function pauseGlide(resumeDelayMs: number = 2500) {
+    isPaused = true;
+    if (pauseTimer) window.clearTimeout(pauseTimer);
+    pauseTimer = window.setTimeout(() => {
+      if (!isDown && !viewport?.matches(':hover')) {
+        isPaused = false;
+      }
+    }, resumeDelayMs);
+  }
+
+  // Continuous loop runner via requestAnimationFrame
+  function glideAnimationLoop() {
+    if (!viewport) return;
+
+    if (!isPaused && !isDown && singleLoopWidth > 0) {
+      viewport.scrollLeft += glideSpeed;
+
+      // When we have scrolled one full set of cards, seamlessly subtract loop width
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+      }
+
+      // Sync active dot with visible position
+      const cardStep = singleLoopWidth / originalCards.length;
+      if (cardStep > 0) {
+        const currentIdx = Math.floor((viewport.scrollLeft + 100) / cardStep) % originalCards.length;
+        updateActiveDot(currentIdx);
+      }
+    }
+
+    requestAnimationFrame(glideAnimationLoop);
+  }
+
+  // Prev / Next button step actions
+  const stepAmount = 280; // Approximate card width + gap
 
   if (prevBtn) {
     prevBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      triggerManualShift('prev');
+      if (!viewport) return;
+      if (viewport.scrollLeft < stepAmount) {
+        viewport.scrollLeft += singleLoopWidth;
+      }
+      viewport.scrollBy({ left: -stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
     });
   }
 
   if (nextBtn) {
     nextBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      triggerManualShift('next');
+      if (!viewport) return;
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+      }
+      viewport.scrollBy({ left: stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
     });
   }
 
-  // Pointer / touch card interaction for mobile devices & desktop click
-  cards.forEach((card) => {
-    card.addEventListener('pointerenter', () => {
-      cards.forEach((c) => c.classList.remove('is-active'));
-      card.classList.add('is-active');
-    });
-
-    card.addEventListener('pointerleave', () => {
-      card.classList.remove('is-active');
-    });
-
-    card.addEventListener('click', (e) => {
-      const isMobile = window.innerWidth < 768;
-      if (isMobile && !card.classList.contains('is-active')) {
-        e.preventDefault();
-        cards.forEach((c) => c.classList.remove('is-active'));
-        card.classList.add('is-active');
+  // Keyboard arrow keys
+  viewport.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      if (viewport.scrollLeft < stepAmount) {
+        viewport.scrollLeft += singleLoopWidth;
       }
-    });
+      viewport.scrollBy({ left: -stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+      }
+      viewport.scrollBy({ left: stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
+    }
+  });
+
+  // Pause on hover or pointer contact so user can read cards comfortably
+  const handleHoverStart = () => {
+    isPaused = true;
+  };
+  const handleHoverEnd = () => {
+    if (!isDown) {
+      pauseGlide(400);
+    }
+  };
+
+  viewport.addEventListener('mouseenter', handleHoverStart);
+  viewport.addEventListener('mouseleave', handleHoverEnd);
+  viewport.addEventListener('pointerenter', handleHoverStart);
+  viewport.addEventListener('pointerleave', handleHoverEnd);
+  track.addEventListener('mouseenter', handleHoverStart);
+  track.addEventListener('mouseleave', handleHoverEnd);
+
+  viewport.addEventListener('touchstart', () => {
+    isPaused = true;
+  }, { passive: true });
+
+  viewport.addEventListener('touchend', () => {
+    pauseGlide(2000);
+  }, { passive: true });
+
+  // Mouse drag support
+  viewport.addEventListener('mousedown', (e) => {
+    isDown = true;
+    hasMoved = false;
+    isPaused = true;
+    startX = e.pageX - viewport.offsetLeft;
+    scrollLeftStart = viewport.scrollLeft;
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!isDown) return;
+    isDown = false;
+    pauseGlide(2000);
+  });
+
+  viewport.addEventListener('mousemove', (e) => {
+    if (!isDown || !viewport) return;
+    e.preventDefault();
+    const x = e.pageX - viewport.offsetLeft;
+    const walk = (x - startX) * 1.4;
+    if (Math.abs(walk) > 6) hasMoved = true;
+    viewport.scrollLeft = scrollLeftStart - walk;
+
+    // Wrap seamlessly while dragging
+    if (singleLoopWidth > 0) {
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+        scrollLeftStart -= singleLoopWidth;
+      } else if (viewport.scrollLeft < 0) {
+        viewport.scrollLeft += singleLoopWidth;
+        scrollLeftStart += singleLoopWidth;
+      }
+    }
+  });
+
+  // Card click navigation (works for both original cards and cloned cards)
+  track.addEventListener('click', (e) => {
+    if (hasMoved) {
+      hasMoved = false;
+      e.preventDefault();
+      return;
+    }
+    const card = (e.target as HTMLElement).closest<HTMLElement>('.what-product-card');
+    if (!card) return;
+
+    const isCta = (e.target as HTMLElement).closest('.what-cta-btn');
+    const targetHref = card.getAttribute('data-href');
+    if (targetHref && isCta) {
+      window.location.href = targetHref;
+    } else if (targetHref) {
+      window.location.href = targetHref;
+    }
+  });
+
+  // Resize observer to re-measure singleLoopWidth on window resize
+  window.addEventListener('resize', () => {
+    measureLoopWidth();
+  }, { passive: true });
+
+  // Initialize and start continuous moving animation
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      measureLoopWidth();
+      updateActiveDot(0);
+      glideAnimationLoop();
+    }, 150);
   });
 }
 
@@ -821,107 +1121,11 @@ function initIndustriesDossier() {
   });
 }
 
-/* ==========================================================================
-   Continuous Right-to-Left "Direct Sector Index" Carousel Controller
-   ========================================================================== */
-function initSectorMatrixCarousel() {
-  const viewport = document.getElementById('sector-carousel-viewport');
-  const track = document.getElementById('sector-carousel-track');
-  const prevBtn = document.getElementById('sector-carousel-prev');
-  const nextBtn = document.getElementById('sector-carousel-next');
-
-  if (!viewport || !track) return;
-  const trackEl = track;
-
-  const cards = trackEl.querySelectorAll<HTMLElement>('.sector-matrix-card');
-  if (cards.length === 0) return;
-
-  // Manual navigation buttons (prev / next)
-  let manualOffset = 0;
-  let resumeTimer: number | null = null;
-
-  function triggerManualShift(direction: 'next' | 'prev') {
-    const cardWidth = (cards[0] as HTMLElement).offsetWidth + 24; // card width + gap
-    trackEl.classList.add('is-paused');
-
-    // Get current computed transform translateX if in CSS animation
-    const style = window.getComputedStyle(trackEl);
-    const matrix = new DOMMatrixReadOnly(style.transform);
-    if (!manualOffset && matrix.m41 !== 0) {
-      manualOffset = matrix.m41;
-    }
-
-    if (direction === 'next') {
-      manualOffset -= cardWidth;
-    } else {
-      manualOffset += cardWidth;
-    }
-
-    // Boundary check for loop
-    const halfWidth = trackEl.scrollWidth / 2;
-    if (Math.abs(manualOffset) >= halfWidth) {
-      manualOffset = 0;
-    } else if (manualOffset > 0) {
-      manualOffset = -halfWidth + cardWidth;
-    }
-
-    trackEl.style.animation = 'none';
-    trackEl.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
-    trackEl.style.transform = `translateX(${manualOffset}px)`;
-
-    if (resumeTimer) window.clearTimeout(resumeTimer);
-    resumeTimer = window.setTimeout(() => {
-      // Return to smooth CSS continuous marquee from current position
-      const currentShift = manualOffset;
-      const progressPercent = (Math.abs(currentShift) % halfWidth) / halfWidth;
-
-      trackEl.style.transition = '';
-      trackEl.style.animation = `sectorScrollRightToLeft 55s linear infinite`;
-      trackEl.style.animationDelay = `-${55 * progressPercent}s`;
-      trackEl.classList.remove('is-paused');
-    }, 4500);
-  }
-
-  if (prevBtn) {
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      triggerManualShift('prev');
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      triggerManualShift('next');
-    });
-  }
-
-  // Pointer / touch card interaction for mobile devices & desktop click
-  cards.forEach((card) => {
-    card.addEventListener('pointerenter', () => {
-      cards.forEach((c) => c.classList.remove('is-active'));
-      card.classList.add('is-active');
-    });
-
-    card.addEventListener('pointerleave', () => {
-      card.classList.remove('is-active');
-    });
-
-    card.addEventListener('click', (e) => {
-      const isMobile = window.innerWidth < 768;
-      if (isMobile && !card.classList.contains('is-active')) {
-        e.preventDefault();
-        cards.forEach((c) => c.classList.remove('is-active'));
-        card.classList.add('is-active');
-      }
-    });
-  });
-}
 
 /* ==========================================================================
    AI Assistant Search Interaction (Inline Rich Answers directly on page)
    ========================================================================== */
-import { getAiBotResponse, initChatbot } from './components/chatbot';
+import { getAiBotResponse } from './components/chatbot';
 
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
@@ -1077,7 +1281,446 @@ function initAiAssistant() {
   }
 }
 
+/* ==========================================================================
+   Scope of Work Dynamic Connector Lines (Exact Card-to-Hub Attachment)
+   ========================================================================== */
+function initScopeConnectorLines() {
+  const container = document.getElementById('scope-lifecycle-container');
+  const svg = document.getElementById('scope-dynamic-connectors') as SVGSVGElement | null;
+  const hubDisc = document.querySelector('.scope-central-disc') as HTMLElement | null;
+  if (!container || !svg || !hubDisc) return;
+
+  const cardsData = [
+    { selector: '.scope-card-01', color: '#F97316', angle: 215, side: 'left' },
+    { selector: '.scope-card-02', color: '#2563EB', angle: 192, side: 'left' },
+    { selector: '.scope-card-03', color: '#16A34A', angle: 168, side: 'left' },
+    { selector: '.scope-card-04', color: '#9333EA', angle: 145, side: 'left' },
+    { selector: '.scope-card-05', color: '#EF4444', angle: 325, side: 'right' },
+    { selector: '.scope-card-06', color: '#2563EB', angle: 348, side: 'right' },
+    { selector: '.scope-card-07', color: '#D97706', angle: 12, side: 'right' },
+    { selector: '.scope-card-08', color: '#0D9488', angle: 35, side: 'right' },
+  ];
+
+  function updateLines() {
+    const currentContainer = document.getElementById('scope-lifecycle-container');
+    const currentSvg = document.getElementById('scope-dynamic-connectors') as SVGSVGElement | null;
+    const currentHubDisc = document.querySelector('.scope-central-disc') as HTMLElement | null;
+    if (!currentContainer || !currentSvg || !currentHubDisc) return;
+
+    if (window.innerWidth < 1024) {
+      currentSvg.innerHTML = '';
+      return;
+    }
+
+    const cRect = currentContainer.getBoundingClientRect();
+    const hRect = currentHubDisc.getBoundingClientRect();
+
+    const hubCenterX = hRect.left + hRect.width / 2 - cRect.left;
+    const hubCenterY = hRect.top + hRect.height / 2 - cRect.top;
+    const hubRadius = (hRect.width / 2) + 24; // Align with outer orbital guide ring
+
+    let pathsHtml = '';
+
+    cardsData.forEach((item) => {
+      const cardEl = currentContainer.querySelector(item.selector) as HTMLElement | null;
+      if (!cardEl) return;
+
+      const cardRect = cardEl.getBoundingClientRect();
+      const badgeEl = cardEl.querySelector('.rounded-full') as HTMLElement | null;
+
+      let targetX = 0;
+      let targetY = 0;
+
+      if (badgeEl) {
+        const bRect = badgeEl.getBoundingClientRect();
+        targetX = (item.side === 'left')
+          ? bRect.right - cRect.left
+          : bRect.left - cRect.left;
+        targetY = bRect.top + bRect.height / 2 - cRect.top;
+      } else {
+        targetX = (item.side === 'left')
+          ? cardRect.right - cRect.left
+          : cardRect.left - cRect.left;
+        targetY = cardRect.top + cardRect.height / 2 - cRect.top;
+      }
+
+      // Hub origin point along outer orbital circle
+      const rad = (item.angle * Math.PI) / 180;
+      const startX = hubCenterX + hubRadius * Math.cos(rad);
+      const startY = hubCenterY + hubRadius * Math.sin(rad);
+
+      // Smooth horizontal-leaning bezier curve
+      const cpX1 = startX + (item.side === 'left' ? -45 : 45);
+      const cpY1 = startY;
+      const cpX2 = targetX + (item.side === 'left' ? 45 : -45);
+      const cpY2 = targetY;
+
+      const pathData = `M ${startX.toFixed(1)} ${startY.toFixed(1)} C ${cpX1.toFixed(1)} ${cpY1.toFixed(1)}, ${cpX2.toFixed(1)} ${cpY2.toFixed(1)}, ${targetX.toFixed(1)} ${targetY.toFixed(1)}`;
+
+      // Dotted connector path
+      pathsHtml += `<path d="${pathData}" stroke="${item.color}" stroke-width="1.8" stroke-dasharray="3 5" opacity="0.85" fill="none" stroke-linecap="round" />`;
+
+      // Satellite node dot on hub orbit
+      pathsHtml += `<circle cx="${startX.toFixed(1)}" cy="${startY.toFixed(1)}" r="4.5" fill="${item.color}" stroke="#FFFFFF" stroke-width="2" />`;
+    });
+
+    currentSvg.innerHTML = pathsHtml;
+  }
+
+  updateLines();
+  window.addEventListener('resize', updateLines);
+  window.addEventListener('scroll', updateLines, { passive: true });
+
+  // Dynamically redraw connectors while cards and hub animate/transition
+  let rafId: number | null = null;
+  function trackTransition() {
+    updateLines();
+    rafId = requestAnimationFrame(trackTransition);
+  }
+
+  container.addEventListener('transitionrun', () => {
+    if (!rafId) {
+      rafId = requestAnimationFrame(trackTransition);
+    }
+  });
+
+  container.addEventListener('transitionend', () => {
+    if (rafId) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+    updateLines();
+  });
+}
+
+/* ==========================================================================
+   Standards & Global Leaders Carousel (Continuous Movable Infinite Marquee)
+   ========================================================================== */
+function initStandardsCarousel() {
+  const viewport = document.getElementById('leaders-carousel-viewport') as HTMLElement | null;
+  const track = document.getElementById('leaders-carousel-track') as HTMLElement | null;
+  const prevBtn = document.getElementById('leaders-prev-btn') as HTMLButtonElement | null;
+  const nextBtn = document.getElementById('leaders-next-btn') as HTMLButtonElement | null;
+  const dots = [
+    document.getElementById('leaders-dot-0') as HTMLButtonElement | null,
+    document.getElementById('leaders-dot-1') as HTMLButtonElement | null,
+    document.getElementById('leaders-dot-2') as HTMLButtonElement | null
+  ];
+
+  if (!viewport || !track) return;
+
+  const originalCards = Array.from(track.querySelectorAll<HTMLElement>('.leaders-card'));
+  if (originalCards.length === 0) return;
+
+  // Duplicate cards twice to guarantee an unbroken, seamless continuous loop even on 4K displays
+  for (let c = 0; c < 2; c++) {
+    originalCards.forEach((card) => {
+      const clone = card.cloneNode(true) as HTMLElement;
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  }
+
+  const allCards = Array.from(track.querySelectorAll<HTMLElement>('.leaders-card'));
+
+  // Calculate pixel distance of one full set of cards for seamless wrap-around
+  let singleLoopWidth = 0;
+  function measureLoopWidth() {
+    if (allCards.length > originalCards.length) {
+      const firstClone = allCards[originalCards.length];
+      const firstCard = allCards[0];
+      if (firstClone && firstCard) {
+        singleLoopWidth = firstClone.offsetLeft - firstCard.offsetLeft;
+      }
+    }
+    if (singleLoopWidth <= 0 && track) {
+      singleLoopWidth = track.scrollWidth / 3;
+    }
+  }
+
+  // Update dots indicator
+  function updateDots() {
+    if (singleLoopWidth <= 0) return;
+    const scrollPos = viewport!.scrollLeft % singleLoopWidth;
+    const progress = scrollPos / singleLoopWidth;
+    const activeIndex = Math.min(dots.length - 1, Math.max(0, Math.floor(progress * dots.length)));
+
+    dots.forEach((dot, idx) => {
+      if (!dot) return;
+      if (idx === activeIndex) {
+        dot.className = 'leaders-indicator-dot w-6 h-2 rounded-full bg-[#EE6226] transition-all cursor-pointer';
+      } else {
+        dot.className = 'leaders-indicator-dot w-2 h-2 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer';
+      }
+    });
+  }
+
+  // Dot click navigation
+  dots.forEach((dot, index) => {
+    if (!dot) return;
+    dot.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (singleLoopWidth <= 0) return;
+      const targetScroll = (index / dots.length) * singleLoopWidth;
+      viewport.scrollTo({ left: targetScroll, behavior: 'smooth' });
+      pauseGlide(3000);
+      updateDots();
+    });
+  });
+
+  // Continuous gliding state
+  const glideSpeed = 0.75; // Smooth, legible, continuous gliding (~45px per second)
+  let isPaused = false;
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+  let hasMoved = false;
+  let pauseTimer: number | null = null;
+
+  function pauseGlide(resumeDelayMs: number = 2500) {
+    isPaused = true;
+    if (pauseTimer) window.clearTimeout(pauseTimer);
+    pauseTimer = window.setTimeout(() => {
+      if (!isDown && !viewport?.matches(':hover') && !track?.matches(':hover')) {
+        isPaused = false;
+      }
+    }, resumeDelayMs);
+  }
+
+  // Continuous loop runner via requestAnimationFrame
+  function glideAnimationLoop() {
+    if (!viewport) return;
+
+    if (!isPaused && !isDown && singleLoopWidth > 0) {
+      viewport.scrollLeft += glideSpeed;
+
+      // Wrap seamlessly when one full loop has scrolled
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+      }
+
+      updateDots();
+    }
+
+    requestAnimationFrame(glideAnimationLoop);
+  }
+
+  // Prev / Next button step actions
+  const stepAmount = 260; // Card width + gap
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (!viewport) return;
+      if (viewport.scrollLeft < stepAmount) {
+        viewport.scrollLeft += singleLoopWidth;
+      }
+      viewport.scrollBy({ left: -stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (!viewport) return;
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+      }
+      viewport.scrollBy({ left: stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
+    });
+  }
+
+  // Keyboard navigation
+  viewport.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      if (viewport.scrollLeft < stepAmount) {
+        viewport.scrollLeft += singleLoopWidth;
+      }
+      viewport.scrollBy({ left: -stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+      }
+      viewport.scrollBy({ left: stepAmount, behavior: 'smooth' });
+      pauseGlide(3000);
+    }
+  });
+
+  // Pause on hover so users can inspect logos and accreditations comfortably
+  const handleHoverStart = () => {
+    isPaused = true;
+  };
+  const handleHoverEnd = () => {
+    if (!isDown) {
+      pauseGlide(400);
+    }
+  };
+
+  viewport.addEventListener('mouseenter', handleHoverStart);
+  viewport.addEventListener('mouseleave', handleHoverEnd);
+  viewport.addEventListener('pointerenter', handleHoverStart);
+  viewport.addEventListener('pointerleave', handleHoverEnd);
+  track.addEventListener('mouseenter', handleHoverStart);
+  track.addEventListener('mouseleave', handleHoverEnd);
+
+  // Touch drag support for mobile / tablets
+  let touchStartX = 0;
+  let touchScrollLeft = 0;
+
+  viewport.addEventListener('touchstart', (e) => {
+    isPaused = true;
+    if (e.touches[0]) {
+      touchStartX = e.touches[0].pageX - viewport.offsetLeft;
+      touchScrollLeft = viewport.scrollLeft;
+    }
+  }, { passive: true });
+
+  viewport.addEventListener('touchmove', (e) => {
+    if (e.touches[0] && singleLoopWidth > 0) {
+      const x = e.touches[0].pageX - viewport.offsetLeft;
+      const walk = (x - touchStartX) * 1.25;
+      viewport.scrollLeft = touchScrollLeft - walk;
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+        touchScrollLeft -= singleLoopWidth;
+      } else if (viewport.scrollLeft < 0) {
+        viewport.scrollLeft += singleLoopWidth;
+        touchScrollLeft += singleLoopWidth;
+      }
+      updateDots();
+    }
+  }, { passive: true });
+
+  viewport.addEventListener('touchend', () => {
+    pauseGlide(2500);
+  }, { passive: true });
+
+  // Mouse drag support ("movable")
+  viewport.addEventListener('mousedown', (e) => {
+    isDown = true;
+    hasMoved = false;
+    isPaused = true;
+    startX = e.pageX - viewport.offsetLeft;
+    scrollLeftStart = viewport.scrollLeft;
+    viewport.classList.add('is-dragging');
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!isDown) return;
+    isDown = false;
+    viewport.classList.remove('is-dragging');
+    pauseGlide(2000);
+  });
+
+  viewport.addEventListener('mousemove', (e) => {
+    if (!isDown || !viewport) return;
+    e.preventDefault();
+    const x = e.pageX - viewport.offsetLeft;
+    const walk = (x - startX) * 1.35;
+    if (Math.abs(walk) > 4) hasMoved = true;
+    viewport.scrollLeft = scrollLeftStart - walk;
+
+    // Wrap seamlessly while dragging
+    if (singleLoopWidth > 0) {
+      if (viewport.scrollLeft >= singleLoopWidth) {
+        viewport.scrollLeft -= singleLoopWidth;
+        scrollLeftStart -= singleLoopWidth;
+      } else if (viewport.scrollLeft < 0) {
+        viewport.scrollLeft += singleLoopWidth;
+        scrollLeftStart += singleLoopWidth;
+      }
+      updateDots();
+    }
+  });
+
+  // Prevent click triggering if user was dragging
+  track.addEventListener('click', (e) => {
+    if (hasMoved) {
+      hasMoved = false;
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
+
+  // Re-measure on window resize
+  window.addEventListener('resize', () => {
+    measureLoopWidth();
+  }, { passive: true });
+
+  // Initialize and kick off continuous gliding loop
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      measureLoopWidth();
+      updateDots();
+      glideAnimationLoop();
+    }, 150);
+  });
+}
+
+/* ==========================================================================
+   Facility Tour Video Modal Controller
+   ========================================================================== */
+function initFacilityVideoModal() {
+  const modal = document.getElementById('facility-video-modal');
+  const video = document.getElementById('facility-modal-video') as HTMLVideoElement | null;
+  const closeBtn = document.getElementById('close-facility-video-btn');
+  const triggers = document.querySelectorAll('.facility-video-trigger');
+
+  if (!modal || !video) return;
+
+  const openModal = () => {
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100', 'pointer-events-auto');
+    const modalDialog = modal.firstElementChild as HTMLElement | null;
+    if (modalDialog) {
+      modalDialog.classList.remove('scale-95');
+      modalDialog.classList.add('scale-100');
+    }
+    video.play().catch(() => {});
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('opacity-100', 'pointer-events-auto');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    const modalDialog = modal.firstElementChild as HTMLElement | null;
+    if (modalDialog) {
+      modalDialog.classList.remove('scale-100');
+      modalDialog.classList.add('scale-95');
+    }
+    video.pause();
+    video.currentTime = 0;
+    document.body.style.overflow = '';
+  };
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener('click', openModal);
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('pointer-events-none')) {
+      closeModal();
+    }
+  });
+}
+
 // Initialize all interactive components
+initSharedNavigation('home');
 init3DFluidWave();
 initHeroTypewriter();
 initNavbarScroll();
@@ -1085,6 +1728,9 @@ initTestimonialSlider();
 initScrollLoadUnload();
 initWhatWeDoCarousel();
 initIndustriesDossier();
-initSectorMatrixCarousel();
 initAiAssistant();
-initChatbot();
+initScopeConnectorLines();
+initStandardsCarousel();
+initFacilityVideoModal();
+
+
