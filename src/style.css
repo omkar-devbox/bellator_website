@@ -947,10 +947,9 @@ textarea:hover {
   transform: translateY(0);
 }
 
-/* Spotlight focus on hover: sibling cards gently soften while hovered card shines */
+/* Controlled, subtle focus on hover */
 #what-carousel-track:hover .what-product-card {
-  opacity: 0.88;
-  transform: scale(0.985);
+  opacity: 0.95;
 }
 
 /* Rich 3D Card Elevation & Spotlight on Hover */
@@ -1434,6 +1433,7 @@ textarea:hover {
    ========================================================================== */
 /* Hide desktop navigation pill menus on mobile (< 1024px) */
 @media (max-width: 1023px) {
+
   .nav-pill-wrapper,
   .nav-pill-capsule {
     display: none !important;
@@ -1590,6 +1590,7 @@ textarea:hover {
 
 /* Hide hamburger menu button on desktop (>= 1024px) */
 @media (min-width: 1024px) {
+
   #mobile-menu-btn,
   .hamburger-btn,
   .nav-circle-menu-btn {
@@ -1599,6 +1600,7 @@ textarea:hover {
 
 /* Show animated hamburger menu button ONLY on mobile devices (< 1024px) */
 @media (max-width: 1023px) {
+
   .hamburger-btn,
   #mobile-menu-btn {
     display: inline-flex !important;
@@ -1689,6 +1691,7 @@ textarea:hover {
     opacity: 0;
     transform: translateY(-8px) scale(0.98);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);

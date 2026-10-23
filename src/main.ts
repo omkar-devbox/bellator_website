@@ -1650,7 +1650,7 @@ function initFacilityVideoModal() {
       modalDialog.classList.remove('scale-95');
       modalDialog.classList.add('scale-100');
     }
-    video.play().catch(() => {});
+    video.play().catch(() => { });
     document.body.style.overflow = 'hidden';
   };
 
