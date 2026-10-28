@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="seatOuter" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#e2e8f0"/>
+      <stop offset="60%" stop-color="#94a3b8"/>
+      <stop offset="85%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </radialGradient>
+    <radialGradient id="seatInner" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="85%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </radialGradient>
+    <linearGradient id="metalBevel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#64748b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="seatShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Drop Shadow & Main Ring -->
+  <g filter="url(#seatShadow)">
+    <circle cx="100" cy="100" r="76" fill="url(#seatOuter)" stroke="#64748b" stroke-width="2"/>
+    <circle cx="100" cy="100" r="66" fill="none" stroke="url(#metalBevel)" stroke-width="3"/>
+    <circle cx="100" cy="100" r="54" fill="url(#seatInner)"/>
+    <circle cx="100" cy="100" r="46" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+    <!-- Bolt holes or machined notches around circumference -->
+    <circle cx="100" cy="35" r="4" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="100" cy="165" r="4" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="35" cy="100" r="4" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="165" cy="100" r="4" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="54" cy="54" r="3.5" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="146" cy="54" r="3.5" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="54" cy="146" r="3.5" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+    <circle cx="146" cy="146" r="3.5" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+  </g>
+</svg>

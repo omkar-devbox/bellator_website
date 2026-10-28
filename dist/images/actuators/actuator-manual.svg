@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gearCastIron" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="60%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="wheelRim" cx="40%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="gearShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#gearShadow)">
+    <!-- Worm Gearbox Cast Body -->
+    <rect x="100" y="62" width="56" height="52" rx="8" fill="url(#gearCastIron)" stroke="#0f172a" stroke-width="2"/>
+    <!-- Gearbox Top Cap / Indicator -->
+    <circle cx="128" cy="62" r="14" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+    <path d="M128 54 L128 70 M120 62 L136 62" stroke="#eab308" stroke-width="2.5"/>
+
+    <!-- Worm Shaft Extension to Handwheel -->
+    <rect x="74" y="82" width="30" height="12" fill="#64748b" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Handwheel Assembly -->
+    <!-- Wheel Outer Rim (Angled Oval Perspective) -->
+    <ellipse cx="64" cy="88" rx="14" ry="44" fill="none" stroke="url(#wheelRim)" stroke-width="8"/>
+    <!-- Center Hub -->
+    <circle cx="64" cy="88" r="8" fill="#475569" stroke="#0f172a" stroke-width="2"/>
+    <!-- Spokes -->
+    <line x1="64" y1="52" x2="64" y2="80" stroke="#475569" stroke-width="4"/>
+    <line x1="64" y1="96" x2="64" y2="124" stroke="#475569" stroke-width="4"/>
+    <line x1="53" y1="88" x2="58" y2="88" stroke="#475569" stroke-width="4"/>
+    <line x1="70" y1="88" x2="75" y2="88" stroke="#475569" stroke-width="4"/>
+    <!-- Revolving Handle -->
+    <rect x="52" y="44" width="7" height="14" rx="2" fill="#0f172a"/>
+
+    <!-- Bottom Mounting Flange -->
+    <rect x="116" y="114" width="24" height="16" fill="#1e293b"/>
+  </g>
+</svg>

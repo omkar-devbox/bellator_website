@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ringGrad1" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="30%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="specularGlow" cx="30%" cy="25%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sealGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="8" stdDeviation="5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Background small O-Ring -->
+  <g filter="url(#sealGlow)">
+    <ellipse cx="125" cy="115" rx="52" ry="40" fill="none" stroke="url(#ringGrad1)" stroke-width="15" transform="rotate(-15 125 115)"/>
+    <ellipse cx="125" cy="115" rx="52" ry="40" fill="none" stroke="url(#specularGlow)" stroke-width="4" stroke-dasharray="50 150" transform="rotate(-15 125 115)"/>
+  </g>
+  <!-- Foreground large O-Ring -->
+  <g filter="url(#sealGlow)">
+    <ellipse cx="78" cy="85" rx="58" ry="44" fill="none" stroke="url(#ringGrad1)" stroke-width="16" transform="rotate(-25 78 85)"/>
+    <ellipse cx="78" cy="85" rx="58" ry="44" fill="none" stroke="url(#specularGlow)" stroke-width="5" stroke-dasharray="60 160" transform="rotate(-25 78 85)"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hydBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="motorTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="hydShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g filter="url(#hydShadow)">
+    <!-- Base Hydraulic Oil Reservoir Tank -->
+    <rect x="30" y="80" width="140" height="48" rx="6" fill="url(#hydBlue)" stroke="#172554" stroke-width="2"/>
+    <!-- Sight Glass Oil Level Indicator -->
+    <rect x="150" y="90" width="6" height="28" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1"/>
+    <rect x="151" y="100" width="4" height="16" fill="#f59e0b"/>
+
+    <!-- Mounted Pump Motor (Left Top) -->
+    <rect x="42" y="38" width="44" height="42" rx="4" fill="url(#motorTeal)" stroke="#0369a1" stroke-width="1.5"/>
+    <path d="M50 38 L50 80 M58 38 L58 80 M66 38 L66 80 M74 38 L74 80" stroke="#0284c7" stroke-width="1.2"/>
+    <!-- Motor Junction Box -->
+    <rect x="48" y="32" width="16" height="8" rx="2" fill="#0f172a"/>
+
+    <!-- Manifold Block & Solenoid Valves (Right Top) -->
+    <rect x="96" y="52" width="42" height="28" rx="3" fill="#64748b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="100" y="38" width="14" height="15" rx="2" fill="#0f172a"/>
+    <rect x="118" y="38" width="14" height="15" rx="2" fill="#0f172a"/>
+
+    <!-- Pressure Gauge -->
+    <circle cx="120" cy="24" r="10" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <path d="M120 24 L124 20" stroke="#ef4444" stroke-width="1.5"/>
+    <path d="M120 34 L120 38" stroke="#334155" stroke-width="2"/>
+
+    <!-- Hydraulic Lines -->
+    <path d="M86 65 L96 65" stroke="#334155" stroke-width="3"/>
+  </g>
+</svg>
